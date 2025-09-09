@@ -1,0 +1,34 @@
+games:
+  root:
+    name: Root
+
+  arcs:
+    name: Arcs
+
+  vast:
+    name: Vast
+
+  oath:
+    name: Oath
+
+languages:
+  en-US:
+    name: English
+
+  pt-BR:
+    name: Português
+
+  es-ES:
+    name: Español
+
+  de-DE:
+    name: Deutsch
+
+  ru-RU:
+    name: Russian
+
+  pl-PL:
+    name: Polski
+
+  nl-NL:
+    name: Nederlands

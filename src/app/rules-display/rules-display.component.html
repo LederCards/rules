@@ -1,0 +1,178 @@
+@let searchTerm = search();
+@let indexesToRules = ruleIndexes();
+@for (rule of allRules(); track $index; let majorIndex = $index) {
+  <div
+    class="rule-container major"
+    [style.border-color]="rule.color"
+    [class.ion-hide]="!isVisible([majorIndex + 1])"
+  >
+    <!-- no text at this level -->
+
+    <div class="rule major" [id]="indexesToRules[rule.index]">
+      <span [id]="rule.index"></span>
+      <span class="index major">{{ rule.index }}</span>
+      <a
+        [innerHTML]="rule.formattedName | highlight: searchTerm : rule.index"
+        [href]="'#' + indexesToRules[rule.index]"
+      ></a>
+    </div>
+
+    <div
+      class="pretext"
+      [innerHTML]="rule.pretext | highlight: searchTerm : rule.index"
+    ></div>
+
+    @for (childRule of rule.children; track $index; let minorIndex = $index) {
+      <div
+        class="rule-container minor"
+        [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1])"
+      >
+        <!-- no text at this level -->
+
+        <div class="rule minor" [id]="indexesToRules[childRule.index]">
+          <span [id]="childRule.index"></span>
+          <span class="index minor">{{ childRule.index }}</span>
+          <a
+            [innerHTML]="
+              childRule.formattedName | highlight: searchTerm : childRule.index
+            "
+            [href]="'#' + indexesToRules[childRule.index]"
+          ></a>
+        </div>
+
+        <div
+          class="pretext"
+          [innerHTML]="
+            childRule.pretext | highlight: searchTerm : childRule.index
+          "
+        ></div>
+
+        @for (
+          grandchildRule of childRule.children;
+          track $index;
+          let childIndex = $index
+        ) {
+          <div
+            class="rule-container child"
+            [class.ion-hide]="
+              !isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1])
+            "
+          >
+            <!-- no pretext at this level -->
+
+            <div class="rule child" [id]="indexesToRules[grandchildRule.index]">
+              <span [id]="grandchildRule.index"></span>
+              <span class="index child">{{ grandchildRule.index }}</span>
+              <span class="desc child">
+                <a
+                  class="name child"
+                  [innerHTML]="
+                    grandchildRule.formattedName
+                      | highlight: searchTerm : grandchildRule.index
+                  "
+                  [href]="'#' + indexesToRules[grandchildRule.index]"
+                ></a>
+                <span
+                  class="text child"
+                  [innerHTML]="
+                    grandchildRule.text
+                      | highlight: searchTerm : grandchildRule.index
+                  "
+                ></span>
+
+                <!-- please never go deeper -->
+                @if (grandchildRule.subchildren) {
+                  <ol class="romanized-list list">
+                    @for (
+                      descRule of grandchildRule.subchildren;
+                      track $index;
+                      let descIndex = $index
+                    ) {
+                      <li
+                        [class.ion-hide]="
+                          !isVisible([
+                            majorIndex + 1,
+                            minorIndex + 1,
+                            childIndex + 1,
+                            descIndex + 1,
+                          ])
+                        "
+                      >
+                        <a
+                          class="name child"
+                          [id]="indexesToRules[descRule.index]"
+                          [innerHTML]="
+                            descRule.formattedName
+                              | highlight: searchTerm : descRule.index
+                          "
+                          [href]="'#' + indexesToRules[descRule.index]"
+                        >
+                          <span [id]="descRule.index"></span>
+                        </a>
+                        <span
+                          class="text child"
+                          [innerHTML]="
+                            descRule.text
+                              | highlight: searchTerm : descRule.index
+                          "
+                        ></span>
+
+                        <!-- I said please :( -->
+                        @if (descRule.subchildren) {
+                          <ol class="alphabeta-list list sublist">
+                            @for (
+                              descDescRule of descRule.subchildren;
+                              track $index;
+                              let descDescIndex = $index
+                            ) {
+                              <li
+                                [class.ion-hide]="
+                                  !isVisible([
+                                    majorIndex + 1,
+                                    minorIndex + 1,
+                                    childIndex + 1,
+                                    descIndex + 1,
+                                    descDescIndex + 1,
+                                  ])
+                                "
+                              >
+                                <a
+                                  class="name child"
+                                  [id]="indexesToRules[descDescRule.index]"
+                                  [innerHTML]="
+                                    descDescRule.formattedName
+                                      | highlight
+                                        : searchTerm
+                                        : descDescRule.index
+                                  "
+                                  [href]="
+                                    '#' + indexesToRules[descDescRule.index]
+                                  "
+                                >
+                                  <span [id]="descDescRule.index"></span>
+                                </a>
+                                <span
+                                  class="text child"
+                                  [innerHTML]="
+                                    descDescRule.text
+                                      | highlight
+                                        : searchTerm
+                                        : descDescRule.index
+                                  "
+                                ></span>
+                              </li>
+                            }
+                          </ol>
+                        }
+                      </li>
+                    }
+                  </ol>
+                }
+              </span>
+            </div>
+          </div>
+        }
+      </div>
+    }
+  </div>
+}

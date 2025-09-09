@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    @if (!showSearch()) {
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+      <ion-title>
+        <span class="title-container">
+          <span class="title-text ion-hide-sm-down">
+            {{ 'App.NavTitle' | translate }}
+          </span>
+
+          <span class="title-text ion-hide-md-up">
+            {{ 'App.NavTitleShort' | translate }}
+          </span>
+        </span>
+      </ion-title>
+    }
+
+    @if (showSearch()) {
+      <ion-searchbar
+        color="primary"
+        showCancelButton="true"
+        debounce="300"
+        (ionCancel)="setSearchValue(undefined)"
+        (ionClear)="setSearchValue(undefined)"
+        (ionChange)="setSearchValue($event.detail.value)"
+        [placeholder]="'App.SearchPlaceholder' | translate"
+      ></ion-searchbar>
+    }
+
+    <ion-buttons slot="end">
+      <ion-button
+        (click)="toggleSearch()"
+        [title]="'App.Titles.Search' | translate"
+      >
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+  [fullscreen]="true"
+  scrollEvents="true"
+  (ionScroll)="scroll($event)"
+>
+  @if (showScrollUp()) {
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button
+        size="small"
+        color="primary"
+        translucent="true"
+        (click)="scrollToEl('#top')"
+      >
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  }
+
+  <div id="top"></div>
+</ion-content>

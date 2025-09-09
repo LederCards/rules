@@ -1,33 +1,69 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
-        <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi&#64;ionicframework.com</ion-note>
+      <ion-header>
+        <ion-toolbar>
+          <ion-list lines="none" class="game-list">
+            <ion-item class="game">
+              <ion-select
+                label="Select Game"
+                placeholder="Select Game"
+                (ionChange)="changeGame()"
+                [(ngModel)]="currentGame"
+              >
+                @for (game of allGames(); track $index) {
+                  <ion-select-option [value]="game.code">
+                    {{ game.name }}
+                  </ion-select-option>
+                }
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-toolbar>
+      </ion-header>
 
-          @for (p of appPages; track p; let i = $index) {
-            <ion-menu-toggle auto-hide="false">
-              <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-                <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-                <ion-label>{{ p.title }}</ion-label>
+      <ion-content>
+        <ion-list lines="none">
+          @for (ruleHead of rulesService.navHeaders(); track $index) {
+            <ion-menu-toggle autoHide="false">
+              <ion-item
+                color="transparent"
+                (click)="
+                  navigateTo(rulesService.indexesToRules[ruleHead.index])
+                "
+                [style.border-left]="'5px solid ' + ruleHead.color"
+                [style.border-bottom]="'1px solid ' + ruleHead.color"
+              >
+                {{ ruleHead.name }}
+
+                @if (ruleHead.icon; as icon) {
+                  <img
+                    class="inline-icon ion-margin-start"
+                    [src]="'inicon/' + ruleHead.icon + '.png'"
+                  />
+                }
               </ion-item>
             </ion-menu-toggle>
           }
-        </ion-list>
 
-        <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
-
-          @for (label of labels; track label) {
-            <ion-item lines="none">
-              <ion-icon aria-hidden="true" slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-              <ion-label>{{ label }}</ion-label>
-            </ion-item>
-          }
+          <ion-item class="language">
+            <ion-select
+              label="Select Language"
+              placeholder="Select Language"
+              (ionChange)="changeLanguage()"
+              [(ngModel)]="currentLocale"
+            >
+              @for (language of allLanguages(); track $index) {
+                <ion-select-option [value]="language.code">
+                  {{ language.name }}
+                </ion-select-option>
+              }
+            </ion-select>
+          </ion-item>
         </ion-list>
       </ion-content>
     </ion-menu>
+
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>
 </ion-app>
