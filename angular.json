@@ -29,13 +29,10 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "assets"
-              },
-              {
-                "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/_redirects",
+              "src/_headers"
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
             "scripts": [],
