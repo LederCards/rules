@@ -1,4 +1,4 @@
-import { inject, Pipe, PipeTransform } from '@angular/core';
+import { inject, Pipe, type PipeTransform } from '@angular/core';
 import { RulesService } from 'src/app/rules-service';
 
 @Pipe({
@@ -7,7 +7,7 @@ import { RulesService } from 'src/app/rules-service';
 export class HighlightPipe implements PipeTransform {
   private rulesService = inject(RulesService);
 
-  transform(value: any, searchString: any, mutateIndex?: string): any {
+  transform(value: string, searchString: string, mutateIndex?: string): string {
     if (!searchString || !value) {
       return value;
     }

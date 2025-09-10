@@ -13,13 +13,14 @@ import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
 
 import { isDevMode } from '@angular/core';
 import { provideServiceWorker } from '@angular/service-worker';
-import { Observable } from 'rxjs';
+import { type Observable } from 'rxjs';
+import { type I18NData } from 'src/app/interfaces';
 import { languageData$ } from 'src/app/language';
 import { AppComponent } from './app/app.component';
 import { routes } from './app/app.routes';
 
 export class RXJSLoader implements TranslateLoader {
-  getTranslation(): Observable<any> {
+  getTranslation(): Observable<I18NData> {
     return languageData$.asObservable();
   }
 }

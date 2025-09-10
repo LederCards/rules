@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, computed, inject } from '@angular/core';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { type AfterViewInit, Component, computed, inject } from '@angular/core';
 import {
   IonApp,
   IonContent,
@@ -20,7 +21,7 @@ import { FormsModule } from '@angular/forms';
 
 import { SwUpdate } from '@angular/service-worker';
 import { interval } from 'rxjs';
-import { AppData, I18NData, RuleData } from 'src/app/interfaces';
+import { type AppData, type I18NData, type RuleData } from 'src/app/interfaces';
 import { languageData$ } from 'src/app/language';
 
 import { sortBy } from 'es-toolkit/compat';

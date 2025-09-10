@@ -1,4 +1,4 @@
-import { Component, computed, inject, OnInit } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { get } from 'es-toolkit/compat';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import { HighlightPipe } from 'src/app/highlight-pipe';
@@ -10,7 +10,7 @@ import { RulesService } from 'src/app/rules-service';
   styleUrls: ['./rules-display.component.scss'],
   imports: [HighlightPipe],
 })
-export class RulesDisplayComponent implements OnInit {
+export class RulesDisplayComponent {
   private rulesService = inject(RulesService);
 
   readonly search = linkedQueryParam('search', {
@@ -19,10 +19,6 @@ export class RulesDisplayComponent implements OnInit {
 
   public allRules = computed(() => this.rulesService.rules());
   public ruleIndexes = computed(() => this.rulesService.indexesToRules);
-
-  constructor() {}
-
-  ngOnInit() {}
 
   public isVisible(index: number[]): boolean {
     if (!this.search()) {

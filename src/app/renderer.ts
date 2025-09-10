@@ -1,12 +1,13 @@
 import * as marked from 'marked';
 import { convert as toRoman } from 'roman-numeral';
+import { type GameRule } from 'src/app/interfaces';
 import { slugTitle } from 'src/app/slugtitle';
 
 // TODO: arcs: https://github.com/Vagabottos/arcs/commit/d8bd489460fd936e181cea25c5ebabc595a09588
 // TODO: arcs: https://github.com/Vagabottos/arcs/commit/6dfed7334e4d0d64e056e84372563dede444d83b
 // TODO: faction icon refs
 
-export function getCustomRenderer(allRules: any[]): marked.Renderer {
+export function getCustomRenderer(allRules: GameRule[]): marked.Renderer {
   const renderer = new marked.Renderer();
 
   // custom inline image formatter
@@ -52,7 +53,7 @@ export function getCustomRenderer(allRules: any[]): marked.Renderer {
 
         return `<a href="#${slugTitle(
           subtype,
-          chosenNode.name
+          chosenNode.name,
         )}" class="rule-link">${chosenString}</a>`;
       }
 

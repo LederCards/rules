@@ -6,6 +6,7 @@ export interface AppData {
 export interface I18NData {
   [game: string]: {
     [locale: string]: {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       appconfig: Record<string, any>;
     };
   };

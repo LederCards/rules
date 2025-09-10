@@ -1,5 +1,9 @@
 import { computed, Injectable, signal } from '@angular/core';
-import { FAQEntry, GameRule, RuleFAQData } from 'src/app/interfaces';
+import {
+  type FAQEntry,
+  type GameRule,
+  type RuleFAQData,
+} from 'src/app/interfaces';
 
 @Injectable({
   providedIn: 'root',

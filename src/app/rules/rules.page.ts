@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
 import {
-  AfterContentInit,
+  type AfterContentInit,
   Component,
   HostListener,
   inject,
-  OnInit,
   signal,
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -51,7 +50,7 @@ import { RulesService } from 'src/app/rules-service';
     IonSearchbar,
   ],
 })
-export class RulesPage implements OnInit, AfterContentInit {
+export class RulesPage implements AfterContentInit {
   private rulesService = inject(RulesService);
 
   readonly search = linkedQueryParam('search', {
@@ -62,15 +61,16 @@ export class RulesPage implements OnInit, AfterContentInit {
   public showScrollUp = signal<boolean>(false);
 
   @HostListener('document:click', ['$event'])
-  public clickScreen($event: any) {
-    if (!$event.target || !$event.target.hash) {
+  public clickScreen($event: MouseEvent) {
+    const hash = ($event.target as HTMLAnchorElement).hash;
+    if (!$event.target || !hash) {
       return;
     }
 
     $event.preventDefault();
     $event.stopPropagation();
 
-    this.scrollToEl($event.target.hash, 'start');
+    this.scrollToEl(hash, 'start');
   }
 
   constructor() {
@@ -80,8 +80,6 @@ export class RulesPage implements OnInit, AfterContentInit {
       .pipe(takeUntilDestroyed())
       .subscribe((id) => this.scrollToEl(id, 'start'));
   }
-
-  ngOnInit() {}
 
   ngAfterContentInit() {
     setTimeout(() => {
@@ -112,6 +110,7 @@ export class RulesPage implements OnInit, AfterContentInit {
     }, 500);
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public scroll($event: any) {
     this.showScrollUp.set($event.detail.scrollTop > window.innerHeight);
   }
