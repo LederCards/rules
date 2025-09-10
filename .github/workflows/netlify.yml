@@ -34,7 +34,7 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: './dist/app/browser'
+          publish-dir: './www'
           production-deploy: ${{ github.ref_name == 'master' }}
           production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
