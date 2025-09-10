@@ -233,3 +233,13 @@ a:not(.rule-link) {
 .hidden {
   display: none;
 }
+
+p {
+  display: inline;
+  margin: 0;
+}
+
+.specialhighlight {
+  padding: 5px;
+  background-color: #ead2e4;
+}

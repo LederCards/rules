@@ -4,6 +4,7 @@ import {
   provideRouter,
   RouteReuseStrategy,
   withPreloading,
+  withRouterConfig,
 } from '@angular/router';
 import {
   IonicRouteStrategy,
@@ -37,7 +38,14 @@ bootstrapApplication(AppComponent, {
         useClass: RXJSLoader,
       },
     }),
-    provideRouter(routes, withPreloading(PreloadAllModules)),
+    provideRouter(
+      routes,
+      withPreloading(PreloadAllModules),
+      withRouterConfig({
+        paramsInheritanceStrategy: 'always',
+        defaultQueryParamsHandling: 'merge',
+      }),
+    ),
     provideServiceWorker('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000',

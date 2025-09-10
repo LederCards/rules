@@ -1,0 +1,817 @@
+- name: Setup
+  color: '#000000'
+  children:
+    - pretext: Place the **map** on the table. Deal the Chronicled **site cards** and their attached **denizen**, **edifice**, and **relic cards** to the site slots on the map. Fill the Cradle fully, then the Provinces fully, then the Hinterland fully, from top to bottom.
+    - pretext: Place the **round marker** on the first _(star)_ space of the round track and the **Visions Drawn** marker on the "0" _(star)_ space of the Visions Drawn track.
+    - pretext: Place the Chronicled **goal reference** near the map.
+    - pretext: >
+        Collect the **following pieces** in the shared bank: 10 attack dice, 6 defense dice, the end die, 36 favor tokens, 20 secret tokens, the Banner of the Darkest Secret placard, and the Banner of the People's Favor placard on the side without the Mob label.
+    - pretext: Place 1 **favor token** on the People's Favor and 1 **secret token** on the Darkest Secret.
+    - pretext: Place 3 **favor tokens** into each of the 6 **favor banks**. If you are playing with 5 or 6 players, place 4 favor tokens in each bank instead.
+    - pretext: Choose a player to be the Chancellor in any way. _(We recommend the previous game's winner.)_ Seat them next to the Cradle. Seat the other players randomly.
+    - pretext: The Chancellor takes the **Chancellor board** and their 24 **warbands**, **pawn**, **Supply marker**, the **Imperial Reliquary placard**, and the **Grand Scepter relic card**.
+    - pretext: Each player except the Chancellor, in turn order, chooses any **Exile or Citizen board** on its Chronicled side, and takes the 14 **warbands**, **pawn**, and **Supply marker** of the same color.
+    - pretext: Each player places their **Supply marker** on the leftmost space of their Supply track.
+    - pretext: The Chancellor takes 2 **favor tokens** and 1 **secret token** from the shared bank and places them on their board.
+    - pretext: The Chancellor places 3 **warbands** on their board, 2 **warbands** on the topmost faceup site in the Cradle, and 1 **warband** on each other faceup site that has at least one denizen or intact edifice card.
+    - pretext: If playing with the Oathkeeper of Devotion goal, the Chancellor takes the **Darkest Secret**. If playing with the Oathkeeper of the People goal, the Chancellor takes the **People's Favor**.
+    - pretext: The Chancellor takes the **Oathkeeper title** on its Oathkeeper side.
+    - pretext: Each Exile and Citizen places 1 **favor token** and 1 **secret token** from the shared bank on their board. Each Exile places 3 **warbands** of their own color on their board. Each Citizen places 3 **purple warbands** on their board.
+    - pretext: Place **favor** and **secret tokens** on any sites as shown by their reveal prompts (`rule:2.8.2`). _(If you don't have enough favor, the Chancellor chooses how to place it.)_
+    - pretext: The Chancellor draws 4 **relic cards** and places them, one each, onto the 4 spaces of their Imperial Reliquary placard facedown.
+    - pretext: Put the remaining **relic cards** on the "Relic Deck" space on the map.
+    - pretext: Take 3 **cards** in total from the **bottom** of the world deck. Place 1 card in each discard pile. _(If you haven't rebuilt the world deck, read the box below.)_
+    - pretext: Each player in turn order draws 3 **cards** from the **bottom** of the world deck.
+    - pretext: Place the remaining world deck on the "World Deck" space on the map.
+    - pretext: Advance the Visions Drawn marker by spaces equal to the number of Visions drawn, if any.
+    - pretext: 'Starting with the Chancellor, each player in turn order does all of the following:'
+      children:
+        - text: Places their **pawn** on any one faceup site. The Chancellor must place theirs on the top Cradle site.
+        - text: Chooses 1 **card** as a facedown adviser.
+        - text: Discards the other 2 **cards**. _("Discard" is defined at `rule:10.5`.)_
+
+- name: Key Components
+  color: '#000000'
+  children:
+    - name: The Map
+      children:
+        - name: Regions.
+          text: The Cradle, which holds two sites (`rule:2.8`), and the Provinces and Hinterland, which hold three sites each.
+
+        - name: Discard Piles.
+          text: Each region has a facedown discard pile of denizen and Vision cards, drawn with Search (`rule:5.1`).
+
+        - name: Favor Banks.
+          text: Each bank holds favor tokens, gained with Search (`rule:5.1`) and Trade (`rule:5.3`).
+
+        - name: Round Track.
+          text: This tracks the current round (`rule:4`).
+
+        - name: World Deck.
+          text: This holds denizen (`rule:2.6`) and Vision (`rule:2.7`) cards facedown. They can be drawn with Search (`rule:5.1`).
+
+        - name: Visions Drawn Track.
+          text: This tracks the number of Visions (`rule:2.7`) that have been drawn from the world deck. The number of Visions drawn determines the Supply cost to draw from the world deck with Search (`rule:5.1`).
+
+        - name: Shared Bank.
+          text: This area near the map holds favor, secrets, and other pieces. Secrets here can be gained with Trade (`rule:5.3`).
+
+    - name: Player's Board
+      children:
+        - name: Board.
+          text: This can hold any number of favor, secrets, and warbands. The Exile side can hold one faceup Vision (`rule:2.7`) in its Revealed Vision space.
+
+        - name: Advisers.
+          text: The faceup or facedown denizens (`rule:2.6`) and facedown Visions (`rule:2.7`) to the right of the board, up to three.
+
+        - name: Personal Bank.
+          text: This area around the board holds any number of warbands, relics (`rule:2.4`), and banners (`rule:2.5`).
+
+    - name: Imperial Reliquary Board
+      pretext: This holds four relics (`rule:2.4`). Citizenship offers (`rule:6.6.1`) must include exactly one relic from here. Other binding deals (`rule:7.6.3`) cannot include relics from here. When a relic is taken from here, the Chancellor gains the revealed action modifier (`rule:6.6.2`). Relics in here cannot be taken by Campaign or Recover, do not add to victory goals, and their powers cannot be used (`rule:7`).
+
+    - name: Relic Cards
+      posttext: The Grand Scepter is a relic that the Chancellor always starts with. The current holder of the Grand Scepter can offer Citizenship (`rule:6.6`) and exile Citizens (`rule:6.7`).
+      children:
+        - name: Cost.
+          text: The cost to take a relic with Recover (`rule:5.4`) is listed on the site that it is at (`rule:2.8.4`).
+        - name: Defense Dice.
+          text: In its top-right corner, each relic shows the number of defense dice that it adds when targeted in a Campaign (`rule:5.5`) in the shield.
+
+    - name: Banner Placards
+      pretext: For brevity, the two banners—the Banner of the People's Favor and the Banner of the Darkest Secret—are generally referred to as the People's Favor and the Darkest Secret.
+
+      children:
+        - name: Cost.
+          text: Each banner has a variable cost of favor or secrets to take with Recover (`rule:5.4`).
+        - name: Defense Dice.
+          text: Each banner adds defense dice (`rule:2.4.2`) equal to the number of favor or secrets on it.
+        - name: Seize Penalty.
+          text: When taken in any way except Recover the People's Favor burns two favor, to a minimum of one, and flips to its Mob side if it is not on that side already, and the Darkest Secret burns two secrets, to a minimum of one.
+
+    - name: Denizen Cards
+      children:
+        - name: Suit.
+          text: 'In its top-left corner, a denizen has a suit: Arcane `suit:arcane`, Beast `suit:beast`, Discord `suit:discord`, Hearth `suit:hearth`, Nomad `suit:nomad`, Order `suit:order`.'
+
+        - name: Restriction Banner.
+          text: Under its suit, a denizen may have a restriction banner (`rule:7.2`).
+
+        - name: Power.
+          text: At its bottom, a denizen has a power (`rule:7`).
+
+    - name: Vision Cards
+      children:
+        - name: Visions Drawn.
+          text: Whenever a Vision is drawn from the world deck, advance the Visions Drawn marker (`rule:2.1.6`).
+        - name: Power.
+          text: Most faceup Visions give a victory goal (`rule:3.2`). The Conspiracy has a When Played power (`rule:5.1.4.4`).
+
+    - name: Site Cards
+      children:
+        - name: Card Capacity.
+          text: In its top-right corner, a site shows the maximum total of denizen and edifice cards it can hold.
+        - name: Reveal Prompt.
+          text: In its top-left corner, a site may prompt favor or secrets to be placed on it from the shared bank, or facedown relics to be placed next to it from the relic deck, when the site is flipped faceup and during setup.
+        - name: Defense Die and Bandit.
+          text: In its top-right corner, each site shows a defense die and a bandit silhouette. Targeting a site in Campaign (`rule:5.5.1`) adds one defense die, and it adds a bandit to the defending force if you're attacking the bandits.
+        - name: Relic Recover Cost.
+          text: In its bottom-right corner, most sites show the cost to take a relic at the site with Recover (`rule:5.4`).
+        - name: Power.
+          text: In its bottom-left corner, each site has a power (`rule:7`), which is described on the Site Reference aid sheet.
+
+    - name: Edifice Cards
+      pretext: Edifices replace denizens in the Chronicle (`rule:8.3.1`). Their intact side has a suit (`rule:2.6.1`) and restriction banner (`rule:7.2`). Their ruined side has no suit and cannot be used to Muster or Trade. Both sides have a power (`rule:7`).
+
+    - name: Goal Reference
+      pretext: This shows the Oathkeeper goal (`rule:2.11`) and Successor goal (`rule:3.3.1`), and its back shows the War Exhaustion order (`rule:3.4`).
+
+    - name: Oathkeeper Title
+      pretext: >
+        The title has two sides: Oathkeeper and Usurper. It is always held by the player who meets the Oathkeeper goal (`rule:2.10`):
+        <br>
+
+          - Supremacy: Rules the most sites (`rule:2.8`).
+
+          - The People: Holds the People's Favor (`rule:2.5`).
+
+          - Protection: Holds the most relics (`rule:2.4`) and banners (`rule:2.5`). _(This is the combined total.)_
+
+          - Devotion: Holds the Darkest Secret (`rule:2.5`).
+
+        An Exile flips the Oathkeeper title to its Usurper side if they have the title at the start of their turn (`rule:4.1.3`). If the title's holder becomes tied with another player for meeting the Oathkeeper goal, the holder keeps the token. If multiple players meet its goal but the holder does not, the holder chooses one of those other players to take it.
+        <br><br>
+
+        Whenever a player takes the Oathkeeper title, the title flips to its Oathkeeper side if it is not already on that side. Being the Oathkeeper adds to various victory goals (`rule:3`). The Oathkeeper must add one defense die in Campaign as defender (`rule:5.5.2`), and the Usurper must add two.
+        <br><br>
+
+        > `symbol:chancellor` The Chancellor holds the Oathkeeper of Supremacy title if the Empire meets the goal, and always adds its power when any Imperial player is defending (`rule:5.5.2`).
+
+- name: Victory
+  color: '#000000'
+  pretext: _Oath_ can end in four ways, as listed below. After ending the game, resolve the Chronicle (`rule:8`).
+  children:
+    - name: Usurper Win
+      pretext: If you are an Exile, you win the game during your Wake Phase (`rule:4.1.2`) if you have the Oathkeeper title (`rule:2.11`) on its Usurper side (`rule:4.1.3`).
+
+    - name: Visionary Win
+      pretext: >
+        If you are an Exile, you win the game during your Wake Phase (`rule:4.1.2`) if you have a revealed Vision card and have completed its goal. (Every Vision goal includes the requirement that at least three Visions have been drawn from the world deck.)
+
+          - Conquest: Rules the most sites.
+          - Rebellion: Holds the People's Favor.
+          - Sanctuary: Holds the most relics and banners.
+          - Faith: Holds the Darkest Secret.
+
+    - name: Stable Regime Win
+      pretext: >
+        If it is the end of the fifth, sixth, or seventh round, roll the die if the Chancellor or a Citizen is the Oathkeeper. The game ends and the Chancellor wins on the following rolls:
+
+          - End of fifth round: A die roll of 6
+          - End of sixth round: A die roll of 5 or 6
+          - End of seventh round: A die roll of 3, 4, 5, or 6
+      children:
+        - name: Successor Win.
+          text: >
+            If the Chancellor would win, a Citizen wins instead if they meet the Successor goal (`rule:2.10`) as follows:
+
+              - Supremacy (Sites): Holds more relics and banners intotal than the Chancellor and any other Citizen.
+              - The People (People's Favor): Holds Darkest Secret.
+              - Protection (Relics + Banners): Holds People's Favor.
+              - Devotion (Darkest Secret): Holds Grand Scepter (`rule:2.4`).
+
+    - name: War Exhaustion Win
+      pretext: If it is the end of the eighth round, the game ends automatically. Determine the winner by checking the following four conditions (`rule:3.4.1`–`rule:3.4.4`) in order.
+      children:
+        - name: Empire if Oathkeeper.
+          text: If the Chancellor or a Citizen is the Oathkeeper, the Chancellor wins. If a Citizen has met the Successor goal (`rule:3.3.1`), that Citizen wins instead.
+
+        - name: Usurper.
+          text: If any Exile is the Usurper, that Exile wins.
+
+        - name: Visionary.
+          text: If any Exile has a revealed Vision and they have met its goal, that Exile wins. If multiple Exiles do, break the tie in favor of the Vision of Conquest _(rules most sites)_, then Vision of Rebellion _(holds People's Favor)_, then Vision of Sanctuary _(holds most relics and banners)_, then Vision of Faith _(holds Darkest Secret)_.
+
+        - name: Empire.
+          text: The Chancellor wins. If a Citizen has met the Successor goal (`rule:3.3.1`), then that Citizen wins instead.
+
+- name: Sequence of Play
+  color: '#000000'
+  pretext: Oath is played over up to eight rounds. In a round, starting with the Chancellor and going clockwise, each player takes one turn, consisting of the Wake Phase, then the Act Phase, then the Rest Phase (`rule:4.1`–`rule:4.3`). Once each player has taken a turn, the round ends. Check for the Stable Regime Win (`rule:3.3`), then advance the round marker clockwise one space.
+  children:
+    - name: Wake Phase
+      pretext: You must resolve `rule:4.1.1`–`rule:4.1.4` in order.
+      children:
+        - name: The People's Favor.
+          text: If you hold the People's Favor, you must resolve its "**Wake:**" power (`rule:7.3.1`) in this order.
+          children:
+            - name: Place or Return Favor.
+              text: You must either place one favor on it or move one favor from it to the favor bank that has the least favor. _(If it only has one favor on it, you must place one favor on it unless you have no favor.)_ On a tie for least favor, choose one of the tied favor banks.
+            - name: Repeat if Mob.
+              text: Repeat `rule:4.1.1.1` once if the People's Favor is on its Mob side.
+            - name: Flip to Mob.
+              text: If the People's Favor has six favor or more, it flips to its Mob side if it is not on that side.
+
+        - name: Check for Win.
+          text: If you are an Exile, check for a Usurper Win (`rule:3.1`) and Visionary Win (`rule:3.2`).
+
+        - name: Flip to Usurper.
+          text: If you are an Exile and you hold the Oathkeeper title, it flips to its Usurper side.
+
+        - name: Use Site Power.
+          text: If your pawn is at the Salt Flats, Mine, or Drowned City, you may take one favor or secret from it.
+
+    - name: Act Phase
+      pretext: >
+        "In any order, you may take any number of actions: major actions (`rule:5`), minor actions (`rule:6`), and \"**Action:**\" powers (`rule:7.3.2`). _(You must finish one action before starting to take the next action. You may take no actions, and you may take the same action multiple times as long as you can pay the cost.)_
+        <br>
+        To take an action that costs **Supply**, you must move your Supply marker once to the right for each Supply you spend."
+
+    - name: Rest Phase
+      pretext: You must resolve `rule:4.3.1`–`rule:4.3.5` in order.
+      children:
+        - name: Return Favor.
+          text: Move any favor tokens on denizens and edifices to their matching favor banks.
+        - name: Return Secrets.
+          text: Move any secret tokens on denizens, edifices, and relics to your board. Flip any facedown secret tokens on your board to their front side. _(Secrets can flip down if you're using battle plans with secret costs when defending, discarding a card that has a secret, or using certain site powers.)_
+        - name: Refresh Supply.
+          text: >
+            "If you are an Exile or the Chancellor, move your Supply marker to the Supply space listing the number of warbands in your personal bank.
+
+            <br><br>
+
+            > `symbol:chancellor` If you are a Citizen, refresh your Supply to the space corresponding to the Chancellor's Supply."
+        - name: Save Supply.
+          text: Move your Supply marker an extra space left for each Supply that you did not spend this turn. You cannot refresh Supply beyond its leftmost space.
+        - name: Use Rest Powers.
+          text: You may use any "**Rest:**" powers, once each, in any order.
+
+- name: Major Actions
+  color: '#000000'
+  children:
+    - name: Search
+      children:
+        - name: 'Step 1: Spend Supply.'
+          text: Spend 2 Supply if drawing from a discard pile, or spend the Supply shown by the Visions Drawn track if drawing from the world deck.
+        - name: 'Step 2: Draw 3 Cards.'
+          text: Draw from the world deck or the discard pile of the region your pawn is in _(not both)_. If you draw from the world deck, draw one at a time. If you draw a Vision card from the world deck _(not a discard pile)_, you must say that you drew a Vision, stop drawing cards now, and advance the Visions Drawn marker by one space (`rule:2.7.1`).
+        - name: 'Step 3: Discard Cards.'
+          text: Discard all the cards you drew except for one. _(Follow the "Discard" term in the Glossary [`rule:10`].)_
+        - name: 'Step 4: Play One Card.'
+          text: Play the one remaining card to your site (`rule:5.1.4.1`), your advisers (`rule:5.1.4.2`), or your Revealed Vision space if you are an Exile - or you may discard it. You must follow its restrictions (`rule:7.2`, `rule:5.1.4.1`–`rule:5.1.4.4`).
+          children:
+            - name: Playing to Your Site.
+              text: You cannot play to your site if it is at capacity (`rule:2.8.1`). Place the card faceup by your site. _(If you have the People's Favor [`rule:2.5`], you may first discard a card from any site in your region, and you may play this card to any site in your region.)_ Gain one favor, taking it from the favor bank that matches the suit of the card you played.
+
+            - name: Playing to Your Advisers.
+              text: >
+                You can have up to three advisers _(faceup or facedown)_. Place the card to the right of your board, faceup or facedown. _(Facedown advisers have no suit, restriction banner, or power. They can be played faceup later [`rule:6.1`].)_
+                <br>
+                If you are playing an adviser that would exceed your adviser limit, you must first discard an adviser. _(Generally, this is the only time you can discard a faceup adviser.)_
+
+            - name: Playing Vision Cards.
+              text: >
+                Visions cannot be played to a site. The Chancellor and Citizens cannot play Vision cards faceup except for the Conspiracy (`rule:5.1.4.4`). _(They can play any Visions as facedown advisers.)_
+                <br>
+                When you play a Vision except the Conspiracy faceup, place it on your Revealed Vision space (`rule:2.2.1`). _(It is not an adviser!)_ If you already had a Vision on your Revealed Vision space, discard that Vision.
+
+            - name: Playing the Conspiracy.
+              text: >
+                Anyone (even the Chancellor and Citizens) may play the Conspiracy faceup. _(Playing this card faceup does not replace a revealed Vision, if any.)_
+                <br>
+                When you play the Conspiracy faceup, you may burn one secret to take any one relic or banner from a player whose pawn is at your site. To do this, you must have at least two advisers that match the suit of any of their advisers. Finally, return the Conspiracy to the box. _(If you took a banner, burn two favor or secrets from it, and flip the People's Favor if you took it [`rule:2.5.3`].)_
+
+    - name: Muster
+      children:
+        - name: 'Step 1: Pay Cost.'
+          text: Spend 1 Supply and place one favor on a denizen or intact edifice card _(but not a relic or ruin [`rule:2.9`])_ with no favor or secrets on it at your site.
+
+        - name: 'Step 2: Gain Warbands.'
+          text: >
+            Gain two warbands. _(Take them from your personal bank and place them on your board.)_
+
+            <br><br>
+
+            > `symbol:chancellor` If you are a Citizen, you gain purple warbands instead of warbands of your own color.
+
+    - name: Trade
+      children:
+        - name: 'Step 1: Spend Supply.'
+          text: Spend 1 Supply.
+
+        - name: 'Step 2: Resolve Trade.'
+          text: >
+            Choose one of the following two options:
+
+              - Place one secret on a denizen or intact edifice card with no favor or secrets on it at your site. Gain one favor, plus one favor for each of your faceup advisers matching that card, all from the favor bank matching the card on which you placed the secret.
+
+              - Place two favor on a denizen or intact edifice card with no favor or secrets on it at your site. Gain one secret from the shared bank for each of your faceup advisers matching that card.
+
+            _(You cannot trade with relics or ruins [`rule:2.9`].)_
+
+    - name: Recover
+      children:
+        - name: 'Step 1: Spend 1 Supply and Choose Target.'
+          text: Choose one facedown relic at your site or any one banner _(even one you hold)_. You can only recover the Darkest Secret if any card at the holder's site does not match any of their advisers, or if you are recovering it from yourself. _(Ignore ruined edifices and facedown advisers, since they have no suit. You cannot recover the Darkest Secret from another player if their site has no cards, but you can recover it if they have no faceup advisers.)_
+
+        - name: 'Step 2: Pay Cost.'
+          text: If you are recovering a relic, your site will list the cost to recover it—place three favor in a specific favor bank, burn two favor, burn one secret, or burn two secrets. The People's Favor costs any amount of favor greater than its current value. The Darkest Secret costs any amount of secrets greater than its current value.
+
+        - name: 'Step 3: Take It.'
+          text: Take the relic or banner and put it near your board faceup. _(You can hold any number of them.)_
+
+        - name: 'Step 4: Resolve Banner.'
+          text: If you took the People's Favor, flip it over if it is on its Mob side, stack the favor you paid on it, and move the favor that used to be on it to the favor banks, one by one, starting with any suit and moving away from the world deck, wrapping around if needed. If you took the Darkest Secret, stack the secrets you paid on it, take one secret that used to be on it, and give the rest of the secrets that used to be on it to the previous holder. _(If you're taking it from yourself, take all of its previous secrets.)_
+
+    - name: Campaign
+      children:
+        - name: 'Step 1: Spend 2 Supply and Choose Defender.'
+          text: >
+            You can choose any one other player who rules your site or whose pawn is at your site. If no player rules your site, you can choose the bandits (`rule:2.8.3`).
+
+            <br><br>
+
+            > `symbol:chancellor` If you are a Citizen attacking the Chancellor or another Citizen, you are not an Imperial player during this Campaign. If you are the Chancellor attacking a Citizen, that Citizen is not an Imperial player during this Campaign.
+
+        - name: 'Step 2: Declare Targets and Collect Dice Pools.'
+          text: >
+            You can declare any number of targets of the defender, listed below. Each target adds the defense dice shown on the target's shield to the **defense pool**:
+
+              - Any sites they rule. _(Yes, anywhere on the map!)_
+              - Any of their relics and banners if their pawn is at your site. _(A banner adds defense dice equal to the number of favor or secrets on it.)_
+              - Their pawn and favor if their pawn is at your site. _(This adds two dice, as shown by the shield on their board.)_
+
+            You must declare at least one target at your site. If the defender rules your site, you must target your site. The attacker adds attack dice to their **attack pool** up to the number of warbands on their board.
+
+            <br><br>
+
+            > `symbol:chancellor` If an Imperial player is defending, the Chancellor joins as an Ally. Also, any Citizen except the attacker, with the defender's permission, may choose to join as an Ally if their pawn is at a targeted site or the site of the attacker's pawn. Activate all the Campaign modifiers (Vow of Peace, etc.) ruled by the defender and all Allies.
+
+        - name: 'Step 3: Use Battle Plans.'
+          text: >
+            The attacker may use any battle plans (`rule:7.5`) they rule, once each. Then the defender may use any battle plans they rule, once each. The bandits use all battle plans they rule that have no cost. If the attack pool would lose an attack die but it has none left, add a defense die to the defense pool.
+
+            <br><br>
+
+            > `symbol:chancellor` If an Imperial player is defending, the defender and any Allies may use any battle plans they rule. _(Any of them can use a battle plan at an Imperial site or in their own advisers, but not other players'. The player who uses a specific battle plan pays its cost, and a specific battle plan cannot be used by multiple players.)_
+
+        - name: 'Step 4: Roll Defense.'
+          text: >
+            The defender rolls their defense pool, then calculates their defense by adding the...
+
+              - Shields `symbol:shield` they rolled.
+              - Warbands at targeted sites. If you're attacking the bandits, add the bandits at targeted sites instead.
+              - Warbands on their board if their pawn is at your site or any site you targeted.
+
+            Each `symbol:x2` roll doubles the total number of `symbol:shield` shields rolled. _(Multiple `symbol:x2` rolls stack exponentially—x4, x8, etc.)_
+
+            <br><br>
+
+            > `symbol:chancellor` If an Imperial player is defending, each Ally adds the warbands on their board if their pawn is at the site of the attacker's pawn or any targeted site.
+
+        - name: 'Step 5: Roll Attack.'
+          text: >
+            The attacker rolls their attack pool. For each skull `symbol:skull` rolled, the attacker immediately kills one warband in their force _(generally on their board)_.
+            <br>
+            Then, the attacker calculates their attack by adding the...
+
+              - Swords `symbol:sword` they rolled.
+              - Warbands from their force that they sacrifice, adding one per warband. _(If they choose to do so, they must sacrifice exactly as many as needed to be victorious [`rule:9.5`].)_
+
+            Two hollow swords `symbol:swordh` `symbol:swordh` count as one sword `symbol:sword`, but a single hollow sword `symbol:swordh` adds nothing.
+            <br>
+            If the attack is higher than the defense, the attacker is **victorious**, and the defender is **defeated**. Otherwise, the defender is victorious and the attacker is defeated.
+
+        - name: 'Step 6: Resolve Defeat.'
+          text: >
+            The defeated player kills half, rounded down, of the warbands in their force: the warbands on their board if they are the attacker, or the warbands that added to their defense if they are the defender. They move all the other warbands in their force to their board. _(Bandits cannot be killed - they just go into hiding.)_ If they used any battle plans that say "If you're defeated," resolve them.
+
+            <br><br>
+
+            > `symbol:chancellor` If an Imperial player is defending, the Chancellor chooses which warbands in the defending force are killed.
+
+        - name: "Step 7: Resolve Attacker's Victory."
+          text: If the attacker is victorious, they resolve the following steps in order.
+          children:
+            - name: 'Take Rule of Any Targeted Sites.'
+              text: >
+                You may place any number of your warbands, even zero, from your force onto any targeted sites. _(You can put zero warbands on sites even if you're a Citizen and targeted Imperial sites.)_
+
+                <br><br>
+
+                > `symbol:chancellor` Imperial warbands at sites move to the Chancellor's board. Any warbands still on Citizens' boards stay there.
+
+            - name: 'Take All Targeted Relics and Banners.'
+              text: _(If you took a banner, burn two favor or secrets from it, and flip the People's Favor if you took it [`rule:2.5.3`].)_
+
+            - name: 'Banish Pawn and Burn Favor.'
+              text: If you targeted their pawn and favor, you may make them travel to a site of your choice, spending no Supply, and you may burn half of their favor, rounded down. _(You can only make them travel to a site they are able to travel to. If their pawn is at the Shrouded Wood site, its power takes precedence over your choice.)_
+
+        - name: 'Step 8: Resolve Battle Plans.'
+          text: If the victorious player used any battle plans that say "If you're victorious," resolve them. Then, if either player used any battle plans that say "At end, discard [card name]," discard them.
+
+    - name: Travel
+      children:
+        - name: Spend Supply and Choose Destination Site.
+          text: If your pawn is in the Cradle, spend 1 Supply to travel to the other Cradle site, 2 Supply to travel to any Provinces site, or 4 Supply to travel to any Hinterland site. If your pawn is in the Provinces, spend 2 Supply to travel to any other site. If your pawn is in the Hinterland, spend 3 Supply to travel to either other Hinterland site, 2 Supply to travel to any Provinces site, or 4 Supply to travel to any Cradle site.
+
+        - name: Move Pawn and Reveal Site.
+          text: 'Place your pawn on your destination site. If the site is facedown, flip it faceup and resolve its reveal prompt (`rule:2.8.2`) if it has one: draw facedown relic cards from the relic deck and place them next to the site equal to the number of "R" icons there, and place favor and secrets from the shared bank on the site equal to the number of favor and secrets icons there.'
+
+- name: Minor Actions
+  color: '#000000'
+  pretext: These actions cost no Supply.
+  children:
+    - name: Play or Discard a Facedown Adviser
+      pretext: Play one of your facedown advisers faceup, or discard it, as if you searched (`rule:5.1.4`). _(Restrictions and modifiers apply. You can always peek at your facedown advisers, and you can let any other players peek at them.)_
+
+    - name: Use an Action Power
+      pretext: 'Use the "**Action:**" power (`rule:7.3.2`) on a card you have access to (`rule:7.1.1`).'
+
+    - name: Peek at a Relic
+      pretext: Peek at any facedown relic card at your site. _(If you have ever peeked at a specific relic, you may peek at it again from any site.)_
+
+    - name: Peek at an Imperial Relic
+      pretext: If you hold the Grand Scepter, you can peek at any relic in the Imperial Reliquary.
+
+    - name: Move Warbands To/From Your Site
+      pretext: >
+        You can move any number of your warbands, except the last one, from your site to your board. If you rule your site, you can move any number of warbands from your board to your site.
+
+        <br><br>
+
+        > `symbol:chancellor` If you are a Citizen, the Chancellor must give you permission to move warbands from your site to your board.
+
+        <br><br>
+
+        > `symbol:chancellor` If you are an Imperial player, you may give any number of warbands to another Imperial player whose pawn is at your site, or you may take any number of warbands from them. Both of these actions require their permission.
+
+    - name: Offering Citizenship
+      children:
+        - name: Offering.
+          text: If you hold the Grand Scepter, you can offer Citizenship to any Exile _(including yourself)_. You must offer to give them exactly one relic from the Reliquary, and you may also negotiate a binding exchange of any number of favor, secrets, banners, and non-Reliquary relics. You can let them peek at any relics in the Imperial Reliquary.
+
+        - name: Accepting.
+          text: >
+            If the Exile accepts, they do this:
+
+              - Flip their board to its Citizen side.
+              - Replace all warbands on their board and on the map with purple warbands. _(If there are not enough, the Exile chooses which warbands to remove and which to replace.)_
+              - Discard their revealed Vision, if they have one.
+              - Flip the Oathkeeper title to its Oathkeeper side, if they hold it and it is on its Usurper side.
+              - End their Act Phase if it is their turn.
+              - Refresh their Supply to its leftmost space.
+
+            The Grand Scepter's holder and new Citizen exchange what
+            was promised (`rule:6.6.1`). The Chancellor gains the revealed
+            mandatory action modifier in the Reliquary.
+
+        - name: Imperial Players.
+          text: Citizens and the Chancellor are **Imperial players**. Every Imperial player rules every site that has any number of Imperial _(purple)_ warbands on it.
+
+    - name: Exiling A Citizen
+      pretext: >
+        If you hold the Grand Scepter, you can exile another Citizen by giving them five favor, modified as follows. Give one more favor if that Citizen is the Oathkeeper or holds the People's Favor, or give two more favor if both are true. Give one less favor if you are the Oathkeeper or hold the People's Favor, or give two less favor if both are true. The exiled Citizen does this:
+
+          - Flips their board to its Exile side.
+          - Replaces all warbands on their board with warbands of their color.
+          - Refreshes their Supply to its leftmost space
+
+    - name: Self-Exiling
+      pretext: >
+        If you are a Citizen, you can exile yourself by giving favor—equal to the number of secrets on your board and on any denizen, relic, and edifice cards, plus the number of warbands on your board—to the player who holds the Grand Scepter. If you hold the Grand Scepter, you cannot exile yourself. When you exile yourself, you do this:
+
+          - Flip your board to its Exile side.
+          - Replace all warbands on your board with warbands of your color.
+          - Refresh your Supply to its leftmost space.
+          - End your Act Phase.
+
+- name: Powers
+  color: '#000000'
+  pretext: Faceup cards, faceup sites, uncovered Imperial Reliquary spaces, and the Oathkeeper title each have a power.
+  children:
+    - name: Using Powers
+      children:
+        - name: Access.
+          text: You may only use a card's power if you rule the card or if your pawn is at the site with the card. Sites describe how their powers are used. The Chancellor always has the mandatory powers on the uncovered spaces of the Imperial Reliquary (`rule:2.3`), and the holder of the Oathkeeper title (`rule:2.11`) always has its mandatory power.
+
+        - name: Cost.
+          text: >
+            To use a power, you must pay its cost, if any. Denizens, relics, and edifices have a cost on their braid. Sites and the Conspiracy have costs described in their text.
+
+              - `symbol:favor` Place one favor here.
+
+              - `symbol:favorb` Burn one favor, returning it to the shared bank.
+
+              - `symbol:secret` Place one secret here.
+
+              - `symbol:secretb` Burn one secret, returning it to the shared bank.
+
+            You cannot place favor or secrets on a card that has favor or secrets on it already. If you pay a cost outside your turn, move the favor to the matching favor bank immediately, and flip the secrets facedown and keep them on your board. Facedown secrets cannot be placed or burned to pay a cost.
+
+        - name: Use.
+          text: When you use a power, you must resolve as much of it as possible except for parts that say "may."
+
+        - name: Persistent Powers.
+          text: A power with a black, thickbraided box affects all the players that the card describes, ignoring access (`rule:7.1.1`). It takes effect during the action that it modifies (`rule:7.4`) or else at the time that it describes. _(Most of them refer to "players," but adviser-only `symbol:restrictionperson` persistent powers use "you" to refer to the player who has the card in their advisers.)_
+
+    - name: Restriction Banners
+      pretext: These restrictions only apply to faceup cards _(not facedown)_.
+      children:
+        - name: Site/Adviser Only.
+          text: Cards with a tree `symbol:restrictiontree` restriction can only be played, moved, or swapped to a site, and cards with a person `symbol:restrictionperson` restriction can only be played, moved, or swapped to a player's advisers.
+
+        - name: Locked.
+          text: Cards with a chain restriction, once played, cannot be discarded, moved, or swapped, except in the Chronicle (`rule:8`).
+
+    - name: Standalone Powers
+      pretext: There are four standalone powers, as listed below.
+      children:
+        - name: Wake.
+          text: Powers starting with "**Wake:**" happen during your Wake Phase (`rule:6.1`), once each. _(In practice, all of these are mandatory except for taking favor or secrets [`rule:4.1.4`].)_
+
+        - name: Action.
+          text: You may use powers starting with "**Action:**" during your Act Phase (`rule:6.2`).
+
+        - name: When Played.
+          text: You must use powers starting with "**When Played,**" after playing them faceup (`rule:5.1.4`). _(Gain favor from playing to site, resolve Homeland site powers, and resolve modifiers before resolving this.)_
+
+        - name: Rest.
+          text: You may use powers starting with "**Rest:**" at the end of your Rest Phase (`rule:4.3.5`), once each.
+
+    - name: Major Action Modifiers
+      pretext: A modifier is used at the start of the major action that it modifies, shown by the icon in its power box. You can use multiple modifiers in any order to modify a given action.
+      children:
+        - name: Usually Optional.
+          text: You may choose whether or not to use a modifier unless it says "must" or "cannot."
+
+        - name: Single Use.
+          text: Using a given modifier only modifies your current major action _(not later ones)_ and only modifies it once _(not multiple times)_. _(However, you can use a given modifier that has no cost multiple times per turn to modify different actions.)_
+
+        - name: No Discarding Active Modifiers.
+          text: A modifier cannot be discarded during the major action it is modifying.
+
+    - name: Battle Plans
+      pretext: Battle plans are Campaign modifiers (`rule:7.4`) whose icon is surrounded by a crown and have different rules. Red, blue, and gradient power boxes indicate battle plans that can only be used by the attacker, defender, or either, respectively.
+      children:
+        - name: Added Use Limit.
+          text: You can only use battle plans that you rule _(not if your pawn is at their site but you do not rule it)_.
+
+        - name: Different Timing.
+          text: Battle plans are used in the Use Battle Plans step (`rule:5.5.3`) of Campaign, not at the start (`rule:7.4`).
+
+        - name: No Pay Limit.
+          text: You can pay the cost for a battle plan that has favor or secrets on it. _(You can still only use it once.)_
+
+        - name: Iconography.
+          text: Many battle plans add (+) or remove (–) attack dice `symbol:dicer` or defense dice `symbol:diceb`. Battle plans with a +/– symbol can add or remove the type of die shown.
+
+    - name: Notable Powers
+      children:
+        - name: Forced Citizenship.
+          text: Some powers _(such as Long-Lost Heir)_ let Exiles become Citizens (`rule:6.6.2`) with no offer (`rule:6.6.1`).
+
+        - name: Free Travel.
+          text: Powers that say "spend no Supply" ignore the Travel cost (`rule:5.6.1`), including any increases to it _(such as when traveling from the Charming Valley site)_.
+
+        - name: Binding Sprite.
+          text: Some powers _(such as Tinker's Fair)_ let players negotiate binding promises. The players involved can promise to do any of the things the power lists; once they agree, they must do so if able. Except for these powers and Citizenship offers (`rule:6.6`), promises are not binding (`rule:9.6`). The Tribunal allows binding promises of future actions, including consequences if the promise is broken; if it is unclear whether such a promise is broken, resolve it by coin flip.
+
+        - name: Adviser Limiters.
+          text: Some powers _(such as Assassin)_ say that the holder can only have one or two advisers. If you play such a card and decrease your adviser limit below your number of advisers, you must discard advisers until you meet that limit. If you have multiple such cards, your adviser limit is the lowest among them. _(They don't add up.)_
+
+        - name: Bandit Crown.
+          text: With this relic, you treat bandits (`rule:2.8.3`) as your warbands. You rule sites that have no physical warbands on them, you can move the last of your physical warbands from your site (`rule:6.5`), and you add bandits at targeted sites to your defending force _(or add relevant bandits to your attacking force if using cards such as Captain)_, but bandit warbands cannot be killed, moved, or sacrificed _(such as for skulls `symbol:skull`, taking losses, or triggering Tyrant or Cursed Cauldron)_.
+
+- name: Writing the Chronicle
+  color: '#000000'
+  pretext: At the end of play, the winner performs these steps in order.
+  children:
+    - name: Vow an Oath
+      pretext: If you won with a Vision alone, use the goal reference whose Oathkeeper goal is the same as this Vision goal. If you won in any other way, or won in multiple ways, choose any goal reference except the one used in the current game. Put this goal reference in the World Box.
+
+    - name: Offer Citizenship
+      pretext: If you are an Exile, flip all Citizen boards _(even in the box)_ to their Exile side, then you may offer Citizenship to any Exiles except those whose boards just flipped to Exile. Ignore the normal rules for offering Citizenship (`rule:6.6.1`). Each Exile who accepts your offer flips their board to its Citizen side and replaces all of their warbands at sites they rule with one of your warbands.
+
+    - name: Clean Up Map and Build Edifices
+      pretext: Perform these steps in order.
+      children:
+        - text: '> `symbol:chancellor` If you are the Chancellor or a Citizen, you may build or repair one edifice: At any site you rule with no edifice, replace any denizen card with the intact edifice card of matching suit from the Archive, returning the replaced denizen to the world deck. Or at any site you rule, you may flip one edifice card from its ruined side to its intact side.'
+
+        - text: Discard all sites on the map except sites that you rule or that have any intact edifices, and shuffle them into the site deck. At each discarded site, discard denizen cards there to any discard pile, return relic cards there to the relic deck, and return ruined edifice cards there to the Archive.
+
+        - text: Flip any intact edifices at sites you do not rule to their ruined side _(no suit)_, and discard all denizen cards at sites where you flipped an edifice. Set aside any sites with ruins, and their attached ruin, denizen, and relic cards, ordered from the top Cradle site to the bottom Hinterland site.
+
+        - text: Remove all of the pawns, favor, secrets, and warbands from the map.
+
+        - text: >
+            Fill empty site slots by moving sites, along with their attached denizen, intact edifice, and relic cards, as follows.
+
+              1. Fill empty Cradle slots from top to bottom by pushing Cradle sites up, then by moving in Provinces sites from top to bottom, then by moving in Hinterland sites from top to bottom.
+
+              2. Fill empty Provinces slots from top to bottom by pushing Provinces sites up, then by moving in Hinterland sites from top to bottom.
+
+              3. Fill empty Hinterland slots from top to bottom by pushing Hinterland sites up.
+
+              4. Fill empty Hinterland slots from bottom to top by moving in the set-aside sites with ruins from bottom to top. _(Note the reverse order here.)_
+
+              5. Fill empty Provinces slots as described in step 4.
+
+              6. Fill empty slots with facedown sites from the site deck.
+
+              7. In each region with no faceup sites, flip the top site up.
+
+    - name: Add Six Cards to the World Deck
+      pretext: >
+        Find the most common suit in your advisers. You choose among tied suits—if you have no advisers, choose any suit. Take the following cards at random from the Archive stacks, and add them to the world deck:
+
+        `suit:discord` > `suit:arcane` > `suit:order` > `suit:hearth` > `suit:beast` > `suit:nomad` > `suit:discord`
+
+          - Add three cards of the most common suit.
+          - Add two cards of the next clockwise suit.
+          - Add one card of the next clockwise suit after that.
+
+        _(Note that this is also the order of the favor banks on the map.)_ If the Archive does not have all of these cards, do not add them. Instead, heal the Archive as follows. Take all the cards from the Dispossessed section of the Archive and sort them into six stacks, one of each suit. Take six cards at random from the Dispossessed stack with the most cards and add them to the world deck. Shuffle each Dispossessed stack into the Archive stack of matching suit.
+
+    - name: Remove Six Cards to the Dispossessed
+      pretext: Set aside all five Visions (including the Conspiracy). Shuffle together all of the discard piles on the map and all of the advisers of the losing players, take six cards from that stack at random, and place them in the Dispossessed section of the Archive without looking at them.
+
+    - name: Clean Up Relics
+      children:
+        - text: Put the Grand Scepter in the World Box. Return all relics of the losing players to the relic deck, and shuffle it.
+        - text: At each faceup site that has fewer relic cards than the number of "R" icons in its reveal prompt (`rule:2.8.2`), draw and place facedown relics at the site until the site has relics equal to its number of “R” icons.
+        - text: Shuffle together the relics held by the winner and in the Reliquary. Stack them on top of the relic deck.
+
+    - name: Save Map and Boards
+      children:
+        - text: Stack any cards at each site on its site card. Then, stack the sites with their cards so that the bottom Hinterland site is at the bottom and the top Cradle site is on top. Put this stack in the World Box.
+        - text: Put the players' boards in the box, keeping them on their current Exile or Citizen side.
+
+    - name: Rebuild the World Deck
+      pretext: >
+        Shuffle all denizen cards remaining in play into a stack, then rebuild the world deck as follows:
+
+          - Take 10 denizen cards facedown from the stack and shuffle in 2 Vision cards at random, forming a pile of 12 cards.
+          - Take 15 denizen cards facedown from the stack and shuffle in the other 3 Vision cards, forming a pile of 18 cards.
+          - Stack the pile of 12 cards on top of the pile of 18 cards, and stack this combined pile on top of the remaining denizen cards in the stack.
+
+        Put the world deck in the World Deck section of the Archive.
+
+- name: Interpreting Rules
+  color: '#000000'
+  children:
+    - name: Interpreting Rules
+      pretext: Interpret the rules literally. Do not infer rules that are not written, even if similar rules exist. Text in italics is a reminder or clarification, which is superseded by the non-italicized text it references. The Law supersedes the Playbook and play aids _(players' boards, Campaign Summary, etc.)_ except for the Site Reference. Powers (`rule:7`) can add new actions and trigger effects beyond those described in the Law, but they follow Glossary terms. _(For example, when you use a power that lets you swap, you must follow the restrictions in the "Swap" Glossary definition.)_
+
+    - name: Must, If Able, Cannot, and Ignore
+      pretext: >
+        Rules with "must" override other rules. Rules with "cannot" override other rules, even "must" rules. Rules with "ignore" override "must" and "cannot" rules if those rules are named. _(For example, you must discard an adviser when playing one above your adviser limit, but the Pied Piper card says to ignore the adviser limit, so it supersedes the core rule. Likewise, the Narrow Pass site says you must travel in certain ways, but Coast sites say you ignore the Narrow Pass power.)_
+        <br>
+        If a rule with "must" also says "if able," you must fulfill it if you can, but if you cannot, then you do not have to fulfill it and you are not penalized. _(For example, if you have the Tyrant card, you can still travel to a site that has no warbands.)_
+
+    - name: Component Limits and Capacity
+      pretext: Oath is component-limited except for secrets and dice. If you are prompted to gain or take components, but the source of that component does not have enough, gain or take as many as possible. Banks and boards can hold any number of a given component unless prompted otherwise.
+
+    - name: Public and Private Information
+      pretext: >
+        The following information is private: the card fronts of cards in all discard piles, the number of cards in the world deck, the card backs of cards in the world deck beyond the first card, and the card fronts of any facedown cards. A player who holds a facedown adviser can peek at it and allow any other player to peek at it. Players may discuss and may lie about the identity of private information.
+        <br>
+        All other information is public. _(This includes the card backs and number of cards in discard piles, and the numbers of favor, secrets, and warbands on boards. No, you cannot switch facedown advisers under the table or otherwise mix up which is which.)_
+
+    - name: No Unprompted Losses
+      pretext: You cannot place, burn, or sacrifice more resources - including but not limited to favor, secrets, and warbands - than a cost or requirement prompts you to.
+
+    - name: No Unprompted Binding Promises
+      pretext: Negotiations and promises are encouraged, even promises for a future game, but promises are not binding except for offers of Citizenship (`rule:6.6`) and powers that say "binding" (`rule:7.6.3`).
+
+- name: Glossary
+  color: '#000000'
+  children:
+    - name: '**Adviser**'
+      plainName: Adviser
+      pretext: See `rule:2.2.2`.
+    - name: '**After**'
+      plainName: After
+      pretext: Immediately following - nothing happens between.
+    - name: '**Bandit**'
+      plainName: Bandit
+      pretext: See `rule:2.8.3` _(Bandits are not warbands!)_
+    - name: '**Burn**'
+      plainName: Burn
+      pretext: Move the favor or secret from your board, or from another location if prompted, to the shared bank.
+    - name: '**Cradle**'
+      plainName: Cradle
+      pretext: >
+        **Discard**: Place the prompted cards in an order of your choice, facedown, on top of the Provinces discard pile if your pawn is in the Cradle, the Hinterland discard pile if your pawn is in the Provinces, or the Cradle discard pile if your pawn is in the Hinterland; if discarding cards in a different region from your pawn, discard based on the region of the card instead. Move any favor on it immediately to the matching favor bank. Move any secrets on it to the acting player's board and flip them facedown.
+    - name: '**Draw**'
+      plainName: Draw
+      pretext: Take cards from the top of the prompted draw source, following the drawing rules in the Search action (`rule:5.1.2`).
+    - name: '**Enemy**'
+      plainName: Enemy
+      pretext: Any Exile if you are the Chancellor or a Citizen. Any other player if you are an Exile or a Citizen who is currently not an Imperial player in some Campaigns (`rule:5.5.1`). Bandits are enemies to all players and vice versa.
+    - name: '**Exchange**'
+      plainName: Exchange
+      pretext: You may **Give** to the prompted player and vice versa.
+    - name: '**Force**'
+      plainName: Force
+      pretext: As the attacker, the warbands on your board. As the defender, the warbands that are adding to your defense.
+    - name: '**Gain**'
+      plainName: Gain
+      pretext: Put the prompted piece on your board. Warbands come from your personal bank, secrets come from the shared bank, and favor comes from the prompted favor bank.
+    - name: '**Give**'
+      plainName: Give
+      pretext: Same as **Take**, but in the reverse direction.
+    - name: '**Imperial Player**'
+      plainName: Imperial Player
+      pretext: The Chancellor is always one. A Citizen is one except during some Campaigns (`rule:5.5.1`).
+    - name: '**Kill**'
+      plainName: Kill
+      pretext: Move the warband to the personal bank of the player of the same color. _(Purple warbands go to the Chancellor.)_
+    - name: '**Match**'
+      plainName: Match
+      pretext: Has the same suit. _(Ignore cards that show no suit.)_
+    - name: '**Move**'
+      plainName: Move
+      pretext: Change the location of the prompted piece, following restrictions (`rule:2.8.1`, `rule:5.1.4`, `rule:7.2`).
+    - name: '**Locked**'
+      plainName: Locked
+      pretext: See `rule:7.2.2`.
+    - name: '**Peek**'
+      plainName: Peek
+      pretext: You look at the front of the prompted card.
+    - name: '**Personal Bank**'
+      plainName: Personal Bank
+      pretext: See `rule:2.2.3`.
+    - name: '**Play**'
+      plainName: Play
+      pretext: Put the prompted card at a site, in your advisers, or in your personal bank following restrictions (`rule:2.8.1`, `rule:5.1.4`, `rule:7.2`).
+    - name: '**Reveal**'
+      plainName: Reveal
+      pretext: Show the front of the prompted card to everyone.
+    - name: '**Rule**'
+      plainName: Rule
+      pretext: A player rules each face-up site that has any of their warbands on it, rules any cards at sites that they rule, and rules their advisers. Bandits rule face-up sites that have no warbands.
+    - name: '**Sacrifice**'
+      plainName: Sacrifice
+      pretext: Choose to kill your own warbands.
+    - name: '**Seize**'
+      plainName: Seize
+      pretext: Take in any way except Recover. See `rule:2.5.3`.
+    - name: '**Shared Bank**'
+      plainName: Shared Bank
+      pretext: See `rule:2.1.7`.
+    - name: '**Swap**'
+      plainName: Swap
+      pretext: Move the two prompted pieces to each other's location.
+    - name: '**Take**'
+      plainName: Take
+      pretext: Move the prompted favor or secrets from the prompted player's board to yours, cards from their advisers to yours, or relics from their personal bank, or the prompted site or draw source, to your personal bank."
+    - name: '**Travel Cost**'
+      plainName: Travel Cost
+      pretext: See `rule:5.6.1`. Some powers (`rule:7.6.2`) ignore this.
+    - name: '**You**'
+      plainName: You
+      pretext: You alone, not including any Imperial Allies (`rule:5.5.2`).
+    - name: '**Your Enemy**'
+      plainName: Your Enemy
+      pretext: If you're the attacker, the defender and any Imperial Allies (5.5.2). If you're the defender, the attacker.
+    - name: '**Your Site/Region**'
+      plainName: Your Site/Region
+      pretext: The site/region that your pawn is in.
+
+- name: Site Reference
+  color: '#000000'
+  children:
+    - name: '**Opportunity Sites**.'
+      plainName: Opportunity Sites
+      pretext: 'At the end of your Wake Phase, if your pawn is here, you may take one favor or secret from this site.'
+    - name: '**Homeland Sites**.'
+      plainName: Homeland Sites
+      pretext: 'If you play a card of this suit to this site, and you have not discarded a card here of this suit during this turn, you get what is shown, gain `symbol:secret`, or `symbol:favor` from the corresponding favor bank, or 2 warbands, or take the relic here, treating this as recovering it.'
+    - name: '**Coast Sites**.'
+      plainName: Coast Sites
+      pretext: 'When traveling from here to a Coast site, the Travel cost is 1 Supply and you **ignore** the Narrow Pass power.'
+    - name: '**Plains, Mountain**.'
+      plainName: Plains, Mountain
+      pretext: 'You **must** add _(Plains)_ or subtract _(Mountain)_ one attack die if you declare any number of targets at this site _(even if you rule)_.'
+    - name: '**River**.'
+      plainName: River
+      pretext: 'When mustering from a card at this site, you gain one more warband if you rule this site.'
+    - name: '**Charming Valley**.'
+      plainName: Charming Valley
+      pretext: 'When traveling from here, increase the Travel cost by 1 Supply. _(For example, traveling from the Provinces costs 3 Supply, not 2 Supply.)_'
+    - name: '**Shrouded Wood**.'
+      plainName: Shrouded Wood
+      pretext: When traveling from here, the Travel cost is 2 Supply, and you **ignore** the Narrow Pass and The Hidden Place powers. If an enemy rules here, you travel to the site of the ruler's choice _(Chancellor's choice if ruled by the Empire)_, even if another player is making you travel.
+    - name: '**Narrow Pass**.'
+      plainName: Narrow Pass
+      pretext: 'When traveling from another region to this region, you **must** travel to this site. When campaigning, if you declare any targets in this region and your pawn is in a different region, you **must** target this site unless you rule it.'
+    - name: '**Shrouded Wood**.'
+      plainName: Shrouded Wood
+      pretext: When traveling from here, the Travel cost is 2 Supply, and you **ignore** the Narrow Pass and The Hidden Place powers. If an enemy rules here, you travel to the site of the ruler's choice _(Chancellor's choice if ruled by the Empire)_, even if another player is making you travel.
+    - name: '**Narrow Pass**.'
+      plainName: Narrow Pass
+      pretext: 'When traveling from another region to this region, you **must** travel to this site. When campaigning, if you declare any targets in this region and your pawn is in a different region, you **must** target this site unless you rule it.'
+    - name: '**The Tribunal**.'
+      plainName: The Tribunal
+      pretext: '**Action**: If you rule this site or your pawn is here, negotiate a binding exchange of `symbol:favor` and `symbol:secret` as well as binding actions at any future time, in any combination, with any player. _(Be as creative as you want with your agreement and your agreed-upon penalties if someone breaks it!)_'

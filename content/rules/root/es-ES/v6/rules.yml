@@ -15,7 +15,7 @@
     - name: Información Pública y Privada.
       children:
         - name: Manos.
-          text: Sólo puedes revelar las cartas de tu mano si se pude específicamente, pero el número de cartas en las manos es información pública. `faction:riverfolk:11.2.3`
+          text: Sólo puedes revelar las cartas de tu mano si se pude específicamente, pero el número de cartas en las manos es información pública. `faction:riverfolk$11.2.3`
         - name: Descarte.
           text: La pila de descarte puede mirarse en cualquier momento.
 
@@ -54,8 +54,8 @@
       pretext: 'Las cartas se roban de la parte superior del mazo común y se descartan a una pila de descartes común. Si en cualquier momento el mazo se queda sin cartas, baraja la pila de descartes inmediatamente para formar uno nuevo. Cada carta tiene un **palo**: Ave, zorro, conejo o ratón. La mayoría de cartas también tiene un efecto que puedes fabricar (`rule:4.1`).'
       children:
         - name: Las aves son comodín.
-          text: Siempre puedes tratar una carta de ave como una carta de cualquier otro palo, incluso si debes gastar, tomar o dar múltiples cartas del mismo palo. `faction:cult:10.2.2`
-          subchildren:
+          text: Siempre puedes tratar una carta de ave como una carta de cualquier otro palo, incluso si debes gastar, tomar o dar múltiples cartas del mismo palo. `faction:cult$10.2.2`
+          children:
             - name: Efectos forzados.
               text: Cuando se te pida descartar o dar cartas de zorro, conejo o ratón, debes tratar a tus cartas como si fueran del palo que se pide.
             - name: Sustitución inversa.
@@ -69,7 +69,7 @@
       pretext: El mapa del bosque está compuestos de una serie de **claros** conectados por **caminos**.
       children:
         - name: Adyacencia.
-          text: Un claro es adyacente a todos aquellos claros que están conectados a él por un camino. `faction:duchy:12.2.2`
+          text: Un claro es adyacente a todos aquellos claros que están conectados a él por un camino. `faction:duchy$12.2.2`
         - name: Palo.
           text: Cada claro tiene un **palo** _(ratón, conejo o zorro)_.
         - name: Espacios.
@@ -78,7 +78,7 @@
           text: Los espacios marcados con una "R" empiezan el juego ocupados con **ruinas**. Las ruinas no pueden retirarse a menos que se indique expresamente _(como por la acción de Explorar del Vagabundo, `rule:9.5.3`)_.
 
     - name: Ríos
-      pretext: Muchos claros están unidos por **ríos**. _(Los ríos no son caminos, pero pueden tratarse como caminos si se indica expresamente. Los ríos no dividen claros ni a los bosques)_ `faction:riverfolk:11.2.2`
+      pretext: Muchos claros están unidos por **ríos**. _(Los ríos no son caminos, pero pueden tratarse como caminos si se indica expresamente. Los ríos no dividen claros ni a los bosques)_ `faction:riverfolk$11.2.2`
 
     - name: Bosques
       pretext: Las áreas del mapa delimitadas por caminos impresos y claros se llaman **bosques**.
@@ -87,7 +87,7 @@
           text: Un bosque es adyacente a todos los claros que lo tocan sin cruzar un camino impreso, y es adyacente a todos los bosques de los que está separado por un único camino impreso.
 
     - name: Gobernador
-      pretext: Un jugador **gobierna** un claro si es el jugador con el mayor número total de edificios y guerreros en ese claro _(las fichas y peones no contribuyen para el gobierno)_. Si hay un empate entre varios jugadores en un claro, nadie lo gobierna. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
+      pretext: Un jugador **gobierna** un claro si es el jugador con el mayor número total de edificios y guerreros en ese claro _(las fichas y peones no contribuyen para el gobierno)_. Si hay un empate entre varios jugadores en un claro, nadie lo gobierna. `faction:eyrie$:7.2.2` `faction:vagabond$9.2.2` `faction:cult$10.2.4`
 
 - name: Victoria
   color: '#000000'
@@ -101,14 +101,14 @@
         - name: Retirar Edificios y Fichas.
           text: Cuando retires un edificio o ficha enemiga, obtienes un punto de victoria.
         - name: Fabricar Objetos.
-          text: Cuando fabriques un objeto (`rule:4.1`), obtienes el número de puntos de victoria indicado en la carta. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
+          text: Cuando fabriques un objeto (`rule:4.1`), obtienes el número de puntos de victoria indicado en la carta. `faction:eyrie$:7.2.3` `faction:warlord$14.2.3`
 
     - name: Cartas de Dominancia
       pretext: El mazo contiene cuatro cartas de dominancia, que te permiten obtener ganar la partida sin llegar a 30 puntos de victoria.
       children:
         - name: Activar.
-          text: Durante tu Día, si tienes al menos 10 puntos de victoria, puedes **activar** una carta de dominancia que esté en tu mano y colocarla en tu zona de juego. Quita tu marcador de puntuación del contador de puntuación. Ya no puedes obtener más puntos de victoria. `faction:vagabond:9.2.8`
-          subchildren:
+          text: Durante tu Día, si tienes al menos 10 puntos de victoria, puedes **activar** una carta de dominancia que esté en tu mano y colocarla en tu zona de juego. Quita tu marcador de puntuación del contador de puntuación. Ya no puedes obtener más puntos de victoria. `faction:vagabond$9.2.8`
+          children:
             - name: Dominancia de Ratón, Conejo o Zorro.
               text: Ganas inmediatamente la partida si, al comienzo de tu Alba, gobiernas tres claros del palo correspondiente a la carta de dominancia activada.
             - name: Dominancia de Ave.
@@ -116,7 +116,7 @@
         - name: Cartas activadas.
           text: Una carta de dominancia activada no cuenta para tu límite de mano, y no puede retirarse del juego. No puedes sustituir una carta de dominancia activada por otra diferente.
         - name: Usar Cartas de Dominancia.
-          text: Una carta de dominancia puede gastar se por su palo. Cuando una carta de dominancia fuese a ser colocada en la pila de descartes, en vez de ahí se sitúa junto al tablero para mostrar que está **disponible** para ser tomada. `faction:cult:10.4.2`
+          text: Una carta de dominancia puede gastar se por su palo. Cuando una carta de dominancia fuese a ser colocada en la pila de descartes, en vez de ahí se sitúa junto al tablero para mostrar que está **disponible** para ser tomada. `faction:cult$10.4.2`
         - name: Tomar Cartas Disponibles.
           text: Durante tu Día, puedes tomar cualquier carta de dominancia disponible y ponerla en tu mando gastando una carta del palo correspondiente. Debes gastar una carta de ave para tomar la carta de dominancia de ave.
 
@@ -127,9 +127,9 @@
       pretext: Puedes **fabricar** la mayor parte de cartas de tu mano para obtener un efecto inmediato o persistente.
       children:
         - name: Coste.
-          text: Para fabricar una carta, debes **activar** las piezas de fabricación de los palos que aparecen en la esquina inferior izquierda de la carta. Las piezas de fabricación de cada facción se indican en su sección de Fabricar. El palo de una pieza de fabricación se corresponde con su claro. Cada pieza de fabricación puede activarse una única vez por turno. Una interrogación tricolor denota una pieza de fabricación de cualquier palo. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1` `faction:cult:10.2.1`
+          text: Para fabricar una carta, debes **activar** las piezas de fabricación de los palos que aparecen en la esquina inferior izquierda de la carta. Las piezas de fabricación de cada facción se indican en su sección de Fabricar. El palo de una pieza de fabricación se corresponde con su claro. Cada pieza de fabricación puede activarse una única vez por turno. Una interrogación tricolor denota una pieza de fabricación de cualquier palo. `faction:vagabond$9.2.1` `faction:riverfolk$11.2.1` `faction:cult$10.2.1`
         - name: Efectos Inmediatos.
-          text: Cuando fabriques un efecto inmediato _(recuadro de pergamino)_, resuelve el efecto y después descarta la carta. Si muestra un objeto, toma el objeto correspondiente de la reserva común de objetos del mapa y colócalo en la zona de objetos fabricados de tu tablero de facción. Si la carta muestra un objeto que no está en la reserva, la carta no puede fabricarse. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
+          text: Cuando fabriques un efecto inmediato _(recuadro de pergamino)_, resuelve el efecto y después descarta la carta. Si muestra un objeto, toma el objeto correspondiente de la reserva común de objetos del mapa y colócalo en la zona de objetos fabricados de tu tablero de facción. Si la carta muestra un objeto que no está en la reserva, la carta no puede fabricarse. `faction:eyrie$:7.8.1` `faction:vagabond$9.5.8` `faction:warlord$14.2.1`
         - name: Efectos Persistentes.
           text: Cuando fabriques un efecto persistente _(recuadro de piedra)_, colócalo en tu zona de juego. Puedes usar el efecto tal y como se describe en la carta. _(el Emigrante del Nido en el mazo de Exiliados y Partisanos es obligatorio)_.
         - name: Sin Duplicados.
@@ -139,7 +139,7 @@
       pretext: Cuando **mueves**, puedes tomar cualquier número _(superior a cero)_ de tus guerreros o peones de un claro y moverlos a otro claro adyacente.
       children:
         - name: Debes Gobernar.
-          text: Para poder mover, debes gobernar el claro de origen, el de destino, o ambos. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
+          text: Para poder mover, debes gobernar el claro de origen, el de destino, o ambos. `faction:vagabond$9.2.3` `faction:riverfolk$11.2.2` `faction:corvid$13.2.3`
         - name: Sin Límites.
           text: Una pieza cualquiera puede moverse cualquier número de veces por turno. Si se te pide que hagas varios movimientos, puedes mover el mismo o distintos grupos de guerreros.
 
@@ -148,23 +148,23 @@
       children:
         - name: 'Paso 1: El Defensor Puede Emboscar.'
           text: El defensor puede jugar una (y solo una) carta de emboscada correspondiente al claro de la batalla. De ser así resuelve `rule:4.3.1.1`–`rule:4.3.1.2` en order.
-          subchildren:
+          children:
             - name: Emboscada Truncada.
               text: El atacante puede jugar también una carta de emboscada correspondiente al claro de batalla. De ser así, ambos jugadores descartan sus cartas de emboscada sin aplicar sus efectos y se omite el paso `rule:4.3.1.2`.
             - name: Resuelve la Emboscada.
               text: El defensor da inmediatamente dos golpes al atacante (`rule:4.3.4`). Después, el defensor descarta la carta de emboscada. Si no quedan guerreros o peones atacantes, la batalla finaliza inmediatamente.
         - name: 'Paso 2: Tirar Dados.'
-          text: Tira ambos dados. El atacante golpeará tantas veces como la tirada más alta, y el defensor golpeará tantas veces como la tirada más baja. Si las tiradas son iguales, el atacante y el defensor golpearán el mismo número de veces _(el uso del futuro aquí refleja que los golpes no se aplican hasta el paso 4)_. `faction:woodland:8.2.2`
-          subchildren:
+          text: Tira ambos dados. El atacante golpeará tantas veces como la tirada más alta, y el defensor golpeará tantas veces como la tirada más baja. Si las tiradas son iguales, el atacante y el defensor golpearán el mismo número de veces _(el uso del futuro aquí refleja que los golpes no se aplican hasta el paso 4)_. `faction:woodland$8.2.2`
+          children:
             - name: Golpes Máximos por Tirada.
-              text: El número máximo de golpes que puedes causar debido a tu tirada es igual al número de tus guerreros en el claro de batalla, ya seas el atacante o el defensor. `faction:vagabond:9.2.6`
+              text: El número máximo de golpes que puedes causar debido a tu tirada es igual al número de tus guerreros en el claro de batalla, ya seas el atacante o el defensor. `faction:vagabond$9.2.6`
         - name: 'Paso 3: Usar Efectos.'
           text: El atacante y el defensor pueden usar efectos opcionales _(como la carta Tácticas Brutales)_ que afecten a la batalla. Si ambos quieren hacerlo, el atacante escoge quién los usa primero (`rule:1.1.3`).
-          subchildren:
+          children:
             - name: Golpes Adicionales.
               text: Muchos efectos causarán **golpes adicionales**, estos golpes no están limitados por el número de guerreros en el claro de batalla.
             - name: Indefenso.
-              text: Si el defensor no tiene guerreros en el claro de la batalla, el atacante da un golpe adicional. `faction:vagabond:9.2.4`
+              text: Si el defensor no tiene guerreros en el claro de la batalla, el atacante da un golpe adicional. `faction:vagabond$9.2.4`
         - name: 'Paso 4: Recibir Golpes.'
           text: 'Cada golpe que da un bando retira una pieza del otro bando en el claro de batalla _(obtienes un punto de victoria por cada edificio o ficha enemiga que retires)_. El bando que recibe un golpe decide en qué orden se retiran sus piezas, aunque todos sus guerreros han de ser retirados antes de que sus edificios o fichas puedan retirarse; también escogen el orden de cualquier efecto que provoque la retirada de sus piezas.'
 
@@ -235,7 +235,7 @@
           text: Coloca un guerrero en cada reclutador. Solo puedes hacer esto una vez por turno.
         - name: Construir.
           text: Coloca un edificio.
-          subchildren:
+          children:
             - name: Escoger Claro y Edificio.
               text: elige un claro que gobiernes. Elige si quieres colocar un aserradero, un taller o un reclutador. Colocarás el edificio de más a la izquierda de ese tipo de tu tablero de facción. Tienes que poder pagar su coste (`rule:6.5.4.2`) y colocarlo (`rule:6.5.4.3`).
             - name: Pagar el Coste.
@@ -260,7 +260,7 @@
         - name: Fabricar.
           text: El Nido fabrica antes de resolver el Decreto durante el Día, activando nidos.
         - name: Señores del Bosque.
-          text: El Nido gobierna en un claro cuando está empatado a mayor número de guerreros y edificios en él, y tiene al menos una pieza de facción del Nido en él. `faction:cult:10.2.4`
+          text: El Nido gobierna en un claro cuando está empatado a mayor número de guerreros y edificios en él, y tiene al menos una pieza de facción del Nido en él. `faction:cult$10.2.4`
         - name: Desdén por el Comercio.
           text: Cuando el Nido fabrique un objeto, ignora los puntos de victoria indicados, solo obtiene 1 punto de victoria en su lugar. _(Sí pueden obtener puntos adicionales por efectos de fabricación como en Maestros Grabadores o la Forja Legendaria)_.
 
@@ -294,7 +294,7 @@
           text: Puedes activar nidos para fabricar cartas de tu mano.
         - name: Resolver el Decreto.
           text: Debes resolver el Decreto, empezando por la columna de más a la izquierda y avanzando hacia la derecha. En cada columna debes resolver todas las cartas, en cualquier orden. Por cada carta, debes llevar a cabo la acción de esa columna, como sigue. Si no puedes llevar a cabo una de esas acciones, caes inmediatamente en el caos (`rule:7.7`).
-          subchildren:
+          children:
             - name: Reclutar.
               text: Coloca un guerrero en un claro que tenga nido y sea correspondiente a la carta.
             - name: Mover.
@@ -321,7 +321,7 @@
           text: Descarta todas las cartas en el Decreto excepto tus Visires Leales.
         - name: 'Paso 3: Depón.'
           text: Dale la vuelta a tu carta de líder actual y déjala a un lado. Elige un nuevo líder de los que están bocarriba y colócalo en tu tablero de facción. Coloca tus Visires Leales en los espacios de Decreto según marque tu nuevo líder.
-          subchildren:
+          children:
             - name: Nueva Nidada.
               text: Si debes elegir un líder nuevo pero no queda ninguno bocarriba, dale la vuelta a todos.
         - name: 'Paso 4: Descansa.'
@@ -354,14 +354,14 @@
           text: Como defensor en batalla, la Alianza golpea con la tirada más alta, y el atacante con la tirada más baja.
         - name: Simpatizantes.
           text: Para llevar a bao acciones durante el Alba, la Alianza gasta **simpatizantes**, que son las cartas de su montón de simpatizantes. Los simpatizantes solo pueden gastarse por el palo y no cuentan para el límite de mano de la Alianza. Los simpatizantes están bocabajo, pero la Alianza puede examinarlos en cualquier momento.
-          subchildren:
+          children:
             - name: Capacidad.
               text: Si la Alianza no tiene bases en el mapa, el montón de simpatizantes sólo puede tener hasta cinco cartas. Si la Alianza fuera a ganar un simpatizante pero no tiene espacio en el montón, esa carta se descarta. Si hay al menos una base en el mapa, el montón de simpatizantes no tiene límite de cartas.
         - name: Retirar Bases.
           text: Cuando se retire una base, la Alianza debe descartar todos sus simpatizantes del palo correspondiente al indicado por la base _(aves incluidas)_, y retirar la mitad de sus oficiales, redondeado hacia arriba. Si la alianza no tiene más bases en el mapa y tiene más de cinco simpatizantes, debe descartarse hasta quedarse con cinco.
         - name: Fichas de Simpatía.
           text: La Alianza tiene 10 fichas de simpatía.
-          subchildren:
+          children:
             - name: Límite de Colocación.
               text: Cada claro solo puede tener una única ficha de simpatía.
             - name: Términos.
@@ -385,7 +385,7 @@
       children:
         - name: Revuelta.
           text: Puedes hacer la acción de Revuelta cualquier número de veces según se indica.
-          subchildren:
+          children:
             - name: 'Paso 1: Elegir Claro.'
               text: Elige un claro afín correspondiente a una base que esté en tu tablero de facción.
             - name: 'Paso 2: Gastar Simpatizantes.'
@@ -395,12 +395,12 @@
 
         - name: Extiende Simpatía.
           text: Puedes Extender Simpatía cualquier número de veces de la forma siguiente.
-          subchildren:
+          children:
             - name: 'Paso 1: Elegir Claro.'
               text: Elige un claro no afín adyacente a un claro afín. Si no hay claros afines, puedes elegir cualquier claro.
             - name: 'Paso 2: Gastar Simpatizantes.'
               text: Gasta simpatizantes correspondientes al claro elegido. El número de simpatizantes que debes gastar está indicado sobre la ficha de simpatía que colocas.
-              subchildren:
+              children:
                 - name: Ley Marcial.
                   text: Debes gastar un simpatizante correspondiente adicional si el claro elegido tiene al menos 3 guerreros de otro jugador, incluyendo guerreros que se estén tratando como suyos para gobernar _(mercenarios, secuaces, etc.)_.
             - name: 'Paso 3: Colocar y Puntuar.'
@@ -421,7 +421,7 @@
       children:
         - name: Operaciones Militares.
           text: Puedes llevar a cabo acciones, de las siguientes, siendo el número máximo de acciones tu número de oficiales, en cualquier orden y número.
-          subchildren:
+          children:
             - name: Mover.
               text: Haz un movimiento.
             - name: Batallar.
@@ -446,7 +446,7 @@
           text: El Vagabundo agota `item:hammer` para fabricar. Todos sus `item:hammer` son correspondientes a su claro actual. Si el Vagabundo fabrica un objeto, puede tomarlo inmediatamente, bocarriba.
         - name: Errante y Solitario.
           text: El peón del Vagabundo no es un guerrero, así que no puede gobernar un claro o impedir que otro jugador gobierne uno. El peón del Vagabundo no puede retirarse del mapa.
-          subchildren:
+          children:
             - name: Retirada Total.
               text: Cuando un jugador enemigo utilice un efecto que indique que se retiran todas las piezas enemigas de un claro _(como una revuelta de la Alianza, una carta del Favor de los Ratones o una bomba de los Córvidos)_ en el que está el Vagabundo, el Vagabundo daña tres de sus objetos a su elección.
 
@@ -456,7 +456,7 @@
           text: En batalla, el Vagabundo está indefenso (`rule:4.3.3.2`) si no tiene `item:sword` no dañadas.
         - name: Objetos.
           text: Las capacidades del Vagabundo dependen de los objetos que tenga. En lugar de una zona para Objetos Fabricados tiene un Hatillo y varios contadores. Los objetos en el tablero de facción del Vagabundo pueden estar bocarriba o bocabajo. El Vagabundo **agota** objetos no dañados, volteándolos bocabajo, para hacer muchas de sus acciones.
-          subchildren:
+          children:
             - name: Contadores.
               text: Al obtenerlos o al voltearlos bocarriba en el hatillo, coloca `item:tea`, `item:coin`, y `item:sack` bocarriba en sus contadores. Cuando voltees bocabajo `item:tea`, `item:coin`, o `item:sack` en su contador, colócalo bocabajo en tu hatillo. Cada contador puede tener hasta 3 objetos del mismo tipo.
             - name: El Hatillo.
@@ -469,17 +469,17 @@
           text: El Vagabundo no puede activar la condición de victoria de una carta de dominancia (`rule:3.3.1`). En vez de eso, en partidas de cuatro jugadores o más, el Vagabundo puede activar una carta de dominancia para formar una coalición con otro jugador, colocando su marcador de puntuación en el tablero de dicho jugador _(el Vagabundo ya no obtiene más puntos de victoria)_. Dicho jugador debe ser el que menos puntos de victoria tenga, salvo por el Vagabundo que forma coalición con él, y no puede estar ya en una coalición. Si hay un empate en la posición de menos puntos, elige a uno de los jugadores empatados. Si el jugador elegido gana la partida, el Vagabundo también gana.
         - name: Relaciones.
           text: Tu tablero de facción muestra una tabla de relaciones que tiene cuatro espacios en la sección de aliados y una zona de hostiles. Contiene un marcador de relación por cada facción que no es el Vagabundo.
-          subchildren:
+          children:
             - name: Mejorar Relaciones.
               text: Puedes mejorar las relaciones con una facción no hostil llevando a cabo la acción ayudar.
-              subchildren:
+              children:
                 - name: Coste.
                   text: Ayuda a una facción no hostil en un mismo turno el número de veces que aparece entre el espacio que contiene su marcador de relación y el siguiente espacio. _(Una acción de ayuda sólo cuenta para una mejora de relaciones)_.
                 - name: Efecto.
                   text: Avanza el marcador de relación de esa facción un espacio hacia la derecha en el contador. Obtén los puntos de victoria anotados en el nuevo espacio.
             - name: Estatus de Aliado.
               text: Si el marcador de relación de una facción llega al espacio final del contador estás **aliado** con esa facción. _(¡Sus guerreros confían en ti!)_.
-              subchildren:
+              children:
                 - name: Ayudar a un Aliado.
                   text: Cada vez que ayudes a una facción aliada, obtienes dos puntos de victoria.
                 - name: Mover con un Aliado.
@@ -490,7 +490,7 @@
                   text: En una batalla donde tratas guerreros aliados como tuyos, puedes recibir golpes retirando a esos guerreros. Sin embargo, si recibes más golpes retirando guerreros aliados que dañando objetos durante la misma batalla, esa facción aliada se vuelve hostil (`rule:9.2.9.3`) al final de la batalla. Esta regla suprime la condición para hacerse hostil en `rule:9.2.9.3`.
             - name: Estatus Hostil.
               text: Si retiras un guerrero de una facción no hostil, mueve su marcador de relación inmediatamente a la zona de hostil. Esta facción es ahora **hostil**. Después, si esto sucede en una batalla durante tu turno, comprueba la puntuación por Infamia (`rule:9.2.9.3.1`).
-              subchildren:
+              children:
                 - name: Infamia.
                   text: Obtienes un punto de victoria adicional por cada pieza de una facción hostil que retires en batalla durante tu turno, salvo por el guerrero que convirtió a esa facción en hostil. _(Suma estos puntos a los obtenidos por retirar edificios y fichas enemigas)_.
                 - name: Mover a Claros Hostiles.
@@ -609,7 +609,7 @@
           text: Descarta todas las cartas del montón de almas perdidas a la pila de descarte _(las cartas de dominancia pasan a estar disponibles)_.
         - name: Realizar Conspiraciones.
           text: Puedes gastar acólitos, devolviéndolos a tu reserva, para conspirar en claros correspondientes al paria, en cualquier orden y número, de la manera siguiente. Si el paria es odiado, cada conspiración te cuesta un acólito menos.
-          subchildren:
+          children:
             - name: Cruzada.
               text: Gasta dos acólitos para iniciar una batalla en un claro de paria o bien para mover al menos un guerrero desde un claro paria y luego, si lo deseas, iniciar una batalla en el claro de destino.
             - name: Convertir.
@@ -658,12 +658,12 @@
           text: 'Para realizar sus acciones, la Compañía consigna y gasta **fondos**: Guerreros en su zona para fondos.'
         - name: Puestos Comerciales.
           text: La Compañía obtiene puntos de victoria cuando construye puestos comerciales.
-          subchildren:
+          children:
             - name: Interrupción del Comercio.
               text: Cuando un puesto comercial es retirado, la Compañía retira la mitad de sus fondos, redondeando hacia arriba, y devuelve ese puesto comercial a la caja.
         - name: Comprar Servicios.
           text: Al inicio de sus respectivas Albas, los otros jugadores pueden comprar los servicios de la Compañía.
-          subchildren:
+          children:
             - name: Coste.
               text: El comprador debe colocar tantos de sus guerreros en la zona de pagos de la Compañía como el coste del servicio, indicado en el contador correspondiente de la zona de servicios.
             - name: Número.
@@ -672,14 +672,14 @@
               text: 'El Vagabundo paga por los servicios agotando objetos: Por cada objeto que agote con ese fin, la Compañía coloca un guerrero de la Compañía en la zona de pagos.'
         - name: Servicios.
           text: La Compañía ofrece tres tipos de servicios.
-          subchildren:
+          children:
             - name: Carta de la Mano.
               text: El comprador toma cualquier carta de la mano de la Compañía y la añade a la suya _(este servicio se puede comprar varias veces siempre que se tenga acceso a suficientes puestos comerciales)_.
             - name: Barcas.
               text: El comprador puede tratar los ríos como si fueran caminos hasta el final de su turno.
             - name: Mercenarios.
               text: Durante el Día y la Noche de este turno, el comprador trata a los guerreros de la Compañía como si fueran suyos para de gobernar y para batallar contra cualquier facción que no sea la Compañía. _(El comprador no puede moverlos, usarlos para cumplir cartas de dominancia o retirarlos, a no ser que sea mediante golpes en batalla. Todavía son piezas de la Compañía, por lo que no se ven afectados por habilidades como Hospitales de Campaña del Marquesado ni pueden usarse para Convencer a Ministros del Ducado)_.
-              subchildren:
+              children:
                 - name: Golpes Recibidos.
                   text: El comprador debe repartir los impactos, sufriendo los golpes impares retirando guerreros de su propiedad _(no de la Compañía)_, si quedan, o edificios de su propiedad o fichas sólo si no tiene guerreros _(incluyendo de la Compañía)_ en el claro de batalla.
                 - name: El Vagabundo y los Mercenarios.
@@ -717,7 +717,7 @@
           text: Consigna un fondo para iniciar una batalla.
         - name: Fabricar.
           text: Consigna fondos para fabricar una carta de tu mano. En vez de mover a estos guerreros a la zona de consignados, debes colocarlos en espacios vacíos de los contadores de puestos comerciales correspondientes a los palos indicados en el coste de fabricación.
-          subchildren:
+          children:
             - name: Exportar.
               text: Puedes ignorar el beneficio asociado a la fabricación de una carta, descartarla y colocar un guerrero de la Compañía en la zona de pagos.
         - name: Robar.
@@ -726,7 +726,7 @@
           text: Gasta un fondo para colocar un guerrero en un claro con un río.
         - name: Puesto Comercial con Guarnición.
           text: Gasta dos fondos para colocar un puesto comercial y un guerrero.
-          subchildren:
+          children:
             - name: Elegir Claro.
               text: Escoge un claro que no tenga un puesto comercial gobernado por cualquier jugador.
             - name: Gastar Fondos.
@@ -783,7 +783,7 @@
       children:
         - name: Asamblea.
           text: Puedes llevar a cabo hasta dos acciones en cualquier orden y número, de la forma siguiente.
-          subchildren:
+          children:
             - name: Construir.
               text: Revela una carta para colocar una ciudadela o un mercado en un claro correspondiente que gobiernes.
             - name: Reclutar.
@@ -796,7 +796,7 @@
               text: Gasta una carta para colocar una ficha de túnel en un claro correspondiente que no tenga una ficha de túnel. Entonces mueve hasta cuatro guerreros desde la madriguera a ese claro. _(Si los tres túneles están sobre el tablero, puedes retirar uno antes)_.
         - name: Parlamento.
           text: Puedes llevar a cabo la acción de cada uno de los ministros convencidos, una vez cada una en cualquier orden.
-          subchildren:
+          children:
             - name: Capatopo.
               text: Revela cualquier carta para colocar una ciudadela o mercado en cualquier claro _(correspondiente o no)_ que gobiernes.
             - name: Capitán.
@@ -817,7 +817,7 @@
               text: Obtén un punto de victoria por cada ciudadela que haya sobre el mapa.
         - name: Convencer.
           text: Puedes convencer a un ministro, de lña siguiente forma.
-          subchildren:
+          children:
             - name: Elegir Ministro.
               text: Elige una carta de ministro de tu pila de ministros no convencidos. Debes tener una corona en tu tablero de facción del rango correspondiente _(escudero, noble o lord)_ a dicho ministro.
             - name: Revelar Cartas.
@@ -848,7 +848,7 @@
           text: Los Córvidos fabrican durante el Alba activando fichas de plan _(ya estén bocarriba o bocabajo)_.
         - name: Fichas de Plan.
           text: Los Córvidos tienen ocho fichas de plan, dos de cada tipo.
-          subchildren:
+          children:
             - name: Sentido de la Ficha.
               text: Mientras que estén en la reserva de los Córvidos, las fichas de plan están bocabajo _(pluma)_. Mientras está en el mapa, una ficha puede estar bocarriba _(ícono único)_ o bocabajo. Los Córvidos pueden inspeccionar una ficha de plan que esté bocabajo en cualquier momento.
             - name: Límites de Colocación.
@@ -925,7 +925,7 @@
           text: Cuando los Cientos fabrican un objecto, pueden tomar el objeto pero no obtienen ninguno de los puntos indicados, o pueden retirar ese objeto de la partida y obtener los puntos indicados. _(Sí pueden obtener puntos adicionales por efectos de fabricación como en Maestros Grabadores o la Forja Legendaria)_.
         - name: El Botín.
           text: En vez de una zona para objetos fabricados, los Cientos tienen el Botín. Consta de dos contadores, Mando y Arrojo. El contador de Mando puede contener `item:boot`, `item:sack` y `item:coin`. El de Arrojo `item:hammer`, `item:tea`, `item:sword` y `item:crossbow`.
-          subchildren:
+          children:
             - name: Conseguir Objetos.
               text: Cuando los Cientos consiguen un objeto, lo colocan en el espacio vacío más a la izquierda del contador de Mando o Arrojo según el tipo de objeto; si no hay un espacio vacío, deben retirar de la partida el objeto obtenido o cualquier objeto del contador _(reemplazándolo por el obtenido)_, y obtienen un punto de victoria.
             - name: Mando y Arrojo.
@@ -963,7 +963,7 @@
           text: Puedes activar bastiones para fabricar cartas.
         - name: Comandar a los Cientos.
           text: Puedes realizar las siguientes acciones, en cualquier orden y hasta un número de veces igual a tu valor de Mando.
-          subchildren:
+          children:
             - name: Mover.
               text: Haz un movimiento.
             - name: Batallar.
@@ -1054,19 +1054,19 @@
           text: Puedes fabricar cartas de tu mano activando puestos provisionales _(de cualquier tipo)_.
         - name: Actuar con el Séquito.
           text: Comenzando por la columna más a la izquierda del Séquito y yendo hacia la derecha, puedes realizar la  acción descrita en cada columna para cada carta en ella, en cualquier orden _(incluso ignorar alguna)_, del modo siguiente.
-          subchildren:
+          children:
             - name: Mover.
               text: Haz un movimiento desde un claro correspondiente a la carta.
             - name: Batallar y Desenterrar.
               text: Escoge un claro correspondiente a la carta. Debes iniciar una batalla en él si hay alguna pieza enemiga allí. Después, si gobiernas ese claro y tienes al menos un guerrero Guardián en él, puedes desenterrar como sigue _(incluso si no hubo enemigo para batallar)_.
-              subchildren:
+              children:
                 - name: 'Paso 1: Mover y Voltear la Reliquia'
                   text: Mueve cualquier reliquia de un bosque adyacente a ese claro. Voltea la reliquia de modo que su valor se muestre, si no lo está ya.
                 - name: 'Paso 2: Comprobar Descarte'
                   text: Cuenta el número de claros que gobiernas adyacentes al bosque en el que desenterraste la reliquia. Si ese número es menor que el valor de la reliquia, debes descartar la carta del Séquito usada para esta acción.
             - name: Mover o Recuperar.
               text: Escoge un claro correspondiente a la carta. Realiza un movimiento desde él o recupera una reliquia en él, según se indica a continuación.
-              subchildren:
+              children:
                 - name: 'Paso 1: Tomar Reliquia'
                   text: Toma una reliquia en ese claro que sea del mismo tipo que el de un puesto provisional que esté en él. Colócala en el espacio de Reliquias vacío de ese tipo más a la izquierda en tu tablero de facción.
                 - name: 'Paso 2: Obtener Puntos de Victoria'
@@ -1099,7 +1099,7 @@
           text: Determinad aleatoriamente el orden de asiento y el primer jugador, el orden de turno va hacia su izquierda.
         - name: 'Paso 5: Preparar los Lugares Míticos'
           text: Como grupo, podéis escoger usar lugares míticos (`rule:16.5`). Si lo hacéis, podéis ignorar la colocación de las piezas de la Torre o el Transbordador indicadas en los Mapas Alternativos (`rule:16.2`).
-          subchildren:
+          children:
             - name: 'Paso 1: Elegir.'
               text: Como grupo, elegid si usáis uno o dos lugares míticos, y devolved  a la caja cualesquiera cartas de lugres míticos que no queráis usar en la partida.
             - name: 'Paso 2: Repartir y Reunir.'
@@ -1108,7 +1108,7 @@
               text: El último jugador según el orden de turno prepara un lugar mítico tal y como se indica en su carta. Si elegisteis jugar con dos lugares míticos, el penúltimo jugador en orden de turno prepara el otro lugar mítico como indica su carta.
         - name: 'Paso 6: Preparar Secuaces'
           text: Como grupo, podéis escoger jugar con exactamente tres secuaces (`rule:16.4`), como se indica a continuación.
-          subchildren:
+          children:
             - name: 'Paso 1: Reunir las piezas.'
               text: Barajad las cartas de secuaces. Robad tres cartas de secuaces y devolved el resto a la caja. Reunid las piezas de los secuaces robados formando una reserva.
             - name: 'Paso 2: Degradar.'
@@ -1123,10 +1123,10 @@
           text: Si es una partida a dos jugadores, retirad del mazo las cuatro cartas de dominancia y devolvedlas a la caja. Barajad el mazo. Cada jugador roba cinco cartas. _(¡No tres como en la preparación estándar! Seleccionarás y te quedarás con tres cartas en el paso 10)_.
         - name: 'Paso 8: Preparar las Facciones'
           text: Como grupo, podéis escoger y preparar las facciones como se describe en la Preparación Estándar (`rule:5.1`) o podéis usar las cartas de preparación de facción incluidas en la expansión de Los Merodeadores, como se describe abajo.
-          subchildren:
+          children:
             - name: 'Paso 1: Repartir Cartas de Preparación'
               text: Barajad las cartas de preparación de las facciones belicosas _(nombre en rojo con una espada)_ y robad una al centro de la mesa. Barajad el resto de cartas de preparación de facciones belicosas con todas las cartas de preparación de las facciones insurgentes _(nombre en gris sin espada)_ y robad una carta por jugador al centro de la mesa. _(Habrá una carta de preparación de facción más que el número de jugadores)_.
-              subchildren:
+              children:
                 - name: Dos Jugadores.
                   text: Si es una partida a dos jugadores, retirad todas las cartas de preparación de facciones insurgentes antes de robar ninguna carta _(Podéis dejarlas si jugáis con Secuaces y os va la aventura)_.
                 - name: Bloquear al último insurgente.
@@ -1135,7 +1135,7 @@
                   text: Cuando se robe una carta de preparación de facción de Vagabundo, robad también una carta de personaje de Vagabundo al azar y situadla a su lado bocarriba. Si un jugador escoge a ese Vagabundo como su facción, debe usar esa carta de personaje.
             - name: 'Paso 2: Escoger Facciones.'
               text: Empezando por el último jugador en orden de turno y yendo en sentido inverso al orden de turno, cada jugador escoge una de las cartas de preparación de facción del centro de la mesa y prepara su facción en ese instante _(antes de que el siguiente jugador escoja)_, tal y como se describe en su carta de preparación de facción.
-              subchildren:
+              children:
                 - name: Patria.
                   text: Al preparar su facción, los jugadores podrían tener que elegir uno o más claro com claros patria. Los jugadores no pueden escoger como claros patria claros que sus enemigos ya hayan escogido como sus claros patria o claros donde no puedan colocar las piezas indicadas en su preparación.
                 - name: Patrias Adyacentes.
@@ -1148,11 +1148,11 @@
     - name: Variantes de Mapas
       children:
         - name: Mapa de Invierno
-          subchildren:
+          children:
             - name: Río Revuelto.
               text: El río divide los bosques _(como lo hacen los caminos impresos)_.
         - name: Mapa del Lago
-          subchildren:
+          children:
             - name: Modificaciones a la Preparación.
               text: Coloca el Transbordador en el claro de la esquina que también es un claro costero.
             - name: El Lago.
@@ -1165,7 +1165,7 @@
               text: 'Una vez por turno, las piezas en un claro costero donde esté el Transbordador pueden mover a otro a otro claro costero, tratándolo como adyacente y moviendo al Transbordador con ellas _(se siguen las reglas de movimiento normal: Gobernar claros, Indignación, etc.)_. Tras mover, el jugador roba una carta. El transbordador no puede ser retirado ni puede batallarse contra él.'
 
         - name: Mapa de la Montaña.
-          subchildren:
+          children:
             - name: Modificaciones a la Preparación.
               text: Coloca los 6 marcadores de camino cerrado para cubrir los 6 caminos de un color más oscuro con terreno excavado. Coloca la Torre en el claro central que muestra dos torres.
             - name: Caminos Cerrados.
@@ -1180,55 +1180,55 @@
     - name: Guía del Vagabundo
       children:
         - name: Ladrón
-          subchildren:
+          children:
             - name: Objetos Iniciales.
               text: Empieza con `item:boot`, `item:torch`, `item:tea`, `item:sword`.
             - name: 'Acción Especial: Robar'
               text: Agota una `item:torch` para robar una carta al azar de un jugador cualquiera en tu claro.
         - name: Chatarrero
-          subchildren:
+          children:
             - name: Objetos Iniciales
               text: Empieza con `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
             - name: 'Acción Especial: Trabajo Diurno'
               text: Agota una `item:torch` para tomar una carta de la pila de descartes del palo correspondiente a tu claro. _(Siempre puedes tomar una carta de ave)_.
         - name: Montaraz
-          subchildren:
+          children:
             - name: Objetos Iniciales
               text: Empieza con `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
             - name: 'Acción Especial: Escondite'
               text: Agota un `item:torch` para reparar tres objetos. Entonces termina tu Día inmediatamente y empieza tu Noche.
         - name: Agitador
-          subchildren:
+          children:
             - name: Objetos Iniciales
               text: Empieza con `item:coin`, `item:torch`, `item:boot`.
             - name: 'Acción Especial: Instigar'
               text: Agota una `item:torch` para iniciar una batalla en tu claro. Tú escoges tanto al atacante como al defensor y el orden en que se retiran edificios y fichas, y retiras las piezas para ambos. _(Obtén un punto de victoria por cada edificio o ficha de cualquiera de los jugadores que sea retirada, yu por cada pieza hostil que se retire de cualquier jugador)_.
         - name: Árbitro
-          subchildren:
+          children:
             - name: Objetos Iniciales
               text: Empieza con `item:boot`, `item:torch`, `item:sword`, `item:sword`.
             - name: 'Acción Especial: Proteger'
               text: Inmediatamente antes de que se tiren los dados en una batalla, el defensor puede pedir ayuda al Árbitro si está en el claro de batalla. El Árbitro obtiene un punto de victoria y añade todas sus `item:sword` no dañadas a los golpes máximos que obtenga el defensor en la tirada de dados. El Árbitro no puede apuntarse por voluntad propia o en contra de su voluntad.
         - name: Bribón
-          subchildren:
+          children:
             - name: Objetos Iniciales
               text: Empieza con `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
             - name: 'Acción Especial: Tierra Quemada'
               text: Agota una `item:torch` y colócala en tu claro. Retira todas las piezas enemigas de ese claro. Durante el resto de la partida, las piezas no pueden colocarse o moverse a este claro. _(Tú permaneces en el claro. Una vez que salgas, no puedes volver a entrar. La `item:torch` no puede retirarse con una carta de "Favor de los..." porque no es una pieza enemiga)_.
         - name: Aventurero
-          subchildren:
+          children:
             - name: Objetos Iniciales
               text: empieza con con `item:boot`, `item:torch`, `item:hammer`.
             - name: 'Acción Especial: Improvisar'
               text: Una vez por turno durante una acción de Misión, puedes tratar un objeto no agotado como cualquier otro objeto. Cuando lo agotes para completar la misión, dáñalo también.
         - name: Ronin
-          subchildren:
+          children:
             - name: Objetos Iniciales
               text: Empieza con `item:boot`, `item:boot`, `item:torch`, `item:sword`.
             - name: 'Acción Especial: Golpe Rápido'
               text: Puedes agotar una `item:sword` para dar un golpe adicional _(después de lanzar dados en batalla)_.
         - name: Hostigador
-          subchildren:
+          children:
             - name: Objetos Iniciales
               text: Empieza con `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
             - name: 'Acción Especial: Vuelo sin motor'
@@ -1237,7 +1237,7 @@
     - name: Secuaces
       children:
         - name: Conseguir y Perder Secuaces
-          subchildren:
+          children:
             - name: Conseguirlos de la Reserva.
               text: Cuando el marcador de puntos de victoria de un jugador entre en la casilla con un marcador de secuaz, ese jugador toma el marcador de secuaz y lo coloca bajo la Noche en su tablero de facción _(como recordatorio)_. Al final de su turno, toma una carta cualquiera de secuaz de la reserva, hace una tirada de control (`rule:16.4.1.2`) y da la vuelta al marcador de secuaz.
             - name: Tirada de Control.
@@ -1246,7 +1246,7 @@
               text: Al final del turno de un jugador, el jugador debe retirar un marcador de control de cada uno de sus secuaces. Luego, debe entregar cada carta de secuaz que control que se haya quedado sin marcadores de control, junto con un marcador de secuaz, a cualquier otro jugador _(incluso al jugador con más puntos de victoria)_. Ese jugador coloca el marcador de secuaz bajo la Noche en su tablero de facción _(como recordatorio)_ y realiza una tirada de control inmediatamente (`rule:16.4.1.2`).
         - name: Habilidades y Acciones
           text: Los Secuaces tienen ciertas acciones y habilidades, indicadas por sus propios iconos. Las acciones y habilidades que comienzan con "**Controlador**:" las obtiene el controlador del secuaz.
-          subchildren:
+          children:
             - name: Acción Al Conseguir (`hireling:whenhired`).
               text: Al tomar el control de un secuaz, el jugador que pasa a ser el controlador debe realizar esta acción.
             - name: Habilidad (`hireling:ability`).
@@ -1256,7 +1256,7 @@
             - name: Acción Una vez por Día (`hireling:daylight`).
               text: Una vez en su Día, el jugador que controla al secuaz puede realizar esta acción.
         - name: Reglas
-          subchildren:
+          children:
             - name: Gobernar.
               text: El controlador de un secuaz trata las piezas de su secuaz como suyas sólo para gobernar _(El controlador podría gobernar un claro con únicamente piezas de secuaz)_. Los secuaces sin controlador pueden gobernar un claro como si fuesen jugadores (`rule:2.5`).
             - name: Condición de Enemigo.
@@ -1275,7 +1275,7 @@
     - name: Lugares Míticos
       children:
         - name: Reglas Generales
-          subchildren:
+          children:
             - name: Seguridad.
               text: Los lugares míticos no pueden ser movidos o retirados, ni se puede batallar contra ellos, a menos que se indique expresamente en el lugar mítico.
             - name: Pertenencia.
@@ -1284,7 +1284,7 @@
     - name: Glosario
       children:
         - name: Adyacente.
-          text: Un claro es adyacente a otro claro si está unido a él por un camino. Un bosque es adyacente a todos los claros que lo tocan sin atravesar un camino, y es adyacente a todos los bosques que están separados únicamente por un camino, salvo en el lago (`rule:16.2.2`). `faction:duchy:12.2.2`
+          text: Un claro es adyacente a otro claro si está unido a él por un camino. Un bosque es adyacente a todos los claros que lo tocan sin atravesar un camino, y es adyacente a todos los bosques que están separados únicamente por un camino, salvo en el lago (`rule:16.2.2`). `faction:duchy$12.2.2`
         - name: Borde del tablero o mapa.
           text: Línea única cerrada de claros y caminos que define los límites del mapa, incluyendo los caminos cerrados en el mapa de la montaña.
         - name: Bosque.
@@ -1294,7 +1294,7 @@
         - name: Colocar o poner.
           text: Tomar la pieza indicada de la fuente indicada y situarla en el destino indicado. Normalmente, si no se especifica fuente, se toma de la reserva, o del espacio más a la izquierda del contador que contenga una pieza indicada.
         - name: Descartar.
-          text: Coloca la carta indicada en la pila de descartes común (`rule:2.1`). Si es una carta de dominancia, se coloca cerca del tablero (`rule:3.3.3`). `faction:cult:10.4.2`
+          text: Coloca la carta indicada en la pila de descartes común (`rule:2.1`). Si es una carta de dominancia, se coloca cerca del tablero (`rule:3.3.3`). `faction:cult$10.4.2`
         - name: Edificio.
           text: Una pieza de cartón cuadrada propiedad de su facción _(cuenta para gobernar)_.
         - name: Efecto.

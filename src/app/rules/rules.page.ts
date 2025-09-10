@@ -1,11 +1,5 @@
 import { CommonModule } from '@angular/common';
-import {
-  type AfterContentInit,
-  Component,
-  HostListener,
-  inject,
-  signal,
-} from '@angular/core';
+import { Component, HostListener, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import {
@@ -27,6 +21,7 @@ import { arrowUpOutline, search } from 'ionicons/icons';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import { navigation$ } from 'src/app/navigation';
 import { RulesService } from 'src/app/rules-service';
+import { RulesDisplayComponent } from '../rules-display/rules-display.component';
 
 @Component({
   selector: 'app-rules',
@@ -48,22 +43,28 @@ import { RulesService } from 'src/app/rules-service';
     IonButton,
     TranslateModule,
     IonSearchbar,
+    RulesDisplayComponent,
   ],
 })
-export class RulesPage implements AfterContentInit {
+export class RulesPage {
   private rulesService = inject(RulesService);
 
   readonly search = linkedQueryParam('search', {
-    defaultValue: 'en-US',
+    defaultValue: '',
   });
 
   public showSearch = signal<boolean>(false);
   public showScrollUp = signal<boolean>(false);
 
   @HostListener('document:click', ['$event'])
-  public clickScreen($event: MouseEvent) {
-    const hash = ($event.target as HTMLAnchorElement).hash;
-    if (!$event.target || !hash) {
+  public clickScreen($event: PointerEvent) {
+    let realTarget = $event.target;
+    if ((realTarget as HTMLElement).tagName === 'P') {
+      realTarget = (realTarget as HTMLElement).parentElement as Element;
+    }
+
+    const hash = (realTarget as HTMLAnchorElement).hash;
+    if (!realTarget || !hash) {
       return;
     }
 
@@ -79,15 +80,6 @@ export class RulesPage implements AfterContentInit {
     navigation$
       .pipe(takeUntilDestroyed())
       .subscribe((id) => this.scrollToEl(id, 'start'));
-  }
-
-  ngAfterContentInit() {
-    setTimeout(() => {
-      if (!window.location.hash) {
-        return;
-      }
-      this.scrollToEl(window.location.hash, 'start');
-    }, 1500);
   }
 
   public scrollToEl(id: string, block: ScrollLogicalPosition = 'start') {

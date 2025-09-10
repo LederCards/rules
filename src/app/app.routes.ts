@@ -7,4 +7,5 @@ export const routes: Routes = [
     loadComponent: async () =>
       await import('./rules/rules.page').then((m) => m.RulesPage),
   },
+  { path: '**', redirectTo: '' },
 ];

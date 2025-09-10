@@ -8,10 +8,10 @@
               <ion-select
                 label="Select Game"
                 placeholder="Select Game"
-                (ionChange)="changeGame()"
-                [(ngModel)]="currentGame"
+                (ionChange)="paramService.changeGame()"
+                [(ngModel)]="paramService.currentGame"
               >
-                @for (game of allGames(); track $index) {
+                @for (game of paramService.allGames(); track $index) {
                   <ion-select-option [value]="game.code">
                     {{ game.name }}
                   </ion-select-option>
@@ -28,9 +28,7 @@
             <ion-menu-toggle autoHide="false">
               <ion-item
                 color="transparent"
-                (click)="
-                  navigateTo(rulesService.indexesToRules[ruleHead.index])
-                "
+                (click)="navigateTo(ruleHead)"
                 [style.border-left]="'5px solid ' + ruleHead.color"
                 [style.border-bottom]="'1px solid ' + ruleHead.color"
               >
@@ -51,10 +49,10 @@
             <ion-select
               label="Select Language"
               placeholder="Select Language"
-              (ionChange)="changeLanguage()"
-              [(ngModel)]="currentLocale"
+              (ionChange)="paramService.changeLanguage()"
+              [(ngModel)]="paramService.currentLocale"
             >
-              @for (language of allLanguages(); track $index) {
+              @for (language of paramService.allLanguages(); track $index) {
                 <ion-select-option [value]="language.code">
                   {{ language.name }}
                 </ion-select-option>

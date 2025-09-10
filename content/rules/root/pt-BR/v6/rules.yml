@@ -15,7 +15,7 @@
     - name: Informações Públicas e Privadas
       children:
         - name: Mão.
-          text: Os jogadores só podem mostrar ou revelar cartas de suas mãos se explicitamente instruídos desta forma, porém a quantidade de cartas em suas mãos é de conhecimento público. `faction:riverfolk:11.2.3`
+          text: Os jogadores só podem mostrar ou revelar cartas de suas mãos se explicitamente instruídos desta forma, porém a quantidade de cartas em suas mãos é de conhecimento público. `faction:riverfolk$11.2.3`
         - name: Descarte.
           text: O monte de descarte pode ser verificado a qualquer momento do jogo.
 
@@ -56,8 +56,8 @@
       pretext: 'Você compra cartas do topo do baralho compartilhado e descarta no monte de descarte comum. Se não existirem mais cartas no baralho, embaralhe o monte de descarte imediatamente para formar um novo. Cada carta possui um **naipe**: pássaro, raposa, coelho ou rato. A maioria das cartas também possui um efeito que pode se criar (`rule:4.1`).'
       children:
         - name: Pássaros São Curingas.
-          text: Você sempre pode tratar uma carta de pássaro como uma carta de outro naipe, mesmo quando você gastar, tomar ou entregar múltiplas cartas do mesmo naipe. `faction:cult:10.2.2`
-          subchildren:
+          text: Você sempre pode tratar uma carta de pássaro como uma carta de outro naipe, mesmo quando você gastar, tomar ou entregar múltiplas cartas do mesmo naipe. `faction:cult$10.2.2`
+          children:
             - name: Efeito Obrigatório.
               text: Quando instruído a descartar ou entregar cartas de quaisquer naipes que não sejam pássaro, você deve tratar suas cartas de pássaro como sendo um dos naipes solicitados.
             - name: Substituição Reversa.
@@ -71,7 +71,7 @@
       pretext: O mapa da Floresta da Madeira é composto de diversas **clareiras** ligadas por **caminhos**.
       children:
         - name: Adjacência.
-          text: Uma clareira é adjacente a todas as demais clareiras ligadas diretamente a ela por um caminho. `faction:duchy:12.2.2`
+          text: Uma clareira é adjacente a todas as demais clareiras ligadas diretamente a ela por um caminho. `faction:duchy$12.2.2`
         - name: Naipe.
           text: Toda clareira possui um **naipe** de rato, coelho ou raposa.
         - name: Locais.
@@ -80,7 +80,7 @@
           text: Locais demarcados com um pequeno "R" começam a partida cobertos com **ruínas**. **Ruínas** não podem ser removidas a menos que explicitado _(por exemplo, pela ação de Exploração dos Malandros, `rule:9.5.3`)_.
 
     - name: Rios
-      pretext: Muitas clareiras são ligadas por **rios**. _(Rios não são caminhos, mas podem ser tratados como tal caso seja explicitamente instruído desta forma. Rios não dividem clareiras ou florestas.)_ `faction:riverfolk:11.2.2`
+      pretext: Muitas clareiras são ligadas por **rios**. _(Rios não são caminhos, mas podem ser tratados como tal caso seja explicitamente instruído desta forma. Rios não dividem clareiras ou florestas.)_ `faction:riverfolk$11.2.2`
 
     - name: Florestas
       pretext: Áreas do mapa cercadas por caminhos e clareiras impressos são chamadas de **florestas**.
@@ -89,7 +89,7 @@
           text: Uma floresta é adjacente a todas as clareiras que encostam nela sem precisar cruzar uma estrada impressa, e também a todas as florestas separadas dela por apenas um caminho impresso.
 
     - name: Governante
-      pretext: Um jogador **governa** uma clareira se ele possui uma quantidade maior de guerreiros e construções na clareira que qualquer outro jogador. _(Marcadores e peões não contam para governar.)_ Se existe um empate entre jogadores em uma clareira, então ninguém a governa. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
+      pretext: Um jogador **governa** uma clareira se ele possui uma quantidade maior de guerreiros e construções na clareira que qualquer outro jogador. _(Marcadores e peões não contam para governar.)_ Se existe um empate entre jogadores em uma clareira, então ninguém a governa. `faction:eyrie$:7.2.2` `faction:vagabond$9.2.2` `faction:cult$10.2.4`
 
 - name: Vitória
   color: '#7f7f7f'
@@ -103,14 +103,14 @@
         - name: Removendo Construções ou Marcadores.
           text: Sempre que você remover uma construção ou marcador inimigo você recebe 1 PV.
         - name: Criando Itens.
-          text: Sempre que você criar um item (`rule:4.1`) você recebe tantos PVs quantos mostrados. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
+          text: Sempre que você criar um item (`rule:4.1`) você recebe tantos PVs quantos mostrados. `faction:eyrie$:7.2.3` `faction:warlord$14.2.3`
 
     - name: Cartas de Domínio
       pretext: O baralho de cartas possui 4 cartas de domínio, as quais podem ser usadas para ganhar o jogo sem que o jogador tenha atingido 30 PVs.
       children:
         - name: Ativar.
-          text: Durante o Dia, se você possui pelo menos 10 PVs, você pode **ativar** uma carta de domínio de sua mão, posicionando-a em sua área de jogo. Remova seu marcador de pontos da trilha de pontuação. Você não irá mais receber PVs. `faction:vagabond:9.2.8`
-          subchildren:
+          text: Durante o Dia, se você possui pelo menos 10 PVs, você pode **ativar** uma carta de domínio de sua mão, posicionando-a em sua área de jogo. Remova seu marcador de pontos da trilha de pontuação. Você não irá mais receber PVs. `faction:vagabond$9.2.8`
+          children:
             - name: Domínio de Rato, Coelho ou Raposa.
               text: Você ganha a partida imediatamente caso, no Amanhecer de seu turno, você seja o governante em 3 clareiras cujo naipe combine com a carta de domínio ativada.
             - name: Domínio de Pássaro.
@@ -118,7 +118,7 @@
         - name: Cartas Ativadas.
           text: Uma carta de domínio ativada não conta no limite de cartas na mão e não pode ser removida do jogo. Você não pode substituir uma carta de domínio ativa por outra.
         - name: Usando Cartas de Domínio.
-          text: Uma carta de domínio pode ser gasta pelo seu naipe. Sempre que uma carta de domínio for ser colocada no descarte, em vez disso, posicione-a ao lado do mapa, mostrando que ela está disponível para ser **tomada**. `faction:cult:10.4.2`
+          text: Uma carta de domínio pode ser gasta pelo seu naipe. Sempre que uma carta de domínio for ser colocada no descarte, em vez disso, posicione-a ao lado do mapa, mostrando que ela está disponível para ser **tomada**. `faction:cult$10.4.2`
         - name: Tomando Cartas Disponíveis.
           text: Durante o Dia de seu turno, você pode tomar uma carta de domínio disponível para sua mão, gastando uma carta de mesmo naipe para fazê-lo. Você não pode tratar uma carta de domínio de pássaro como sendo de qualquer outro naipe diferente de pássaro.
 
@@ -129,9 +129,9 @@
       pretext: Você pode **criar** a maioria das cartas direto de sua mão para ganhar um efeito imediato ou um efeito permanente.
       children:
         - name: Custo.
-          text: Para criar uma carta você deve **ativar** peças artesanais dos naipes listados no canto inferior esquerdo dela. _(As peças artesanais de cada facção estão listadas na sua seção de Criar.)_ O naipe de uma peça artesanal corresponde à sua clareira. Cada peça artesanal pode ser ativada apenas uma vez por turno. Uma interrogação em 3 cores denota uma peça artesanal de qualquer naipe. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
+          text: Para criar uma carta você deve **ativar** peças artesanais dos naipes listados no canto inferior esquerdo dela. _(As peças artesanais de cada facção estão listadas na sua seção de Criar.)_ O naipe de uma peça artesanal corresponde à sua clareira. Cada peça artesanal pode ser ativada apenas uma vez por turno. Uma interrogação em 3 cores denota uma peça artesanal de qualquer naipe. `faction:vagabond$9.2.1` `faction:riverfolk$11.2.1`
         - name: Efeitos Imediatos.
-          text: Quando você cria um efeito imediato _(caixa de papel)_, você deve resolver esse efeito e descartar a carta. Se ela mostra um item, pegue o item correspondente do suprimento compartilhado do mapa e posicione-o no espaço para Itens Artesanais de seu tabuleiro de facção. Se a carta mostra um item não disponível no suprimento compartilhado, então ela não pode ser criada. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
+          text: Quando você cria um efeito imediato _(caixa de papel)_, você deve resolver esse efeito e descartar a carta. Se ela mostra um item, pegue o item correspondente do suprimento compartilhado do mapa e posicione-o no espaço para Itens Artesanais de seu tabuleiro de facção. Se a carta mostra um item não disponível no suprimento compartilhado, então ela não pode ser criada. `faction:eyrie$:7.8.1` `faction:vagabond$9.5.8` `faction:warlord$14.2.1`
         - name: Efeitos Permanentes.
           text: Quando você cria um efeito permanente _(caixa de pedra)_, coloque a carta em sua área de jogo. Você poderá usar os efeitos como estão descritos nas cartas. _(A carta Imigrante Rapina do baralho de **Exilados e Partisans** é mandatória)_
         - name: Sem Repetição.
@@ -141,7 +141,7 @@
       pretext: Quando você se **move**, pegue qualquer quantidade _(maior que zero)_ de guerreiros e/ou peões seus, removendo-os de uma clareira e levando-os para uma clareira adjacente.
       children:
         - name: Você Deve Governar.
-          text: Para realizar um movimento, você deve ser o governante da clareira de origem, da clareira de destino ou de ambas. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
+          text: Para realizar um movimento, você deve ser o governante da clareira de origem, da clareira de destino ou de ambas. `faction:vagabond$9.2.3` `faction:riverfolk$11.2.2` `faction:corvid$13.2.3`
         - name: Sem Limite de Movimentos.
           text: Uma peça pode ser movida uma quantidade qualquer de vezes durante um turno. Se você for instruído a realizar múltiplos movimentos, você pode mover o mesmo grupo ou grupos separados de guerreiros.
 
@@ -150,23 +150,23 @@
       children:
         - name: '1º Passo: Defensor Pode Emboscar.'
           text: O defensor pode jogar 1 carta de emboscada correspondente à clareira da batalha. Se isso ocorrer, resolva `rule:4.3.1.1`–`rule:4.3.1.2` em ordem.
-          subchildren:
+          children:
             - name: Emboscada Frustrada.
               text: O atacante também pode jogar uma carta de emboscada correspondente à clareira da batalha. Caso o faça, o defensor descarta sua carta de emboscada e o passo `rule:4.3.1.2` é pulado.
             - name: Resolver a Emboscada.
               text: O defensor causa 2 danos imediatamente (`rule:4.3.4`). Depois, o defensor descarta a carta de emboscada. Caso não sobre nenhum guerreiro ou peão atacante, a batalha termina imediatamente.
         - name: '2º Passo: Role Os Dadoss.'
-          text: Role ambos os dados. O atacante causará danos iguais ao maior resultado e o defensor iguais ao menor resultado. Caso ambos os dados mostrem o mesmo resultado, tanto o atacante quanto o defensor causarão a mesma quantidade de dano. _(Note que o verbo está no futuro, pois o dano só será realmente causado no 4º Passo.)_ `faction:woodland:8.2.2`
-          subchildren:
+          text: Role ambos os dados. O atacante causará danos iguais ao maior resultado e o defensor iguais ao menor resultado. Caso ambos os dados mostrem o mesmo resultado, tanto o atacante quanto o defensor causarão a mesma quantidade de dano. _(Note que o verbo está no futuro, pois o dano só será realmente causado no 4º Passo.)_ `faction:woodland$8.2.2`
+          children:
             - name: Dano Máximo de Dados.
-              text: A quantidade máxima de dano que você pode causar na rolagem dos dados é igual à quantidade de guerreiros que você possui na clareira da batalha, independentemente de ser o atacante ou o defensor. `faction:vagabond:9.2.6`
+              text: A quantidade máxima de dano que você pode causar na rolagem dos dados é igual à quantidade de guerreiros que você possui na clareira da batalha, independentemente de ser o atacante ou o defensor. `faction:vagabond$9.2.6`
         - name: '3º Passo: Use Efeitos.'
           text: O atacante e o defensor podem usar efeitos opcionais _(como a carta Táticas Brutais)_ para afetar a batalha. Se ambos o fizerem, o atacante escolhe quem usa primeiro (`rule:1.1.3`).
-          subchildren:
+          children:
             - name: Danos Adicionais.
               text: Muitos efeitos podem gerar **danos adicionais**, que não estão limitados pela quantidade de guerreiros presentes na clareira da batalha.
             - name: Indefeso.
-              text: Se o defensor não possuir nenhum guerreiro na clareira da batalha, então o atacante causa um dano adicional. `faction:vagabond:9.2.4`
+              text: Se o defensor não possuir nenhum guerreiro na clareira da batalha, então o atacante causa um dano adicional. `faction:vagabond$9.2.4`
         - name: '4º Passo: Cause Danos.'
           text: Cada dano causado remove uma peça oponente da clareira da batalha. _(Você ganha 1 PV para cada construção ou marcador inimigo removido.)_ Todos os guerreiros de um jogador devem ser removidos antes de qualquer de suas construções ou marcadores. O jogador que está recebendo o dano escolhe qual de suas peças será removida e a ordem dos efeitos acionados pelas peças retiradas.
 
@@ -237,7 +237,7 @@
           text: Posicione 1 guerreiro em cada recrutador. Você só pode realizar esta ação uma vez por rodada.
         - name: Erguer.
           text: Posicione uma construção.
-          subchildren:
+          children:
             - name: 1º.Escolha a Clareira e a Construção.
               text: Escolha uma clareira que você governe. Escolha se você quer erguer uma serraria, oficina ou recrutador. Pegue a construção mais à esquerda da trilha escolhida de seu tabuleiro de facção. Você deve conseguir pagar seu custo (`rule:6.5.4.2`) e posicioná-la (`rule:6.5.4.3`).
             - name: 2º.Pague os Custos.
@@ -262,7 +262,7 @@
         - name: Criando.
           text: As Rapinas criam antes de resolver os Decretos, durante o Dia, através da ativação de seus ninhos.
         - name: Lordes da Floresta.
-          text: As Rapinas governam uma clareira a partir do momento que estejam empatadas pela maior quantidade combinada de guerreiros e construções nela. Elas não governam clareiras vazias. `faction:cult:10.2.4`
+          text: As Rapinas governam uma clareira a partir do momento que estejam empatadas pela maior quantidade combinada de guerreiros e construções nela. Elas não governam clareiras vazias. `faction:cult$10.2.4`
         - name: Desprezo pelo Comércio.
           text: Sempre que as Rapinas criam um item, ela ignora o valor em PVs mostrados nele, recebendo somente 1 PV. _(Eles ainda podem ganhar pontos extras com outros efeitos ao criar, como o da carta Mestre Escultor e da Forja Lendária.)_
 
@@ -296,7 +296,7 @@
           text: Você pode ativar ninhos para criar cartas da sua mão.
         - name: 2º.Resolver o Decreto.
           text: Você deve resolver o Decreto, começando pela coluna esquerda e seguindo para a direita. Em cada coluna você deve resolver todas as cartas, mas em qualquer ordem. Para cada carta você deve realizar a ação correspondente da sua coluna. Se você não puder realizar completamente uma ação, você imediatamente cai em **Tumulto** (`rule:7.7`).
-          subchildren:
+          children:
             - name: Recrutar.
               text: Posicione um guerreiro em uma clareira com ninho na qual o naipe corresponda ao naipe da carta.
             - name: Mover.
@@ -323,7 +323,7 @@
           text: Descarte todas as cartas do Decreto, exceto os Vizires Leais.
         - name: '3º Passo: Destituir.'
           text: Vire com a face para baixo sua carta de líder atual e escolha, entre os restantes com a face para cima, um novo líder, posicionando-o em seu tabuleiro de facção. Posicione as duas cartas de Vizires Leais nas colunas de decretos conforme descrito no novo líder.
-          subchildren:
+          children:
             - name: Uma Nova Ninhada.
               text: Caso você tenha que escolher um novo líder, mas nenhum esteja com a face virada para cima, vire todos novamente com a face para cima.
         - name: '4º Passo: Descansar.'
@@ -356,14 +356,14 @@
           text: Como defensor em uma batalha, a Aliança irá causar danos igual ao maior valor rolado, e o atacante, ao menor valor rolado.
         - name: O Baralho de Apoiadores.
           text: Para realizar várias ações, a Aliança gasta **apoiadores**, que são as cartas em seu baralho de Apoiadores. Apoiadores só podem ser utilizados pelos seus naipes e não contam na quantidade de cartas na mão. Apoiadores permanecem com o verso para cima, mas a Aliança pode olhar as cartas sempre que quiser.
-          subchildren:
+          children:
             - name: Capacidade.
               text: Se a Aliança não possui nenhuma base no mapa, então o baralho de apoiadores pode comportar apenas 5 cartas. Caso a Aliança fosse receber um apoiador, e seu limite já esteja completo, então esta carta é descartada. Se houver qualquer base no mapa, a capacidade do baralho de Apoiadores é ilimitada.
         - name: Removendo Bases.
           text: Sempre que uma base é removida, a Aliança deve descartar todos os apoiadores do naipe impresso correspondente _(incluindo pássaros)_, e remover metade de seus oficiais, arredondado para cima. Caso a Aliança não possua mais bases no mapa e seu baralho de apoiadores tenha mais de 5 cartas, então ela deve descartar cartas desse baralho até chegar no limite de 5.
         - name: Marcadores de Simpatia.
           text: A Aliança possui 10 marcadores de simpatia.
-          subchildren:
+          children:
             - name: Limite de Colocação.
               text: Cada clareira suporta apenas 1 marcador de simpatia.
             - name: Terminologia.
@@ -387,7 +387,7 @@
       children:
         - name: 1º.Revolta.
           text: Você pode realizar a ação Revolta quantas vezes quiser, da seguinte forma.
-          subchildren:
+          children:
             - name: '1º Passo: Escolha uma Clareira.'
               text: Escolha uma clareira simpática cujo naipe corresponda a uma base em seu tabuleiro de facção.
             - name: '2º Passo: Gaste Apoiadores.'
@@ -396,12 +396,12 @@
               text: Remova todas as peças inimigas da clareira escolhida. Então posicione a base correspondente à clareira, bem como guerreiros, em quantidade igual ao número de clareiras simpáticas correspondentes ao naipe impresso na base. Finalmente, posicione 1 guerreiro na seção de Oficiais. Esse guerreiro é, agora, um **oficial**. _(Lembre-se de receber 1 PV para cada marcador e construção removidos.)_
         - name: 2º.Distribuir Simpatia.
           text: Você pode realizar a ação de Distribuir Simpatia quantas vezes quiser, da seguinte forma.
-          subchildren:
+          children:
             - name: '1º Passo: Escolha uma Clareira.'
               text: Escolha uma clareira neutra adjacente a uma clareira simpática. Caso não exista nenhuma clareira simpática, você pode escolher qualquer clareira.
             - name: '2º Passo: Gaste Apoiadores.'
               text: Gaste apoiadores correspondentes ao naipe da clareira. A quantidade de apoiadores necessária é mostrada acima do marcador de simpatia.
-              subchildren:
+              children:
                 - name: Lei Marcial.
                   text: Você deve gastar um apoiador adicional caso a clareira possua pelo menos 3 guerreiros pertencentes a outro jogador, incluindo guerreiros que eles tratam como se fossem seus para governar _(Mercenários, Capangas, etc.)_.
             - name: '3º Passo: Posicione e Pontue.'
@@ -422,7 +422,7 @@
       children:
         - name: 1º.Operações Militares.
           text: Você pode realizar as ações a seguir, em qualquer ordem ou combinação, tantas vezes quanto oficiais você possuir.
-          subchildren:
+          children:
             - name: Mover.
               text: Realize 1 movimento.
             - name: Batalhar.
@@ -447,7 +447,7 @@
           text: O Malandro exaure `item:hammer` para criar. Todos os seus `item:hammer` correspondem ao naipe da clareira atual. Se o Malandro cria um item, o jogador pode pegá-lo imediatamente, com a face voltada para cima.
         - name: Andarilho Solitário.
           text: O peão do Malandro não é um guerreiro _(logo, ele não pode governar uma clareira ou impedir que outro jogador governe)._ O peão do Malandro não pode ser removido do mapa.
-          subchildren:
+          children:
             - name: Remoção Completa.
               text: Sempre que um jogador inimigo usar um efeito que diga para remover todas as peças inimigas de uma clareira _(como por exemplo, a revolta da Aliança, a carta Favor dos Ratos, bombas da Conspiração)_ que tenha o Malandro, então o Malandro danifica 3 itens.
         - name: Ágil.
@@ -456,7 +456,7 @@
           text: Em uma batalha, o Malandro é indefeso (`rule:4.3.3.2`) caso ele não possua nenhuma `item:sword` não danificada.
         - name: Itens.
           text: As capacidades do Malandro dependem dos itens que adquire. No lugar de uma caixa de Itens Artesanais, ele possui uma Mochila e algumas trilhas de itens. Os itens no tabuleiro do Malandro podem estar virados para cima (claro) ou para baixo (escuro). O Malandro **exaure** um item não danificado voltado para cima, virando sua face para baixo, para realizar diversas ações.
-          subchildren:
+          children:
             - name: Trilhas de Itens.
               text: Quando recebidos ou virados com a face para cima na Mochila, `item:tea`, `item:coin` e `item:sack` são colocados com a face para cima em suas trilhas correspondentes. Quando `item:tea`, `item:coin` e `item:sack` forem virados para baixo enquanto estiverem nas trilhas, eles são colocados na Mochila. Cada trilha só pode conter três itens correspondentes..
             - name: Mochila.
@@ -469,17 +469,17 @@
           text: O Malandro não pode ativar cartas de domínio para sua forma de vitória usual (`rule:3.3.1`). Em vez disso, em partidas com 4 ou mais jogadores, o Malandro poderá ativar uma carta de domínio para formar uma coalizão com outro jogador, posicionando seu marcador de pontos no tabuleiro da facção do jogador escolhido. _(O Malandro não pontua mais.)_ Este jogador deve ter menos PVs que qualquer outro jogador exceto o Malandro que está fazendo a coalizão, e esse jogador não pode já estar em uma coalizão. Caso exista empate pela menor quantidade de PVs, o Malandro escolhe um dos empatados. Caso o jogador escolhido ganhe o jogo, o Malandro ganha junto.
         - name: Relações.
           text: Seu tabuleiro de facção mostra uma tabela de Relações que possui 4 espaços na trilha de Aliados e um espaço Hostil. Esses espaços abrigarão um marcador de relação para cada facção, exceto o Malandro, que estiver em jogo.
-          subchildren:
+          children:
             - name: Melhorando a Relação.
               text: Você pode melhorar a relação com uma facção não Hostil usando a ação de **Ajuda**.
-              subchildren:
+              children:
                 - name: Custo.
                   text: Ajude uma facção não Hostil o número de vezes mostrado entre o nível atual da trilha de Aliados e o próximo nível. _(Uma ação de Ajuda conta apenas para um passo de melhora na relação.)_
                 - name: Efeito.
                   text: Avance o marcador de relação dessa facção um espaço para a direita na trilha. Receba os PVs indicados no novo nível.
             - name: Status de Aliado.
               text: Se um marcador de facção alcança o nível final da trilha de Aliados, você agora será **aliado** da facção correspondente ao marcador de relação. _(Os guerreiros daquela facção confiam em você!)_
-              subchildren:
+              children:
                 - name: Ajudando Aliados.
                   text: Cada vez que Ajudar uma facção Aliada, você recebe 2 PVs.
                 - name: Movendo-se com Aliados.
@@ -490,7 +490,7 @@
                   text: Em uma batalha em que você trate guerreiros Aliados como seus, você pode receber dano retirando guerreiros aliados. Porém, se você receber mais danos retirando guerreiros aliados do que danificando itens durante uma batalha, então essa facção Aliada se tornará Hostil (`rule:9.2.9.3`) ao final da batalha. Esta regra suprime as condições para uma facção tornar-se Hostil em `rule:9.2.9.3`.
             - name: Status de Hostil.
               text: Se você remover um guerreiro de uma facção não Hostil, mova o marcador de relação dessa facção imediatamente para o espaço Hostil. Essa facção passa a ser hostil. Caso isso ocorra em batalha, durante seu turno, verifique a Infâmia (`rule:9.2.9.3.1`).
-              subchildren:
+              children:
                 - name: Infâmia.
                   text: Receba 1 PV adicional para cada peça de uma facção hostil que você remova em batalha durante seu turno, exceto o guerreiro que levou a facção a se tornar Hostil. _(Adicione aos pontos marcados por construções e marcadores inimigos.)_
                 - name: Movendo-se para Clareiras Hostis.
@@ -609,7 +609,7 @@
           text: Descarte todas as cartas do baralho das Almas Perdidas para o monte de descarte. _(Cartas de domínio ficam disponíveis para serem tomadas.)_
         - name: 3º.Realizar Conspirações.
           text: Você pode gastar acólitos, retornando-os para seu suprimento, para realizar conspirações em clareiras correspondentes ao seu Pária, em qualquer ordem, quantidade e combinação, da maneira a seguir. Se o Pária é Odiado, a conspiração custa um acólito a menos.
-          subchildren:
+          children:
             - name: Cruzada.
               text: Gaste 2 acólitos para iniciar uma batalha em uma clareira Pária **ou** para mover _(pelo menos um guerreiro)_ a partir de uma clareira Pária e, então, se quiser, começar uma batalha na clareira de destino.
             - name: Conversão.
@@ -658,12 +658,12 @@
           text: 'Para realizar muitas ações, os Ribeirinhos devem comprometer e gastar fundos: guerreiros na seção Fundos.'
         - name: Entrepostos Comerciais.
           text: Os Ribeirinhos recebem PVs quando constroem entrepostos comerciais.
-          subchildren:
+          children:
             - name: Perturbação do Comércio.
               text: Sempre que um **entreposto comercial** é removido, os Ribeirinhos removem metade de seus **Fundos**, arredondado para cima, e retornam o entreposto comercial para a caixa do jogo.
         - name: Comprando Serviços.
           text: No início do Amanhecer de outro jogador, aquele jogador pode comprar os serviços dos Ribeirinhos.
-          subchildren:
+          children:
             - name: Custo.
               text: O comprador deve posicionar guerreiros provenientes de seu suprimento, na seção de pagamentos dos Ribeirinhos, em quantidade igual ao custo do serviço, conforme mostrado na trilha de Serviços dos Ribeirinhos.
             - name: Quantidade de Serviços.
@@ -672,14 +672,14 @@
               text: O Malandro paga por serviços exaurindo itens – para cada item exaurido, os Ribeirinhos posicionam um guerreiro Ribeirinho na Seção de Pagamentos.
         - name: Serviços dos Ribeirinhos.
           text: Os Ribeirinhos prestam três diferentes serviços.
-          subchildren:
+          children:
             - name: Carta da Mão.
               text: O comprador toma uma carta qualquer da mão dos Ribeirinhos, adicionando-a a sua própria mão. _(O comprador pode realizar esta ação diversas vezes, desde que tenha acesso a entrepostos comerciais suficientes.)_
             - name: Botes.
               text: O comprador trata rios como caminhos até o final de seu turno
             - name: Mercenários.
               text: Durante o Dia e o Anoitecer deste turno, o comprador trata guerreiros Ribeirinhos como se fossem seus para o propósito de governar e para batalhar contra facções diferentes dos Ribeirinhos. _(O comprador não pode movê-los, contá-los para domínio ou removê-los, exceto como resultado de danos. Eles ainda são peças de facção dos Ribeirinhos, logo não podem ser afetados por habilidades de outras facções como os **Hospitais de Batalha** dos Marqueses ou como Influenciar Ministros do Ducado.)_
-              subchildren:
+              children:
                 - name: Recebendo Danos.
                   text: O comprador deve dividir igualmente os danos recebidos, tomando danos ímpares através da remoção de seus próprios guerreiros _(não dos Ribeirinhos)_, caso existam, ou de construções ou marcadores seus apenas caso não existam mais guerreiros _(incluindo guerreiros Ribeirinhos)_ na clareira da batalha.
                 - name: Mercenários para o Malandro.
@@ -717,7 +717,7 @@
           text: Comprometa 1 fundo para iniciar 1 batalha.
         - name: Criar.
           text: Comprometa Fundos para criar uma carta de sua mão. Em vez de mover os guerreiros para a seção de Comprometido, você deve colocá-los em locais vazios das trilhas de **Entrepostos Comerciais** correspondentes aos naipes listados no custo para criar.
-          subchildren:
+          children:
             - name: Exportar.
               text: Você pode ignorar o benefício listado na carta, descartando-a, para posicionar um guerreiro Ribeirinho na Seção de Pagamentos.
         - name: Comprar.
@@ -726,7 +726,7 @@
           text: Gaste 1 fundo para posicionar 1 guerreiro em qualquer clareira com rio.
         - name: Estabelecer um Entreposto Comercial com Guarnição.
           text: Gaste 2 Fundos para posicionar um **entreposto comercial** e um guerreiro.
-          subchildren:
+          children:
             - name: Escolha a Clareira.
               text: Escolha qualquer clareira sem um **entreposto comercial**, que seja governada por qualquer jogador.
             - name: Gaste Fundos.
@@ -783,7 +783,7 @@
       children:
         - name: 1º.Montar.
           text: Você pode realizar até duas ações, em qualquer ordem e combinação, conforme segue.
-          subchildren:
+          children:
             - name: Construir.
               text: Revele uma carta para posicionar uma cidadela ou mercado em uma clareira correspondente que você governe.
             - name: Recrutar.
@@ -796,7 +796,7 @@
               text: Gaste uma carta para posicionar um marcador de **túnel** em uma clareira correspondente que não possua um **túnel**. Depois, mova até quatro guerreiros presentes na **Toca** para essa clareira. _(Caso todos os túneis estejam no mapa, você pode retirar um deles primeiro.)_
         - name: 2º.Parlamento.
           text: Você pode realizar a ação de cada ministro influenciado uma vez, em qualquer ordem.
-          subchildren:
+          children:
             - name: Capataz.
               text: Revele qualquer carta para posicionar uma Cidadela ou Mercado em qualquer clareira _(correspondente ou não)_ que você governe.
             - name: Capitão.
@@ -817,7 +817,7 @@
               text: Receba 1 PV por Cidadela no mapa.
         - name: 3º.Influenciar.
           text: Você pode influenciar um ministro, como segue.
-          subchildren:
+          children:
             - name: 1º.Escolher o Ministro.
               text: Escolha uma carta de Ministro de seu baralho de Ministros Não Influenciados. Você deve ter uma coroa em seu tabuleiro de facção que corresponda ao nível _(comum, nobre ou lorde)_ desse ministro.
             - name: 2º.Revelar Cartas.
@@ -848,7 +848,7 @@
           text: A Conspiração criam durante o Amanhecer, ativando marcadores de **trama** _(revelados ou não)_.
         - name: Marcadores de Trama.
           text: A Conspiração possui 8 marcadores de trama, dois de cada tipo.
-          subchildren:
+          children:
             - name: Apresentação.
               text: Enquanto estiverem no estoque da Conspiração, os marcadores de **trama** são deixados virados pra baixo _(pena)_. Uma vez no mapa, um marcador de **trama** pode estar virado para cima _(ícone único)_ ou para baixo. A Conspiração pode inspecionar quaisquer marcadores virados para baixo a qualquer momento.
             - name: Limites de Posicionamento.
@@ -925,7 +925,7 @@
           text: Sempre que as Centenas criam um item, eles podem pegar o item, mas não recebem os PVs marcados; ou podem remover permanentemente o item, recebendo os PVs marcados. _(Eles ainda podem receber PVs adicionais de outros efeitos, como Mestre Escultor e a Forja Lendária.)_
         - name: O Tesouro.
           text: 'Em vez de um local para Itens Artesanais, as Centenas possuem uma seção de Tesouro. A seção possui duas trilhas: Comando e Proezas. A trilha de Comando pode acomodar `item:boot`, `item:sack`, and `item:coin`. A trilha de Proezas pode acomodar `item:hammer`, `item:tea`, `item:sword`, and `item:crossbow`.'
-          subchildren:
+          children:
             - name: Ganhando Itens.
               text: Quando as Centenas ganham um item, elas o posicionam no espaço vazio mais à esquerda da trilha de Comando ou Proezas, a depender do tipo do item. Se não houver um espaço vazio para tal, o item ganho ou um item que já esteja na trilha correspondente deve ser removido permanentemente, e o jogador recebe 1 PV.
             - name: Comando e Proezas.
@@ -961,7 +961,7 @@
           text: Você pode ativar fortes para criar cartas.
         - name: 2º.Comandar as Centenas.
           text: Você pode realizar as seguintes ações, em qualquer ordem, uma quantidade de vezes menor ou igual ao seu Comando.
-          subchildren:
+          children:
             - name: Mover
               text: Realize 1 movimento.
             - name: Batalha.
@@ -1050,19 +1050,19 @@
           text: Você pode ativar estações _(de qualquer tipo)_ para criar cartas.
         - name: 2º.Usar o seu Séquito.
           text: Começando com a coluna mais à esquerda de seu Séquito e se movendo para a direita, você pode realizar a ação da coluna, conforme explicado a seguir, para cada carta na coluna, em qualquer ordem.
-          subchildren:
+          children:
             - name: Mover.
               text: Realize 1 movimento a partir de uma clareira cujo naipe corresponda ao naipe da carta.
             - name: Batalhar e Escavar.
               text: Escolha uma clareira cujo naipe corresponda ao naipe da carta. Você deve iniciar 1 batalha lá se quaisquer peças inimigas estiverem presentes. Depois, se você governar a clareira e possuir pelo menos um guerreiro Guardião lá, você pode escavar, da seguinte forma _(mesmo caso não existisse nenhum inimigo na batalha)_.
-              subchildren:
+              children:
                 - name: '1º Passo: Mova e Revele Relíquias.'
                   text: Mova qualquer relíquia de uma floresta adjacente para a clareira da batalha. Vire a relíquia de modo que seu valor fique visível, caso já não esteja.
                 - name: '2º Passo: Verifique o Descarte.'
                   text: Conte a quantidade de clareiras que você governa adjacentes à floresta na qual você investigou a relíquia. Se você governar menos clareiras que o valor da relíquia, então você deve descartar a carta de Séquito usada para realizar esta ação.
             - name: Mover ou Recuperar.
               text: Escolha uma clareira cujo naipe corresponda ao naipe da carta. Realize 1 movimento a partir dela ou recupere uma relíquia da seguinte forma.
-              subchildren:
+              children:
                 - name: '1º Passo: Pegue a Relíquia.'
                   text: Pegue uma relí quia da clareira que seja do mesmo tipo que uma estação presente lá. Posicione-a no seu espaço de Relíquias vazio mais à esquerda daquele tipo de relíquia.
                 - name: '2º Passo: Receba Pontos.'
@@ -1100,7 +1100,7 @@
 
         - name: '5º Passo: Prepare os Marcos'
           text: Em consenso, vocês podem escolher usar **marcos** (`rule:16.5`). Se o fizerem, vocês podem ignorar ou substituir o posicionamento das peças da **Torre** e da **Balsa** descritas nos Mapas Alternativos (`rule:16.2`).
-          subchildren:
+          children:
             - name: '1º Passo: Escolha.'
               text: Em grupo, escolham se vocês jogarão com 1 ou 2 **marcos** e removam quaisquer cartas de **marco** que vocês não queiram em jogo.
             - name: '2º Passo: Revele e Recolha.'
@@ -1110,7 +1110,7 @@
 
         - name: '6º Passo: Prepare os Capangas'
           text: Em consenso, vocês podem escolher utilizar exatamente 3 **capangas** (`rule:16.4`), da seguinte forma.
-          subchildren:
+          children:
             - name: '1º Passo: Recolha Peças.'
               text: Embaralhe todas as cartas de **capangas**. Revele 3 destas cartas e retorne as demais para a caixa. Junte as peças dos **capangas** reveladas em um suprimento.
             - name: '2º Passo: Rebaixe.'
@@ -1127,10 +1127,10 @@
 
         - name: '8º Passo: Prepare as Facções'
           text: Em consenso, vocês podem escolher preparar as facções conforme a Preparação Padrão (`rule:5.1`) ou podem usar as cartas de preparação de facção contidas na Expansão Saqueadores, da seguinte forma,"
-          subchildren:
+          children:
             - name: '1º Passo: Distribua Cartas de Preparação.'
               text: Embaralhe todas as cartas de preparação de facção militantes _(nome vermelho com espada)_ e revele uma no centro da mesa. Embaralhe as cartas de preparação de facção militantes restantes com as cartas de preparação de facção insurgentes _(nome cinza sem espada)_ e revele uma carta por jogador no centro da mesa. _(Ao final, você terá uma carta de preparação de facção a mais revelada do que a quantidade de jogadores.)_
-              subchildren:
+              children:
                 - name: Dois Jogadores.
                   text: Caso esteja jogando em 2 jogadores, remova todas as cartas de preparação de facções insurgentes antes de revelar as cartas. _(Embora você possa mantê-las, caso esteja jogando com **capangas** e esteja se sentindo corajoso.)_
                 - name: Trave o Último Insurgente.
@@ -1140,7 +1140,7 @@
 
             - name: '2º Passo: Escolha a Facção.'
               text: Começando com o último jogador na ordem de turno e seguindo em sentido anti-horário, cada jogador escolhe uma carta de preparação de facção dentre as reveladas e prepara sua facção imediatamente _(antes que outro jogador escolha)_, conforme descrito em sua carta de preparação de facção.
-              subchildren:
+              children:
                 - name: Inicial..
                   text: Quando preparando, os jogadores podem escolher 1 ou mais clareiras iniciais. Os jogadores não podem escolher como clareiras iniciais aquelas que os inimigos já tenham escolhido como suas clareiras iniciais ou aquelas em que eles não possam posicionar todas as peças listadas na preparação.
                 - name: Adjacente à Clareira Inicial.
@@ -1155,12 +1155,12 @@
     - name: Mapas Alternativos
       children:
         - name: Mapa do Inverno
-          subchildren:
+          children:
             - name: Rio Revolto.
               text: O rio divide as florestas _(assim como caminhos impressos o fazem)_.
 
         - name: Mapa do Lago
-          subchildren:
+          children:
             - name: Alterações na Preparação.
               text: Posicione a peça da **Balsa** na clareira de canto que também é uma clareira costeira.
             - name: O Lago.
@@ -1173,7 +1173,7 @@
               text: Uma vez por turno, peças realizando um movimento partindo da clareira costeira onde esteja a **balsa**, podem se mover para outra clareira costeira, movendo a balsa junto _(e seguindo as regras normais de movimento)_. Após esse movimento, esse jogador compra uma carta. A **Balsa** não pode ser atacada ou removida.
 
         - name: Mapa das Montanhas
-          subchildren:
+          children:
             - name: Alterações na Preparação.
               text: Posicione os 6 marcadores de caminho fechado cobrindo os 6 caminhos de cores mais escuras. Posicione a peça da **Torre** na clareira central mostrando 2 torres.
             - name: Caminhos Fechados.
@@ -1188,63 +1188,63 @@
     - name: Referência dos Malandros
       children:
         - name: Ladrão
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:boot`, `item:torch`, `item:tea`, `item:sword`.
             - name: 'Ação Especial: Roubo'
               text: Exaura 1 `item:torch` para pegar uma carta aleatória de um jogador na sua clareira.
 
         - name: Funileiro
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
             - name: 'Ação Especial: Dia de Trabalho'
               text: Exaura 1 `item:torch` para pegar uma carta do monte de descarte cujo naipe corresponda à sua clareira. _(Você sempre pode pegar uma carta de pássaro.)_
 
         - name: Andarilho
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
             - name: 'Ação Especial: Esconderijo'
               text: Exaura 1 `item:torch` para reparar 3 itens e, imediatamente, termine o Dia e siga para o Anoitecer.
 
         - name: Vagabundo
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:coin`, `item:torch`, `item:boot`.
             - name: 'Ação Especial: Instigar'
               text: Exaura 1 `item:torch` para iniciar uma batalha em sua clareira. Você escolhe o atacante e o defensor, e você escolhe a ordem em que eles removem construções e marcadores. _(Receba 1 PV para cada construção ou marcador removido de cada jogador e por peça Hostil de cada jogador removida.)_
 
         - name: Árbitro
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:boot`, `item:torch`, `item:sword`, `item:sword`.
             - name: 'Ação Especial: Proteção'
               text: Imediatamente antes que os dados sejam rolados em uma batalha, o defensor pode recrutar o Árbitro para a clareira da batalha. O árbitro recebe 1 PV e adiciona todas as suas `item:sword` não danificadas à quantidade máxima de dano rolado para o defensor. O Árbitro não pode se voluntariar sozinho ou ser recrutado contra si mesmo.
 
         - name: Patife
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
             - name: 'Ação Especial: Terra Queimada'
               text: Exaura 1 `item:torch` e a coloque em sua clareira. Remova todas as peças inimigas dessa clareira. Pelo resto da partida, nenhuma peça pode ser posicionada ou movida para a clareira com a `item:torch`. _(Você permanece nessa clareira. Uma vez que se mova, também não poderá voltar. A `item:torch` não pode ser removida com uma carta "Favor de..." porque não é considerada uma peça inimiga.)_
 
         - name: Aventureiro
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:boot`, `item:torch`, `item:hammer`.
             - name: 'Ação Especial: Improvisar'
               text: Uma vez por turno, quanto fizer a ação de Tarefas, você pode tratar um item não exaurido como qualquer outro item não exaurido. Quando você exaurir ele para completar a Tarefa, também o danifique.
 
         - name: Ronin
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:boot`, `item:boot`, `item:torch`, `item:sword`.
             - name: 'Ação Especial: Ataque Rápido'
               text: Você pode exaurir 1 `item:sword` para gerar 1 dano adicional em batalha _(após a rolagem)_.
 
         - name: Saqueador
-          subchildren:
+          children:
             - name: Itens Iniciais
               text: Comece com `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
             - name: 'Ação Especial: Esgueirar'
@@ -1253,7 +1253,7 @@
     - name: Referência dos Capangas
       children:
         - name: Recebendo e Perdendo Capangas
-          subchildren:
+          children:
             - name: Recebendo do Suprimento.
               text: Quando o marcador de pontuação de um jogador entra no espaço com um marcador de **capanga**, ele pega o marcador de **capanga** e o coloca abaixo de seu Anoitecer _(como um lembrete)_. Ao final de seu turno, ele pega qualquer carta de **capanga** do suprimento, rola por controle (`rule:16.4.1.2`) e vira o marcador do **capanga**.
             - name: Rolar por Controle.
@@ -1263,7 +1263,7 @@
 
         - name: Habilidades e Ações
           text: '**Capangas** possuem diversas ações e habilidades, como mostradas por seus ícones únicos. Ações e habilidades que começam com “**controlador**”: são recebidas pelo controlador do **capanga**.'
-          subchildren:
+          children:
             - name: Ação Quando Ganho (`hireling:whenhired`).
               text: Quando tomar o controle deste **capanga**, o jogador controlador deve realizar esta ação.
             - name: Habilidade (`hireling:ability`).
@@ -1274,7 +1274,7 @@
               text: Uma vez durante o **Dia**, o jogador controlador pode realizar esta ação.
 
         - name: Regras
-          subchildren:
+          children:
             - name: Governar.
               text: O controlador do **capanga** trata as peças do **capanga** como suas apenas para o propósito de governar. _(O controlador pode até mesmo governar uma clareira que tenha apenas **capangas**.)_ **Capangas** não controlados podem governar clareiras como se eles fossem jogadores (`rule:2.5`).
             - name: Inimigo.
@@ -1293,7 +1293,7 @@
     - name: Marcos
       children:
         - name: Regras Gerais
-          subchildren:
+          children:
             - name: Segurança.
               text: '**Marcos** não podem ser atacados, movidos, ou removidos, a menos que esteja explicitado no **marco**.'
             - name: Propriedade.
@@ -1302,7 +1302,7 @@
     - name: Glossário
       children:
         - name: Adjacente.
-          text: Uma clareira é adjacente a todas as outras clareiras ligadas a ela por um caminho. Uma floresta é adjacente a todas as clareiras que a tocam sem cruzar um caminho, e é adjacente a todas as florestas que estão separadas por apenas um caminho, exceto no **Lago** (`rule:16.2.2`). `faction:duchy:12.2.2`
+          text: Uma clareira é adjacente a todas as outras clareiras ligadas a ela por um caminho. Uma floresta é adjacente a todas as clareiras que a tocam sem cruzar um caminho, e é adjacente a todas as florestas que estão separadas por apenas um caminho, exceto no **Lago** (`rule:16.2.2`). `faction:duchy$12.2.2`
 
         - name: Área de Jogo.
           text: Área ao redor de seu tabuleiro de facção. Cartas posicionadas nessa área só podem ser gastas, descartadas ou usadas para outros propósitos quando explicitado dessa forma.
@@ -1320,7 +1320,7 @@
           text: Peça cartonada quadrada de propriedade de uma determinada facção.
 
         - name: Descarte.
-          text: Posicione a carta indicada no monte de descarte comum (`rule:2.1`), exceto se for uma Carta de Domínio, que é posicionada ao lado do mapa (`rule:3.3.3`). `faction:cult:10.4.2`
+          text: Posicione a carta indicada no monte de descarte comum (`rule:2.1`), exceto se for uma Carta de Domínio, que é posicionada ao lado do mapa (`rule:3.3.3`). `faction:cult$10.4.2`
 
         - name: Efeito.
           text: Qualquer coisa que altere o jogo, incluindo efeitos contínuos, habilidades de facção e ações.
@@ -1459,7 +1459,7 @@
 
         - name: Domínio.
           text: '`rule:2.1.3`'
-          subchildren:
+          children:
             - name: Ativar.
               text: '`rule:3.3.1`'
             - name: Gastando pelo Naipe.
@@ -1473,7 +1473,7 @@
 
         - name: Emboscada.
           text: '`rule:2.1.2`'
-          subchildren:
+          children:
             - name: Em batalhas.
               text: '`rule:4.3.1`'
 

@@ -1,5 +1,6 @@
 @let searchTerm = search();
 @let indexesToRules = ruleIndexes();
+
 @for (rule of allRules(); track $index; let majorIndex = $index) {
   <div
     class="rule-container major"
@@ -27,8 +28,6 @@
         class="rule-container minor"
         [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1])"
       >
-        <!-- no text at this level -->
-
         <div class="rule minor" [id]="indexesToRules[childRule.index]">
           <span [id]="childRule.index"></span>
           <span class="index minor">{{ childRule.index }}</span>
@@ -38,6 +37,15 @@
             "
             [href]="'#' + indexesToRules[childRule.index]"
           ></a>
+
+          @if (childRule.text) {
+            <span
+              class="text child"
+              [innerHTML]="
+                childRule.text | highlight: searchTerm : childRule.index
+              "
+            ></span>
+          }
         </div>
 
         <div
@@ -58,8 +66,6 @@
               !isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1])
             "
           >
-            <!-- no pretext at this level -->
-
             <div class="rule child" [id]="indexesToRules[grandchildRule.index]">
               <span [id]="grandchildRule.index"></span>
               <span class="index child">{{ grandchildRule.index }}</span>
@@ -80,11 +86,19 @@
                   "
                 ></span>
 
+                <div
+                  class="pretext"
+                  [innerHTML]="
+                    grandchildRule.pretext
+                      | highlight: searchTerm : grandchildRule.index
+                  "
+                ></div>
+
                 <!-- please never go deeper -->
-                @if (grandchildRule.subchildren) {
+                @if (grandchildRule.children) {
                   <ol class="romanized-list list">
                     @for (
-                      descRule of grandchildRule.subchildren;
+                      descRule of grandchildRule.children;
                       track $index;
                       let descIndex = $index
                     ) {
@@ -117,11 +131,19 @@
                           "
                         ></span>
 
+                        <div
+                          class="pretext"
+                          [innerHTML]="
+                            descRule.pretext
+                              | highlight: searchTerm : descRule.index
+                          "
+                        ></div>
+
                         <!-- I said please :( -->
-                        @if (descRule.subchildren) {
+                        @if (descRule.children) {
                           <ol class="alphabeta-list list sublist">
                             @for (
-                              descDescRule of descRule.subchildren;
+                              descDescRule of descRule.children;
                               track $index;
                               let descDescIndex = $index
                             ) {

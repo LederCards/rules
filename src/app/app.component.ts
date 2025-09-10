@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { type AfterViewInit, Component, computed, inject } from '@angular/core';
+import { Component, inject, type OnInit } from '@angular/core';
 import {
   IonApp,
   IonContent,
@@ -14,26 +14,17 @@ import {
   IonSplitPane,
   IonToolbar,
 } from '@ionic/angular/standalone';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { linkedQueryParam } from 'ngxtension/linked-query-param';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { FormsModule } from '@angular/forms';
 
 import { SwUpdate } from '@angular/service-worker';
 import { interval } from 'rxjs';
-import { type AppData, type I18NData, type RuleData } from 'src/app/interfaces';
-import { languageData$ } from 'src/app/language';
+import { type GameRule } from 'src/app/interfaces';
 
-import { sortBy } from 'es-toolkit/compat';
 import { navigation$ } from 'src/app/navigation';
+import { ParamService } from 'src/app/param-service';
 import { RulesService } from 'src/app/rules-service';
-import * as appData from '../../public/app.json';
-import * as i18nData from '../../public/i18n.json';
-import * as rulesData from '../../public/rules.json';
-
-const rulesJson: RuleData = (rulesData as any).default;
-const appJson: AppData = (appData as any).default;
-const i18nJson: I18NData = (i18nData as any).default;
 
 @Component({
   selector: 'app-root',
@@ -56,47 +47,10 @@ const i18nJson: I18NData = (i18nData as any).default;
     IonMenuToggle,
   ],
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements OnInit {
   private swUpdate = inject(SwUpdate);
-  private translateService = inject(TranslateService);
+  public paramService = inject(ParamService);
   public rulesService = inject(RulesService);
-
-  readonly currentGame = linkedQueryParam<string>('game', {
-    defaultValue: 'root',
-  });
-
-  readonly currentLocale = linkedQueryParam<string>('locale', {
-    defaultValue: 'en-US',
-  });
-
-  readonly currentVersion = linkedQueryParam<string>('version', {
-    defaultValue: '',
-  });
-
-  public allGames = computed(() =>
-    Object.keys(appJson['games']).map((game) => ({
-      code: game,
-      name: appJson['games'][game].name,
-    })),
-  );
-
-  public allLanguages = computed(() =>
-    Object.keys(appJson['languages'])
-      .map((locale) => ({
-        code: locale,
-        name: appJson['languages'][locale].name,
-      }))
-      .filter((lang) =>
-        Object.keys(rulesJson[this.currentGame()] || {}).includes(lang.code),
-      ),
-  );
-
-  public allVersions = computed(() =>
-    sortBy(
-      Object.keys(rulesJson[this.currentGame()][this.currentLocale()] ?? {}),
-      (k) => +k.replace('v', ''),
-    ).reverse(),
-  );
 
   constructor() {
     this.initializeApp();
@@ -115,38 +69,28 @@ export class AppComponent implements AfterViewInit {
     this.swUpdate.checkForUpdate();
   }
 
-  ngAfterViewInit() {
-    if (!this.currentVersion()) {
-      this.currentVersion.set(this.allVersions()[0]);
+  public navigateTo(rule: GameRule) {
+    navigation$.next(rule.index);
+  }
+
+  ngOnInit() {
+    // mega whatever, this is stupid
+    const baseParams = new URLSearchParams(window.location.search);
+
+    if (baseParams.has('game'))
+      this.paramService.currentGame.set(baseParams.get('game')!);
+    if (baseParams.has('locale'))
+      this.paramService.currentLocale.set(baseParams.get('locale')!);
+    if (baseParams.has('version'))
+      this.paramService.currentVersion.set(baseParams.get('version')!);
+
+    this.paramService.init();
+
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        navigation$.next(hash);
+      }, 1500);
     }
-
-    this.updateRules();
-  }
-
-  public changeGame() {
-    this.currentLocale.set(this.allLanguages()[0]?.code || 'en-US');
-    this.currentVersion.set(this.allVersions()[0]);
-    this.updateRules();
-  }
-
-  public changeLanguage() {
-    this.updateRules();
-  }
-
-  public updateRules() {
-    this.translateService.use(this.currentLocale());
-    languageData$.next(i18nJson[this.currentGame()][this.currentLocale()]);
-
-    console.log(rulesJson, this.currentVersion());
-
-    this.rulesService.setRules(
-      rulesJson[this.currentGame()][this.currentLocale()][
-        this.currentVersion()
-      ],
-    );
-  }
-
-  public navigateTo(id: string) {
-    navigation$.next(id);
   }
 }

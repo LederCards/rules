@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     @if (!showSearch()) {
       <ion-buttons slot="start">
@@ -22,9 +22,10 @@
       <ion-searchbar
         color="primary"
         showCancelButton="true"
-        debounce="300"
+        [debounce]="300"
         (ionCancel)="setSearchValue(undefined)"
         (ionClear)="setSearchValue(undefined)"
+        (ionInput)="setSearchValue($event.detail.value)"
         (ionChange)="setSearchValue($event.detail.value)"
         [placeholder]="'App.SearchPlaceholder' | translate"
       ></ion-searchbar>
@@ -42,7 +43,7 @@
 </ion-header>
 
 <ion-content
-  [fullscreen]="true"
+  class="ion-padding"
   scrollEvents="true"
   (ionScroll)="scroll($event)"
 >
@@ -60,4 +61,6 @@
   }
 
   <div id="top"></div>
+
+  <app-rules-display></app-rules-display>
 </ion-content>

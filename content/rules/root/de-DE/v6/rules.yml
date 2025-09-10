@@ -15,7 +15,7 @@
     - name: Öffentliche und Private Informationen
       children:
         - name: Hand.
-          text: Die Spieler dürfen die Karten auf ihrer Hand nur zeigen, wenn sie ausdrücklich dazu aufgefordert werden. Die Anzahl der Karten ist hingegen öffentlich. `faction:riverfolk:11.2.3`
+          text: Die Spieler dürfen die Karten auf ihrer Hand nur zeigen, wenn sie ausdrücklich dazu aufgefordert werden. Die Anzahl der Karten ist hingegen öffentlich. `faction:riverfolk$11.2.3`
         - name: Ablagestapel.
           text: Der Ablagestapel kann jederzeit durchgesehen werden.
 
@@ -57,8 +57,8 @@
 
       children:
         - name: Vögel sind Joker.
-          text: Jede Vogel-Karte kann als Karte einer beliebigen Klasse benutzt werden, auch wenn du mehrere Karten derselben Klasse ausgeben, nehmen oder hergeben musst. `faction:cult:10.2.2`
-          subchildren:
+          text: Jede Vogel-Karte kann als Karte einer beliebigen Klasse benutzt werden, auch wenn du mehrere Karten derselben Klasse ausgeben, nehmen oder hergeben musst. `faction:cult$10.2.2`
+          children:
             - name: Erzwungene Effekte.
               text: Wenn du dazu aufgefordert wirst, Fuchs-, Hasen- oder Maus-Karten abzulegen oder herzugeben, musst du Vogel-Karten so behandeln wie die der verlangten Klasse.
             - name: Umgekehrter Austausch.
@@ -72,7 +72,7 @@
       pretext: Das Spielbrett des Waldlands besteht aus zahlreichen **Lichtungen**, die durch **Wege** miteinander verbunden sind.
       children:
         - name: Benachbart.
-          text: Eine Lichtung ist benachbart zu allen anderen Lichtungen, mit denen sie durch Wege verbunden ist. `faction:duchy:12.2.2`
+          text: Eine Lichtung ist benachbart zu allen anderen Lichtungen, mit denen sie durch Wege verbunden ist. `faction:duchy$12.2.2`
         - name: Klasse.
           text: 'Jede Lichtung gehört zu einer Klasse von Waldbewohnern: Maus, Hase oder Fuchs. Haben eine Lichtung und eine Karte die gleiche Klasse, entsprechen sie einander. **(Vogel-Karten sind Joker.)**'
         - name: Bauplätze.
@@ -81,7 +81,7 @@
           text: Bauplätze, die mit einem „R“ markiert sind, sind am Spielbeginn mit **Ruinen** belegt. Ruinen können nicht entfernt werden, es sei denn, es wird ausdrücklich angewiesen _(z.B. durch die Aktion Erkunden des Vagabunden, `rule:9.5.3`)_.
 
     - name: Flüsse
-      pretext: Viele Lichtungen sind mit **Flüssen** verbunden. _(Normalerweise sind Flüsse keine Wege, können aber als Wege behandelt werden, wenn es ausdrücklich so angegeben ist. Flüsse teilen weder Lichtungen noch Wälder.)_ `faction:riverfolk:11.2.2`
+      pretext: Viele Lichtungen sind mit **Flüssen** verbunden. _(Normalerweise sind Flüsse keine Wege, können aber als Wege behandelt werden, wenn es ausdrücklich so angegeben ist. Flüsse teilen weder Lichtungen noch Wälder.)_ `faction:riverfolk$11.2.2`
 
     - name: Wälder
       pretext: Gebiete, die auf dem Spielbrett von Wegen und Lichtungen umgeben sind, werden **Wälder** genannt.
@@ -90,7 +90,7 @@
           text: Ein Wald ist benachbart zu allen Lichtungen, die ihn berühren, ohne dass ein Weg dazwischenliegt. Er ist auch benachbart zu allen Wäldern, von denen er nur durch einen Weg getrennt ist.
 
     - name: Herrscher
-      pretext: Der **Herrscher** einer Lichtung ist der Spieler, der zusammengezählt die meisten Krieger und Gebäude auf dieser Lichtung hat. _(Plättchen und Spielfiguren werden nicht gezählt.)_ Wenn es einen Gleichstand gibt, ist keiner der Herrscher. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
+      pretext: Der **Herrscher** einer Lichtung ist der Spieler, der zusammengezählt die meisten Krieger und Gebäude auf dieser Lichtung hat. _(Plättchen und Spielfiguren werden nicht gezählt.)_ Wenn es einen Gleichstand gibt, ist keiner der Herrscher. `faction:eyrie$:7.2.2` `faction:vagabond$9.2.2` `faction:cult$10.2.4`
 
 - name: Sieg
   color: '#000000'
@@ -104,14 +104,14 @@
         - name: Gebäude und Plättchen entfernen.
           text: Immer wenn du ein Gebäude oder Plättchen eines Gegners entfernst, erhältst du einen Siegpunkt.
         - name: Gegenstände herstellen.
-          text: Immer wenn du einen Gegenstand herstellst (`rule:4.1`), erhältst du die Siegpunkte, die auf der Karte angegeben sind. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
+          text: Immer wenn du einen Gegenstand herstellst (`rule:4.1`), erhältst du die Siegpunkte, die auf der Karte angegeben sind. `faction:eyrie$:7.2.3` `faction:warlord$14.2.3`
 
     - name: Dominanz-Karten
       pretext: Der Nachziehstapel enthält vier Dominanz-Karten, mit denen du das Spiel gewinnen kannst, ohne 30 Siegpunkte zu erreichen.
       children:
         - name: Aktivieren.
-          text: Wenn du mindestens 10 Siegpunkte hast, kannst du im Laufe deines Tageslichts eine Dominanz-Karte auf deiner Hand **aktivieren**, indem du sie in deinen Spielbereich legst. Entferne deinen Marker von der Siegpunktleiste. Du kannst keine Siegpunkte mehr erhalten. `faction:vagabond:9.2.8`
-          subchildren:
+          text: Wenn du mindestens 10 Siegpunkte hast, kannst du im Laufe deines Tageslichts eine Dominanz-Karte auf deiner Hand **aktivieren**, indem du sie in deinen Spielbereich legst. Entferne deinen Marker von der Siegpunktleiste. Du kannst keine Siegpunkte mehr erhalten. `faction:vagabond$9.2.8`
+          children:
             - name: Maus-, Hasen- oder Fuchs-Dominanz.
               text: Du gewinnst das Spiel sofort, wenn du zu Beginn deiner Morgenröte mindestens drei Lichtungen beherrschst, die der Klasse deiner aktivierten Dominanz-Karte entsprechen.
             - name: Vogel-Dominanz.
@@ -119,7 +119,7 @@
         - name: Aktivierte Dominanz-Karten.
           text: Eine aktivierte Dominanz-Karte wird nicht zu deinem Handkartenlimit gezählt und sie kann nicht aus dem Spiel entfernt werden. Du kannst eine aktivierte Dominanz-Karte weder ersetzen, noch eine weitere spielen.
         - name: Für Klasse ausgeben.
-          text: Eine Dominanz-Karte kann für ihre Klasse ausgegeben werden. Sie wird jedoch nicht auf den Ablagestapel, sondern in die Nähe des Spielbretts gelegt, um anzuzeigen, dass sie **verfügbar** ist und genommen werden kann. `faction:cult:10.4.2`
+          text: Eine Dominanz-Karte kann für ihre Klasse ausgegeben werden. Sie wird jedoch nicht auf den Ablagestapel, sondern in die Nähe des Spielbretts gelegt, um anzuzeigen, dass sie **verfügbar** ist und genommen werden kann. `faction:cult$10.4.2`
         - name: Verfügbare Karten nehmen.
           text: Im Laufe deines Tageslichts kannst du verfügbare Dominanz-Karten auf die Hand nehmen, indem du eine Karte mit der gleichen Klasse ausgibst. Du kannst eine verfügbare Vogel-Dominanzkarte nicht als Nicht-Vogel-Klasse behandeln.
 
@@ -130,9 +130,9 @@
       pretext: Du kannst die meisten Karten von deiner Hand **herstellen**, um einen sofortigen oder anhaltenden Effekt zu erhalten.
       children:
         - name: Kosten.
-          text: Um eine Karte herzustellen, musst du Herstellungs-Marker **aktivieren**. Diese müssen den Kosten entsprechen, die in der unteren linken Ecke der Karte angegeben sind. _(Jede Partei hat ihre eigenen Herstellungs-Marker._) Die Klasse eines Herstellungs-Markers entspricht seiner Lichtung. Jeder Herstellungs-Marker kann nur einmal pro Zug aktiviert werden. Ein Fragezeichen vor dreifarbigem Hintergrund kennzeichnet einen Herstellungs-Marker beliebiger Klasse. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
+          text: Um eine Karte herzustellen, musst du Herstellungs-Marker **aktivieren**. Diese müssen den Kosten entsprechen, die in der unteren linken Ecke der Karte angegeben sind. _(Jede Partei hat ihre eigenen Herstellungs-Marker._) Die Klasse eines Herstellungs-Markers entspricht seiner Lichtung. Jeder Herstellungs-Marker kann nur einmal pro Zug aktiviert werden. Ein Fragezeichen vor dreifarbigem Hintergrund kennzeichnet einen Herstellungs-Marker beliebiger Klasse. `faction:vagabond$9.2.1` `faction:riverfolk$11.2.1`
         - name: Sofortige Effekte.
-          text: Wenn du einen sofortigen Effekt herstellst _(Papier-Textfeld)_, führe den Effekt aus und lege die Karte dann ab. Wenn die Karte einen Gegenstand zeigt, nimm den entsprechenden Gegenstand aus dem Vorrat und platziere ihn auf dem Feld für hergestellte Gegenstände auf deiner Partei-Tafel. Wenn die Karte einen Gegenstand zeigt, der nicht im Vorrat ist, kann die Karte nicht hergestellt werden. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
+          text: Wenn du einen sofortigen Effekt herstellst _(Papier-Textfeld)_, führe den Effekt aus und lege die Karte dann ab. Wenn die Karte einen Gegenstand zeigt, nimm den entsprechenden Gegenstand aus dem Vorrat und platziere ihn auf dem Feld für hergestellte Gegenstände auf deiner Partei-Tafel. Wenn die Karte einen Gegenstand zeigt, der nicht im Vorrat ist, kann die Karte nicht hergestellt werden. `faction:eyrie$:7.8.1` `faction:vagabond$9.5.8` `faction:warlord$14.2.1`
         - name: Anhaltende Effekte.
           text: Wenn du einen anhaltenden Effekt herstellst _(Stein-Textfeld)_, platziere die Karte in deinem Spielbereich. Du kannst den Effekt nun wie auf der Karte beschrieben anwenden. _(Die Karte "Dynastien-Auswanderer" aus dem "Exilanten & Partisanen"-Nachziehstapel ist verpflichtend.)_
         - name: Keine Duplikate.
@@ -142,7 +142,7 @@
       pretext: Wenn du dich **bewegst**, nimm einen oder mehrere deiner Krieger bzw. deine Spielfigur und bewege sie auf eine benachbarte Lichtung.
       children:
         - name: Du musst herrschen.
-          text: Um dich bewegen zu können, musst du die Ausgangs-Lichtung, die Ziel-Lichtung oder beide beherrschen.`faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
+          text: Um dich bewegen zu können, musst du die Ausgangs-Lichtung, die Ziel-Lichtung oder beide beherrschen.`faction:vagabond$9.2.3` `faction:riverfolk$11.2.2` `faction:corvid$13.2.3`
         - name: Keine Bewegungslimits.
           text: Ein Marker kann beliebig oft pro Zug bewegt werden. Wenn du aufgefordert wirst mehrere Bewegungen zu machen, kannst du dieselbe oder unterschiedliche Gruppen von Kriegern bewegen.
 
@@ -151,23 +151,23 @@
       children:
         - name: 'Schritt 1: Der Verteidiger kann einen Hinterhalt legen'
           text: Der Verteidiger kann eine Hinterhalts-Karte entsprechend der Lichtung spielen. Ist dies der Fall, werden die Regeln `rule:4.3.1.1`–`rule:4.3.1.2` der Reihe nach abgehandelt.
-          subchildren:
+          children:
             - name: Hinterhalt vereiteln.
               text: Nachdem der Verteidiger eine Hinterhalts-Karte gespielt hat, kann der Angreifer ihren Effekt aufheben, indem er auch eine der Lichtung des Kampfes entsprechende Hinterhalts-Karte spielt. Wenn er dies tut, wirft der Verteidiger seine Hinterhalts-Karte ab und überspringt `rule:4.2.1.2`.
             - name: Hinterhalt ausführen.
               text: Der Verteidiger landet sofort zwei Treffer (`rule:4.3.4`). Dann legt er die Hinterhalts-Karte ab. Wenn keine angreifenden Krieger oder Figuren übrig sind, beende den Kampf sofort.
         - name: 'Schritt 2: Würfeln und extra Treffer landen.'
-          text: Würfle mit beiden Würfeln. Der Angreifer wird Treffer entsprechend dem höheren Wert landen, der Verteidiger entsprechend dem niedrigeren. Ist der Wert gleich, werden Angreifer und Verteidiger die gleiche Anzahl Treffer landen. _(Die Verwendung von „wird“ spiegelt wider, dass Treffer nicht vor Schritt 4 gelandet werden.)_ `faction:woodland:8.2.2`
-          subchildren:
+          text: Würfle mit beiden Würfeln. Der Angreifer wird Treffer entsprechend dem höheren Wert landen, der Verteidiger entsprechend dem niedrigeren. Ist der Wert gleich, werden Angreifer und Verteidiger die gleiche Anzahl Treffer landen. _(Die Verwendung von „wird“ spiegelt wider, dass Treffer nicht vor Schritt 4 gelandet werden.)_ `faction:woodland$8.2.2`
+          children:
             - name: Maximal würfelbare Treffer.
-              text: Die maximale Anzahl Treffer, die du durch Würfeln landen kannst, entspricht der Anzahl deiner eigenen Krieger auf der Lichtung des Kampfes – egal ob du Angreifer oder Verteidiger bist. `faction:vagabond:9.2.6`
+              text: Die maximale Anzahl Treffer, die du durch Würfeln landen kannst, entspricht der Anzahl deiner eigenen Krieger auf der Lichtung des Kampfes – egal ob du Angreifer oder Verteidiger bist. `faction:vagabond$9.2.6`
         - name: 'Schritt 3: Effekte benutzen.'
           text: Der Angreifer und der Verteidiger können optionale Effekte _(wie die Karte "Brutale Taktik")_ einsetzen, die den Kampf beeinflussen. Wenn beide Effekte nutzen wollen, wählt der Angreifer, wer sie zuerst nutzt (`rule:1.1.3`).
-          subchildren:
+          children:
             - name: Extra-Treffer.
               text: Viele Effekte fügen **Extra-Treffer** zu, die nicht durch die Anzahl der Krieger auf der Kampf-Lichtung begrenzt sind.
             - name: Wehrlos.
-              text: Wenn der Verteidiger keine Krieger auf der Lichtung des Kampfes hat, wird der Angreifer einen extra Treffer landen. `faction:vagabond:9.2.4`
+              text: Wenn der Verteidiger keine Krieger auf der Lichtung des Kampfes hat, wird der Angreifer einen extra Treffer landen. `faction:vagabond$9.2.4`
         - name: 'Schritt 4: Treffer landen.'
           text: Angreifer und Verteidiger landen Treffer gleichzeitig. Jeder Treffer, den du landest, entfernt einen Marker. _(Du erhältst einen Siegpunkt pro gegnerischen Gebäude oder Plättchen, das entfernt wird.)_ Der Spieler, der die Treffer erleidet, wählt selbst, welche Marker von der Lichtung des Kampfes entfernt werden. Er muss aber alle Krieger entfernen, bevor Gebäude und Plättchen in beliebiger Reihenfolge entfernt werden können. Er wählt außerdem die Reihenfolge der Effekte, die durch das Entfernen ihrer Figuren ausgelöst werden.
 
@@ -238,7 +238,7 @@
           text: Platziere einen Krieger bei jedem Rekrutierer. Du kannst diese Aktion nur einmal pro Zug ausführen.
         - name: Bauen.
           text: Platziere ein Gebäude.
-          subchildren:
+          children:
             - name: Lichtung und Gebäude wählen.
               text: Wähle eine beliebige Lichtung, die du beherrschst. Wähle, ob du eine Sägemühle, eine Werkstatt oder einen Rekrutierer platzieren willst. Nimm das erste noch übrige Gebäude dieser Art von links auf deiner Partei-Tafel. Du musst in der Lage sein die Kosten zu bezahlen (`rule:6.5.4.2`) und es zu platzieren (`rule:6.5.4.3`).
             - name: Kosten bezahlen.
@@ -263,7 +263,7 @@
         - name: Herstellen.
           text: Während des Tageslichts, bevor sie das Dekret erfüllen, stellen die Horst-Dynastien Karten her, indem sie Nester aktivieren.
         - name: Herren des Waldes.
-          text: Die Dynastien beherrschen eine Lichtung auch bei einem Gleichstand hinsichtlich der Anzahl an Kriegern und Gebäuden. Leere Lichtungen beherrschen sie nicht. `faction:cult:10.2.4`
+          text: Die Dynastien beherrschen eine Lichtung auch bei einem Gleichstand hinsichtlich der Anzahl an Kriegern und Gebäuden. Leere Lichtungen beherrschen sie nicht. `faction:cult$10.2.4`
         - name: Verachtung für Arbeit.
           text: Immer wenn die Dynastien einen Gegenstand herstellen, ignorieren sie die angegebenen Siegpunkte und erhalten nur einen Siegpunkt. _(Sie können trotzdem noch zusätzliche Handwerkspunkte durch Effekte wie Meistergraveure und die Legendäre Schmiede erhalten.)_
 
@@ -297,7 +297,7 @@
           text: Du kannst Nester aktivieren, um Karten aus deiner Hand herzustellen.
         - name: Dekret ausführen.
           text: Du musst das Dekret ausführen, angefangen mit der Spalte ganz links und dann schrittweise nach rechts. Innerhalb der Spalte ist die Reihenfolge beliebig. Für jede Karte musst du die in ihrer Spalte angegebene Aktion wie folgt ausführen. Wenn du die Aktion irgendeiner einer Karte nicht vollständig ausführen kannst, gerätst du sofort in Aufruhr (`rule:7.7`).
-          subchildren:
+          children:
             - name: Rekrutieren.
               text: Platziere einen Krieger auf einer Lichtung mit einem Nest, deren Klasse mit der Klasse der Karte übereinstimmt.
             - name: Bewegen.
@@ -324,7 +324,7 @@
           text: Lege alle Karten aus deinem Dekret auf den Ablagestapel ab, außer deinen treuen Wesiren.
         - name: 'Schritt 3: Absetzen.'
           text: Lege deine derzeitige Anführer-Karte verdeckt zur Seite, wähle einen neuen Anführer aus den aufgedeckten Anführer-Karten und lege ihn auf deine Partei-Tafel. Lege deine treuen Wesire unter die Dekret-Spalten, wie von deinem neuen Anführer angegeben.
-          subchildren:
+          children:
             - name: Ein neues Gelege.
               text: Wenn du einen neuen Anführer wählen musst, aber keiner aufgedeckt ist, decke alle auf.
         - name: 'Schritt 4: Ruhen.'
@@ -357,14 +357,14 @@
           text: Als Verteidiger in einem Kampf landet die Allianz Treffer entsprechend dem höheren Wurf. Der Angreifer landet Treffer entsprechend dem geringeren Wurf.
         - name: Der Anhänger-Stapel.
           text: Für bestimmte Aktionen gibt die Allianz **Anhänger** aus, das sind Karten von ihrem Anhänger-Stapel. Anhänger können nur für ihre Klasse ausgegeben werden und zählen nicht zum Handkartenlimit. Anhänger sind verdeckt, die Allianz kann sie aber jederzeit anschauen.
-          subchildren:
+          children:
             - name: Kapazität.
               text: Wenn die Allianz keine Stützpunkte auf dem Spielbrett hat, kann der Anhänger-Stapel nur bis zu fünf Karten enthalten. Wenn die Allianz einen Anhänger gewinnen würde, der Stapel ihn aber nicht aufnehmen kann, wird er auf den Ablagestapel gelegt. Wenn sich auf dem Spielbrett mindestens ein Stützpunkt befindet, kann der Anhänger-Stapel beliebig viele Karten enthalten.
         - name: Stützpunkte entfernen.
           text: Immer wenn ein Stützpunkt entfernt wird, muss die Allianz alle Anhänger dieser Klasse _(inklusive Vögel)_ und die Hälfte ihrer Offiziere _(aufgerundet)_ entfernen. Wenn die Allianz keine Stützpunkte mehr auf dem Spielbrett besitzt und mehr als fünf Karten in ihrem Anhänger-Stapel hat, muss sie Karten entfernen, bis nur noch fünf übrig sind.
         - name: Sympathie-Plättchen.
           text: Die Allianz hat 10 Sympathie-Plättchen.
-          subchildren:
+          children:
             - name: Platzierungs-Limit.
               text: Auf einer Lichtung kann nur ein Sympathie-Plättchen gleichzeitig liegen.
             - name: Begriffe.
@@ -388,7 +388,7 @@
       children:
         - name: Revoltieren.
           text: Entferne gegnerische Marker und platziere einen Stützpunkt und Krieger wie folgt. Du kannst beliebig oft revoltieren.
-          subchildren:
+          children:
             - name: 'Schritt 1: Lichtung wählen.'
               text: Wähle eine sympathisierende Lichtung entsprechend der Klasse eines noch nicht gebauten Stützpunktes. _(Wenn er schon auf dem Spielbrett ist, kannst du nicht damit revoltieren.)_
             - name: 'Schritt 2: Anhänger ausgeben.'
@@ -398,12 +398,12 @@
 
         - name: Sympathie verbreiten.
           text: Platziere ein Sympathie- Plättchen wie folgt. Du kannst beliebig oft Sympathie verbreiten.
-          subchildren:
+          children:
             - name: 'Schritt 1: Lichtung wählen.'
               text: Wähle eine nicht-sympathisierende Lichtung, die zu einer sympathisierenden Lichtung benachbart ist. Wenn es keine sympathisierenden Lichtungen gibt, kannst du eine beliebige Lichtung wählen.
             - name: 'Schritt 2: Anhänger ausgeben.'
               text: Gib Anhänger entsprechend der Klasse deiner gewählten Lichtung aus. Die Anzahl, die du ausgeben musst, ist über den Sympathie-Plättchen angegeben.
-              subchildren:
+              children:
                 - name: Kriegsrecht.
                   text: Du musst einen weiteren Anhänger ausgeben, wenn ein anderer Spieler auf der gewählten Lichtung mindestens 3 Krieger hat, inklusive Krieger die sie als ihre eigenen zählen bei der Herrschaft _(Söldner, Hirelings, etc.)_.
             - name: 'Schritt 3: Platzieren und punkten.'
@@ -424,7 +424,7 @@
       children:
         - name: Militäreinsätze.
           text: Du kannst die folgenden Aktionen, bis zur Anzahl deiner Offiziere, in beliebiger Reihenfolge und Häufigkeit ausführen.
-          subchildren:
+          children:
             - name: Bewegen.
               text: Mache eine Bewegung.
             - name: Kämpfen.
@@ -449,7 +449,7 @@
           text: Der Vagabund benutzt `item:hammer`, um Karten herzustellen. Alle seine `item:hammer` entsprechen der Klasse der Lichtung, auf der er sich gerade befindet. Wenn der Vagabund einen Gegenstand herstellt, kann er ihn sich sofort aufgedeckt nehmen.
         - name: Einsamer Wanderer.
           text: Die Vagabund-Spielfigur ist kein Krieger _(deshalb kann er keine Lichtung beherrschen oder einen anderen Spieler davon abhalten)_. Die Vagabund-Spielfigur kann nicht vom Spielbrett entfernt werden.
-          subchildren:
+          children:
             - name: Vollständig Entfernen.
               text: Wenn ein gegnerischer Spieler einen Effekt anwendet, der alle gegnerischen Marker von einer Lichtung entfernen soll (z. B. Allianz-Revolten, die Gunst der Mäuse), und der Vagabund auf der betroffenen Lichtung steht, beschädigt der Vagabund 3 seiner Gegenstände.
 
@@ -459,7 +459,7 @@
           text: Der Vagabund ist wehrlos (`rule:4.3.3.2`) im Kampf, wenn er keine unbeschädigten `item:sword` hat.
         - name: Gegenstände.
           text: Die Fähigkeiten des Vagabunden hängen von den Gegenständen ab, die er besitzt. Gegenstände auf der Partei-Tafel des Vagabunden können aufgedeckt oder verdeckt, und beschädigt oder unbeschädigt sein. Der Vagabund **benutzt** aufgedeckte, unbeschädigte Gegenstände, indem er sie umdreht, um verschiedene Aktionen auszuführen.
-          subchildren:
+          children:
             - name: Gegenstands-Leiste.
               text: Sobald erhalten, werden `item:tea`, `item:coin` und `item:sack` auf ihre jeweiligen Leisten gelegt. Jede Leiste kann nur drei Gegenstände enthalten.
             - name: Der Rucksack.
@@ -474,17 +474,17 @@
           text: Der Vagabund kann keine Dominanzkarte für seine normale Siegbedingung aktivieren (`rule:3.3.1`). In Spielen mit vier oder mehr Spielern kann der Vagabund eine Dominanz-Karte aktivieren, um ein Bündnis mit dem Spieler einzugehen, der außer ihm selbst die wenigsten Siegpunkte hat. Dazu legt er seinen Siegpunkt-Marker auf die Partei-Tafel des gewählten Spielers. Wenn es einen Gleichstand bei den wenigsten Punkten gibt, wählt er aus diesen Spielern. Wenn dieser Spieler gewinnt, teilt er nun den Sieg mit dem Vagabunden. _(Der Vagabund erhält keine Siegpunkte mehr. Er kann kein Bündnis mit einem Spieler eingehen, der bereits eine Dominanz-Karte aktiviert hat.)_
         - name: Beziehungen.
           text: Deine Partei-Tafel hat eine Tabelle für Beziehungen mit vier Spalten auf der Alliierten-Leiste und einem Feindlich-Feld. Sie enthält je einen Beziehungs-Marker für alle Spieler, die keinen Vagabunden spielen.
-          subchildren:
+          children:
             - name: Beziehungen verbessern.
               text: Du kannst deine Beziehung zu einer nicht feindlichen Partei verbessern, indem du die Helfen-Aktion ausführst.
-              subchildren:
+              children:
                 - name: Kosten.
                   text: Hilf einer nicht feindlichen Partei innerhalb eines Zuges so oft, wie zwischen ihrem aktuellen Alliierten-Feld und ihrem nächsten Alliierten-Feld angegeben ist. _(Jede gegebene Hilfe zählt nur zu einer einzigen Verbesserung einer Beziehung.)_
                 - name: Effekt.
                   text: Rücke den Marker des jeweiligen Spielers ein Feld auf der Tabelle für Beziehungen vor. Erhalte Siegpunkte, wie auf dem neuen Feld angegeben.
             - name: Alliierter-Status.
               text: Wenn ein Beziehungs-Marker das letzte Feld auf der Alliierten-Leiste erreicht, bist du jetzt mit dem durch den Marker repräsentierten Spieler **alliiert**. _(Seine Krieger vertrauen dir!)_
-              subchildren:
+              children:
                 - name: Alliierten helfen.
                   text: Jedes Mal, wenn du einem alliierten Spieler hilfst, erhältst du zwei Siegpunkte.
                 - name: Mit Alliierten bewegen.
@@ -495,7 +495,7 @@
                   text: Greifst du mit einer alliierten Partei gemeinsam an, kannst du Treffer erleiden, indem du alliierte Krieger entfernst. Wenn du jedoch im gleichen Kampf beim Erleiden von Treffern mehr alliierte Krieger entfernst, als du eigene Gegenstände beschädigst, wird dieser alliierte Spieler am Ende des Kampfes feindlich (`rule:9.2.9.3`). Diese Regel hat Vorrang vor der Bedingung, feindselig zu werden in `rule:9.2.9.3`.
             - name: Feindlicher-Status.
               text: Wenn du einen Krieger eines nicht feindlichen Spielers entfernst, bewegt sich sein Beziehungs-Marker sofort auf das Feindlich-Feld. Dieser Spieler ist jetzt **feindlich**.
-              subchildren:
+              children:
                 - name: Niedertracht.
                   text: Immer wenn du während deines Zuges im Kampf einen Marker eines feindlichen Spielers entfernst, erhältst du einen Siegpunkt. _(Zähle diese Punkte den Punkten hinzu, die du für das Entfernen feindlicher Gebäude und Plättchen erhältst. Zähle keinen Punkt für den Krieger, der den Spieler feindlich werden ließ.)_
                 - name: Auf feindliche Lichtungen bewegen.
@@ -614,7 +614,7 @@
           text: Lege alle Karten vom Verlorene-Seelen-Stapel auf den Ablagestapel. _(Dominanz-Karten werden verfügbar und können ab jetzt genommen werden.)_
         - name: Verschwörungen ausführen.
           text: Du kannst Akolythen ausgeben, indem du sie in den Vorrat zurücklegst, um Verschwörungen auf den Lichtungen der Verstoßenen auszuführen. Verschwörungen können in beliebiger Reihenfolge und Häufigkeit ausgeführt werden. Wenn die Verstoßenen verhasst sind, kostet die Verschwörung einen Akolythen weniger. Wenn du Konvertieren oder Weihen ausführst, musst du die Verschwörung vollständig ausführen.
-          subchildren:
+          children:
             - name: Eifern.
               text: Gib zwei Akolythen aus, um auf einer Verstoßenen-Lichtung einen Kampf zu eröffnen **oder** mindestens einen Krieger von einer Verstoßenen-Lichtung zu bewegen. Anschließend kannst du, wenn du möchtest, einen Kampf auf der Ziel-Lichtung eröffnen.
             - name: Konvertieren.
@@ -663,12 +663,12 @@
           text: 'Für viele ihrer Aktionen muss das Flussvolk **Mittel** einsetzen und ausgeben: Krieger auf ihrem Feld für Mittel.'
         - name: Handelsposten.
           text: Das Flussvolk erhält Siegpunkte, wenn es Handelsposten baut.
-          subchildren:
+          children:
             - name: Handels-Störungen.
               text: Immer wenn ein Handelsposten entfernt wird, entfernt das Flussvolk die Hälfte seiner Mittel (aufgerundet) und legt den Handelsposten in die Schachtel zurück.
         - name: Dienste kaufen.
           text: Zu Beginn ihrer eigenen Morgenröte können andere Spieler Dienste vom Flussvolk kaufen.
-          subchildren:
+          children:
             - name: Kosten.
               text: Der Käufer muss Krieger aus seinem Vorrat auf dem Feld für Einzahlungen des Flussvolks platzieren, entsprechend der Kosten auf der Dienst-Leiste des Flussvolkes.
             - name: Anzahl der Dienste.
@@ -677,14 +677,14 @@
               text: Der Vagabund zahlt für Dienste, indem er Gegenstände benutzt – für jeden so benutzten Gegenstand legt das Flussvolk einen seiner eigenen Krieger auf das Feld für Einzahlungen.
         - name: Dienste des Flussvolks.
           text: Das Flussvolk bietet die folgenden drei Dienste an.
-          subchildren:
+          children:
             - name: Handkarte.
               text: Der Käufer nimmt eine Karte aus der öffentlichen Hand des Flussvolkes und fügt sie seiner eigenen Hand hinzu. _(Der Käufer kann diesen Dienst beliebig oft kaufen, solange er Zugang zu genug Handelsposten hat.)_
             - name: Flussboote.
               text: Der Käufer kann bis zum Ende seines Zuges Flüsse wie Wege verwenden.
             - name: Söldner.
               text: Während des Tageslichts und Abends seines Zuges kann der Käufer Krieger des Flussvolks wie seine eigenen behandeln, um zu herrschen oder mit anderen Parteien, außer dem Flussvolk, zu kämpfen. _(Sie sind immer noch Partei-Marker vom Flussvolk, daher können sie nicht von Fähigkeiten wie dem Feldlazarett der Marquise betroffen sein oder bei Aktionen wie den überzeugten Ministern des Herzogtums eingesetzt werden.)_
-              subchildren:
+              children:
                 - name: Treffer erleiden.
                   text: Der Käufer muss die Treffer aufteilen, wobei er ungerade Treffer durch das Entfernen von eigenen _(nicht Flussvolk)_ Kriegern, falls vorhanden, oder von eigenen Gebäuden oder Plättchen nur dann einstecken muss, wenn er keine Krieger _(einschließlich Flussvolk)_ in der Kampf-Lichtung hat.
                 - name: Vagabund-Söldner.
@@ -722,7 +722,7 @@
           text: Setze ein Mittel ein, um einen Kampf zu eröffnen.
         - name: Herstellen.
           text: Um eine deiner Handkarten herzustellen, musst du Mittel einsetzen. Aber anstatt diese Krieger auf das Feld für Einsätze zu verschieben, musst du sie den Herstellungskosten entsprechend auf den leeren Feldern der Handelsposten- Leisten platzieren. Dabei entspricht jeder Krieger auf einem Handelsposten-Feld der Klasse dieses Feldes.
-          subchildren:
+          children:
             - name: Exportieren.
               text: Statt den Herstellungs-Effekt einer Karte zu nutzen, kannst du sie ablegen, um einen Krieger auf das Feld für Einzahlungen zu legen.
         - name: Karten Ziehen.
@@ -731,7 +731,7 @@
           text: Gib ein Mittel aus, um einen Krieger auf einer beliebigen Lichtung mit einem Fluss zu platzieren.
         - name: Handelsposten mit Garnison gründen.
           text: Gib zwei Mittel aus, um einen Handelsposten und einen Krieger zu platzieren.
-          subchildren:
+          children:
             - name: Lichtung wählen.
               text: Wähle eine beliebige Lichtung ohne Handelsposten, die von einem beliebigen Spieler beherrscht wird.
             - name: Mittel ausgeben.
@@ -796,7 +796,7 @@
       children:
         - name: Versammlung.
           text: Du darfst wie folgt bis zu zwei Aktionen ausführen, in beliebiger Reihenfolge und Häufigkeit.
-          subchildren:
+          children:
             - name: Bauen.
               text: Decke eine Karte auf, um eine Zitadelle oder einen Markt auf einer entsprechenden Lichtung zu platzieren, die du beherrschst.
 
@@ -814,7 +814,7 @@
 
         - name: Parlament.
           text: Du darfst die Aktion jedes überzeugten Ministers einmal ausführen, in beliebiger Reihenfolge.
-          subchildren:
+          children:
             - name: Vorgräber.
               text: Decke eine beliebige Karte auf, um eine Zitadelle oder einen Markt auf einer beliebigen Lichtung (egal ob sie der Karte entspricht) zu platzieren, die du beherrschst.
 
@@ -844,7 +844,7 @@
 
         - name: Überzeugen.
           text: Du darfst wie folgt einen Minister überzeugen.
-          subchildren:
+          children:
             - name: Minister auswählen.
               text: Wähle eine Minister-Karte aus deinem Skeptische-Minister-Stapel. Du musst eine Krone auf deiner Partei-Tafel haben, die dem Rang _(Junker, Adeliger, Lord)_ dieses Ministers entspricht.
 
@@ -879,7 +879,7 @@
 
         - name: Plan-Plättchen.
           text: Die Krähen haben acht Plan-Plättchen, zwei von jeder Art.
-          subchildren:
+          children:
             - name: Plättchen-Status.
               text: Solange sie im Vorrat der Krähen sind, sind die Plan-Plättchen verdeckt _(Feder)_. Liegt ein Plan-Plättchen auf dem Spielbrett, kann es aufgedeckt sein _(individuelles Symbol)_ oder verdeckt. Die Krähen dürfen sich jedes verdeckte Plan-Plättchen jederzeit anschauen.
             - name: Platzierungs-Limit.
@@ -965,7 +965,7 @@
 
         - name: Der Hort.
           text: 'Statt einem Feld für hergestellte Gegenstände habt ihr einen Hort. Dieser hat zwei Leisten mit Plätzen für Gegenstände: Befehlsgewalt und Wagemut. Auf die Befehlsgewaltleiste legt ihr `item:boot`, `item:sack`, und `item:coin`. Auf die Wagemutleiste legt ihr `item:hammer`, `item:tea`, `item:sword`, und `item:crossbow`.'
-          subchildren:
+          children:
             - name: Gegenstände erhalten.
               text: Wenn ihr einen Gegenstand erhaltet, legt ihr ihn immer auf den am weitesten links liegenden leeren Platz dieser Art. Falls es keinen leeren Platz dieser Art gibt, müsst ihr entweder diesen Gegenstand entfernen oder einen anderen von der entsprechenden Leiste, und ihr erhaltet 1 Siegpunkt.
 
@@ -1009,7 +1009,7 @@
 
         - name: Befehligt die Scharen.
           text: 'Führt so viele dieser Aktionen in beliebiger Reihenfolge aus, wie es eurem Befehlsgewalt-Wert entspricht:'
-          subchildren:
+          children:
             - name: Bewegen.
               text: Führt eine Bewegung durch.
             - name: Kämpfen.
@@ -1119,13 +1119,13 @@
 
         - name: Euer Gefolge agiert.
           text: 'Ihr könnt eine Aktion pro Karte in euren Gefolgespalten ausführen. Geht dabei die Gefolgespalten von links nach rechts durch; innerhalb einer Spalte dürft ihr eine beliebig Reihenfolge wählen. Führt jeweils die in der Gefolgespalte angegebene Aktion in einer Lichtung mit der Gemeinschaft aus:'
-          subchildren:
+          children:
             - name: Bewegen.
               text: Führt eine Bewegung von einer der Karte entsprechenden Lichtung aus durch.
 
             - name: Kämpfen, dann Ausgraben.
               text: 'Wählt eine Lichtung, die der Karte entspricht. Beginnt einen Kampf, falls sich dort gegnerische Marker befinden. Wenn ihr dann die Lichtung beherrscht und sich mindestens ein Wächter-Krieger dort befindet, dürft ihr wie folgt ausgraben _(auch wenn kein Kampf stattgefunden hat)_:'
-              subchildren:
+              children:
                 - name: 'Schritt 1: Relikt auf die Lichtung.'
                   text: Nehmt ein Relikt aus einem an die Lichtung angrenzenden Wald und platziert es mit dem Wert offen auf der Lichtung.
 
@@ -1134,7 +1134,7 @@
 
             - name: Bewegen oder Sichern.
               text: 'Wählt eine Lichtung, die der Karte entspricht. Führt eine Bewegung von dort aus durch oder sichert ein Relikt von dort, wie folgt:'
-              subchildren:
+              children:
                 - name: 'Schritt 1: Relikt aufs Tableau.'
                   text: Nehmt von dieser Lichtung ein Relikt, das der Art eines Lagerplatzes dort entspricht. Platziert es auf dem am weitesten links liegenden, leeren Platz für Relikte dieser Art auf eurem Tableau.
 
@@ -1175,7 +1175,7 @@
 
         - name: 'Schritt 5: Landmarken aufbauen'
           text: Wählt als Gruppe, ob ihr mit Landmarken spielen wollt. Wenn dies der Fall ist, können die in den Varianten-Spielbretten beschriebene Platzierung der Turm- und Fährenmarker ignorieren oder außer Kraft setzen.
-          subchildren:
+          children:
             - name: 'Schritt 1: Wählt.'
               text: Entscheidet euch als Gruppe, ob ihr mit einem oder zwei Landmarken spielen wollt, und entfernt alle Landmarkenkarten, mit denen ihr nicht spielen wollt.
 
@@ -1187,7 +1187,7 @@
 
         - name: 'Schritt 6: Aufbau Hirelings'
           text: As a group, you may choose to use exactly three hirelings, as follows.
-          subchildren:
+          children:
             - name: 'Schritt 1: Collect Pieces.'
               text: Shuffle all the hirelings cards. Deal out three hireling cards and return the rest to the box. Collect the pieces for the dealt hireling cards into a supply.
 
@@ -1208,10 +1208,10 @@
 
         - name: 'Schritt 8: Aufbau Parteien'
           text: Als Gruppe könnt ihr Parteien auswählen und aufstellen, wie in dem Standard-Aufbau beschrieben (`rule:5.1`) oder ihr könnt die Partei-Aufbau-Karten aus der Marodeur-Erweiterung verwenden, wie unten beschrieben.
-          subchildren:
+          children:
             - name: 'Schritt 1: Aufbau-Karten austeilen.'
               text: Mischt alle Aufbaukarten der militanten Parteien _(roter Name mit Schwert)_ und teilt eine Karte in der Tischmitte aus. Mischt die verbleibenden Aufbaukarten der militanten Partei zusammen mit allen Aufbaukarten der aufständischen Parteien _(grauer Name ohne Schwert)_ und legt eine Aufbaukarte der Parteien pro Spieler aus. _(Es wird eine Karte mehr als die Anzahl der Spieler sein.)_
-              subchildren:
+              children:
                 - name: Zwei Spieler.
                   text: Wenn ihr mit zwei Spielern spielt, nehmt alle Aufbau-Karten der aufständischen Parteien heraus, bevor ihr sie auslegt. _(Ihr könnt sie behalten, wenn ihr mit Hirelings spielt und euch abenteuerlich fühlt)_.
 
@@ -1223,7 +1223,7 @@
 
             - name: 'Schritt 2: Parteien wählen.'
               text: Beginnend mit dem letzten Spieler in der Zugreihenfolge und gegen den Uhrzeigersinn, wählt jeder Spieler eine Partei-Aufbau-Karte aus dem Pool und stellt die Partei sofort auf _(bevor ein anderer Spieler wählt)_, wie auf seiner Partei-Aufbau-Karte beschrieben.
-              subchildren:
+              children:
                 - name: Heimatlichtungen.
                   text: Beim Aufbau können die Spieler ein oder mehrere Heimatlichtungen wählen. Die Spieler können keine Heimatländer wählen, die von Gegnern gewählt wurden oder in denen sie nicht alle beim Aufbau aufgeführten Marker platzieren können.
 
@@ -1239,12 +1239,12 @@
     - name: Varianten-Spielbretter
       children:
         - name: Winter-Seite
-          subchildren:
+          children:
             - name: Reißender Fluss.
               text: Der Fluss teilt Wälder, als wäre jeder Flussabschnitt, der zwei Lichtungen verbindet, ein Weg.
 
         - name: See-Seite
-          subchildren:
+          children:
             - name: Änderungen beim Aufbau.
               text: Platziere den Fähren-Marker auf der Eck-Lichtung, die gleichzeitig eine Ufer-Lichtung ist.
 
@@ -1261,7 +1261,7 @@
               text: Einmal pro Zug können Marker, die sich von der Ufer-Lichtung mit der Fähre bewegen, zu einer anderen Ufer-Lichtung bewegen, die sie als benachbart behandeln und die Fähre bewegt sich mit ihnen. Danach zieht der sich bewegende Spieler eine Karte. _(Dies folgt den normalen Bewegungsregeln.)_ Die Fähre kann nicht bekämpft oder entfernt werden.
 
         - name: Gebirge-Seite
-          subchildren:
+          children:
             - name: Änderungen beim Aufbau.
               text: Platziere die 6 Marker für versperrte Wege so, dass sie die 6 Wege bedecken, die dunkler und nach Grabungsarbeiten aussehen. Platziere den Turm-Marker auf der zentralen Lichtung, auf der zwei Türme abgebildet sind.
 
@@ -1280,7 +1280,7 @@
     - name: Vagabund-Referenz
       children:
         - name: Dieb
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:boot`, `item:torch`, `item:tea`, `item:sword`.
 
@@ -1288,7 +1288,7 @@
               text: Benutze eine `item:torch`, um von einem Spieler auf deiner Lichtung eine zufällige Karte zu nehmen.
 
         - name: Tüftler
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
 
@@ -1296,7 +1296,7 @@
               text: Benutze eine `item:torch`, um eine Karte vom Ablagestapel zu nehmen, deren Klasse deiner Lichtung entspricht. _(Vogel-Karten kannst du immer nehmen.)_
 
         - name: Waldläufer
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
 
@@ -1304,7 +1304,7 @@
               text: Benutze eine `item:torch` um drei Gegenstände zu reparieren. Beende danach sofort das Tageslicht und beginne den Abend.
 
         - name: Landstreicher
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:coin`, `item:torch`, `item:boot`.
 
@@ -1312,7 +1312,7 @@
               text: Benutze eine `item:torch`, um einen Kampf auf deiner Lichtung zu eröffnen. Du wählst sowohl Angreifer als auch Verteidiger, du wählst die Reihenfolge, in der sie Gebäude und Plättchen entfernen, und du entfernst für beide die Marker. _(Erhalte dabei einen Siegpunkt pro entferntem Gebäude oder Plättchen und pro entferntem feindlichen Marker.)_
 
         - name: Schiedsrichter
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:boot`, `item:torch`, `item:sword`, `item:sword`.
 
@@ -1320,7 +1320,7 @@
               text: Unmittelbar bevor im Kampf gewürfelt wird, darf der Verteidiger den Schiedsrichter auf der Lichtung des Kampfes anwerben. Der Schiedsrichter erhält einen Siegpunkt und fügt alle seine unbeschädigten `item:sword` den maximal würfelbaren Treffern des Verteidigers hinzu. Der Schiedsrichter kann sich nicht selbst anwerben.
 
         - name: Schurke
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
 
@@ -1328,7 +1328,7 @@
               text: Benutze eine `item:torch` und platziere sie auf deiner Lichtung. Entferne alle gegnerischen Marker von dieser Lichtung. Für den Rest des Spiels können Marker weder auf dieser Lichtung platziert noch hineinbewegt werden. _(Du bleibst auf dieser Lichtung. Sobald du dich dort hinausbewegst, kannst du nie mehr hinein.)_
 
         - name: Abenteurer
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:boot`, `item:torch`, `item:hammer`.
 
@@ -1336,7 +1336,7 @@
               text: Einmal pro Zug, während du die Aktion "Aufgabe erledigen" ausführst, darfst du einen nicht benutzten Gegenstand als einen beliebigen anderen Gegenstand behandeln. Wenn du ihn benutzt, um die Aufgabe zu erfüllen, beschädige ihn außerdem.
 
         - name: Ronin
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:boot`, `item:boot`, `item:torch`, `item:sword`.
 
@@ -1344,7 +1344,7 @@
               text: Du darfst ein `item:sword` benutzen, um im Kampf einen extra Treffer zu landen _(nach dem Würfeln)_.
 
         - name: Plünderer
-          subchildren:
+          children:
             - name: Start-Gegenstände
               text: Starte mit `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
 
@@ -1354,7 +1354,7 @@
     - name: Hirelings
       children:
         - name: Gaining and Losing Hirelings
-          subchildren:
+          children:
             - name: Gaining from Supply.
               text: When a player's score marker enters a space with a hireling marker, they take the hireling marker and place it below their Evening _(as a reminder)_. At the end of their turn, they take any hireling card from the supply, roll for control (`rule:16.4.1.2`), and flip over the hireling marker.
 
@@ -1366,7 +1366,7 @@
 
         - name: Abilities and Actions
           text: Hirelings have various actions and abilities, as shown by unique icons. Actions and abilities that start with "**Controller**:" are gained by the hireling's controller.
-          subchildren:
+          children:
             - name: When-Hired Action (`hireling:whenhired`).
               text: When they take control of the hireling, the controlling player must take this action.
 
@@ -1380,7 +1380,7 @@
               text: Once in their Daylight, the controlling player may take this action.
 
         - name: Rules
-          subchildren:
+          children:
             - name: Rule.
               text: A hireling's controller treats hireling pieces as their own only for rule. _(The controller can rule a clearing even with hirelings alone.)_ Uncontrolled hirelings can rule clearings as if they were players (`rule:2.5`).
 
@@ -1405,7 +1405,7 @@
     - name: Landmarken
       children:
         - name: Allgemeine Regeln
-          subchildren:
+          children:
             - name: Sicherheit.
               text: Landmarken können nicht bekämpft, verschoben oder entfernt werden, es sei denn, eine Landmarke weist ausdrücklich darauf hin.
 
@@ -1418,7 +1418,7 @@
           text: Ein anhaltender Effekt einer Partei, wie er oben auf ihrer Parteitafel und im Abschnitt Parteiregeln und -Fähigkeiten aufgeführt ist, oder ein anhaltender Effekt eines Hirelings, wie er auf seiner Hirelingskarte aufgeführt ist (`rule:16.4.2`).
 
         - name: Angrenzend.
-          text: Eine Lichtung grenzt an alle anderen Lichtungen, die durch einen Weg mit ihr verbunden sind. Ein Wald grenzt an alle Lichtungen, die ihn berühren, ohne einen Weg zu kreuzen, und er grenzt an alle Wälder, die nur durch einen Weg getrennt sind, außer am See (`rule:16.2.2`). `faction:duchy:12.2.2`
+          text: Eine Lichtung grenzt an alle anderen Lichtungen, die durch einen Weg mit ihr verbunden sind. Ein Wald grenzt an alle Lichtungen, die ihn berühren, ohne einen Weg zu kreuzen, und er grenzt an alle Wälder, die nur durch einen Weg getrennt sind, außer am See (`rule:16.2.2`). `faction:duchy$12.2.2`
 
         - name: Gebäude.
           text: Ein quadratisches Pappstück, das der eigenen Partei gehört.
@@ -1427,7 +1427,7 @@
           text: Siehe `rule:1.1.2`.
 
         - name: Abwerfen.
-          text: Lege die angeforderte Karte auf den gemeinsamen Ablagestapel (`rule:2.1`). Handelt es sich um eine Dominanzkarte, lege sie stattdessen in die Nähe der Karte (`rule:3.3.3`). `faction:cult:10.4.2`
+          text: Lege die angeforderte Karte auf den gemeinsamen Ablagestapel (`rule:2.1`). Handelt es sich um eine Dominanzkarte, lege sie stattdessen in die Nähe der Karte (`rule:3.3.3`). `faction:cult$10.4.2`
 
         - name: Ziehen.
           text: Nehmen Sie die oberste Karte vom gemeinsamen Stapel (`rule:2.1`).

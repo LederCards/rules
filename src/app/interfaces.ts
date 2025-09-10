@@ -39,7 +39,7 @@ export interface FAQEntry {
 export interface GameRule {
   name: string;
   plainName?: string;
-  formattedName?: string;
+  formattedName: string;
   icon?: string;
   index: string;
 
@@ -47,5 +47,4 @@ export interface GameRule {
   pretext: string;
   text: string;
   children: GameRule[];
-  subchildren?: GameRule[];
 }

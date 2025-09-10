@@ -14,16 +14,17 @@ export class RulesDisplayComponent {
   private rulesService = inject(RulesService);
 
   readonly search = linkedQueryParam('search', {
-    defaultValue: 'en-US',
+    defaultValue: '',
   });
 
-  public allRules = computed(() => this.rulesService.rules());
-  public ruleIndexes = computed(() => this.rulesService.indexesToRules);
+  public allRules = computed(() => this.rulesService.formattedRules());
+  public ruleIndexes = computed(() => this.rulesService.indexRuleHash());
 
   public isVisible(index: number[]): boolean {
     if (!this.search()) {
       return true;
     }
+
     return get(
       this.rulesService.indexVisibilityHash,
       [...index, 'visible'],
