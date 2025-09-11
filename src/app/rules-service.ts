@@ -1,7 +1,7 @@
 import { computed, Injectable, signal } from '@angular/core';
 import { marked } from 'marked';
 import {
-  type FAQEntry,
+  type FAQEntryQA,
   type GameRule,
   type RuleFAQData,
 } from 'src/app/interfaces';
@@ -13,7 +13,7 @@ import { slugTitle } from 'src/app/slugtitle';
 })
 export class RulesService {
   public rules = signal<GameRule[]>([]);
-  public faq = signal<FAQEntry[]>([]);
+  public faq = signal<FAQEntryQA[]>([]);
 
   public formattedRules = signal<GameRule[]>([]);
   public indexRuleHash = signal<Record<string, string>>({});
@@ -30,8 +30,8 @@ export class RulesService {
 
   public setRules(entries: RuleFAQData) {
     if (!entries) return;
-    this.rules.set(entries.rules);
-    this.faq.set(entries.faq);
+    this.rules.set(entries.rules ?? []);
+    this.faq.set(entries.faq ?? []);
 
     this.formatRules();
   }

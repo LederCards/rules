@@ -1,0 +1,5 @@
+@for (errata of erratasForIndex(); track $index) {
+  <div class="errata">
+    <span [innerHTML]="errata.text | markdown"></span>
+  </div>
+}

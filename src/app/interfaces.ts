@@ -12,9 +12,15 @@ export interface I18NData {
   };
 }
 
+export interface ErrataData {
+  [game: string]: {
+    [locale: string]: ErrataEntry[];
+  };
+}
+
 export interface RuleFAQData {
   rules: GameRule[];
-  faq: FAQEntry[];
+  faq: FAQEntryQA[];
 }
 
 export interface RuleData {
@@ -25,15 +31,17 @@ export interface RuleData {
   };
 }
 
+export interface ErrataEntry {
+  text: string;
+  versions?: string[];
+  laws: string[];
+}
+
 export interface FAQEntryQA {
   q: string;
   a: string;
-}
 
-export interface FAQEntry {
-  category: string;
-  color: string;
-  questions: FAQEntryQA[];
+  laws: string[];
 }
 
 export interface GameRule {

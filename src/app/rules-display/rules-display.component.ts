@@ -3,12 +3,14 @@ import { get } from 'es-toolkit/compat';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import { HighlightPipe } from 'src/app/highlight-pipe';
 import { RulesService } from 'src/app/rules-service';
+import { ErrataDisplayComponent } from '../errata-display/errata-display.component';
+import { FaqDisplayComponent } from '../faq-display/faq-display.component';
 
 @Component({
   selector: 'app-rules-display',
   templateUrl: './rules-display.component.html',
   styleUrls: ['./rules-display.component.scss'],
-  imports: [HighlightPipe],
+  imports: [HighlightPipe, FaqDisplayComponent, ErrataDisplayComponent],
 })
 export class RulesDisplayComponent {
   private rulesService = inject(RulesService);

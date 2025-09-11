@@ -3,18 +3,26 @@ import { computed, inject, Injectable } from '@angular/core';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
 
 import { sortBy } from 'es-toolkit/compat';
-import { type AppData, type I18NData, type RuleData } from 'src/app/interfaces';
+import {
+  type AppData,
+  type ErrataData,
+  type I18NData,
+  type RuleData,
+} from 'src/app/interfaces';
 
 import { TranslateService } from '@ngx-translate/core';
+import { injectLocalStorage } from 'ngxtension/inject-local-storage';
 import { languageData$ } from 'src/app/language';
 import { RulesService } from 'src/app/rules-service';
 import * as appData from '../../public/app.json';
+import * as errataData from '../../public/errata.json';
 import * as i18nData from '../../public/i18n.json';
 import * as rulesData from '../../public/rules.json';
 
 const appJson: AppData = (appData as any).default;
 const rulesJson: RuleData = (rulesData as any).default;
 const i18nJson: I18NData = (i18nData as any).default;
+const errataJson: ErrataData = (errataData as any).default;
 
 @Injectable({
   providedIn: 'root',
@@ -35,6 +43,10 @@ export class ParamService {
     return rulesJson;
   }
 
+  public get erratasJson() {
+    return errataJson;
+  }
+
   readonly currentProduct = linkedQueryParam<string>('product', {
     defaultValue: '',
   });
@@ -45,6 +57,14 @@ export class ParamService {
 
   readonly currentVersion = linkedQueryParam<string>('version', {
     defaultValue: '',
+  });
+
+  public showFAQ = injectLocalStorage<boolean>('showFAQ', {
+    defaultValue: false,
+  });
+
+  public showErrata = injectLocalStorage<boolean>('showErrata', {
+    defaultValue: false,
   });
 
   public allProducts = computed(() =>

@@ -1,0 +1,13 @@
+@for (faq of faqsForIndex(); track $index) {
+  <div class="faq">
+    <div class="qa">
+      <strong class="label">Q:</strong>
+      <span [innerHTML]="faq.q | markdown"></span>
+    </div>
+
+    <div class="qa">
+      <strong class="label">A:</strong>
+      <span [innerHTML]="faq.a | markdown"></span>
+    </div>
+  </div>
+}

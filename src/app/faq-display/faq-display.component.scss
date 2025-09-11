@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+
+.faq {
+  padding: 5px;
+  background-color: hsl(from var(--ion-color-primary) h s calc(l + 35));
+  margin-bottom: 4px;
+
+  &:first-child {
+    margin-top: 4px;
+  }
+}
+
+.qa {
+  &:first-child {
+    margin-bottom: 4px;
+  }
+
+  .label {
+    display: inline-block;
+    min-width: 25px;
+  }
+}

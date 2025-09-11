@@ -1,0 +1,8 @@
+- text: >
+    Edited to: "Discard all action cards not in players' hands into a facedown action discard pile on the map, *then shuffle it*."
+    <br>
+    *There are a couple situations where discard order matters.*
+  versions:
+    - v1
+  laws:
+    - '3.1.1.2.6'

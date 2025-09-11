@@ -112,6 +112,11 @@ ion-list {
   padding-top: 0 !important;
 }
 
+ion-checkbox {
+  padding-left: 6px;
+  --border-color: var(--ion-color-primary) !important;
+}
+
 ion-item,
 a[href],
 img[href] {

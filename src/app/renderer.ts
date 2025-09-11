@@ -3,8 +3,6 @@ import { convert as toRoman } from 'roman-numeral';
 import { type GameRule } from 'src/app/interfaces';
 import { slugTitle } from 'src/app/slugtitle';
 
-// TODO: arcs: https://github.com/Vagabottos/arcs/commit/d8bd489460fd936e181cea25c5ebabc595a09588
-
 export function getCustomRenderer(
   allRules: GameRule[],
   indexRuleHash: Record<string, string>,

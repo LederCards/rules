@@ -14,19 +14,21 @@ try {
 
 // Game Rules + Metadata
 const finalRulesJSON = {};
-
 const finalConfigJSON = {};
+const finalErrataJSON = {};
 
 const games = fs.readdirSync('content/rules');
 games.forEach((game) => {
   finalRulesJSON[game] = {};
   finalConfigJSON[game] = {};
+  finalErrataJSON[game] = {};
 
   console.log(`Compiling rules for ${game}...`);
 
   const locales = fs.readdirSync(`content/rules/${game}`);
   locales.forEach((locale) => {
     finalRulesJSON[game][locale] = {};
+    finalErrataJSON[game][locale] = [];
 
     console.log(`Compiling rules for ${game}->${locale}...`);
 
@@ -46,7 +48,21 @@ games.forEach((game) => {
         finalConfigJSON[game][locale] = yaml.load(appconfig);
       } catch (e) {
         console.error(
-          `::error:: ${game}->${locale}->${version} appconfig.yml is not valid yaml: ${e.message}`,
+          `::error:: ${game}->${locale} appconfig.yml is not valid yaml: ${e.message}`,
+        );
+      }
+    }
+
+    if (fs.existsSync(`content/rules/${game}/${locale}/errata.yml`)) {
+      const errata = fs.readFileSync(
+        `content/rules/${game}/${locale}/errata.yml`,
+        'utf8',
+      );
+      try {
+        finalErrataJSON[game][locale] = yaml.load(errata);
+      } catch (e) {
+        console.error(
+          `::error:: ${game}->${locale} errata.yml is not valid yaml: ${e.message}`,
         );
       }
     }
@@ -107,3 +123,4 @@ games.forEach((game) => {
 
 fs.writeJsonSync('public/rules.json', finalRulesJSON, { spaces: 2 });
 fs.writeJsonSync('public/i18n.json', finalConfigJSON, { spaces: 2 });
+fs.writeJsonSync('public/errata.json', finalErrataJSON, { spaces: 2 });
