@@ -1,5 +1,5 @@
 export interface AppData {
-  games: Record<string, { name: string }>;
+  products: Record<string, { name: string }>;
   languages: Record<string, { name: string }>;
 }
 

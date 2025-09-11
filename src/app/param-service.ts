@@ -35,7 +35,7 @@ export class ParamService {
     return rulesJson;
   }
 
-  readonly currentGame = linkedQueryParam<string>('game', {
+  readonly currentProduct = linkedQueryParam<string>('product', {
     defaultValue: '',
   });
 
@@ -47,10 +47,10 @@ export class ParamService {
     defaultValue: '',
   });
 
-  public allGames = computed(() =>
-    Object.keys(appJson['games']).map((game) => ({
+  public allProducts = computed(() =>
+    Object.keys(appJson['products']).map((game) => ({
       code: game,
-      name: appJson['games'][game].name,
+      name: appJson['products'][game].name,
     })),
   );
 
@@ -61,20 +61,20 @@ export class ParamService {
         name: appJson['languages'][locale].name,
       }))
       .filter((lang) =>
-        Object.keys(rulesJson[this.currentGame()] || {}).includes(lang.code),
+        Object.keys(rulesJson[this.currentProduct()] || {}).includes(lang.code),
       ),
   );
 
   public allVersions = computed(() =>
     sortBy(
-      Object.keys(rulesJson[this.currentGame()][this.currentLocale()] ?? {}),
+      Object.keys(rulesJson[this.currentProduct()][this.currentLocale()] ?? {}),
       (k) => +k.replace('v', ''),
     ).reverse(),
   );
 
   init() {
-    if (!this.currentGame()) {
-      this.currentGame.set('root');
+    if (!this.currentProduct()) {
+      this.currentProduct.set('root');
     }
 
     if (!this.currentLocale()) {
@@ -88,7 +88,7 @@ export class ParamService {
     this.updateRules();
   }
 
-  public changeGame() {
+  public changeProduct() {
     if (
       !this.allLanguages()
         .map((l) => l.code)
@@ -107,10 +107,10 @@ export class ParamService {
 
   public updateRules() {
     this.translateService.use(this.currentLocale());
-    languageData$.next(i18nJson[this.currentGame()][this.currentLocale()]);
+    languageData$.next(i18nJson[this.currentProduct()][this.currentLocale()]);
 
     this.rulesService.setRules(
-      rulesJson[this.currentGame()][this.currentLocale()][
+      rulesJson[this.currentProduct()][this.currentLocale()][
         this.currentVersion()
       ],
     );

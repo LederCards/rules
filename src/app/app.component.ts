@@ -77,8 +77,8 @@ export class AppComponent implements OnInit {
     // mega whatever, this is stupid
     const baseParams = new URLSearchParams(window.location.search);
 
-    if (baseParams.has('game'))
-      this.paramService.currentGame.set(baseParams.get('game')!);
+    if (baseParams.has('product'))
+      this.paramService.currentProduct.set(baseParams.get('product')!);
     if (baseParams.has('locale'))
       this.paramService.currentLocale.set(baseParams.get('locale')!);
     if (baseParams.has('version'))

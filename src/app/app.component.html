@@ -6,12 +6,12 @@
           <ion-list lines="none" class="game-list">
             <ion-item class="game">
               <ion-select
-                label="Select Game"
-                placeholder="Select Game"
-                (ionChange)="paramService.changeGame()"
-                [(ngModel)]="paramService.currentGame"
+                label="Select Product"
+                placeholder="Select Product"
+                (ionChange)="paramService.changeProduct()"
+                [(ngModel)]="paramService.currentProduct"
               >
-                @for (game of paramService.allGames(); track $index) {
+                @for (game of paramService.allProducts(); track $index) {
                   <ion-select-option [value]="game.code">
                     {{ game.name }}
                   </ion-select-option>
