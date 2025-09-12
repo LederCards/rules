@@ -6,6 +6,7 @@ import { sortBy } from 'es-toolkit/compat';
 import {
   type AppData,
   type ErrataData,
+  type GameRule,
   type I18NData,
   type RuleData,
 } from 'src/app/interfaces';
@@ -56,6 +57,10 @@ export class ParamService {
   });
 
   readonly currentPrinting = linkedQueryParam<string>('printing', {
+    defaultValue: '',
+  });
+
+  readonly compareToPrinting = linkedQueryParam<string>('compareToPrinting', {
     defaultValue: '',
   });
 
@@ -139,6 +144,13 @@ export class ParamService {
       rulesJson[this.currentProduct()][this.currentLocale()][
         this.currentPrinting()
       ],
+    );
+  }
+
+  getRulesForPrinting(printing: string): GameRule[] {
+    return (
+      rulesJson[this.currentProduct()][this.currentLocale()][printing].rules ??
+      []
     );
   }
 }

@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, inject, signal } from '@angular/core';
+import {
+  Component,
+  computed,
+  HostListener,
+  inject,
+  signal,
+} from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import {
@@ -20,7 +26,9 @@ import { addIcons } from 'ionicons';
 import { arrowUpOutline, search } from 'ionicons/icons';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import { navigation$ } from 'src/app/navigation';
+import { ParamService } from 'src/app/param-service';
 import { RulesService } from 'src/app/rules-service';
+import { CompareRulesComponent } from '../compare-rules/compare-rules.component';
 import { RulesDisplayComponent } from '../rules-display/rules-display.component';
 
 @Component({
@@ -44,9 +52,11 @@ import { RulesDisplayComponent } from '../rules-display/rules-display.component'
     TranslateModule,
     IonSearchbar,
     RulesDisplayComponent,
+    CompareRulesComponent,
   ],
 })
 export class RulesPage {
+  private paramService = inject(ParamService);
   private rulesService = inject(RulesService);
 
   readonly search = linkedQueryParam('search', {
@@ -55,6 +65,10 @@ export class RulesPage {
 
   public showSearch = signal<boolean>(false);
   public showScrollUp = signal<boolean>(false);
+
+  public shouldCompareRulesInstead = computed(
+    () => !!this.paramService.compareToPrinting(),
+  );
 
   @HostListener('document:click', ['$event'])
   public clickScreen($event: PointerEvent) {

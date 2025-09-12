@@ -34,7 +34,11 @@
               "src/_redirects",
               "src/_headers"
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss"],
+            "styles": [
+              "src/global.scss",
+              "src/theme/variables.scss",
+              "node_modules/ngx-diff/styles/default-theme.css"
+            ],
             "scripts": [],
             "browser": "src/main.ts"
           },

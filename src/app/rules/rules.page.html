@@ -18,7 +18,7 @@
       </ion-title>
     }
 
-    @if (showSearch()) {
+    @if (showSearch() && !shouldCompareRulesInstead()) {
       <ion-searchbar
         color="primary"
         showCancelButton="true"
@@ -31,14 +31,16 @@
       ></ion-searchbar>
     }
 
-    <ion-buttons slot="end">
-      <ion-button
-        (click)="toggleSearch()"
-        [title]="'App.Titles.Search' | translate"
-      >
-        <ion-icon name="search"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+    @if (!shouldCompareRulesInstead()) {
+      <ion-buttons slot="end">
+        <ion-button
+          (click)="toggleSearch()"
+          [title]="'App.Titles.Search' | translate"
+        >
+          <ion-icon name="search"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    }
   </ion-toolbar>
 </ion-header>
 
@@ -62,5 +64,9 @@
 
   <div id="top"></div>
 
-  <app-rules-display></app-rules-display>
+  @if (shouldCompareRulesInstead()) {
+    <app-compare-rules></app-compare-rules>
+  } @else {
+    <app-rules-display></app-rules-display>
+  }
 </ion-content>
