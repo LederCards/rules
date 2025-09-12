@@ -92,6 +92,10 @@ export class ParamService {
     ).reverse(),
   );
 
+  public currentErrata = computed(
+    () => this.erratasJson[this.currentProduct()]?.[this.currentLocale()] ?? [],
+  );
+
   init() {
     if (!this.currentProduct()) {
       this.currentProduct.set('root');

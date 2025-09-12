@@ -60,25 +60,33 @@
             </ion-select>
           </ion-item>
 
-          <ion-item class="toggle">
-            <ion-checkbox
-              label-placement="start"
-              alignment="start"
-              [(ngModel)]="paramService.showFAQ"
-            >
-              Show FAQ
-            </ion-checkbox>
-          </ion-item>
+          @let faqCount = rulesService.faq().length;
 
-          <ion-item class="toggle">
-            <ion-checkbox
-              label-placement="start"
-              alignment="start"
-              [(ngModel)]="paramService.showErrata"
-            >
-              Show Errata
-            </ion-checkbox>
-          </ion-item>
+          @if (faqCount > 0) {
+            <ion-item class="toggle">
+              <ion-checkbox
+                label-placement="start"
+                alignment="start"
+                [(ngModel)]="paramService.showFAQ"
+              >
+                Show FAQ ({{ faqCount }})
+              </ion-checkbox>
+            </ion-item>
+          }
+
+          @let errataCount = paramService.currentErrata().length;
+
+          @if (errataCount > 0) {
+            <ion-item class="toggle">
+              <ion-checkbox
+                label-placement="start"
+                alignment="start"
+                [(ngModel)]="paramService.showErrata"
+              >
+                Show Errata ({{ errataCount }})
+              </ion-checkbox>
+            </ion-item>
+          }
         </ion-list>
       </ion-content>
     </ion-menu>
