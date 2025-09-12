@@ -130,7 +130,9 @@ export class ParamService {
   }
 
   public updateRules() {
-    this.translateService.use(this.currentLocale());
+    this.translateService.use(
+      `${this.currentProduct()}-${this.currentLocale()}`,
+    );
     languageData$.next(i18nJson[this.currentProduct()][this.currentLocale()]);
 
     this.rulesService.setRules(
