@@ -84,7 +84,7 @@ export class AppComponent implements OnInit {
     if (baseParams.has('locale'))
       this.paramService.currentLocale.set(baseParams.get('locale')!);
     if (baseParams.has('version'))
-      this.paramService.currentVersion.set(baseParams.get('version')!);
+      this.paramService.currentPrinting.set(baseParams.get('version')!);
 
     this.paramService.init();
 

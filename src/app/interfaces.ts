@@ -33,15 +33,15 @@ export interface RuleData {
 
 export interface ErrataEntry {
   text: string;
-  versions?: string[];
-  laws: string[];
+  printings?: string[];
+  rules: string[];
 }
 
 export interface FAQEntryQA {
   q: string;
   a: string;
 
-  laws: string[];
+  rules: string[];
 }
 
 export interface GameRule {

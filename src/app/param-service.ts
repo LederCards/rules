@@ -55,7 +55,7 @@ export class ParamService {
     defaultValue: '',
   });
 
-  readonly currentVersion = linkedQueryParam<string>('version', {
+  readonly currentPrinting = linkedQueryParam<string>('printing', {
     defaultValue: '',
   });
 
@@ -85,7 +85,7 @@ export class ParamService {
       ),
   );
 
-  public allVersions = computed(() =>
+  public allPrintings = computed(() =>
     sortBy(
       Object.keys(rulesJson[this.currentProduct()][this.currentLocale()] ?? {}),
       (k) => +k.replace('v', ''),
@@ -105,8 +105,8 @@ export class ParamService {
       this.currentLocale.set('en-US');
     }
 
-    if (!this.currentVersion()) {
-      this.currentVersion.set(this.allVersions()[0]);
+    if (!this.currentPrinting()) {
+      this.currentPrinting.set(this.allPrintings()[0]);
     }
 
     this.updateRules();
@@ -121,7 +121,7 @@ export class ParamService {
       this.currentLocale.set('en-US');
     }
 
-    this.currentVersion.set(this.allVersions()[0]);
+    this.currentPrinting.set(this.allPrintings()[0]);
     this.updateRules();
   }
 
@@ -137,7 +137,7 @@ export class ParamService {
 
     this.rulesService.setRules(
       rulesJson[this.currentProduct()][this.currentLocale()][
-        this.currentVersion()
+        this.currentPrinting()
       ],
     );
   }

@@ -67,19 +67,19 @@ games.forEach((game) => {
       }
     }
 
-    const versions = fs.readdirSync(`content/rules/${game}/${locale}`);
-    versions.forEach((version) => {
-      if (version.includes('.yml')) return;
+    const printings = fs.readdirSync(`content/rules/${game}/${locale}`);
+    printings.forEach((printing) => {
+      if (printing.includes('.yml')) return;
 
-      finalRulesJSON[game][locale][version] = {};
+      finalRulesJSON[game][locale][printing] = {};
 
-      console.log(`Compiling rules for ${game}->${locale}->${version}...`);
+      console.log(`Compiling rules for ${game}->${locale}->${printing}...`);
 
       if (
-        !fs.existsSync(`content/rules/${game}/${locale}/${version}/rules.yml`)
+        !fs.existsSync(`content/rules/${game}/${locale}/${printing}/rules.yml`)
       ) {
         console.error(
-          `::error:: ${game}->${locale}->${version} has no rules.yml file.`,
+          `::error:: ${game}->${locale}->${printing} has no rules.yml file.`,
         );
         hasError = true;
       }
@@ -88,34 +88,34 @@ games.forEach((game) => {
         const gameLocaleVersionData = {};
 
         const rules = fs.readFileSync(
-          `content/rules/${game}/${locale}/${version}/rules.yml`,
+          `content/rules/${game}/${locale}/${printing}/rules.yml`,
           'utf8',
         );
         try {
           gameLocaleVersionData.rules = yaml.load(rules);
         } catch (e) {
           console.error(
-            `::error:: ${game}->${locale}->${version} rules.yml is not valid yaml: ${e.message}`,
+            `::error:: ${game}->${locale}->${printing} rules.yml is not valid yaml: ${e.message}`,
           );
         }
 
         if (
-          fs.existsSync(`content/rules/${game}/${locale}/${version}/faq.yml`)
+          fs.existsSync(`content/rules/${game}/${locale}/${printing}/faq.yml`)
         ) {
           const faq = fs.readFileSync(
-            `content/rules/${game}/${locale}/${version}/faq.yml`,
+            `content/rules/${game}/${locale}/${printing}/faq.yml`,
             'utf8',
           );
           try {
             gameLocaleVersionData.faq = yaml.load(faq);
           } catch (e) {
             console.error(
-              `::error:: ${game}->${locale}->${version} faq.yml is not valid yaml: ${e.message}`,
+              `::error:: ${game}->${locale}->${printing} faq.yml is not valid yaml: ${e.message}`,
             );
           }
         }
 
-        finalRulesJSON[game][locale][version] = gameLocaleVersionData;
+        finalRulesJSON[game][locale][printing] = gameLocaleVersionData;
       }
     });
   });

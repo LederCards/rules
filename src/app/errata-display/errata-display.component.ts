@@ -24,9 +24,9 @@ export class ErrataDisplayComponent {
         .currentErrata()
         .filter(
           (errata) =>
-            errata.laws.includes(this.index()) &&
-            (!errata.versions ||
-              errata.versions.includes(this.paramService.currentVersion())),
+            errata.rules.includes(this.index()) &&
+            (!errata.printings ||
+              errata.printings.includes(this.paramService.currentPrinting())),
         ) ?? [],
   );
 }

@@ -21,6 +21,6 @@ export class FaqDisplayComponent {
   public index = input.required<string>();
 
   public faqsForIndex = computed(() =>
-    this.rulesService.faq().filter((faq) => faq.laws.includes(this.index())),
+    this.rulesService.faq().filter((faq) => faq.rules.includes(this.index())),
   );
 }
