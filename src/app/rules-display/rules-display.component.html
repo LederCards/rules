@@ -11,7 +11,7 @@
 
     <div class="rule major" [id]="indexesToRules[rule.index]">
       <span [id]="rule.index"></span>
-      <span class="index major">{{ rule.index }}</span>
+      <span class="index major">{{ rule.indexDisplay }}</span>
       <a
         [innerHTML]="rule.formattedName | highlight: searchTerm : rule.index"
         [href]="'#' + indexesToRules[rule.index]"
@@ -34,7 +34,7 @@
       >
         <div class="rule minor" [id]="indexesToRules[childRule.index]">
           <span [id]="childRule.index"></span>
-          <span class="index minor">{{ childRule.index }}</span>
+          <span class="index minor">{{ childRule.indexDisplay }}</span>
           <a
             [innerHTML]="
               childRule.formattedName | highlight: searchTerm : childRule.index
@@ -76,7 +76,7 @@
           >
             <div class="rule child" [id]="indexesToRules[grandchildRule.index]">
               <span [id]="grandchildRule.index"></span>
-              <span class="index child">{{ grandchildRule.index }}</span>
+              <span class="index child">{{ grandchildRule.indexDisplay }}</span>
               <span class="desc child">
                 <a
                   class="name child"

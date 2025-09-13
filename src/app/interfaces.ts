@@ -50,6 +50,8 @@ export interface GameRule {
   formattedName: string;
   icon?: string;
   index: string;
+  indexDisplay: string;
+  appendix?: string;
 
   color: string;
   pretext: string;

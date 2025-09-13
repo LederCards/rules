@@ -23,8 +23,8 @@ export function getCustomRenderer(
         let chosenString = '';
 
         if (major) {
-          chosenString += major;
           chosenNode = allRules[+major - 1];
+          chosenString += chosenNode?.appendix || major;
         }
 
         if (minor && chosenNode && chosenNode.children) {

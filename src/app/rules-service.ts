@@ -40,16 +40,21 @@ export class RulesService {
     const indexRuleHash: Record<string, string> = {};
     const allRules: GameRule[] = [];
 
-    const buildIndex = (arr: number[]) => arr.join('.');
+    const buildIndex = (arr: (number | string)[]) => arr.join('.');
 
     const baseRules = structuredClone(this.rules());
 
     baseRules.forEach((rule, majorRuleIndex) => {
       rule.index = `${majorRuleIndex + 1}.`;
+      rule.indexDisplay = rule.appendix ? `${rule.appendix}.` : rule.index;
       allRules.push(rule);
 
       (rule.children || []).forEach((childRule, minorRuleIndex) => {
         childRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1]);
+        childRule.indexDisplay = buildIndex([
+          rule.appendix || majorRuleIndex + 1,
+          minorRuleIndex + 1,
+        ]);
         allRules.push(childRule);
 
         (childRule.children || []).forEach((grandchildRule, revRuleIndex) => {
@@ -58,11 +63,17 @@ export class RulesService {
             minorRuleIndex + 1,
             revRuleIndex + 1,
           ]);
+          grandchildRule.indexDisplay = buildIndex([
+            rule.appendix || majorRuleIndex + 1,
+            minorRuleIndex + 1,
+            revRuleIndex + 1,
+          ]);
+
           allRules.push(grandchildRule);
 
           (grandchildRule.children || []).forEach(
             (descendantNode, descRuleIndex) => {
-              descendantNode.index = buildIndex([
+              descendantNode.indexDisplay = descendantNode.index = buildIndex([
                 majorRuleIndex + 1,
                 minorRuleIndex + 1,
                 revRuleIndex + 1,
@@ -72,13 +83,14 @@ export class RulesService {
 
               (descendantNode.children || []).forEach(
                 (descDescendantNode, descDescRuleIndex) => {
-                  descDescendantNode.index = buildIndex([
-                    majorRuleIndex + 1,
-                    minorRuleIndex + 1,
-                    revRuleIndex + 1,
-                    descRuleIndex + 1,
-                    descDescRuleIndex + 1,
-                  ]);
+                  descDescendantNode.indexDisplay = descDescendantNode.index =
+                    buildIndex([
+                      majorRuleIndex + 1,
+                      minorRuleIndex + 1,
+                      revRuleIndex + 1,
+                      descRuleIndex + 1,
+                      descDescRuleIndex + 1,
+                    ]);
                   allRules.push(descDescendantNode);
                 },
               );

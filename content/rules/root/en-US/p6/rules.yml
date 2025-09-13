@@ -42,7 +42,7 @@
         - name: Piece Ownership.
           text: The ownership of faction pieces cannot change. _(For example, the Marquise cannot use Field Hospitals on Riverfolk mercenaries or hirelings, since these are not Marquise warriors.)_
         - name: Piece Manipulation.
-          text: Pieces are placed and removed as defined in the Glossary (`rule:16.6.19`, `rule:16.6.22`). If you are prompted to place, take, or remove pieces but you cannot do so fully, you must place, take, or remove the maximum number possible. _(This does not allow you to avoid costs or prerequisites. You just cannot do less than the most you can.)_ If multiple pieces are removed simultaneously and that would trigger effects, remove all pieces before triggering effects.
+          text: Pieces are placed and removed as defined in the Glossary (`rule:21.19`, `rule:21.22`). If you are prompted to place, take, or remove pieces but you cannot do so fully, you must place, take, or remove the maximum number possible. _(This does not allow you to avoid costs or prerequisites. You just cannot do less than the most you can.)_ If multiple pieces are removed simultaneously and that would trigger effects, remove all pieces before triggering effects.
         - name: Use of **Force**.
           plainName: Use of Force.
           text: Some effects let you **force** a player or their pieces to act. Resolve this exactly as if that player were choosing to do this, as limited by the effect. _(For example, if you force the Eyrie to move warriors, they benefit from Lords of the Forest.)_
@@ -170,7 +170,7 @@
 
 - name: Setup
   color: '#000000'
-  pretext: If any players are new to the game, use the Standard Setup (`rule:5.1`) If everyone has played and you want more variety, use the Advanced Setup (`rule:16.1`). If you want to play with five or more factions that would start in corner clearings, you must use the Advanced Setup.
+  pretext: If any players are new to the game, use the Standard Setup (`rule:5.1`) If everyone has played and you want more variety, use the Advanced Setup (`rule:16.`). If you want to play with five or more factions that would start in corner clearings, you must use the Advanced Setup.
   children:
     - name: Standard Setup Procedure
       children:
@@ -1158,365 +1158,374 @@
         - name: Draw and Discard.
           text: Draw one card, plus one card per uncovered draw bonus _(equal to waystations on the map)_. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
-- name: Variants, Vagabonds and Hirelings
+- name: Advanced Setup
   color: '#000000'
+  appendix: A
   children:
-    - name: Advanced Setup [A]
+    - name: 'Step 1: Choose and Set Up Map'
+      pretext: As a group, choose a map. If you choose a variant map, follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins (`rule:5.1.4`), item supply (`rule:5.1.5`), and dice (`rule:5.1.6`) as normal.
+
+    - name: 'Step 2: Choose Deck'
+      pretext: As a group, you may choose to replace the entire standard deck with the Exiles and Partisans deck.
+
+    - name: 'Step 3: Set Up Bots'
+      pretext: As a group, you may choose to play with bots, as described in the Law of Rootbotics.
+
+    - name: 'Step 4: Seat Players'
+      pretext: Determine the seating order and the first player randomly.
+
+    - name: 'Step 5: Set Up Landmarks'
+      pretext: As a group, you may choose to use landmarks. If so, you may ignore or override the placement of the Tower and Ferry pieces described in Variant Maps.
       children:
-        - name: 'Step 1: Choose and Set Up Map'
-          text: As a group, choose a map. If you choose a variant map, follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins (`rule:5.1.4`), item supply (`rule:5.1.5`), and dice (`rule:5.1.6`) as normal.
+        - name: 'Step 1: Choose.'
+          text: As a group, choose if you're playing with one or two landmarks, and remove any landmark cards you do not want to play with.
 
-        - name: 'Step 2: Choose Deck'
-          text: As a group, you may choose to replace the entire standard deck with the Exiles and Partisans deck.
+        - name: 'Step 2: Deal and Collect.'
+          text: Shuffle the chosen landmark cards, deal out the chosen number, and collect the landmark piece shown on each dealt card.
 
-        - name: 'Step 3: Set Up Bots'
-          text: As a group, you may choose to play with bots, as described in the Law of Rootbotics.
+        - name: 'Step 3: Set Up.'
+          text: The last player in turn order sets up one drawn landmark as described on its card. If you chose to play with two landmarks, the second-to-last player in turn order sets up the other drawn landmark as described on its card.
 
-        - name: 'Step 4: Seat Players'
-          text: Determine the seating order and the first player randomly.
-
-        - name: 'Step 5: Set Up Landmarks'
-          text: As a group, you may choose to use landmarks. If so, you may ignore or override the placement of the Tower and Ferry pieces described in Variant Maps.
-          children:
-            - name: 'Step 1: Choose.'
-              text: As a group, choose if you're playing with one or two landmarks, and remove any landmark cards you do not want to play with.
-
-            - name: 'Step 2: Deal and Collect.'
-              text: Shuffle the chosen landmark cards, deal out the chosen number, and collect the landmark piece shown on each dealt card.
-
-            - name: 'Step 3: Set Up.'
-              text: The last player in turn order sets up one drawn landmark as described on its card. If you chose to play with two landmarks, the second-to-last player in turn order sets up the other drawn landmark as described on its card.
-
-        - name: 'Step 6: Set Up Hirelings'
-          text: As a group, you may choose to use exactly three hirelings, as follows.
-          children:
-            - name: 'Step 1: Collect Pieces.'
-              text: Shuffle all the hirelings cards. Deal out three hireling cards and return the rest to the box. Collect the pieces for the dealt hireling cards into a supply.
-
-            - name: 'Step 2: Demote.'
-              text: If playing with three players, flip over one random hireling to its Demoted side _(marked with a "D")_. If playing with four players, flip over two random hirelings to their Demoted side. If playing with five or more players, flip over all three hirelings to their Demoted side.
-
-            - name: 'Step 3: Set Up Hirelings.'
-              text: Starting with the last player in turn order and going counterclockwise, players set up one dealt hireling each as described on its hireling card. _(Some have no setup instructions.)_
-
-            - name: 'Step 4: Place Hireling Markers.'
-              text: Place the three hireling markers—marked "4," "8," and "12"—on the "4," "8," and "12" spaces of the score track on the map.
-
-            - name: 'Step 5: Return Corresponding Factions.'
-              text: A faction cannot be played if its corresponding hireling is in play _(shown by color and icon)_. Return the corresponding faction boards, pieces, and setup cards to the box.
-
-        - name: 'Step 7: Draw Five Cards'
-          text: If you are playing with two players, remove all four dominance cards from the deck. Shuffle the deck. Each player draws five cards. _(Not three, as in Standard Setup! You will choose three cards to keep in step 10.)_
-
-        - name: 'Step 8: Set Up Factions'
-          text: As a group, you may choose and set up factions as described in the Standard Setup (`rule:5.1`) or you may use the faction setup cards included in the Marauder Expansion, as described below.
-          children:
-            - name: 'Step 1: Deal Setup Cards.'
-              text: Shuffle all of the militant faction setup cards _(red name with sword)_ and deal out one card to a pool in the center of the table. Shuffle the remaining militant faction setup cards together with all of the insurgent faction setup cards _(grey name with no sword)_, and deal out one faction setup card per player. _(There will be one more faction setup card than the number of players.)_
-              children:
-                - name: Two Players.
-                  text: If you're playing with two players, remove all of the insurgent faction setup cards before dealing out any. _(You may keep them if you're playing with hirelings and feeling adventurous.)_
-
-                - name: Lock Last Insurgent.
-                  text: If the last faction setup card dealt out is an insurgent, turn it sideways to show that it is locked. It cannot be chosen unless at least one militant faction has been chosen.
-
-                - name: Vagabond.
-                  text: Whenever a Vagabond faction setup card is dealt out, also deal out one random character card next to it face up. If a player chooses this Vagabond as their faction, they must use this character card.
-
-            - name: 'Step 2: Choose Factions.'
-              text: Starting with the last player in turn order and going counterclockwise, each player chooses one faction setup card from the pool and sets up the faction immediately as it describes _(before another player chooses)_.
-              children:
-                - name: Homelands.
-                  text: When setting up, players might choose one or more homeland clearings. Players cannot choose homelands that enemies have chosen as their homelands or where they cannot place all the pieces listed in setup.
-
-                - name: Enemy Homeland Adjacency.
-                  text: Some factions require you to choose a homeland that is not adjacent to enemy homelands; if you cannot do this, choose a homeland adjacent to an enemy homeland. If you must choose a homeland that has two or more clearings between it and enemy homelands but you cannot, choose a homeland that is not adjacent to enemy homelands. _(Basically, try to set up as far away as able.)_
-
-                - name: Multiple Homeland Adjacency.
-                  text: If your faction has multiple homelands and you cannot fulfill all of their enemy adjacency requirements (`rule:16.1.8.1.2`), choose and set them up one at a time, fulfilling each requirement as best you can.
-
-        - name: 'Step 9: Place Score Markers'
-          text: Each player places their faction's score marker on the "0" space on the score track.
-
-        - name: 'Step 10: Choose Starting Hands'
-          text: Each player chooses three cards in their hand to keep and puts the other two cards face down on the shared deck. When finished, shuffle the shared deck.
-
-    - name: Variant Maps [C]
+    - name: 'Step 6: Set Up Hirelings'
+      pretext: As a group, you may choose to use exactly three hirelings, as follows.
       children:
-        - name: Winter Map
-          children:
-            - name: Raging River.
-              text: The river divides forests _(as printed paths do)_.
+        - name: 'Step 1: Collect Pieces.'
+          text: Shuffle all the hirelings cards. Deal out three hireling cards and return the rest to the box. Collect the pieces for the dealt hireling cards into a supply.
 
-        - name: Lake Map
-          children:
-            - name: Setup Modifications.
-              text: Place the Ferry piece in the corner clearing that is also a coastal clearing.
+        - name: 'Step 2: Demote.'
+          text: If playing with three players, flip over one random hireling to its Demoted side _(marked with a "D")_. If playing with four players, flip over two random hirelings to their Demoted side. If playing with five or more players, flip over all three hirelings to their Demoted side.
 
-            - name: The Lake.
-              text: '**The Lake** is in the center of the map. The lake is treated as rivers linking each coastal clearing to each other coastal clearing. The lake divides forests.'
+        - name: 'Step 3: Set Up Hirelings.'
+          text: Starting with the last player in turn order and going counterclockwise, players set up one dealt hireling each as described on its hireling card. _(Some have no setup instructions.)_
 
-            - name: Coastal Clearings.
-              text: Clearings touching the lake _(not separated by a forest)_ are **coastal clearings**.
+        - name: 'Step 4: Place Hireling Markers.'
+          text: Place the three hireling markers—marked "4," "8," and "12"—on the "4," "8," and "12" spaces of the score track on the map.
 
-            - name: Coastal Forests.
-              text: Forests touching the lake are **coastal forests**. Each coastal forest is adjacent to its two neighboring coastal forests _(separated by one coastal clearing)_.
+        - name: 'Step 5: Return Corresponding Factions.'
+          text: A faction cannot be played if its corresponding hireling is in play _(shown by color and icon)_. Return the corresponding faction boards, pieces, and setup cards to the box.
 
-            - name: The Ferry.
-              text: Once per turn, pieces moving from the coastal clearing with the Ferry can move on the lake to any other coastal clearing, ignoring adjacency, and moving the Ferry along with them. _(You still must rule the origin or destination clearing.)_ After this, the moving player draws one card. The Ferry cannot be battled or removed.
+    - name: 'Step 7: Draw Five Cards'
+      pretext: If you are playing with two players, remove all four dominance cards from the deck. Shuffle the deck. Each player draws five cards. _(Not three, as in Standard Setup! You will choose three cards to keep in step 10.)_
 
-        - name: Mountain Map
-          children:
-            - name: Setup Modifications.
-              text: Place the 6 closed path markers to cover the 6 paths of darker color with excavated ground. Place the Tower piece in the central clearing showing two towers.
-
-            - name: Closed Paths.
-              text: A path covered with a closed path marker is a **closed path**. Clearings linked by a closed path are not adjacent, and pieces _(such as Highway Bandits)_ cannot be placed on closed paths. Closed paths enclose and divide forests as if they were paths _(so the Vagabond can slip across it)_.
-
-            - name: Removing Closed Paths.
-              text: Once per turn in their Daylight, a player can spend a card to remove a closed path marker from the game permanently and score one victory point. To remove it, that player must have any faction pieces in either clearing linked by the closed path marker.
-
-            - name: The Pass and Tower.
-              text: The clearing marked with the tower piece is **the pass**. At the end of a player's Evening, if that player rules the Pass, that player scores one victory point.
-
-            - name: Forests.
-              text: All areas on the mountain map enclosed by paths and clearings are forests (`rule:2.4`), regardless of the presence or placement of trees within.
-
-    - name: Vagabonds [D]
+    - name: 'Step 8: Set Up Factions'
+      pretext: As a group, you may choose and set up factions as described in the Standard Setup (`rule:5.1`) or you may use the faction setup cards included in the Marauder Expansion, as described below.
       children:
-        - name: Thief
+        - name: 'Step 1: Deal Setup Cards.'
+          text: Shuffle all of the militant faction setup cards _(red name with sword)_ and deal out one card to a pool in the center of the table. Shuffle the remaining militant faction setup cards together with all of the insurgent faction setup cards _(grey name with no sword)_, and deal out one faction setup card per player. _(There will be one more faction setup card than the number of players.)_
           children:
-            - name: Starting Items
-              text: Start with `item:boot`, `item:torch`, `item:tea`, `item:sword`.
+            - name: Two Players.
+              text: If you're playing with two players, remove all of the insurgent faction setup cards before dealing out any. _(You may keep them if you're playing with hirelings and feeling adventurous.)_
 
-            - name: 'Special Action: Steal'
-              text: Exhaust one `item:torch` to take a random card from any player in your clearing.
+            - name: Lock Last Insurgent.
+              text: If the last faction setup card dealt out is an insurgent, turn it sideways to show that it is locked. It cannot be chosen unless at least one militant faction has been chosen.
 
-        - name: Tinker
+            - name: Vagabond.
+              text: Whenever a Vagabond faction setup card is dealt out, also deal out one random character card next to it face up. If a player chooses this Vagabond as their faction, they must use this character card.
+
+        - name: 'Step 2: Choose Factions.'
+          text: Starting with the last player in turn order and going counterclockwise, each player chooses one faction setup card from the pool and sets up the faction immediately as it describes _(before another player chooses)_.
           children:
-            - name: Starting Items
-              text: Start with `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
+            - name: Homelands.
+              text: When setting up, players might choose one or more homeland clearings. Players cannot choose homelands that enemies have chosen as their homelands or where they cannot place all the pieces listed in setup.
 
-            - name: 'Special Action: Day Labor'
-              text: Exhaust one `item:torch` to take a card from the discard pile whose suit matches your clearing. _(You can always take a bird card.)_
+            - name: Enemy Homeland Adjacency.
+              text: Some factions require you to choose a homeland that is not adjacent to enemy homelands; if you cannot do this, choose a homeland adjacent to an enemy homeland. If you must choose a homeland that has two or more clearings between it and enemy homelands but you cannot, choose a homeland that is not adjacent to enemy homelands. _(Basically, try to set up as far away as able.)_
 
-        - name: Ranger
-          children:
-            - name: Starting Items
-              text: Start with `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
+            - name: Multiple Homeland Adjacency.
+              text: If your faction has multiple homelands and you cannot fulfill all of their enemy adjacency requirements (`rule:16.8.1.2`), choose and set them up one at a time, fulfilling each requirement as best you can.
 
-            - name: 'Special Action: Hideout'
-              text: Exhaust one `item:torch` to repair 3 items. Then, immediately end Daylight and begin Evening.
+    - name: 'Step 9: Place Score Markers'
+      pretext: Each player places their faction's score marker on the "0" space on the score track.
 
-        - name: Vagrant
-          children:
-            - name: Starting Items
-              text: Start with `item:coin`, `item:torch`, `item:boot`.
+    - name: 'Step 10: Choose Starting Hands'
+      pretext: Each player chooses three cards in their hand to keep and puts the other two cards face down on the shared deck. When finished, shuffle the shared deck.
 
-            - name: 'Special Action: Instigate'
-              text: Exhaust a `item:torch` to initiate a battle in your clearing. You choose the attacker and defender, you choose the order in which they each remove buildings and tokens, and you remove pieces for each. _(Score a victory point per building or token of either player removed, and per Hostile piece of either player removed.)_
-
-        - name: Arbiter
-          children:
-            - name: Starting Items
-              text: Start with `item:boot`, `item:torch`, `item:sword`, `item:sword`.
-
-            - name: 'Special Action: Protector'
-              text: Immediately before dice are rolled in a battle, the defender may enlist the Arbiter in the clearing of battle. The Arbiter scores one victory point and adds all of his undamaged `item:sword` to the maximum rolled hits of the defender. The Arbiter cannot enlist himself or be enlisted against himself.
-
-        - name: Scoundrel
-          children:
-            - name: Starting Items
-              text: Start with `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
-
-            - name: 'Special Action: Scorched Earth'
-              text: Exhaust a `item:torch` and place it in your clearing. Remove all enemy pieces from that clearing. Pieces cannot be placed in or moved into the clearing with the `item:torch`. _(You remain in this clearing. Once you move out, you cannot move back in. The `item:torch` cannot be removed with a "Favor of the..." card because it is not an enemy piece.)_
-
-        - name: Adventurer
-          children:
-            - name: Starting Items
-              text: Start with `item:boot`, `item:torch`, `item:hammer`.
-
-            - name: 'Special Action: Improvise'
-              text: Once per turn while taking the Quest action, you may treat one unexhausted item as any other item. When you exhaust it to complete the quest, also damage that item.
-
-        - name: Ronin
-          children:
-            - name: Starting Items
-              text: Start with `item:boot`, `item:boot`, `item:torch`, `item:sword`.
-
-            - name: 'Special Action: Swift Strike'
-              text: You may exhaust a `item:sword` to deal an extra hit in battle _(after rolling)_.
-
-        - name: Harrier
-          children:
-            - name: Starting Items
-              text: Start with `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
-
-            - name: 'Special Action: Glide'
-              text: Exhaust a `item:torch` to move only your Vagabond pawn _(not other pieces)_ to any clearing _(even Hostile)_ on the map, ignoring adjacency and paths, without exhausting any `item:boot`.
-
-    - name: Hirelings [E]
+- name: Variant Maps
+  color: '#000000'
+  appendix: C
+  children:
+    - name: Winter Map
       children:
-        - name: Gaining and Losing Hirelings
-          children:
-            - name: Gaining from Supply.
-              text: When a player's score marker enters a space with a hireling marker, they take the hireling marker and place it below their Evening _(as a reminder)_. At the end of their turn, they take any hireling card from the supply, roll for control (`rule:16.4.1.2`), and flip over the hireling marker.
+        - name: Raging River.
+          text: The river divides forests _(as printed paths do)_.
 
-            - name: Rolling for Control.
-              text: When a player gains a hireling card, they roll the control die and place control markers on the hireling card equal in number to the die roll. They count only the gold die pips if they have the most victory points or are tied for the most; they count all the die pips otherwise _(including if they have activated a dominance card)_.
-
-            - name: Gaining from Another Player.
-              text: At the end of a player's turn, they must remove one control marker from each hireling card they gained on previous turns. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control (`rule:16.4.1.2`).
-
-        - name: Abilities and Actions
-          text: Hirelings have various actions and abilities, as shown by unique icons. Actions and abilities that start with "**Controller**:" are gained by the hireling's controller.
-          children:
-            - name: When-Hired Action (`hireling:whenhired`).
-              text: When they take control of the hireling, the controlling player must take this action.
-
-            - name: Ability (`hireling:ability`).
-              text: This ability is always active or it specifies when it happens.
-
-            - name: Start-of-Birdsong Action (`hireling:birdsong`).
-              text: At the start of their Birdsong, the controlling player must or may take this action, as the action describes.
-
-            - name: Once-Per-Daylight Action (`hireling:daylight`).
-              text: Once in their Daylight, the controlling player may take this action.
-
-        - name: Rules
-          children:
-            - name: Rule.
-              text: A hireling's controller treats hireling pieces as their own only for rule. _(The controller can rule a clearing even with hirelings alone.)_ Uncontrolled hirelings can rule clearings as if they were players (`rule:2.5`).
-
-            - name: Enemy Status.
-              text: A hireling is an enemy to players other than its controller and players in coalition with its controller.
-
-            - name: Separate Pieces.
-              text: Hireling pieces are not the controller's faction pieces. _(So, the Duchy cannot count them as Duchy pieces to sway, the Keepers cannot remove them to encamp, etc.)_.
-
-            - name: Separate Actions.
-              text: A hireling's Move or Battle actions can only move or battle with the hireling's pieces and cannot include the controller's pieces. Hirelings cannot take actions in other ways _(such as from their controller's Move actions, False Orders, or the Vagabond's Allied Relationship)._
-
-            - name: Separate Effects.
-              text: Hirelings cannot use their controller's abilities, crafted persistent effects, or ambush cards. _(So, a hireling could not use Boat Builders while moving, and the Highway Bandits could not be placed on a river. A hireling's controller could not play an ambush card while battling with the hireling.)_
-
-            - name: No Scoring from Removal.
-              text: A hireling's controller does not score victory points if their hireling removes an enemy piece _(usually in battle)_. _(Players can still score points by removing hireling buildings and tokens, even when defending in battle against the hireling. Players still score as normal if the Warm Sun Prophets force that player's faction pieces to battle.)_
-
-            - name: Weird Stuff.
-              text: If you move a hireling with the Ferry, you do draw a card. If you move hireling warriors into a clearing with an Alliance sympathy token or remove Alliance sympathy by using a hireling, this does trigger Outrage. _(These effects refer to a "player moving" or "player removing.")_
-
-    - name: Landmarks [F]
+    - name: Lake Map
       children:
-        - name: General Rules
-          children:
-            - name: Safety.
-              text: Landmarks cannot be battled, moved, or removed, unless noted explicitly by a landmark.
+        - name: Setup Modifications.
+          text: Place the Ferry piece in the corner clearing that is also a coastal clearing.
 
-            - name: Ownership.
-              text: Landmarks are not owned by any faction and are not enemy pieces.
+        - name: The Lake.
+          text: '**The Lake** is in the center of the map. The lake is treated as rivers linking each coastal clearing to each other coastal clearing. The lake divides forests.'
 
-    - name: Glossary [G]
+        - name: Coastal Clearings.
+          text: Clearings touching the lake _(not separated by a forest)_ are **coastal clearings**.
+
+        - name: Coastal Forests.
+          text: Forests touching the lake are **coastal forests**. Each coastal forest is adjacent to its two neighboring coastal forests _(separated by one coastal clearing)_.
+
+        - name: The Ferry.
+          text: Once per turn, pieces moving from the coastal clearing with the Ferry can move on the lake to any other coastal clearing, ignoring adjacency, and moving the Ferry along with them. _(You still must rule the origin or destination clearing.)_ After this, the moving player draws one card. The Ferry cannot be battled or removed.
+
+    - name: Mountain Map
       children:
-        - name: Ability.
-          text: A persistent effect of a faction as listed at the top of its faction board and in its Faction Rules and Abilities section, or a persistent effect of a hireling as listed on its hireling card (`rule:16.4.2`).
+        - name: Setup Modifications.
+          text: Place the 6 closed path markers to cover the 6 paths of darker color with excavated ground. Place the Tower piece in the central clearing showing two towers.
 
-        - name: Adjacent.
-          text: A clearing is adjacent to all other clearings linked to it by a path. A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path, except on the lake (`rule:16.2.2`). `faction:duchy$12.2.2`
+        - name: Closed Paths.
+          text: A path covered with a closed path marker is a **closed path**. Clearings linked by a closed path are not adjacent, and pieces _(such as Highway Bandits)_ cannot be placed on closed paths. Closed paths enclose and divide forests as if they were paths _(so the Vagabond can slip across it)_.
 
-        - name: Building.
-          text: A square cardboard piece owned by its faction.
+        - name: Removing Closed Paths.
+          text: Once per turn in their Daylight, a player can spend a card to remove a closed path marker from the game permanently and score one victory point. To remove it, that player must have any faction pieces in either clearing linked by the closed path marker.
 
-        - name: Cannot.
-          text: See `rule:1.1.2`.
+        - name: The Pass and Tower.
+          text: The clearing marked with the tower piece is **the pass**. At the end of a player's Evening, if that player rules the Pass, that player scores one victory point.
 
-        - name: Discard.
-          text: Place the prompted card in the shared discard pile (`rule:2.1`). If it is a dominance card, place it near the map instead (`rule:3.3.3`). `faction:cult$10.4.2`
+        - name: Forests.
+          text: All areas on the mountain map enclosed by paths and clearings are forests (`rule:2.4`), regardless of the presence or placement of trees within.
 
-        - name: Draw.
-          text: Take the top card from the shared deck (`rule:2.1`).
+- name: Vagabonds
+  color: '#000000'
+  appendix: D
+  children:
+    - name: Thief
+      children:
+        - name: Starting Items
+          text: Start with `item:boot`, `item:torch`, `item:tea`, `item:sword`.
 
-        - name: Effect.
-          text: Anything that changes the game, including persistent effects, faction abilities, and actions.
+        - name: 'Special Action: Steal'
+          text: Exhaust one `item:torch` to take a random card from any player in your clearing.
 
-        - name: Enemy.
-          text: Any other player that you are not in a coalition with (`rule:9.2.8`), or a hireling that is in the supply or held by an enemy player.
+    - name: Tinker
+      children:
+        - name: Starting Items
+          text: Start with `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
 
-        - name: Enemy Piece.
-          text: A faction piece of an enemy player or a hireling piece of an enemy hireling, except while you're treating the piece as your own for rule _(Riverfolk mercenaries, controlled hirelings, etc.)_. _(Items cannot be enemy pieces.)_
+        - name: 'Special Action: Day Labor'
+          text: Exhaust one `item:torch` to take a card from the discard pile whose suit matches your clearing. _(You can always take a bird card.)_
 
-        - name: Faction Piece.
-          text: All the warriors, pawns, buildings, and tokens listed on the back of a faction board. _(Items are not faction pieces.)_ See `rule:1.5.2`.
+    - name: Ranger
+      children:
+        - name: Starting Items
+          text: Start with `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
 
-        - name: Forest.
-          text: An area on the map enclosed by paths and clearings.
+        - name: 'Special Action: Hideout'
+          text: Exhaust one `item:torch` to repair 3 items. Then, immediately end Daylight and begin Evening.
 
-        - name: Force.
-          text: See `rule:1.5.5`.
+    - name: Vagrant
+      children:
+        - name: Starting Items
+          text: Start with `item:coin`, `item:torch`, `item:boot`.
 
-        - name: Item.
-          text: A square cardboard piece showing an item (`item:boot`, `item:sword`, `item:crossbow`, etc.) that is not owned by any faction.
+        - name: 'Special Action: Instigate'
+          text: Exhaust a `item:torch` to initiate a battle in your clearing. You choose the attacker and defender, you choose the order in which they each remove buildings and tokens, and you remove pieces for each. _(Score a victory point per building or token of either player removed, and per Hostile piece of either player removed.)_
 
-        - name: Map.
-          text: See `rule:2.2`.
+    - name: Arbiter
+      children:
+        - name: Starting Items
+          text: Start with `item:boot`, `item:torch`, `item:sword`, `item:sword`.
 
-        - name: Map Edge.
-          text: The single closed loop of clearings and paths that define the map boundary, including closed paths on the mountain map.
+        - name: 'Special Action: Protector'
+          text: Immediately before dice are rolled in a battle, the defender may enlist the Arbiter in the clearing of battle. The Arbiter scores one victory point and adds all of his undamaged `item:sword` to the maximum rolled hits of the defender. The Arbiter cannot enlist himself or be enlisted against himself.
 
-        - name: Path.
-          text: A white link between two clearings.
+    - name: Scoundrel
+      children:
+        - name: Starting Items
+          text: Start with `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
 
-        - name: Pawn.
-          text: A wooden figure owned by its faction.
+        - name: 'Special Action: Scorched Earth'
+          text: Exhaust a `item:torch` and place it in your clearing. Remove all enemy pieces from that clearing. Pieces cannot be placed in or moved into the clearing with the `item:torch`. _(You remain in this clearing. Once you move out, you cannot move back in. The `item:torch` cannot be removed with a "Favor of the..." card because it is not an enemy piece.)_
 
-        - name: Piece.
-          text: Any component—building, token, warrior, pawn, item, marker, and so on.
+    - name: Adventurer
+      children:
+        - name: Starting Items
+          text: Start with `item:boot`, `item:torch`, `item:hammer`.
 
-        - name: Place.
-          text: Take the prompted piece from the prompted source and put it in the prompted destination. Usually, no source is specified—in this case, take it from its supply, or take the leftmost prompted piece if it is on a track. _Put_ is shorthand for _Place_.
+        - name: 'Special Action: Improvise'
+          text: Once per turn while taking the Quest action, you may treat one unexhausted item as any other item. When you exhaust it to complete the quest, also damage that item.
 
-        - name: Play Area.
-          text: The area around your faction board. Cards in it can only be spent, discarded, or used for other purposes if explicitly instructed.
+    - name: Ronin
+      children:
+        - name: Starting Items
+          text: Start with `item:boot`, `item:boot`, `item:torch`, `item:sword`.
 
-        - name: Replace.
-          text: Shorthand for **remove** then **place**. Remove the prompted piece and place the other prompted piece in location from which the first was removed. You must complete all steps of the **replace** in order to do it.
+        - name: 'Special Action: Swift Strike'
+          text: You may exhaust a `item:sword` to deal an extra hit in battle _(after rolling)_.
 
-        - name: Remove.
-          text: Take the prompted piece from the prompted source and return it to the prompted destination. Usually, no destination is specified— in this case, return it to its owner's supply, return it to the rightmost empty space of its track it has one, or remove it permanently otherwise. _(Items are removed permanently.)_
+    - name: Harrier
+      children:
+        - name: Starting Items
+          text: Start with `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
 
-        - name: Reveal.
-          text: Place the prompted card face up in your play area. Usually, no source is specified—in this case, take it from your hand.
+        - name: 'Special Action: Glide'
+          text: Exhaust a `item:torch` to move only your Vagabond pawn _(not other pieces)_ to any clearing _(even Hostile)_ on the map, ignoring adjacency and paths, without exhausting any `item:boot`.
 
-        - name: River.
-          text: A blue link between two clearings.
+- name: Hirelings
+  color: '#000000'
+  appendix: E
+  children:
+    - name: Gaining and Losing Hirelings
+      children:
+        - name: Gaining from Supply.
+          text: When a player's score marker enters a space with a hireling marker, they take the hireling marker and place it below their Evening _(as a reminder)_. At the end of their turn, they take any hireling card from the supply, roll for control (`rule:19.1.2`), and flip over the hireling marker.
 
-        - name: Ruin.
-          text: Piece covering an "R" slot in a clearing (`rule:2.2.4`).
+        - name: Rolling for Control.
+          text: When a player gains a hireling card, they roll the control die and place control markers on the hireling card equal in number to the die roll. They count only the gold die pips if they have the most victory points or are tied for the most; they count all the die pips otherwise _(including if they have activated a dominance card)_.
 
+        - name: Gaining from Another Player.
+          text: At the end of a player's turn, they must remove one control marker from each hireling card they gained on previous turns. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control (`rule:19.1.2`).
+
+    - name: Abilities and Actions
+      pretext: Hirelings have various actions and abilities, as shown by unique icons. Actions and abilities that start with "**Controller**:" are gained by the hireling's controller.
+      children:
+        - name: When-Hired Action (`hireling:whenhired`).
+          text: When they take control of the hireling, the controlling player must take this action.
+
+        - name: Ability (`hireling:ability`).
+          text: This ability is always active or it specifies when it happens.
+
+        - name: Start-of-Birdsong Action (`hireling:birdsong`).
+          text: At the start of their Birdsong, the controlling player must or may take this action, as the action describes.
+
+        - name: Once-Per-Daylight Action (`hireling:daylight`).
+          text: Once in their Daylight, the controlling player may take this action.
+
+    - name: Rules
+      children:
         - name: Rule.
-          text: See `rule:2.5`.
+          text: A hireling's controller treats hireling pieces as their own only for rule. _(The controller can rule a clearing even with hirelings alone.)_ Uncontrolled hirelings can rule clearings as if they were players (`rule:2.5`).
 
-        - name: Show.
-          text: Let the prompted player see the prompted piece.
+        - name: Enemy Status.
+          text: A hireling is an enemy to players other than its controller and players in coalition with its controller.
 
-        - name: Slot.
-          text: White box in a clearing (`rule:2.2.3`).
+        - name: Separate Pieces.
+          text: Hireling pieces are not the controller's faction pieces. _(So, the Duchy cannot count them as Duchy pieces to sway, the Keepers cannot remove them to encamp, etc.)_.
 
-        - name: Spend.
-          text: See **Discard** (`rule:16.6.5`). _(These terms are equivalent, but spend is used in contexts with choice.)_
+        - name: Separate Actions.
+          text: A hireling's Move or Battle actions can only move or battle with the hireling's pieces and cannot include the controller's pieces. Hirelings cannot take actions in other ways _(such as from their controller's Move actions, False Orders, or the Vagabond's Allied Relationship)._
 
-        - name: Supply.
-          text: The collection of pieces that is not on a faction board or the map. The item supply is the collection of items on the map.
+        - name: Separate Effects.
+          text: Hirelings cannot use their controller's abilities, crafted persistent effects, or ambush cards. _(So, a hireling could not use Boat Builders while moving, and the Highway Bandits could not be placed on a river. A hireling's controller could not play an ambush card while battling with the hireling.)_
 
-        - name: Swap.
-          text: Switch the locations of the two prompted pieces. _(This ignores move and place restrictions, such as the Corvids' snare and the Marquise's keep.)_
+        - name: No Scoring from Removal.
+          text: A hireling's controller does not score victory points if their hireling removes an enemy piece _(usually in battle)_. _(Players can still score points by removing hireling buildings and tokens, even when defending in battle against the hireling. Players still score as normal if the Warm Sun Prophets force that player's faction pieces to battle.)_
 
-        - name: Token.
-          text: A circular cardboard piece owned by its faction.
+        - name: Weird Stuff.
+          text: If you move a hireling with the Ferry, you do draw a card. If you move hireling warriors into a clearing with an Alliance sympathy token or remove Alliance sympathy by using a hireling, this does trigger Outrage. _(These effects refer to a "player moving" or "player removing.")_
 
-        - name: Treat.
-          text: The prompted thing takes on the properties of the second prompted thing. While you treat enemy pieces as your own for rule, they are not enemy pieces, but they are still faction pieces of that enemy player. _(For example, Riverfolk warriors you've hired as mercenaries are not enemy pieces to you, but they are still Riverfolk faction pieces.)_
+- name: Landmarks
+  color: '#000000'
+  appendix: F
+  children:
+    - name: General Rules
+      children:
+        - name: Safety.
+          text: Landmarks cannot be battled, moved, or removed, unless noted explicitly by a landmark.
 
-        - name: Warrior.
-          text: A wooden figure owned by its faction. _(The Vagabond pawn is not a warrior and cannot be removed.)_
+        - name: Ownership.
+          text: Landmarks are not owned by any faction and are not enemy pieces.
+
+- name: Glossary
+  color: '#000000'
+  appendix: G
+  children:
+    - name: Ability.
+      pretext: A persistent effect of a faction as listed at the top of its faction board and in its Faction Rules and Abilities section, or a persistent effect of a hireling as listed on its hireling card (`rule:19.2`).
+
+    - name: Adjacent.
+      pretext: A clearing is adjacent to all other clearings linked to it by a path. A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path, except on the lake (`rule:17.2`). `faction:duchy$12.2.2`
+
+    - name: Building.
+      pretext: A square cardboard piece owned by its faction.
+
+    - name: Cannot.
+      pretext: See `rule:1.1.2`.
+
+    - name: Discard.
+      pretext: Place the prompted card in the shared discard pile (`rule:2.1`). If it is a dominance card, place it near the map instead (`rule:3.3.3`). `faction:cult$10.4.2`
+
+    - name: Draw.
+      pretext: Take the top card from the shared deck (`rule:2.1`).
+
+    - name: Effect.
+      pretext: Anything that changes the game, including persistent effects, faction abilities, and actions.
+
+    - name: Enemy.
+      pretext: Any other player that you are not in a coalition with (`rule:9.2.8`), or a hireling that is in the supply or held by an enemy player.
+
+    - name: Enemy Piece.
+      pretext: A faction piece of an enemy player or a hireling piece of an enemy hireling, except while you're treating the piece as your own for rule _(Riverfolk mercenaries, controlled hirelings, etc.)_. _(Items cannot be enemy pieces.)_
+
+    - name: Faction Piece.
+      pretext: All the warriors, pawns, buildings, and tokens listed on the back of a faction board. _(Items are not faction pieces.)_ See `rule:1.5.2`.
+
+    - name: Forest.
+      pretext: An area on the map enclosed by paths and clearings.
+
+    - name: Force.
+      pretext: See `rule:1.5.5`.
+
+    - name: Item.
+      pretext: A square cardboard piece showing an item (`item:boot`, `item:sword`, `item:crossbow`, etc.) that is not owned by any faction.
+
+    - name: Map.
+      pretext: See `rule:2.2`.
+
+    - name: Map Edge.
+      pretext: The single closed loop of clearings and paths that define the map boundary, including closed paths on the mountain map.
+
+    - name: Path.
+      pretext: A white link between two clearings.
+
+    - name: Pawn.
+      pretext: A wooden figure owned by its faction.
+
+    - name: Piece.
+      pretext: Any component—building, token, warrior, pawn, item, marker, and so on.
+
+    - name: Place.
+      pretext: Take the prompted piece from the prompted source and put it in the prompted destination. Usually, no source is specified—in this case, take it from its supply, or take the leftmost prompted piece if it is on a track. _Put_ is shorthand for _Place_.
+
+    - name: Play Area.
+      pretext: The area around your faction board. Cards in it can only be spent, discarded, or used for other purposes if explicitly instructed.
+
+    - name: Replace.
+      pretext: Shorthand for **remove** then **place**. Remove the prompted piece and place the other prompted piece in location from which the first was removed. You must complete all steps of the **replace** in order to do it.
+
+    - name: Remove.
+      pretext: Take the prompted piece from the prompted source and return it to the prompted destination. Usually, no destination is specified— in this case, return it to its owner's supply, return it to the rightmost empty space of its track it has one, or remove it permanently otherwise. _(Items are removed permanently.)_
+
+    - name: Reveal.
+      pretext: Place the prompted card face up in your play area. Usually, no source is specified—in this case, take it from your hand.
+
+    - name: River.
+      pretext: A blue link between two clearings.
+
+    - name: Ruin.
+      pretext: Piece covering an "R" slot in a clearing (`rule:2.2.4`).
+
+    - name: Rule.
+      pretext: See `rule:2.5`.
+
+    - name: Show.
+      pretext: Let the prompted player see the prompted piece.
+
+    - name: Slot.
+      pretext: White box in a clearing (`rule:2.2.3`).
+
+    - name: Spend.
+      pretext: See **Discard** (`rule:21.5`). _(These terms are equivalent, but spend is used in contexts with choice.)_
+
+    - name: Supply.
+      pretext: The collection of pieces that is not on a faction board or the map. The item supply is the collection of items on the map.
+
+    - name: Swap.
+      pretext: Switch the locations of the two prompted pieces. _(This ignores move and place restrictions, such as the Corvids' snare and the Marquise's keep.)_
+
+    - name: Token.
+      pretext: A circular cardboard piece owned by its faction.
+
+    - name: Treat.
+      pretext: The prompted thing takes on the properties of the second prompted thing. While you treat enemy pieces as your own for rule, they are not enemy pieces, but they are still faction pieces of that enemy player. _(For example, Riverfolk warriors you've hired as mercenaries are not enemy pieces to you, but they are still Riverfolk faction pieces.)_
+
+    - name: Warrior.
+      pretext: A wooden figure owned by its faction. _(The Vagabond pawn is not a warrior and cannot be removed.)_
