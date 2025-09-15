@@ -43,14 +43,7 @@
               @let faqCount = rulesService.faq().length;
               @let errataCount = paramService.currentErrata().length;
 
-              <ion-item
-                class="toggle"
-                [disabled]="
-                  paramService.showRules() &&
-                  !paramService.showFAQ() &&
-                  !paramService.showErrata()
-                "
-              >
+              <ion-item class="toggle">
                 <ion-checkbox
                   label-placement="end"
                   alignment="start"
@@ -60,14 +53,7 @@
                 </ion-checkbox>
               </ion-item>
 
-              <ion-item
-                class="toggle"
-                [disabled]="
-                  !paramService.showRules() &&
-                  paramService.showFAQ() &&
-                  !paramService.showErrata()
-                "
-              >
+              <ion-item class="toggle">
                 <ion-checkbox
                   label-placement="end"
                   alignment="start"
@@ -77,14 +63,7 @@
                 </ion-checkbox>
               </ion-item>
 
-              <ion-item
-                class="toggle"
-                [disabled]="
-                  !paramService.showRules() &&
-                  !paramService.showFAQ() &&
-                  paramService.showErrata()
-                "
-              >
+              <ion-item class="toggle">
                 <ion-checkbox
                   label-placement="end"
                   alignment="start"
