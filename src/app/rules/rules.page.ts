@@ -18,12 +18,14 @@ import {
   IonIcon,
   IonMenuButton,
   IonSearchbar,
+  IonSelect,
+  IonSelectOption,
   IonTitle,
   IonToolbar,
 } from '@ionic/angular/standalone';
 import { TranslateModule } from '@ngx-translate/core';
 import { addIcons } from 'ionicons';
-import { arrowUpOutline, search } from 'ionicons/icons';
+import { arrowUpOutline, language, search } from 'ionicons/icons';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import { navigation$ } from 'src/app/navigation';
 import { ParamService } from 'src/app/param-service';
@@ -53,10 +55,12 @@ import { RulesDisplayComponent } from '../rules-display/rules-display.component'
     IonSearchbar,
     RulesDisplayComponent,
     CompareRulesComponent,
+    IonSelect,
+    IonSelectOption,
   ],
 })
 export class RulesPage {
-  private paramService = inject(ParamService);
+  public paramService = inject(ParamService);
   private rulesService = inject(RulesService);
 
   readonly search = linkedQueryParam('search', {
@@ -89,7 +93,7 @@ export class RulesPage {
   }
 
   constructor() {
-    addIcons({ arrowUpOutline, search });
+    addIcons({ arrowUpOutline, search, language });
 
     navigation$
       .pipe(takeUntilDestroyed())

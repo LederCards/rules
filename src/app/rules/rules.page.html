@@ -31,16 +31,38 @@
       ></ion-searchbar>
     }
 
-    @if (!shouldCompareRulesInstead()) {
-      <ion-buttons slot="end">
+    <ion-buttons slot="end">
+      @if (!showSearch()) {
+        <ion-button (click)="languageSelect.open()">
+          <ion-icon name="language"></ion-icon>
+        </ion-button>
+
+        <ion-select
+          class="ion-hide"
+          #languageSelect
+          label="Select Language"
+          placeholder="Select Language"
+          (ionChange)="paramService.changeLanguage()"
+          [(ngModel)]="paramService.currentLocale"
+          [ngModelOptions]="{ standalone: true }"
+        >
+          @for (language of paramService.allLanguages(); track $index) {
+            <ion-select-option [value]="language.code">
+              {{ language.name }}
+            </ion-select-option>
+          }
+        </ion-select>
+      }
+
+      @if (!shouldCompareRulesInstead()) {
         <ion-button
           (click)="toggleSearch()"
           [title]="'App.Titles.Search' | translate"
         >
           <ion-icon name="search"></ion-icon>
         </ion-button>
-      </ion-buttons>
-    }
+      }
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
