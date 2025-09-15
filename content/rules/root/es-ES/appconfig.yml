@@ -1,6 +1,7 @@
 App:
   NavTitle: 5ª Ed.USA
   NavTitleShort: 5ª Ed.USA
+  NoItemsFound: No se encontraron artículos.
   SearchPlaceholder: Buscar reglas
   Titles:
     Search: Buscar reglas

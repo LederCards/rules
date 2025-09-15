@@ -1,6 +1,7 @@
 App:
   NavTitle: 6th Edition
   NavTitleShort: 6th Ed.
+  NoItemsFound: No items found.
   SearchPlaceholder: Search Rules
   Titles:
     Search: Search Rules

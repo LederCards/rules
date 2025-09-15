@@ -1,0 +1,7 @@
+ion-item {
+  --min-height: unset;
+
+  &.item-disabled {
+    opacity: 0.7;
+  }
+}

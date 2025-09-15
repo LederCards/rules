@@ -2,7 +2,6 @@
 import { Component, inject, type OnInit } from '@angular/core';
 import {
   IonApp,
-  IonCheckbox,
   IonContent,
   IonHeader,
   IonItem,
@@ -46,7 +45,6 @@ import { RulesService } from 'src/app/rules-service';
     IonSelectOption,
     FormsModule,
     IonMenuToggle,
-    IonCheckbox,
   ],
 })
 export class AppComponent implements OnInit {

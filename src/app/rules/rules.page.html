@@ -33,6 +33,70 @@
 
     <ion-buttons slot="end">
       @if (!showSearch()) {
+        <ion-button (click)="displayOptions.present($event)">
+          <ion-icon name="options"></ion-icon>
+        </ion-button>
+
+        <ion-popover #displayOptions>
+          <ng-template>
+            <ion-list class="dropdown-list">
+              @let faqCount = rulesService.faq().length;
+              @let errataCount = paramService.currentErrata().length;
+
+              <ion-item
+                class="toggle"
+                [disabled]="
+                  paramService.showRules() &&
+                  !paramService.showFAQ() &&
+                  !paramService.showErrata()
+                "
+              >
+                <ion-checkbox
+                  label-placement="end"
+                  alignment="start"
+                  [(ngModel)]="paramService.showRules"
+                >
+                  Show Rules
+                </ion-checkbox>
+              </ion-item>
+
+              <ion-item
+                class="toggle"
+                [disabled]="
+                  !paramService.showRules() &&
+                  paramService.showFAQ() &&
+                  !paramService.showErrata()
+                "
+              >
+                <ion-checkbox
+                  label-placement="end"
+                  alignment="start"
+                  [(ngModel)]="paramService.showFAQ"
+                >
+                  Show FAQ ({{ faqCount }})
+                </ion-checkbox>
+              </ion-item>
+
+              <ion-item
+                class="toggle"
+                [disabled]="
+                  !paramService.showRules() &&
+                  !paramService.showFAQ() &&
+                  paramService.showErrata()
+                "
+              >
+                <ion-checkbox
+                  label-placement="end"
+                  alignment="start"
+                  [(ngModel)]="paramService.showErrata"
+                >
+                  Show Errata ({{ errataCount }})
+                </ion-checkbox>
+              </ion-item>
+            </ion-list>
+          </ng-template>
+        </ion-popover>
+
         <ion-button (click)="languageSelect.open()">
           <ion-icon name="language"></ion-icon>
         </ion-button>

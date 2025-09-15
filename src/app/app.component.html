@@ -44,34 +44,6 @@
               </ion-item>
             </ion-menu-toggle>
           }
-
-          @let faqCount = rulesService.faq().length;
-
-          @if (faqCount > 0) {
-            <ion-item class="toggle">
-              <ion-checkbox
-                label-placement="start"
-                alignment="start"
-                [(ngModel)]="paramService.showFAQ"
-              >
-                Show FAQ ({{ faqCount }})
-              </ion-checkbox>
-            </ion-item>
-          }
-
-          @let errataCount = paramService.currentErrata().length;
-
-          @if (errataCount > 0) {
-            <ion-item class="toggle">
-              <ion-checkbox
-                label-placement="start"
-                alignment="start"
-                [(ngModel)]="paramService.showErrata"
-              >
-                Show Errata ({{ errataCount }})
-              </ion-checkbox>
-            </ion-item>
-          }
         </ion-list>
       </ion-content>
     </ion-menu>

@@ -64,6 +64,10 @@ export class ParamService {
     defaultValue: '',
   });
 
+  public showRules = injectLocalStorage<boolean>('showRules', {
+    defaultValue: true,
+  });
+
   public showFAQ = injectLocalStorage<boolean>('showFAQ', {
     defaultValue: false,
   });

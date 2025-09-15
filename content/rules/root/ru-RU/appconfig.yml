@@ -1,6 +1,7 @@
 App:
   NavTitle: Правила и фракции
   NavTitleShort: Правила
+  NoItemsFound: Ничего не найдено.
   SearchPlaceholder: Поиск в правилах
   Titles:
     Search: Поиск

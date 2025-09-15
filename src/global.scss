@@ -233,6 +233,8 @@ a:not(.rule-link) {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  font-size: 2em;
 }
 
 .hidden {
@@ -247,4 +249,8 @@ p {
 .specialhighlight {
   padding: 5px;
   background-color: #ead2e4;
+}
+
+.dropdown-list {
+  padding-bottom: 0 !important;
 }

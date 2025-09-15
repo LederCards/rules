@@ -1,6 +1,7 @@
 App:
   NavTitle: 8ª Ed.
   NavTitleShort: 8ª Ed.
+  NoItemsFound: Nenhum item encontrado.
   SearchPlaceholder: Procurar nas Regras
   Titles:
-    Search: Procurar nas Regas
+    Search: Procurar nas Regras

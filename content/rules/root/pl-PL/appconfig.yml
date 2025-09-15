@@ -1,6 +1,7 @@
 App:
   NavTitle: 6-ta Edycja
   NavTitleShort: 6-ta Edycja
+  NoItemsFound: Nie znaleziono żadnych pozycji.
   SearchPlaceholder: Szukaj Zasad
   Titles:
     Search: Szukaj Zasad
