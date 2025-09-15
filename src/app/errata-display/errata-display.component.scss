@@ -5,6 +5,7 @@
 .errata {
   padding: 5px;
   background-color: hsl(from var(--ion-color-secondary) h s calc(l + 15));
+  border: 1px solid hsl(from var(--ion-color-secondary) h s calc(l + 15));
   margin-bottom: 4px;
 
   &:first-child {

@@ -45,12 +45,12 @@
 </ion-header>
 
 <ion-content
-  class="ion-padding"
+  class="ion-padding printable"
   scrollEvents="true"
   (ionScroll)="scroll($event)"
 >
   @if (showScrollUp()) {
-    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="print-hide">
       <ion-fab-button
         size="small"
         color="primary"

@@ -1,0 +1,53 @@
+.print-only {
+  @media screen {
+    display: none !important;
+  }
+}
+
+@media print {
+  ion-header,
+  .print-hide {
+    display: none !important;
+  }
+
+  body,
+  ion-app,
+  ion-split-pane,
+  ion-router-outlet,
+  .ion-page,
+  ion-content,
+  ion-content::part(scroll) {
+    contain: unset !important;
+    transform: unset !important;
+    background: #fff !important;
+    --background: unset !important;
+    padding: 0 !important;
+    display: block !important;
+    height: auto !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  .print-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding-top: 8px;
+  }
+
+  .page-container:not(.printable) {
+    display: none;
+  }
+
+  .page-container {
+    margin-top: 50px;
+    border-bottom: none !important;
+  }
+}
