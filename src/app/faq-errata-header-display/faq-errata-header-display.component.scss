@@ -1,0 +1,24 @@
+.rule-container {
+  margin-bottom: 15px;
+}
+
+.rule {
+  font-size: 21px;
+  font-variant: small-caps;
+  font-weight: bold;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media (max-width: 576px) {
+    font-size: 18px;
+  }
+}
+
+.index {
+  margin-right: 20px;
+
+  @media (max-width: 576px) {
+    margin-right: 5px;
+  }
+}

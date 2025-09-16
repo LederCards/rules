@@ -246,34 +246,104 @@
     </div>
   } @else {
     @for (rule of allRules(); track $index) {
+      @if (hasFAQ(rule.index)) {
+        <app-faq-errata-header-display
+          [rule]="rule"
+        ></app-faq-errata-header-display>
+      }
+
       <app-faq-display [index]="rule.index"></app-faq-display>
+
+      @for (childRule of rule.children; track $index) {
+        @if (hasFAQ(childRule.index)) {
+          <app-faq-errata-header-display
+            [rule]="childRule"
+          ></app-faq-errata-header-display>
+        }
+
+        <app-faq-display [index]="childRule.index"></app-faq-display>
+
+        @for (grandchildRule of childRule.children; track $index) {
+          @if (hasFAQ(grandchildRule.index)) {
+            <app-faq-errata-header-display
+              [rule]="grandchildRule"
+            ></app-faq-errata-header-display>
+          }
+
+          <app-faq-display [index]="grandchildRule.index"></app-faq-display>
+
+          @if (grandchildRule.children) {
+            @for (descRule of grandchildRule.children; track $index) {
+              @if (hasFAQ(descRule.index)) {
+                <app-faq-errata-header-display
+                  [rule]="descRule"
+                ></app-faq-errata-header-display>
+              }
+
+              <app-faq-display [index]="descRule.index"></app-faq-display>
+
+              @if (descRule.children) {
+                @for (descDescRule of descRule.children; track $index) {
+                  @if (hasFAQ(descDescRule.index)) {
+                    <app-faq-errata-header-display
+                      [rule]="descDescRule"
+                    ></app-faq-errata-header-display>
+                  }
+                  <app-faq-display
+                    [index]="descDescRule.index"
+                  ></app-faq-display>
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @for (rule of allRules(); track $index) {
+      @if (hasErrata(rule.index)) {
+        <app-faq-errata-header-display
+          [rule]="rule"
+        ></app-faq-errata-header-display>
+      }
 
       <app-errata-display [index]="rule.index"></app-errata-display>
 
       @for (childRule of rule.children; track $index) {
-        <app-faq-display [index]="childRule.index"></app-faq-display>
+        @if (hasErrata(childRule.index)) {
+          <app-faq-errata-header-display
+            [rule]="childRule"
+          ></app-faq-errata-header-display>
+        }
 
         <app-errata-display [index]="childRule.index"></app-errata-display>
 
         @for (grandchildRule of childRule.children; track $index) {
-          <app-faq-display [index]="grandchildRule.index"></app-faq-display>
-
+          @if (hasErrata(grandchildRule.index)) {
+            <app-faq-errata-header-display
+              [rule]="grandchildRule"
+            ></app-faq-errata-header-display>
+          }
           <app-errata-display
             [index]="grandchildRule.index"
           ></app-errata-display>
 
           @if (grandchildRule.children) {
             @for (descRule of grandchildRule.children; track $index) {
-              <app-faq-display [index]="descRule.index"></app-faq-display>
-
+              @if (hasErrata(descRule.index)) {
+                <app-faq-errata-header-display
+                  [rule]="descRule"
+                ></app-faq-errata-header-display>
+              }
               <app-errata-display [index]="descRule.index"></app-errata-display>
 
               @if (descRule.children) {
                 @for (descDescRule of descRule.children; track $index) {
-                  <app-faq-display
-                    [index]="descDescRule.index"
-                  ></app-faq-display>
-
+                  @if (hasErrata(descDescRule.index)) {
+                    <app-faq-errata-header-display
+                      [rule]="descDescRule"
+                    ></app-faq-errata-header-display>
+                  }
                   <app-errata-display
                     [index]="descDescRule.index"
                   ></app-errata-display>
