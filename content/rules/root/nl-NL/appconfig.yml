@@ -2,6 +2,11 @@ App:
   NavTitle: 6de Ed.
   NavTitleShort: 6de Ed.
   NoItemsFound: Geen items gevonden.
+  NoRulesAvailable: Er zijn geen regels beschikbaar.
   SearchPlaceholder: Zoek Regels
+  Locale:
+    ShowRules: Toon Regels
+    ShowFAQ: Toon FAQ
+    ShowErrata: Toon Errata
   Titles:
     Search: Zoek Regels

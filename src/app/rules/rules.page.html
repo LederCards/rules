@@ -49,7 +49,7 @@
                   alignment="start"
                   [(ngModel)]="paramService.showRules"
                 >
-                  Show Rules
+                  {{ 'App.Locale.ShowRules' | translate }}
                 </ion-checkbox>
               </ion-item>
 
@@ -59,7 +59,7 @@
                   alignment="start"
                   [(ngModel)]="paramService.showFAQ"
                 >
-                  Show FAQ ({{ faqCount }})
+                  {{ 'App.Locale.ShowFAQ' | translate }} ({{ faqCount }})
                 </ion-checkbox>
               </ion-item>
 
@@ -69,7 +69,7 @@
                   alignment="start"
                   [(ngModel)]="paramService.showErrata"
                 >
-                  Show Errata ({{ errataCount }})
+                  {{ 'App.Locale.ShowErrata' | translate }} ({{ errataCount }})
                 </ion-checkbox>
               </ion-item>
             </ion-list>

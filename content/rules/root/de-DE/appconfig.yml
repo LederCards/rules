@@ -2,6 +2,11 @@ App:
   NavTitle: 6. Ed. USA
   NavTitleShort: 6th Ed.
   NoItemsFound: Keine Einträge gefunden.
+  NoRulesAvailable: Keine Regeln verfügbar.
   SearchPlaceholder: Regel suchen
+  Locale:
+    ShowRules: Regeln anzeigen
+    ShowFAQ: FAQ anzeigen
+    ShowErrata: Errata anzeigen
   Titles:
     Search: Regel suchen

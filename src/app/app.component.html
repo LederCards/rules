@@ -23,28 +23,36 @@
       </ion-header>
 
       <ion-content>
-        <ion-list lines="none">
-          @for (ruleHead of rulesService.navHeaders(); track $index) {
-            <ion-menu-toggle autoHide="false">
-              <ion-item
-                color="transparent"
-                (click)="navigateTo(ruleHead)"
-                [style.border-left]="'5px solid ' + ruleHead.color"
-                [style.border-bottom]="'1px solid ' + ruleHead.color"
-              >
-                {{ ruleHead.name }}
+        @if (paramService.showRules()) {
+          <ion-list lines="none">
+            @for (ruleHead of rulesService.navHeaders(); track $index) {
+              <ion-menu-toggle autoHide="false">
+                <ion-item
+                  color="transparent"
+                  (click)="navigateTo(ruleHead)"
+                  [style.border-left]="'5px solid ' + ruleHead.color"
+                  [style.border-bottom]="'1px solid ' + ruleHead.color"
+                >
+                  {{ ruleHead.name }}
 
-                @if (ruleHead.icon; as icon) {
-                  <img
-                    class="inline-icon ion-margin-start"
-                    [src]="'inicon/' + ruleHead.icon + '.png'"
-                    alt="{{ ruleHead.icon }}"
-                  />
-                }
-              </ion-item>
-            </ion-menu-toggle>
-          }
-        </ion-list>
+                  @if (ruleHead.icon; as icon) {
+                    <img
+                      class="inline-icon ion-margin-start"
+                      [src]="'inicon/' + ruleHead.icon + '.png'"
+                      alt="{{ ruleHead.icon }}"
+                    />
+                  }
+                </ion-item>
+              </ion-menu-toggle>
+            }
+          </ion-list>
+        } @else {
+          <ion-list lines="none">
+            <ion-item color="transparent">
+              {{ 'App.NoRulesAvailable' | translate }}
+            </ion-item>
+          </ion-list>
+        }
       </ion-content>
     </ion-menu>
 

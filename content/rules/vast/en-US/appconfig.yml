@@ -2,6 +2,11 @@ App:
   NavTitle: 1st Edition
   NavTitleShort: 1st Ed.
   NoItemsFound: No items found.
+  NoRulesAvailable: No rules available.
   SearchPlaceholder: Search Rules
+  Locale:
+    ShowRules: Show Rules
+    ShowFAQ: Show FAQ
+    ShowErrata: Show Errata
   Titles:
     Search: Search Rules

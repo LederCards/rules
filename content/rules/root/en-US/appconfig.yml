@@ -1,7 +1,12 @@
 App:
-  NavTitle: 6th Edition
-  NavTitleShort: 6th Ed.
+  NavTitle: 6th Printing
+  NavTitleShort: 6th Printing
   NoItemsFound: No items found.
+  NoRulesAvailable: No rules available.
   SearchPlaceholder: Search Rules
+  Locale:
+    ShowRules: Show Rules
+    ShowFAQ: Show FAQ
+    ShowErrata: Show Errata
   Titles:
     Search: Search Rules

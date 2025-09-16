@@ -2,6 +2,11 @@ App:
   NavTitle: 6-ta Edycja
   NavTitleShort: 6-ta Edycja
   NoItemsFound: Nie znaleziono żadnych pozycji.
+  NoRulesAvailable: Brak dostępnych zasad.
   SearchPlaceholder: Szukaj Zasad
+  Locale:
+    ShowRules: Pokaż zasady
+    ShowFAQ: Pokaż FAQ
+    ShowErrata: Pokaż Errata
   Titles:
     Search: Szukaj Zasad
