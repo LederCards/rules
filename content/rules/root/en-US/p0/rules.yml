@@ -1320,19 +1320,19 @@
   color: '#000000'
   children:
     - name: 'Step 1: Choose and Set up Map'
-      text: As a group, choose a map. If you choose a variant map, follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins, item supply, and dice as normal.
+      pretext: As a group, choose a map. If you choose a variant map, follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins, item supply, and dice as normal.
 
     - name: 'Step 2: Choose Deck'
-      text: As a group, you may choose to replace the entire shared deck from the base game with the Exiles and Partisans deck or Squires and Disciples deck.
+      pretext: As a group, you may choose to replace the entire shared deck from the base game with the Exiles and Partisans deck or Squires and Disciples deck.
 
     - name: 'Step 3: Set Up Bots'
-      text: As a group, you may choose to play with bots, as described in the Law of Rootbotics.
+      pretext: As a group, you may choose to play with bots, as described in the Law of Rootbotics.
 
     - name: 'Step 4: Seat Players'
-      text: Determine the seating order and the first player randomly.
+      pretext: Determine the seating order and the first player randomly.
 
     - name: 'Step 5: Set up Landmarks'
-      text: As a group, you may choose to use landmarks. If so, you may ignore or override the placement of the Tower and Ferry pieces in Maps.
+      pretext: As a group, you may choose to use landmarks. If so, you may ignore or override the placement of the Tower and Ferry pieces in Maps.
       children:
         - name: 'Step 1: Choose.'
           text: As a group, choose if you're playing with one or two landmarks, and remove any landmark cards you do not want to play with.
@@ -1356,10 +1356,10 @@
           text: A faction cannot be played if its corresponding hireling is in play, shown by its color and icon. _(The Exile/Brigand hireling removes both the Vagabond and Knaves of the Deepwood.)_ Return the corresponding faction boards, pieces, and setup cards to the box.
 
     - name: 'Step 7: Draw Five Cards'
-      text: If you are playing with two players, remove all four dominance cards from the deck. Shuffle the deck. Each player draws five cards. _(Not three, as in Standard Setup! You will choose three cards to keep in step 10.)_
+      pretext: If you are playing with two players, remove all four dominance cards from the deck. Shuffle the deck. Each player draws five cards. _(Not three, as in Standard Setup! You will choose three cards to keep in step 10.)_
 
     - name: 'Step 8: Set Up Factions'
-      text: As a group, you may choose and set up factions as described in the Standard Setup or you may use the faction setup cards included in the Marauder and Homeland Expansions, as described below.
+      pretext: As a group, you may choose and set up factions as described in the Standard Setup or you may use the faction setup cards included in the Marauder and Homeland Expansions, as described below.
       children:
         - name: 'Step 1: Create Draft Pool.'
           text: Agree whether you will omit any factions from the game. You cannot include both the Vagabond and the Knaves of the Deepwood. If you include the Vagabond, choose whether to include one or both Vagabond setup cards. _(We recommend one card except for adventurous groups.)_
@@ -1385,10 +1385,10 @@
               text: If your faction has multiple homelands and you cannot fulfill all of their enemy adjacency requirements, choose and set them up one at a time, fulfilling each requirement as best you can.
 
     - name: 'Step 9: Place Score Markers'
-      text: Each player places their faction's score marker on the "0" space on the score track.
+      pretext: Each player places their faction's score marker on the "0" space on the score track.
 
     - name: 'Step 10: Choose Starting Hands'
-      text: Each player chooses three cards in their hand to keep and puts the other two cards face down on the shared deck. When finished, shuffle the shared deck.
+      pretext: Each player chooses three cards in their hand to keep and puts the other two cards face down on the shared deck. When finished, shuffle the shared deck.
 - name: Hirelings
   color: '#000000'
   children:
@@ -1433,109 +1433,109 @@
   color: '#000000'
   children:
     - name: Ability.
-      text: A persistent effect of a faction as listed at the top of its faction board and in its Faction Rules and Abilities section, or a persistent effect of a hireling as listed on its hireling card.
+      pretext: A persistent effect of a faction as listed at the top of its faction board and in its Faction Rules and Abilities section, or a persistent effect of a hireling as listed on its hireling card.
 
     - name: Adjacent.
-      text: A clearing is adjacent to all other clearings linked to it by a path. A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path, except on the lake.
+      pretext: A clearing is adjacent to all other clearings linked to it by a path. A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path, except on the lake.
 
     - name: Building.
-      text: A square cardboard piece owned by its faction or hireling.
+      pretext: A square cardboard piece owned by its faction or hireling.
 
     - name: Cannot.
-      text: See Golden Rules - Use of Cannot. The term cannot is absolute. It cannot be overridden unless explicitly instructed.
+      pretext: See Golden Rules - Use of Cannot. The term cannot is absolute. It cannot be overridden unless explicitly instructed.
 
     - name: Discard.
-      text: Place the prompted card in the shared discard pile. If it is a dominance card, place it near the map instead.
+      pretext: Place the prompted card in the shared discard pile. If it is a dominance card, place it near the map instead.
 
     - name: Draw.
-      text: Take a card into your hand. If drawing from a deck or pile, take the top card unless otherwise specified. If no source is specified, take it from the shared deck.
+      pretext: Take a card into your hand. If drawing from a deck or pile, take the top card unless otherwise specified. If no source is specified, take it from the shared deck.
 
     - name: Effect.
-      text: Anything that changes the game, including persistent effects, faction abilities, and actions.
+      pretext: Anything that changes the game, including persistent effects, faction abilities, and actions.
 
     - name: Enemy.
-      text: Any other player that you are not in a coalition with, or a hireling that is in the supply or held by an enemy player.
+      pretext: Any other player that you are not in a coalition with, or a hireling that is in the supply or held by an enemy player.
 
     - name: Enemy Piece.
-      text: A faction piece of an enemy player or a hireling piece of an enemy hireling, except while you're treating the piece as your own for rule _(Riverfolk mercenaries, controlled hirelings, etc.)_. _(Items cannot be enemy pieces.)_
+      pretext: A faction piece of an enemy player or a hireling piece of an enemy hireling, except while you're treating the piece as your own for rule _(Riverfolk mercenaries, controlled hirelings, etc.)_. _(Items cannot be enemy pieces.)_
 
     - name: Faction Piece.
-      text: All the warriors, pawns, buildings, and tokens listed on the back of a faction board. _(Items are not faction pieces.)_
+      pretext: All the warriors, pawns, buildings, and tokens listed on the back of a faction board. _(Items are not faction pieces.)_
 
     - name: Forest.
-      text: An area on the map enclosed by paths and clearings.
+      pretext: An area on the map enclosed by paths and clearings.
 
     - name: Force.
-      text: Some effects let you force a player or their pieces to act. Resolve this exactly as if that player were choosing to do this, as limited by the effect. _(For example, if you force the Eyrie to move warriors, they benefit from Lords of the Forest.)_
+      pretext: Some effects let you force a player or their pieces to act. Resolve this exactly as if that player were choosing to do this, as limited by the effect. _(For example, if you force the Eyrie to move warriors, they benefit from Lords of the Forest.)_
 
     - name: Item.
-      text: A square cardboard piece showing an item (Boots, Swords, Crossbows, etc.) that is not owned by any faction.
+      pretext: A square cardboard piece showing an item (Boots, Swords, Crossbows, etc.) that is not owned by any faction.
 
     - name: Map.
-      text: The game board showing the Woodland with clearings, paths, rivers, and forests.
+      pretext: The game board showing the Woodland with clearings, paths, rivers, and forests.
 
     - name: Map Edge.
-      text: The single closed loop of clearings and paths that define the map boundary, including closed paths on the mountain map.
+      pretext: The single closed loop of clearings and paths that define the map boundary, including closed paths on the mountain map.
 
     - name: Matching.
-      text: Of the same suit.
+      pretext: Of the same suit.
 
     - name: Path.
-      text: A white link between two clearings.
+      pretext: A white link between two clearings.
 
     - name: Pawn.
-      text: A wooden figure owned by its faction or hireling.
+      pretext: A wooden figure owned by its faction or hireling.
 
     - name: Piece.
-      text: Any component—building, token, warrior, pawn, item, marker, and so on.
+      pretext: Any component—building, token, warrior, pawn, item, marker, and so on.
 
     - name: Place.
-      text: Take the prompted piece from the prompted source and put it in the prompted destination. Usually, no source is specified—in this case, take it from its supply, or take the leftmost prompted piece if it is on a track. Put is shorthand for Place.
+      pretext: Take the prompted piece from the prompted source and put it in the prompted destination. Usually, no source is specified—in this case, take it from its supply, or take the leftmost prompted piece if it is on a track. Put is shorthand for Place.
 
     - name: Play Area.
-      text: The area around your faction board. Cards in it can only be spent, discarded, or used for other purposes if explicitly instructed.
+      pretext: The area around your faction board. Cards in it can only be spent, discarded, or used for other purposes if explicitly instructed.
 
     - name: Random.
-      text: When referring to a card, choose one at random without looking at them at all.
+      pretext: When referring to a card, choose one at random without looking at them at all.
 
     - name: Replace.
-      text: Remove the prompted piece and place the other prompted piece in the location from which the first was removed. To do so, you must be able to complete both steps. _(For example, enemies of the Marquise cannot replace a Marquise warrior at the keep.)_
+      pretext: Remove the prompted piece and place the other prompted piece in the location from which the first was removed. To do so, you must be able to complete both steps. _(For example, enemies of the Marquise cannot replace a Marquise warrior at the keep.)_
 
     - name: Remove.
-      text: Take the prompted piece from the prompted source and return it to the prompted destination. Usually, no destination is specified—in this case, return it to its owner's supply, return it to the rightmost empty space of its track it has one, or remove it permanently otherwise. _(Items are removed permanently.)_
+      pretext: Take the prompted piece from the prompted source and return it to the prompted destination. Usually, no destination is specified—in this case, return it to its owner's supply, return it to the rightmost empty space of its track it has one, or remove it permanently otherwise. _(Items are removed permanently.)_
 
     - name: Reveal.
-      text: Place the prompted card face up in your play area. Usually, no source is specified—in this case, take it from your hand.
+      pretext: Place the prompted card face up in your play area. Usually, no source is specified—in this case, take it from your hand.
 
     - name: River.
-      text: A blue link between two clearings.
+      pretext: A blue link between two clearings.
 
     - name: Ruin.
-      text: Piece covering an "R" slot in a clearing.
+      pretext: Piece covering an "R" slot in a clearing.
 
     - name: Rule.
-      text: A player rules a clearing if they have more total warriors and buildings in it than each other player. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one rules it.
+      pretext: A player rules a clearing if they have more total warriors and buildings in it than each other player. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one rules it.
 
     - name: Show.
-      text: Let the prompted player see the prompted piece.
+      pretext: Let the prompted player see the prompted piece.
 
     - name: Slot.
-      text: White box in a clearing.
+      pretext: White box in a clearing.
 
     - name: Spend.
-      text: See Discard. _(These terms are equivalent, but spend is used in contexts with choice.)_
+      pretext: See Discard. _(These terms are equivalent, but spend is used in contexts with choice.)_
 
     - name: Supply.
-      text: The collection of pieces that is not on a faction board or the map. The item supply is the collection of items on the map.
+      pretext: The collection of pieces that is not on a faction board or the map. The item supply is the collection of items on the map.
 
     - name: Swap.
-      text: Switch the locations of the two prompted pieces. _(This ignores move and place restrictions, such as the Corvids' snare and the Marquise's keep.)_
+      pretext: Switch the locations of the two prompted pieces. _(This ignores move and place restrictions, such as the Corvids' snare and the Marquise's keep.)_
 
     - name: Token.
-      text: A circular cardboard piece owned by its faction or hireling.
+      pretext: A circular cardboard piece owned by its faction or hireling.
 
     - name: Treat.
-      text: The prompted thing takes on the properties of the second prompted thing. While you treat enemy pieces as your own for rule, they are not enemy pieces, but they are still faction pieces of that enemy player. _(For example, Riverfolk warriors you've hired as mercenaries are not enemy pieces to you, but they are still Riverfolk faction pieces.)_
+      pretext: The prompted thing takes on the properties of the second prompted thing. While you treat enemy pieces as your own for rule, they are not enemy pieces, but they are still faction pieces of that enemy player. _(For example, Riverfolk warriors you've hired as mercenaries are not enemy pieces to you, but they are still Riverfolk faction pieces.)_
 
     - name: Warrior.
-      text: A wooden figure owned by its faction or hireling. _(The Vagabond pawn is not a warrior and cannot be removed.)_
+      pretext: A wooden figure owned by its faction or hireling. _(The Vagabond pawn is not a warrior and cannot be removed.)_
