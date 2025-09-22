@@ -1390,47 +1390,6 @@
 
     - name: 'Step 10: Choose Starting Hands'
       pretext: Each player chooses three cards in their hand to keep and puts the other two cards face down on the shared deck. When finished, shuffle the shared deck.
-- name: Hirelings
-  appendix: H
-  color: '#000000'
-  children:
-    - name: Gaining and Losing Hirelings
-      children:
-        - name: Gaining from Supply.
-          text: When a player's score marker enters a space with a hireling marker, they take the hireling marker and place it below their Evening _(as a reminder)_. At the end of their turn, they take any hireling card from the supply, roll for control, and flip over the hireling marker.
-        - name: Rolling for Control.
-          text: When a player gains a hireling card, they roll the control die and place control markers on the hireling card equal in number to the die roll. They count only the gold die pips if they have the most victory points or are tied for the most; they count all the die pips otherwise _(including if they have activated a dominance card)_.
-        - name: Gaining from Another Player.
-          text: At the end of a player's turn, they must remove one control marker from each hireling card they gained on previous turns. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control.
-
-    - name: Abilities and Actions
-      pretext: Hirelings have various actions and abilities, as shown by unique icons. Actions and abilities that start with "controller:" are gained by the hireling's controller.
-      children:
-        - name: When-Hired Action.
-          text: When they take control of the hireling, the controlling player must take this action.
-        - name: Ability.
-          text: This ability is always active or it specifies when it happens.
-        - name: Start-of-Birdsong Action.
-          text: At the start of their Birdsong, the controlling player must or may take this action, as the action describes.
-        - name: Once-Per-Daylight Action.
-          text: Once in their Daylight, the controlling player may take this action.
-
-    - name: Rules
-      children:
-        - name: Rule.
-          text: A hireling's controller treats hireling pieces as their own only for rule. _(The controller can rule a clearing even with hirelings alone.)_ Uncontrolled hirelings can rule clearings as if they were players.
-        - name: Enemy Status.
-          text: A hireling is an enemy to players other than its controller and players in coalition with its controller.
-        - name: Separate Pieces.
-          text: Hireling pieces are not the controller's faction pieces. _(So, the Duchy cannot count them as Duchy pieces to sway, the Keepers cannot remove them to encamp, etc.)_
-        - name: Separate Actions.
-          text: A hireling's Move or Battle actions can only move or battle with the hireling's pieces and cannot include the controller's pieces. Hirelings cannot take actions in other ways _(such as from their controller's Move actions, False Orders, or the Vagabond's Allied Relationship)_.
-        - name: Separate Effects.
-          text: Hirelings cannot use their controller's abilities, crafted persistent effects, or ambush cards. _(So, a hireling could not use Boat Builders while moving, and the Highway Bandits could not be placed on a river. A hireling's controller could not play an ambush card while battling with the hireling.)_
-        - name: No Scoring from Removal.
-          text: A hireling's controller does not score victory points if their hireling removes an enemy piece _(usually in battle)_. _(Players can still score points by removing hireling buildings and tokens, even when defending in battle against the hireling. Players still score as normal if the Warm Sun Prophets force that player's faction pieces to battle.)_
-        - name: Weird Stuff.
-          text: If you move hireling warriors into a clearing with an Alliance sympathy token or remove Alliance sympathy by using a hireling, this does trigger Outrage. _(These effects refer to a "player moving" or "player removing.")_
 - name: Glossary
   color: '#000000'
   appendix: G
@@ -1542,3 +1501,283 @@
 
     - name: Warrior.
       pretext: A wooden figure owned by its faction or hireling. _(The Vagabond pawn is not a warrior and cannot be removed.)_
+      
+- name: Knave Captains
+  color: '#000000'
+  appendix: K
+  children:
+    - name: Thief
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Bags.
+        - name: Ability.
+          text: After you Filch, you may move the Thief.
+
+    - name: Tinker
+      children:
+        - name: Starting Items.
+          text: Start with Bags, Hammers.
+        - name: Ability.
+          text: After you Serve, draw 1 card.
+
+    - name: Ranger
+      children:
+        - name: Starting Items.
+          text: Start with Swords, Crossbows.
+        - name: Ability.
+          text: Once per turn, as an action, you may flip any item down to Assault, Skirmish, or Nab.
+
+    - name: Vagrant
+      children:
+        - name: Starting Items.
+          text: Start with Tea, Coins.
+        - name: Ability.
+          text: Once per turn, as an action, you may flip any item down to Revel, Gift, or Serve.
+
+    - name: Arbiter
+      children:
+        - name: Starting Items.
+          text: Start with Swords, Coins.
+        - name: Ability.
+          text: In Assault battles, you may take 1 extra hit to deal 1 extra hit. _(Do this after rolling the dice.)_
+
+    - name: Scoundrel
+      children:
+        - name: Starting Items.
+          text: Start with Crossbows, Tea.
+        - name: Ability.
+          text: When you Skirmish, you may instead move from a clearing before the battle. If you do, do not ignore 1 hit.
+
+    - name: Adventurer
+      children:
+        - name: Starting Items.
+          text: Start with Hammers, Coins.
+        - name: Ability.
+          text: After you place acclaim at a ruin, draw 1 card.
+
+    - name: Harrier
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Crossbows.
+        - name: Ability.
+          text: When you Dash, you may move the Harrier up to three times _(instead of two)_, ignoring rule.
+
+    - name: Ronin
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Swords.
+        - name: Ability.
+          text: When you Assault, the Ronin may move before the battle.
+
+    - name: Cheat
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Tea.
+        - name: Ability.
+          text: As an action, you may flip two items down to take any item action.
+
+    - name: Gladiator
+      children:
+        - name: Starting Items.
+          text: Start with Swords, Hammers.
+        - name: Ability.
+          text: When you Assault, draw 1 card at the start of battle.
+
+    - name: Jailor
+      children:
+        - name: Starting Items.
+          text: Start with Crossbows, Bags.
+        - name: Ability.
+          text: In Nab battles, you may deal 1 less hit, even if you are dealing no hits, to ignore 1 rolled hit you take. _(Do this after rolling the dice.)_
+
+- name: Hirelings
+  appendix: H
+  color: '#000000'
+  children:
+    - name: Gaining and Losing Hirelings
+      children:
+        - name: Gaining from Supply.
+          text: When a player's score marker enters a space with a hireling marker, they take the hireling marker and place it below their Evening _(as a reminder)_. At the end of their turn, they take any hireling card from the supply, roll for control, and flip over the hireling marker.
+        - name: Rolling for Control.
+          text: When a player gains a hireling card, they roll the control die and place control markers on the hireling card equal in number to the die roll. They count only the gold die pips if they have the most victory points or are tied for the most; they count all the die pips otherwise _(including if they have activated a dominance card)_.
+        - name: Gaining from Another Player.
+          text: At the end of a player's turn, they must remove one control marker from each hireling card they gained on previous turns. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control.
+
+    - name: Abilities and Actions
+      pretext: Hirelings have various actions and abilities, as shown by unique icons. Actions and abilities that start with "controller:" are gained by the hireling's controller.
+      children:
+        - name: When-Hired Action.
+          text: When they take control of the hireling, the controlling player must take this action.
+        - name: Ability.
+          text: This ability is always active or it specifies when it happens.
+        - name: Start-of-Birdsong Action.
+          text: At the start of their Birdsong, the controlling player must or may take this action, as the action describes.
+        - name: Once-Per-Daylight Action.
+          text: Once in their Daylight, the controlling player may take this action.
+
+    - name: Rules
+      children:
+        - name: Rule.
+          text: A hireling's controller treats hireling pieces as their own only for rule. _(The controller can rule a clearing even with hirelings alone.)_ Uncontrolled hirelings can rule clearings as if they were players.
+        - name: Enemy Status.
+          text: A hireling is an enemy to players other than its controller and players in coalition with its controller.
+        - name: Separate Pieces.
+          text: Hireling pieces are not the controller's faction pieces. _(So, the Duchy cannot count them as Duchy pieces to sway, the Keepers cannot remove them to encamp, etc.)_
+        - name: Separate Actions.
+          text: A hireling's Move or Battle actions can only move or battle with the hireling's pieces and cannot include the controller's pieces. Hirelings cannot take actions in other ways _(such as from their controller's Move actions, False Orders, or the Vagabond's Allied Relationship)_.
+        - name: Separate Effects.
+          text: Hirelings cannot use their controller's abilities, crafted persistent effects, or ambush cards. _(So, a hireling could not use Boat Builders while moving, and the Highway Bandits could not be placed on a river. A hireling's controller could not play an ambush card while battling with the hireling.)_
+        - name: No Scoring from Removal.
+          text: A hireling's controller does not score victory points if their hireling removes an enemy piece _(usually in battle)_. _(Players can still score points by removing hireling buildings and tokens, even when defending in battle against the hireling. Players still score as normal if the Warm Sun Prophets force that player's faction pieces to battle.)_
+        - name: Weird Stuff.
+          text: If you move hireling warriors into a clearing with an Alliance sympathy token or remove Alliance sympathy by using a hireling, this does trigger Outrage. _(These effects refer to a "player moving" or "player removing.")_
+
+- name: Maps
+  color: '#000000'
+  appendix: M
+  children:
+    - name: Autumn Map
+      pretext: No special rules.
+
+    - name: Winter Map
+      children:
+        - name: Raging River.
+          text: The river divides forests _(as printed paths do)_.
+
+    - name: Lake Map
+      children:
+        - name: Setup Modifications.
+          text: Place the Ferry piece in the corner clearing that is also a coastal clearing.
+        - name: The Lake.
+          text: The lake is in the center of the map. The lake is treated as rivers linking each coastal clearing to each other coastal clearing. The lake divides forests.
+        - name: Coastal Clearings.
+          text: Clearings touching the lake _(not separated by a forest)_ are coastal clearings.
+        - name: Coastal Forests.
+          text: Forests touching the lake are coastal forests. Each coastal forest is adjacent to its two neighboring coastal forests _(separated by one coastal clearing)_.
+        - name: The Ferry.
+          text: Once per turn, when moving from a clearing with the Ferry, you may move to another coastal clearing, ignoring paths. Move the Ferry along with the moving pieces. If faction pieces move, their player draws one card. _(You still must rule the origin or destination clearing to use the Ferry, even with the Swimmers ability. If pieces of multiple factions move at the same time, each of their players draws a card.)_
+
+    - name: Mountain Map
+      children:
+        - name: Setup Modifications.
+          text: Place the 6 closed path markers to cover the 6 paths of darker color with excavated ground. Place the Tower piece in the central clearing showing two towers.
+        - name: Closed Paths.
+          text: A path covered with a closed path marker is a closed path. Clearings linked by a closed path are not adjacent, and pieces _(such as Highway Bandits)_ cannot be placed on closed paths. Closed paths enclose and divide forests as if they were paths _(so the Vagabond can slip across it)_.
+        - name: Removing Closed Paths.
+          text: Once per turn in their Daylight, a player can spend a card to remove a closed path marker from the game permanently and score one victory point. To remove it, that player must have any faction pieces in either clearing linked by the closed path marker.
+        - name: The Pass and Tower.
+          text: The clearing marked with the Tower piece is the pass. At the end of a player's Evening, if that player rules the Pass, that player scores one victory point.
+        - name: Forests.
+          text: All areas on the mountain map enclosed by paths and clearings are forests, regardless of the presence or placement of trees within.
+
+    - name: Marsh Map
+      children:
+        - name: Setup Modification.
+          text: Follow the subsection based on your player count. Then, place 2 ruins in the "R" slots with no numbers and 2 ruins in the "R" slots with the lowest showing numbers.
+          children:
+            - name: 1–4 Players.
+              text: Cover a total of 3 flooding clearings with flood markers—one light green, one dark green, and one brown. Align the flood markers' paths so that they match up with paths touching the marker.
+            - name: 5+ Players.
+              text: Place the Mousehold, Foxburrow, and Rabbittown landmarks in the three unsuited clearings. _(You can still place other landmarks as normal.)_
+        - name: Flooded Clearings.
+          text: A flooded clearing is no longer a clearing. Instead it only contains one or more paths, and may include flooded paths. Clearings linked by any number of non-flooded paths in these clearings are adjacent.
+        - name: Flooded Paths.
+          text: Flooded paths are not linked to the other paths, but they enclose and divide forests as if they were paths _(so the Vagabond can slip across it)_.
+        - name: Placing on Paths.
+          text: Pieces that can be placed on paths _(such as Highway Bandits)_ can be placed on any non-flooded path in the clearing, but not the point where its paths link.
+
+    - name: Gorge Map
+      children:
+        - name: The Dam.
+          text: The dam separates the forests under it.
+        - name: The Bridge.
+          text: The bridge does not separate the forests under it.
+        - name: Gorge Sides.
+          text: The gorge sides do not separate the forests they are in.
+
+- name: Vagabonds
+  color: '#000000'
+  children:
+    - name: Thief
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Torches, Tea, Swords.
+        - name: 'Special Action: Steal.'
+          text: Exhaust one Torch to take a random card from a player with faction pieces in your clearing.
+
+    - name: Tinker
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Torches, Bags, Hammers.
+        - name: 'Special Action: Day Labor.'
+          text: Exhaust one Torch to take a card from the discard pile whose suit matches your clearing. _(You can always take a bird card.)_
+
+    - name: Ranger
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Torches, Crossbows, Swords.
+        - name: 'Special Action: Hideout.'
+          text: Exhaust one Torch to repair three items. Then, immediately end Daylight and begin Evening.
+
+    - name: Vagrant
+      children:
+        - name: Starting Items.
+          text: Start with Coins, Torches, Boots.
+        - name: 'Special Action: Instigate.'
+          text: Exhaust a Torch to force a player _(even you)_ to battle a player in your clearing. Treat removed buildings and tokens as if you removed them. _(Score a victory point per building or token of either player removed. Score Infamy as normal.)_
+
+    - name: Arbiter
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Torches, Swords, Swords.
+        - name: 'Special Action: Protector.'
+          text: When defending in battle, before the roll, a faction may enlist the Arbiter if he's in the clearing of battle. If so, the Arbiter scores one victory point and adds all of his undamaged Swords to the defender's maximum rolled hits. The Arbiter cannot enlist himself or be enlisted against himself.
+
+    - name: Scoundrel
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Boots, Torches, Crossbows.
+        - name: 'Special Action: Scorched Earth.'
+          text: Exhaust a Torch and place it in your clearing to remove all enemy pieces there. Pieces cannot be placed in or moved into the clearing with the Torch. _(You remain in this clearing. Once you move out, you cannot move back in. The Torch cannot be removed with a "Favor of the..." card because it is not an enemy piece.)_
+
+    - name: Adventurer
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Torches, Hammers.
+        - name: 'Special Action: Improvise.'
+          text: Once per turn while taking the Quest action, you may treat one unexhausted item as any other item. When you exhaust it to complete the quest, also damage that item.
+
+    - name: Harrier
+      children:
+        - name: Starting Items.
+          text: Start with Coins, Torches, Swords, Crossbows.
+        - name: 'Special Action: Glide.'
+          text: Exhaust a Torch to move only your Vagabond pawn _(not other pieces)_ to any clearing _(even Hostile)_ on the map, ignoring adjacency and paths, without exhausting any Boots.
+
+    - name: Ronin
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Boots, Torches, Swords.
+        - name: 'Special Action: Swift Strike.'
+          text: You may exhaust a Sword to deal an extra hit in battle _(after rolling)_.
+
+    - name: Cheat
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Tea, Crossbows, Torches.
+        - name: 'Special Action: Con.'
+          text: Once per turn, you may resolve the Quest action by exhausting any two items instead of the listed items. _(Score or draw as normal, and draw a new quest.)_ Then, shuffle the completed quest into the quest deck.
+
+    - name: Gladiator
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Torches, Hammers.
+        - name: 'Special Action: Duel.'
+          text: You may exhaust any item, damage it, and remove 1 enemy warrior from the Gladiator's clearing to draw 1 card. Do not go Hostile.
+
+    - name: Jailor
+      children:
+        - name: Starting Items.
+          text: Start with Boots, Crossbows, Torches.
+        - name: 'Special Action: Coerce.'
+          text: Once per turn, you may spend a card matching the Jailor's clearing to treat it as exhausting any item. After the action that it prompts or adds to, you lose 1 victory point. This action may interrupt actions on your turn. _(You may use it to repair, craft, aid, quest, and pay for Riverfolk Services.)_
