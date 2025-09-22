@@ -1318,6 +1318,7 @@
           text: Draw one card. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 - name: Advanced Setup
   color: '#000000'
+  appendix: A
   children:
     - name: 'Step 1: Choose and Set up Map'
       pretext: As a group, choose a map. If you choose a variant map, follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins, item supply, and dice as normal.
@@ -1390,6 +1391,7 @@
     - name: 'Step 10: Choose Starting Hands'
       pretext: Each player chooses three cards in their hand to keep and puts the other two cards face down on the shared deck. When finished, shuffle the shared deck.
 - name: Hirelings
+  appendix: H
   color: '#000000'
   children:
     - name: Gaining and Losing Hirelings
@@ -1431,6 +1433,7 @@
           text: If you move hireling warriors into a clearing with an Alliance sympathy token or remove Alliance sympathy by using a hireling, this does trigger Outrage. _(These effects refer to a "player moving" or "player removing.")_
 - name: Glossary
   color: '#000000'
+  appendix: G
   children:
     - name: Ability.
       pretext: A persistent effect of a faction as listed at the top of its faction board and in its Faction Rules and Abilities section, or a persistent effect of a hireling as listed on its hireling card.
