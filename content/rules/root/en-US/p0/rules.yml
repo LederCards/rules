@@ -35,14 +35,14 @@
         - name: Interrupts.
           text: You cannot interrupt an action _(including a compound action such as the Marquise's March)_, ability _(such as the Corvids' Exposure)_, or persistent effect _(such as the Eyrie Emigre card)_ with another effect unless it explicitly allows it. _(For example, the Armorers card says it is used "In battle...")_.
         - name: End of Turn.
-          text: Once a player begins the last step of their turn, they cannot take actions except those that specify "end of Evening" or "end of turn," such as hirelings (`rule:22`).
+          text: Once a player begins the last step of their turn, they cannot take actions except those that specify "end of Evening" or "end of turn," such as hirelings (`rule:22.`).
 
     - name: Pieces
       children:
         - name: Limits.
           text: Pieces are limited by the contents of the game. Do not use proxy pieces if you run out.
         - name: Starting Faction.
-          text: Each player owns the faction they choose in setup (`rule:5`) and the pieces listed on the back of its faction board except for items. Generically, these are called **faction pieces** or similar. Specifically, these are called **[faction name] pieces**. _(For example, "your faction warriors" and "warriors of your faction" and "Marquise warriors" all refer to the orange wooden cat-shaped warriors.)_
+          text: Each player owns the faction they choose in setup (`rule:5.`) and the pieces listed on the back of its faction board except for items. Generically, these are called **faction pieces** or similar. Specifically, these are called **[faction name] pieces**. _(For example, "your faction warriors" and "warriors of your faction" and "Marquise warriors" all refer to the orange wooden cat-shaped warriors.)_
         - name: Piece Ownership.
           text: The ownership of faction pieces cannot change. _(For example, the Marquise cannot use Field Hospitals on Riverfolk mercenaries or hirelings, since these are not Marquise warriors.)_
         - name: Piece Manipulation.
@@ -55,7 +55,7 @@
 
 - name: Key Concepts
   color: '#000000'
-  pretext: Terms are defined strictly in the Glossary (`rule:21`).
+  pretext: Terms are defined strictly in the Glossary (`rule:21.`).
   children:
     - name: Cards
       pretext: 'You draw cards from the top of the shared deck, and discard to a shared discard pile. If the deck is ever empty, shuffle the discard pile immediately to form a new deck. Each card has a **suit**: bird, fox, rabbit, or mouse. Most cards also have an effect you can craft (`rule:4.1`). `faction:cult$10.2.6``faction:diaspora$16.2.2`' 
@@ -188,7 +188,7 @@
 
 - name: Setup
   color: '#000000'
-  pretext: If any players are new to the game, use the Standard Setup (`rule:5.1`). If everyone has played and you want more variety, use the Advanced Setup (`rule:19`). If you want to play with five or more factions that would start in corner clearings, you must use the Advanced Setup.
+  pretext: If any players are new to the game, use the Standard Setup (`rule:5.1`). If everyone has played and you want more variety, use the Advanced Setup (`rule:19.`). If you want to play with five or more factions that would start in corner clearings, you must use the Advanced Setup.
   children:
     - name: Standard Setup
       children:
@@ -1378,7 +1378,7 @@
   appendix: A
   children:
     - name: 'Step 1: Choose and Set up Map'
-      pretext: As a group, choose a map. If you choose a variant map (`rule:25`), follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins (`rule:5.1.4`), item supply (`rule:5.1.5`), and dice (`rule:5.1.6`) as normal.
+      pretext: As a group, choose a map. If you choose a variant map (`rule:25.`), follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins (`rule:5.1.4`), item supply (`rule:5.1.5`), and dice (`rule:5.1.6`) as normal.
 
     - name: 'Step 2: Choose Deck'
       pretext: As a group, you may choose to replace the entire shared deck from the base game with the Exiles and Partisans deck or Squires and Disciples deck.
@@ -1390,7 +1390,7 @@
       pretext: Determine the seating order and the first player randomly.
 
     - name: 'Step 5: Set up Landmarks'
-      pretext: As a group, you may choose to use landmarks (`rule:24`). If so, you may ignore or override the placement of the Tower and Ferry pieces in Maps (`rule:25`).
+      pretext: As a group, you may choose to use landmarks (`rule:24.`). If so, you may ignore or override the placement of the Tower and Ferry pieces in Maps (`rule:25.`).
       children:
         - name: 'Step 1: Choose.'
           text: As a group, choose if you're playing with one or two landmarks, and remove any landmark cards you do not want to play with.
@@ -1400,7 +1400,7 @@
           text: The last player in turn order sets up one drawn landmark as described on its card. If you chose to play with two landmarks, the second-to-last player in turn order sets up the other drawn landmark as described on its card.
 
     - name: 'Step 6: Set up Hirelings'
-      pretext: As a group, you may choose to use exactly three hirelings (`rule:23`), as follows.
+      pretext: As a group, you may choose to use exactly three hirelings (`rule:23.`), as follows.
       children:
         - name: 'Step 1: Collect Pieces.'
           text: Shuffle all the hirelings cards. Deal out three hireling cards and return the rest to the box. Collect the pieces for the dealt hireling cards into a supply.
