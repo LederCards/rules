@@ -1003,7 +1003,7 @@
           text: Whenever you take the Incite action in your warlord's clearing, after placing the mob token for the action, you may—up to four times—roll the mob die and place a mob token in a matching clearing that has no mob token but is adjacent to any clearing with a mob token.
         - name: Lavish (No Item).
           text: At the end of your Birdsong, you may remove any number of items from your Hoard permanently. For each item you remove, place two warriors into your warlord's clearing. When you are done, shift items in your Hoard to fill its tracks from left to right.
-        - name: Relentless (`item:bag`).
+        - name: Relentless (`item:sack`).
           text: Whenever you take the Advance the Warlord action and both move and battle, you may then either move your warlord with any Hundreds warriors or battle in your warlord's clearing.
         - name: Rowdy (`item:coin`).
           text: In Evening (`rule:14.6.3`), draw one more card. If your warlord's clearing has three or more enemy pieces _(even a combination of pieces from different enemies)_, draw two more cards instead.
@@ -1105,24 +1105,28 @@
       children:
         - name: Enclaves.
           text: 'The Diaspora has 12 enclave tokens, which are double-sided: one side is Peaceful and the other side is Militant.'
-        - name: Clearing Suit.
-          text: While Peaceful, an enclave adds the frog suit to its clearing, making it dual-suited. While Militant, an enclave replaces its clearing suit with the frog suit.
-        - name: Matching.
-          text: Various effects target a clearing matching the suit of something else, such as a card. A clearing with a Militant enclave can be matched with the frog suit. A clearing with a Peaceful enclave can be matched with either the frog suit or the printed clearing suit.
+          children:
+          - name: Clearing Suit.
+            text: While Peaceful, an enclave adds the frog suit to its clearing, making it dual-suited. While Militant, an enclave replaces its clearing suit with the frog suit.
+          - name: Matching.
+            text: Various effects target a clearing matching the suit of something else, such as a card. A clearing with a Militant enclave can be matched with the frog suit. A clearing with a Peaceful enclave can be matched with either the frog suit or the printed clearing suit.
         - name: Frog Cards.
           text: During setup, 14 frog cards are shuffled into the shared deck. These cards have the frog suit. Some of them have frog crafting icons. Many of their crafted effects force the Diaspora to take actions; the Diaspora can craft these to act themselves.
-        - name: Frog Dominance.
-          text: If a player has activated the Frog Dominance card, they win the game at the start of their Birdsong if they rule at least two enclaves on the river, and they now follow the Enclave Defense rule (`rule:16.2.2.1.1`).
-        - name: Enclave Defense.
-          text: When the Diaspora is defending in battle, if an enclave is in the battle clearing, the player with Frog Dominance adds their faction warriors there as defending warriors, taking hits after the Diaspora's, unless the player with Frog Dominance is attacking.
-        - name: Peacekeepers.
-          text: If both Peacekeepers (`rule:17.2.5`) and Enclave Defense (`rule:16.2.2.1.1`) affect a battle, the Diaspora chooses the combination of Council warriors and Enclave Defense warriors to take hits after their own.
+          children:
+          - name: Frog Dominance.
+            text: If a player has activated the Frog Dominance card, they win the game at the start of their Birdsong if they rule at least two enclaves on the river, and they now follow the Enclave Defense rule (`rule:16.2.2.1.1`).
+            children:
+              - name: Enclave Defense.
+                text: When the Diaspora is defending in battle, if an enclave is in the battle clearing, the player with Frog Dominance adds their faction warriors there as defending warriors, taking hits after the Diaspora's, unless the player with Frog Dominance is attacking.
+              - name: Peacekeepers.
+                text: If both Peacekeepers (`rule:17.2.5`) and Enclave Defense (`rule:16.2.2.1.1`) affect a battle, the Diaspora chooses the combination of Council warriors and Enclave Defense warriors to take hits after their own.
         - name: The Pond.
           text: When a frog card is discarded, it goes face up on top of the Pond pile, on the Pond placard, instead of the discard pile.
-        - name: Drawing.
-          text: When a player draws any number of cards, they may draw the first card from the top of the Pond instead of the shared deck.
-        - name: Reshuffling.
-          text: When the shared deck is reshuffled, all cards from the Pond are also shuffled into it.
+          children:
+            - name: Drawing.
+              text: When a player draws any number of cards, they may draw the first card from the top of the Pond instead of the shared deck.
+            - name: Reshuffling.
+              text: When the shared deck is reshuffled, all cards from the Pond are also shuffled into it.
         - name: Swimmers.
           text: The Diaspora treat rivers as paths and may move along a river fully linking an origin and destination clearing, ignoring the need for rule.
         - name: Fears Come to Pass.
@@ -1193,8 +1197,9 @@
           text: Any number of times on their turn, an enemy may force the Council to flip any assembly to Closed. After flipping it, the Council may either place any number of Loyalists at that assembly or place 1 warrior in their Loyalists.
         - name: Peacekeepers.
           text: When an enemy chooses another enemy as defender at an assembly, the Council adds Council warriors as defending warriors, but Council warriors only take hits once the defender's warriors have been removed. Ignore Peacekeepers if the Vagabond is defending. _(The Council cannot ambush, use battle effects, etc.)_
-        - name: Vagabond Allies.
-          text: If the Vagabond attacks another enemy in battle while Allied (`rule:9.2.9.2`) to the Twilight Council, Council warriors are attacking warriors.
+          children:
+            - name: Vagabond Allies.
+              text: If the Vagabond attacks another enemy in battle while Allied (`rule:9.3.2`) to the Twilight Council, Council warriors are attacking warriors.
         - name: Crafting.
           text: The Council crafts during Evening by activating assemblies.
 
@@ -1311,7 +1316,7 @@
                   text: Initiate a battle in the Acting Captain's clearing. Take all warriors you hit as a Prisoner (`rule:18.2.6`), moving each to a separate forest with no Prisoners.
                 - name: Skirmish (`item:crossbow`).
                   text: Move the Acting Captain from a forest. Then, initiate a battle in the Acting Captain's destination clearing, ignoring the first hit you take.
-                - name: Nab (`item:bag`).
+                - name: Nab (`item:sack`).
                   text: Initiate a battle in the Acting Captain's clearing. If the Acting Captain is hit, it is not removed—move it to an adjacent forest instead; if it cannot be moved, it is removed as normal. If the Acting Captain was not hit, you may move it after the battle _(after placing acclaim)_.
                 - name: Revel (`item:tea`).
                   text: Place 1 acclaim and 1 Skunk at the Acting Captain. _(If it's in a forest, just place the Skunk.)_ If acclaim is already in the Acting Captain's clearing, place 2 Skunks there instead.
@@ -1339,7 +1344,7 @@
   appendix: A
   children:
     - name: 'Step 1: Choose and Set up Map'
-      pretext: As a group, choose a map. If you choose a variant map (`rule:M`), follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins (`rule:5.1.4`), item supply (`rule:5.1.5`), and dice (`rule:5.1.6`) as normal.
+      pretext: As a group, choose a map. If you choose a variant map (`rule:25`), follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins (`rule:5.1.4`), item supply (`rule:5.1.5`), and dice (`rule:5.1.6`) as normal.
 
     - name: 'Step 2: Choose Deck'
       pretext: As a group, you may choose to replace the entire shared deck from the base game with the Exiles and Partisans deck or Squires and Disciples deck.
@@ -1351,7 +1356,7 @@
       pretext: Determine the seating order and the first player randomly.
 
     - name: 'Step 5: Set up Landmarks'
-      pretext: As a group, you may choose to use landmarks (`rule:L`). If so, you may ignore or override the placement of the Tower and Ferry pieces in Maps (`rule:M`).
+      pretext: As a group, you may choose to use landmarks (`rule:24`). If so, you may ignore or override the placement of the Tower and Ferry pieces in Maps (`rule:25`).
       children:
         - name: 'Step 1: Choose.'
           text: As a group, choose if you're playing with one or two landmarks, and remove any landmark cards you do not want to play with.
@@ -1361,7 +1366,7 @@
           text: The last player in turn order sets up one drawn landmark as described on its card. If you chose to play with two landmarks, the second-to-last player in turn order sets up the other drawn landmark as described on its card.
 
     - name: 'Step 6: Set up Hirelings'
-      pretext: As a group, you may choose to use exactly three hirelings (`rule:H`), as follows.
+      pretext: As a group, you may choose to use exactly three hirelings (`rule:23`), as follows.
       children:
         - name: 'Step 1: Collect Pieces.'
           text: Shuffle all the hirelings cards. Deal out three hireling cards and return the rest to the box. Collect the pieces for the dealt hireling cards into a supply.
@@ -1421,7 +1426,7 @@
       pretext: A persistent effect of a faction as listed at the top of its faction board and in its Faction Rules and Abilities section, or a persistent effect of a hireling as listed on its hireling card (`rule:22.2.2`).
 
     - name: Adjacent.
-      pretext: A clearing is adjacent to all other clearings linked to it by a path. A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path, except on the lake (`rule:M.3.4`).
+      pretext: A clearing is adjacent to all other clearings linked to it by a path. A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path, except on the lake (`rule:25.3.4`).
 
     - name: Building.
       pretext: A square cardboard piece owned by its faction or hireling.
@@ -1532,14 +1537,14 @@
     - name: Thief
       children:
         - name: Starting Items.
-          text: Start with `item:boot`, `item:bag`.
+          text: Start with `item:boot`, `item:sack`.
         - name: Ability.
           text: After you Filch, you may move the Thief.
 
     - name: Tinker
       children:
         - name: Starting Items.
-          text: Start with `item:bag`, `item:hammer`.
+          text: Start with `item:sack`, `item:hammer`.
         - name: Ability.
           text: After you Serve, draw 1 card.
 
@@ -1609,7 +1614,7 @@
     - name: Jailor
       children:
         - name: Starting Items.
-          text: Start with `item:crossbow`, `item:bag`.
+          text: Start with `item:crossbow`, `item:sack`.
         - name: Ability.
           text: In Nab battles, you may deal 1 less hit, even if you are dealing no hits, to ignore 1 rolled hit you take. _(Do this after rolling the dice.)_
 
