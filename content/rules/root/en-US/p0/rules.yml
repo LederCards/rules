@@ -1129,7 +1129,7 @@
           text: Draw one card, plus one card per uncovered draw bonus _(equal to waystations on the map)_. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
 - name: Lilypad Diaspora
-  color: '#8fbc8f'
+  color: '#AD9932'
   icon: faction-diaspora
   children:
     - name: Overview
@@ -1213,7 +1213,7 @@
           text: 'Draw one card, plus more cards based on your Peaceful enclaves on the map: +1 if you have 2–3, +2 if you have 4–7, or +3 if you have 8 or more. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.'
 
 - name: Twilight Council
-  color: '#4a90e2'
+  color: '#944A2E'
   icon: faction-council
   children:
     - name: Overview
@@ -1290,7 +1290,7 @@
           text: Draw one card. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
 - name: Knaves of the Deepwood
-  color: '#2e8b57'
+  color: '#372F2C'
   icon: faction-knaves
   children:
     - name: Overview
