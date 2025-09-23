@@ -209,7 +209,24 @@
 
     - name: Reach
       pretext: To set up an interesting game, choose factions whose reach values add up to at least the total reach recommended for your player count. _(Adventurous players are welcome to use any faction mix with 17+ Reach.)_
-      
+      children:
+        - name: Reach Table.
+          text: |
+            | Faction | Reach |
+            | ------ | ------ |
+            | Marquise de Cat | 10 
+            | Lord of the Hundreds | 9 
+            | Keepers in Iron |	8
+            | Underground Duchy |	8
+            | Lilypad Diaspora |	7
+            | Eyrie Dynasties |	7
+            | Vagabond (first/second) |	5/2
+            | Riverfolk Company |	5
+            | Knaves of the Deepwood |	4
+            | Twilight Council |	4
+            | Woodland Alliance |	3
+            | Corvid Conspiracy |	3
+            | Lizard Cult |	2
 - name: Marquise de Cat
   color: '#e07a37'
   icon: faction-marquise
