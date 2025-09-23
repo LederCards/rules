@@ -209,14 +209,15 @@
 
     - name: Reach
       pretext: To set up an interesting game, choose factions whose reach values add up to at least the total reach recommended for your player count. _(Adventurous players are welcome to use any faction mix with 17+ Reach.)_
-      text: >
-        | Players | Total Reach |
-        | ------ | ------ |
-        | 2 | 17+ |
-        | 3 | 18+ |
-        | 4 | 21+ |
-        | 5 | 25+ |
-        | 6 | 28+ |
+      children:
+        text: >
+          | Players | Total Reach |
+          | ------ | ------ |
+          | 2 | 17+ |
+          | 3 | 18+ |
+          | 4 | 21+ |
+          | 5 | 25+ |
+          | 6 | 28+ |
       
 - name: Marquise de Cat
   color: '#e07a37'
