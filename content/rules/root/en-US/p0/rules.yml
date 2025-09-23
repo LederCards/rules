@@ -207,9 +207,33 @@
         - name: 'Step 7: Set Up Factions.'
           text: In setup order (A, B, C, etc.), each player follows their faction's setup instructions, listed in their rules section and on the back of their faction board.
 
-    - name: Reach (MISSING TEXT)
+    - name: Reach
       pretext: To set up an interesting game, choose factions whose reach values add up to at least the total reach recommended for your player count. _(Adventurous players are welcome to use any faction mix with 17+ Reach.)_
+      documentation: |
+        | Players | Total Reach |
+        | ------ | ------ |
+        | 2 | 17+ |
+        | 3 | 18+ |
+        | 4 | 21+ |
+        | 5 | 25+ |
+        | 6 | 28+ |
 
+        | Faction | Reach |
+        | ------ | ------ |
+        | Marquise de Cat | 10 
+        | Lord of the Hundreds | 9 
+        | Keepers in Iron |	8
+        | Underground Duchy |	8
+        | Lilypad Diaspora |	7
+        | Eyrie Dynasties |	7
+        | Vagabond (first/second) |	5/2
+        | Riverfolk Company |	5
+        | Knaves of the Deepwood |	4
+        | Twilight Council |	4
+        | Woodland Alliance |	3
+        | Corvid Conspiracy |	3
+        | Lizard Cult |	2
+      
 - name: Marquise de Cat
   color: '#e07a37'
   icon: faction-marquise
@@ -565,7 +589,7 @@
         - name: Special Action.
           text: Take the action listed on your character card by exhausting any items it lists.
 
-    - name: Evening (MISSING PLAYING WITH TWO VAGABONDS)
+    - name: Evening
       pretext: Your Evening has four steps, as follows.
       children:
         - name: Rest.
@@ -576,6 +600,16 @@
           text: If you have more than five cards in your hand, discard cards of your choice until you have five.
         - name: Check Item Capacity.
           text: If you have more items total in your Satchel and Damaged box than your item limit—six plus two per `item:sack` face up on the respective track—remove items from your Satchel and Damaged box until you have items equal to your item limit, and remove them from the game permanently.
+    
+    - name: Playing with Two Vagabonds
+      pretext: If you have _The Riverfolk Expansion_, you can play a game with two Vagabonds by following these rules.
+      children:
+      - name: Setup
+        text: Use both sets of "R" items and place two random "R" items in each ruin slot. If you are using the Standard Setup `rule:5.1`, randomly determine which Vagabond sets up first.
+      - name: Share Quests
+        text: Either Vagabond may complete any of the three face-up quests. Do not add extra quest cards during setup.
+      - name: Taking Items from Ruins
+        text: When a Vagabond explores a ruin with two items, or the Hundreds raze a ruin (`rule:14.4.1`) with two items, that player may look at those items and take one of their choice. _(By taking two Explore actions, the Vagabond could take both items from one ruin.)_ A player cannot take an "R" item if they have the same type of "R" item on their faction board. _(If the Vagabond explores but does not take an item, he does not score a victory point, but the `item:torch` is still exhausted.)_
 
 - name: Lizard Cult
   color: '#fcf065'
@@ -1414,9 +1448,136 @@
     - name: 'Step 10: Choose Starting Hands'
       pretext: Each player chooses three cards in their hand to keep and puts the other two cards face down on the shared deck. When finished, shuffle the shared deck.
 
-- name: Components (MISSING TEXT)
+- name: Components
   color: '#000000'
   appendix: C
+  children:
+    - name: Root Base Game
+      children:
+        - name: Booklets
+          text: Walkthrough, Learning to Play, and this Law.
+        - name: Cardboard Pieces
+          text: 28 Buildings _\(7 Roosts, 6 Sawmills, 6 Recruiters, 6 Workshops, 3 Bases\)_, 19 Tokens _\(10 Sympathy, 8 Wood, 1 Keep\)_, 12 Clearing Markers _\(4 Rabbit, 4 Fox, 4 Mouse\)_, 4 Ruins, 4 Victory Point Markers, 3 Relationship Markers, 23 Items _\(4 Boots, 4 Swords, 4 Bags, 3 Hammers, 3 Tea, 2 Coins, 2 Crossbows, 1 Torch\)_.
+        - name: Wooden Pieces
+          text: 55 Warriors _\(25 Marquise, 20 Eyrie, 10 Alliance\)_, 1 Vagabond Pawn.
+        - name: Cards
+          text: 54 Cards for Shared Deck, 16 Faction Overviews, 4 Eyrie Leaders, 2 Loyal Viziers, 3 Vagabond Characters, 15 Quests, 4 Walkthroughs.
+        - name: Other
+          text: Board _\(Fall and Winter Maps\)_, 2 Battle Dice, 4 Faction Boards _\(Marquise, Eyrie, Alliance, Vagabond\)_.
+
+    - name: Riverfolk Expansion
+      children:
+        - name: Booklets
+          text: Learning to Play.
+        - name: Cardboard Pieces
+          text: 15 Buildings _\(15 Gardens\)_, 9 Tokens _\(9 Trade Posts\)_, 3 Victory Point Markers, 1 Outcast Marker, 9 Relationship Markers, 11 Items _\(3 Boots, 3 Swords, 1 Bag, 1 Hammer, 1 Torch, 1 Coins, 1 Crossbow\)_, and 17 spare pieces with letter backs for future scenarios.
+        - name: Wooden Pieces
+          text: 40 Warriors _\(25 Lizard, 15 Riverfolk\)_, 1 Vagabond Pawn.
+        - name: Cards
+          text: 4 Spies, 2 Faction Overviews, 3 Vagabond Characters.
+        - name: Other
+          text: 4 Faction Boards _\(Second Vagabond, Mechanical Marquise, Riverfolk Company, Lizard Cult\)_, 3 Service Markers, 1 Card Stand.
+
+    - name: Underworld Expansion
+      children:
+        - name: Booklets
+          text: Learning to Play and this Law.
+        - name: Cardboard Pieces
+          text: 6 Buildings _\(3 Markets, 3 Citadels\)_, 19 Tokens _\(8 Plots, 8 Spare Plots, 3 Tunnels\)_, the Burrow, 4 Relationship Markers, 2 Victory Point Markers, 6 Closed Path Markers.
+        - name: Wooden Pieces
+          text: 35 Warriors _\(20 Duchy, 15 Corvid\)_, 1 Ferry, 1 Tower, 9 Crowns.
+        - name: Cards
+          text: 9 Ministers, 2 Overviews.
+        - name: Other
+          text: Board _\(Lake and Mountain Maps\)_, 2 Battle Dice, 2 Faction Boards _\(Duchy, Corvid\)_.
+
+    - name: Marauder Expansion
+      children:
+        - name: Booklets
+          text: Learning to Play and this Law.
+        - name: Cardboard Pieces
+          text: 9 Buildings _\(3 Waystations, 6 Strongholds\)_, 17 Tokens _\(12 Relics, 5 Mobs\)_, 4 Relationship Markers, 2 Victory Point Markers, 12 Control Markers, 3 Club Items, 3 Hireling Markers, 11 Extra Markers _\(9 Victory Points, 2 Relationships\)_.
+        - name: Wooden Pieces
+          text: 56 Warriors _\(20 Hundreds, 15 Keepers, 12 Patrol, 5 Dynasty, 4 Uprising\)_, 1 Hundreds Warlord, 1 Exile Pawn.
+        - name: Cards
+          text: 8 Moods, 3 Faithful Retainers, 10 Faction Setup, 4 Hirelings, 2 Overviews.
+        - name: Other
+          text: 2 Faction Boards _\(Hundreds, Keepers\)_, 3 Dice _\(Mob, Uprising, Control\)_.
+
+    - name: Homeland Expansion
+      children:
+        - name: Booklets
+          text: Learning to Play and this Law.
+        - name: Cardboard Pieces
+          text: 26 Tokens _\(12 Enclaves, 6 Assemblies, 8 Acclaim\)_, 28 Items _\(4 Coins, 4 Boots, 4 Swords, 5 Tea, 4 Hammers, 4 Bags, 3 Crossbows\)_, 4 Ruins, 4 Relationship Markers, 3 Victory Point Markers, 9 Reminder Markers, 3 Flood Markers, 1 Pond Placard.
+        - name: Wooden Pieces
+          text: 43 Warriors _\(20 Diaspora, 20 Council, 10 Knave Skunks\)_, 3 Vagabond / Knave Captains _\(Jailor, Gladiator, Cheat\)_, 3 Landmarks _\(Mousehold, Foxburrow, Rabbittown\)_.
+        - name: Cards
+          text: 14 Frog, 12 Captains, 3 Vagabonds, 3 Overviews, 3 Faction Setup, 4 Clarifications, 3 Landmarks, 19 Updates.
+        - name: Other
+          text: Board _\(Marsh and Gorge Maps\)_, 3 Faction Boards _\(Diaspora, Council, Knaves\)_, 2 Battle Dice.
+
+    - name: Clockwork Expansion
+      children:
+        - name: Booklets
+          text: Law of Rootbotics.
+        - name: Cardboard Pieces
+          text: 12 Priority Markers.
+        - name: Cards
+          text: 12 Difficulties, 16 Traits, 3 Vagabots.
+        - name: Other
+          text: 4 Faction Boards.
+
+    - name: Clockwork Expansion 2
+      children:
+        - name: Booklets
+          text: Law of Rootbotics.
+        - name: Cardboard Pieces
+          text: 12 Priority Markers.
+        - name: Cards
+          text: 12 Difficulties, 20 Traits, 3 Vagabots, 1 Interaction, 11 Services.
+        - name: Other
+          text: 4 Faction Boards.
+
+    - name: Additional Decks
+      children:
+        - name: Exiles and Partisans Deck
+          children:
+            - name: Cards
+              text: 54 Cards for Shared Deck.
+        - name: Squires and Disciples Deck
+          children:
+            - name: Cards
+              text: 54 Cards for Shared Deck.
+
+    - name: Landmarks Pack
+      children:
+        - name: Cards
+          text: 1 Setup/Rules, 6 Landmarks.
+        - name: Wooden Pieces
+          text: 4 Landmarks.
+
+    - name: Vagabond Pack
+      children:
+        - name: Cardboard Pieces
+          text: 3 Items _\(1 Coins, 1 Hammer, 1 Boot\)_.
+        - name: Wooden Pieces
+          text: 7 Vagabond Pawns.
+        - name: Cards
+          text: 3 Vagabond Characters.
+
+    - name: Hireling Packs
+      children:
+        - name: Booklets
+          text: Learning to Play Hirelings.
+        - name: Cardboard Pieces
+          text: 3 Hireling Markers, 12 Control Markers. 3 Foothold Tokens in Underworld Pack. 6 Vault Buildings in Marauder Pack. 4 Farm Buildings and 5 Lilypad Tokens in Homeland Pack.
+        - name: Wooden Pieces
+          text: 1 Flotilla Pawn, 4 Prophet Warriors, 4 Bandit Warriors in Riverfolk Pack. 8 Expedition Warriors, 6 Spy Warriors, and 1 Protector Pawn in Underworld Pack. 6 Bearer Warriors, 6 Keeper Warriors, and 5 Band Warriors in Marauder Pack. 10 Frog Warriors, 8 Bat Warriors, and 9 Duck Warriors in Homeland Pack.
+        - name: Cards
+          text: 3 Hirelings.
+        - name: Other
+          text: 1 Control Die.
 
 - name: Glossary
   color: '#000000'
@@ -1660,9 +1821,16 @@
         - name: Weird Stuff.
           text: If you move hireling warriors into a clearing with an Alliance sympathy token or remove Alliance sympathy by using a hireling, this does trigger Outrage. _(These effects refer to a "player moving" or "player removing.")_
 
-- name: Landmarks (MISSING TEXT)
+- name: Landmarks
   color: '#000000'
   appendix: L
+  children:
+    - name: General Rules
+      children:
+      - name: Safety.
+        text: Landmarks cannot be battled, moved, covered, or removed, unless noted explicitly by a landmark.
+      - name: Ownership.
+        text: Landmarks are not owned by anyone and are not enemy pieces.
 
 - name: Maps
   color: '#000000'
