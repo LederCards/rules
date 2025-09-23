@@ -1456,129 +1456,129 @@
   children:
     - name: Root Base Game
       children:
-        - name: Booklets
+        - name: Booklets.
           text: Walkthrough, Learning to Play, and this Law.
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 28 Buildings _\(7 Roosts, 6 Sawmills, 6 Recruiters, 6 Workshops, 3 Bases\)_, 19 Tokens _\(10 Sympathy, 8 Wood, 1 Keep\)_, 12 Clearing Markers _\(4 Rabbit, 4 Fox, 4 Mouse\)_, 4 Ruins, 4 Victory Point Markers, 3 Relationship Markers, 23 Items _\(4 Boots, 4 Swords, 4 Bags, 3 Hammers, 3 Tea, 2 Coins, 2 Crossbows, 1 Torch\)_.
-        - name: Wooden Pieces
+        - name: Wooden Pieces.
           text: 55 Warriors _\(25 Marquise, 20 Eyrie, 10 Alliance\)_, 1 Vagabond Pawn.
-        - name: Cards
+        - name: Cards.
           text: 54 Cards for Shared Deck, 16 Faction Overviews, 4 Eyrie Leaders, 2 Loyal Viziers, 3 Vagabond Characters, 15 Quests, 4 Walkthroughs.
-        - name: Other
+        - name: Other.
           text: Board _\(Fall and Winter Maps\)_, 2 Battle Dice, 4 Faction Boards _\(Marquise, Eyrie, Alliance, Vagabond\)_.
 
     - name: Riverfolk Expansion
       children:
-        - name: Booklets
+        - name: Booklets.
           text: Learning to Play.
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 15 Buildings _\(15 Gardens\)_, 9 Tokens _\(9 Trade Posts\)_, 3 Victory Point Markers, 1 Outcast Marker, 9 Relationship Markers, 11 Items _\(3 Boots, 3 Swords, 1 Bag, 1 Hammer, 1 Torch, 1 Coins, 1 Crossbow\)_, and 17 spare pieces with letter backs for future scenarios.
-        - name: Wooden Pieces
+        - name: Wooden Pieces.
           text: 40 Warriors _\(25 Lizard, 15 Riverfolk\)_, 1 Vagabond Pawn.
-        - name: Cards
+        - name: Cards.
           text: 4 Spies, 2 Faction Overviews, 3 Vagabond Characters.
-        - name: Other
+        - name: Other.
           text: 4 Faction Boards _\(Second Vagabond, Mechanical Marquise, Riverfolk Company, Lizard Cult\)_, 3 Service Markers, 1 Card Stand.
 
     - name: Underworld Expansion
       children:
-        - name: Booklets
+        - name: Booklets.
           text: Learning to Play and this Law.
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 6 Buildings _\(3 Markets, 3 Citadels\)_, 19 Tokens _\(8 Plots, 8 Spare Plots, 3 Tunnels\)_, the Burrow, 4 Relationship Markers, 2 Victory Point Markers, 6 Closed Path Markers.
-        - name: Wooden Pieces
+        - name: Wooden Pieces.
           text: 35 Warriors _\(20 Duchy, 15 Corvid\)_, 1 Ferry, 1 Tower, 9 Crowns.
-        - name: Cards
+        - name: Cards.
           text: 9 Ministers, 2 Overviews.
-        - name: Other
+        - name: Other.
           text: Board _\(Lake and Mountain Maps\)_, 2 Battle Dice, 2 Faction Boards _\(Duchy, Corvid\)_.
 
     - name: Marauder Expansion
       children:
-        - name: Booklets
+        - name: Booklets.
           text: Learning to Play and this Law.
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 9 Buildings _\(3 Waystations, 6 Strongholds\)_, 17 Tokens _\(12 Relics, 5 Mobs\)_, 4 Relationship Markers, 2 Victory Point Markers, 12 Control Markers, 3 Club Items, 3 Hireling Markers, 11 Extra Markers _\(9 Victory Points, 2 Relationships\)_.
-        - name: Wooden Pieces
+        - name: Wooden Pieces.
           text: 56 Warriors _\(20 Hundreds, 15 Keepers, 12 Patrol, 5 Dynasty, 4 Uprising\)_, 1 Hundreds Warlord, 1 Exile Pawn.
-        - name: Cards
+        - name: Cards.
           text: 8 Moods, 3 Faithful Retainers, 10 Faction Setup, 4 Hirelings, 2 Overviews.
-        - name: Other
+        - name: Other.
           text: 2 Faction Boards _\(Hundreds, Keepers\)_, 3 Dice _\(Mob, Uprising, Control\)_.
 
     - name: Homeland Expansion
       children:
-        - name: Booklets
+        - name: Booklets.
           text: Learning to Play and this Law.
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 26 Tokens _\(12 Enclaves, 6 Assemblies, 8 Acclaim\)_, 28 Items _\(4 Coins, 4 Boots, 4 Swords, 5 Tea, 4 Hammers, 4 Bags, 3 Crossbows\)_, 4 Ruins, 4 Relationship Markers, 3 Victory Point Markers, 9 Reminder Markers, 3 Flood Markers, 1 Pond Placard.
-        - name: Wooden Pieces
+        - name: Wooden Pieces.
           text: 43 Warriors _\(20 Diaspora, 20 Council, 10 Knave Skunks\)_, 3 Vagabond / Knave Captains _\(Jailor, Gladiator, Cheat\)_, 3 Landmarks _\(Mousehold, Foxburrow, Rabbittown\)_.
-        - name: Cards
+        - name: Cards.
           text: 14 Frog, 12 Captains, 3 Vagabonds, 3 Overviews, 3 Faction Setup, 4 Clarifications, 3 Landmarks, 19 Updates.
-        - name: Other
+        - name: Other.
           text: Board _\(Marsh and Gorge Maps\)_, 3 Faction Boards _\(Diaspora, Council, Knaves\)_, 2 Battle Dice.
 
     - name: Clockwork Expansion
       children:
-        - name: Booklets
+        - name: Booklets.
           text: Law of Rootbotics.
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 12 Priority Markers.
-        - name: Cards
+        - name: Cards.
           text: 12 Difficulties, 16 Traits, 3 Vagabots.
-        - name: Other
+        - name: Other.
           text: 4 Faction Boards.
 
     - name: Clockwork Expansion 2
       children:
-        - name: Booklets
+        - name: Booklets.
           text: Law of Rootbotics.
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 12 Priority Markers.
-        - name: Cards
+        - name: Cards.
           text: 12 Difficulties, 20 Traits, 3 Vagabots, 1 Interaction, 11 Services.
-        - name: Other
+        - name: Other.
           text: 4 Faction Boards.
 
     - name: Additional Decks
       children:
         - name: Exiles and Partisans Deck
           children:
-            - name: Cards
+            - name: Cards.
               text: 54 Cards for Shared Deck.
         - name: Squires and Disciples Deck
           children:
-            - name: Cards
+            - name: Cards.
               text: 54 Cards for Shared Deck.
 
     - name: Landmarks Pack
       children:
-        - name: Cards
+        - name: Cards.
           text: 1 Setup/Rules, 6 Landmarks.
-        - name: Wooden Pieces
+        - name: Wooden Pieces.
           text: 4 Landmarks.
 
     - name: Vagabond Pack
       children:
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 3 Items _\(1 Coins, 1 Hammer, 1 Boot\)_.
-        - name: Wooden Pieces
+        - name: Wooden Pieces.
           text: 7 Vagabond Pawns.
-        - name: Cards
+        - name: Cards.
           text: 3 Vagabond Characters.
 
     - name: Hireling Packs
       children:
-        - name: Booklets
+        - name: Booklets.
           text: Learning to Play Hirelings.
-        - name: Cardboard Pieces
+        - name: Cardboard Pieces.
           text: 3 Hireling Markers, 12 Control Markers. 3 Foothold Tokens in Underworld Pack. 6 Vault Buildings in Marauder Pack. 4 Farm Buildings and 5 Lilypad Tokens in Homeland Pack.
-        - name: Wooden Pieces
+        - name: Wooden Pieces.
           text: 1 Flotilla Pawn, 4 Prophet Warriors, 4 Bandit Warriors in Riverfolk Pack. 8 Expedition Warriors, 6 Spy Warriors, and 1 Protector Pawn in Underworld Pack. 6 Bearer Warriors, 6 Keeper Warriors, and 5 Band Warriors in Marauder Pack. 10 Frog Warriors, 8 Bat Warriors, and 9 Duck Warriors in Homeland Pack.
-        - name: Cards
+        - name: Cards.
           text: 3 Hirelings.
-        - name: Other
+        - name: Other.
           text: 1 Control Die.
 
 - name: Glossary
