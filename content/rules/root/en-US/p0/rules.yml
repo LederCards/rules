@@ -209,7 +209,7 @@
 
     - name: Reach
       pretext: To set up an interesting game, choose factions whose reach values add up to at least the total reach recommended for your player count. _(Adventurous players are welcome to use any faction mix with 17+ Reach.)_
-      documentation: |
+      text: >
         | Players | Total Reach |
         | ------ | ------ |
         | 2 | 17+ |
