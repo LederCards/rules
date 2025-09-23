@@ -42,7 +42,7 @@
         - name: Limits.
           text: Pieces are limited by the contents of the game. Do not use proxy pieces if you run out.
         - name: Starting Faction.
-          text: Each player owns the faction they choose in setup `rule:5` and the pieces listed on the back of its faction board except for items. Generically, these are called **faction pieces** or similar. Specifically, these are called **[faction name] pieces**. _(For example, "your faction warriors" and "warriors of your faction" and "Marquise warriors" all refer to the orange wooden cat-shaped warriors.)_
+          text: Each player owns the faction they choose in setup (`rule:5`) and the pieces listed on the back of its faction board except for items. Generically, these are called **faction pieces** or similar. Specifically, these are called **[faction name] pieces**. _(For example, "your faction warriors" and "warriors of your faction" and "Marquise warriors" all refer to the orange wooden cat-shaped warriors.)_
         - name: Piece Ownership.
           text: The ownership of faction pieces cannot change. _(For example, the Marquise cannot use Field Hospitals on Riverfolk mercenaries or hirelings, since these are not Marquise warriors.)_
         - name: Piece Manipulation.
