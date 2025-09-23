@@ -1585,112 +1585,112 @@
   color: '#000000'
   appendix: G
   children:
-    - name: Ability.
+    - name: Ability
       pretext: A persistent effect of a faction as listed at the top of its faction board and in its Faction Rules and Abilities section, or a persistent effect of a hireling as listed on its hireling card (`rule:22.2.2`).
 
-    - name: Adjacent.
+    - name: Adjacent
       pretext: A clearing is adjacent to all other clearings linked to it by a path. A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path, except on the lake (`rule:25.3.4`).
 
-    - name: Building.
+    - name: Building
       pretext: A square cardboard piece owned by its faction or hireling.
 
-    - name: Cannot.
+    - name: Cannot
       pretext: See `rule:1.1.2`. The term cannot is absolute. It cannot be overridden unless explicitly instructed.
 
-    - name: Discard.
+    - name: Discard
       pretext: Place the prompted card in the shared discard pile. If it is a dominance card, place it near the map instead (`rule:3.3.3`). `faction:cult$10.2.6` `faction:diaspora$16.2.3`
 
-    - name: Draw.
+    - name: Draw
       pretext: Take a card into your hand. If drawing from a deck or pile, take the top card unless otherwise specified. If no source is specified, take it from the shared deck (`rule:2.1`). `faction:diaspora$16.2.3.1`
 
-    - name: Effect.
+    - name: Effect
       pretext: Anything that changes the game, including persistent effects, faction abilities, and actions.
 
-    - name: Enemy.
+    - name: Enemy
       pretext: Any other player that you are not in a coalition with (`rule:9.2.8`), or a hireling that is in the supply or held by an enemy player.
 
-    - name: Enemy Piece.
+    - name: Enemy Piece
       pretext: A faction piece of an enemy player or a hireling piece of an enemy hireling, except while you're treating the piece as your own for rule _(Riverfolk mercenaries, controlled hirelings, etc.)_. _(Items cannot be enemy pieces.)_
 
-    - name: Faction Piece.
+    - name: Faction Piece
       pretext: All the warriors, pawns, buildings, and tokens listed on the back of a faction board. _(Items are not faction pieces.)_ See `rule:1.5.1`.
 
-    - name: Forest.
+    - name: Forest
       pretext: An area on the map enclosed by paths and clearings.
 
-    - name: Force.
+    - name: Force
       pretext: See `rule:1.5.5`.
 
-    - name: Item.
+    - name: Item
       pretext: A square cardboard piece showing an item (`item:boot`, `item:sword`, `item:crossbow`, etc.) that is not owned by any faction.
 
-    - name: Map.
+    - name: Map
       pretext: See `rule:2.2`.
 
-    - name: Map Edge.
+    - name: Map Edge
       pretext: The single closed loop of clearings and paths that define the map boundary, including closed paths on the mountain map.
 
-    - name: Matching.
+    - name: Matching
       pretext: Of the same suit.
 
-    - name: Path.
+    - name: Path
       pretext: A white link between two clearings.
 
-    - name: Pawn.
+    - name: Pawn
       pretext: A wooden figure owned by its faction or hireling.
 
-    - name: Piece.
+    - name: Piece
       pretext: Any component—building, token, warrior, pawn, item, marker, and so on.
 
-    - name: Place.
+    - name: Place
       pretext: Take the prompted piece from the prompted source and put it in the prompted destination. Usually, no source is specified—in this case, take it from its supply, or take the leftmost prompted piece if it is on a track. Put is shorthand for Place.
 
-    - name: Play Area.
+    - name: Play Area
       pretext: The area around your faction board. Cards in it can only be spent, discarded, or used for other purposes if explicitly instructed.
 
-    - name: Random.
+    - name: Random
       pretext: When referring to a card, choose one at random without looking at them at all.
 
-    - name: Replace.
+    - name: Replace
       pretext: Remove the prompted piece and place the other prompted piece in the location from which the first was removed. To do so, you must be able to complete both steps. _(For example, enemies of the Marquise cannot replace a Marquise warrior at the keep.)_
 
-    - name: Remove.
+    - name: Remove
       pretext: Take the prompted piece from the prompted source and return it to the prompted destination. Usually, no destination is specified—in this case, return it to its owner's supply, return it to the rightmost empty space of its track it has one, or remove it permanently otherwise. _(Items are removed permanently.)_
 
-    - name: Reveal.
+    - name: Reveal
       pretext: Place the prompted card face up in your play area. Usually, no source is specified—in this case, take it from your hand.
 
-    - name: River.
+    - name: River
       pretext: A blue link between two clearings.
 
-    - name: Ruin.
+    - name: Ruin
       pretext: Piece covering an "R" slot in a clearing (`rule:2.2.4`).
 
-    - name: Rule.
+    - name: Rule
       pretext: A player rules a clearing if they have more total warriors and buildings in it than each other player. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one rules it.
 
-    - name: Show.
+    - name: Show
       pretext: Let the prompted player see the prompted piece.
 
-    - name: Slot.
+    - name: Slot
       pretext: White box in a clearing `rule:2.2.3`.
 
-    - name: Spend.
+    - name: Spend
       pretext: See Discard. _(These terms are equivalent, but spend is used in contexts with choice.)_
 
-    - name: Supply.
+    - name: Supply
       pretext: The collection of pieces that is not on a faction board or the map. The item supply is the collection of items on the map.
 
-    - name: Swap.
+    - name: Swap
       pretext: Switch the locations of the two prompted pieces. _(This ignores_ **move** and **place** _restrictions, such as the Corvids' snare and the Marquise's keep.)_
 
-    - name: Token.
+    - name: Token
       pretext: A circular cardboard piece owned by its faction or hireling.
 
-    - name: Treat.
+    - name: Treat
       pretext: The prompted thing takes on the properties of the second prompted thing. While you treat enemy pieces as your own for rule, they are not enemy pieces, but they are still faction pieces of that enemy player. _(For example, Riverfolk warriors you've hired as mercenaries are not enemy pieces to you, but they are still Riverfolk faction pieces.)_
 
-    - name: Warrior.
+    - name: Warrior
       pretext: A wooden figure owned by its faction or hireling. _(The Vagabond pawn is not a warrior and cannot be removed.)_
       
 - name: Knave Captains
