@@ -1002,7 +1002,7 @@
           text: Whenever you take the Incite action in your warlord's clearing, after placing the mob token for the action, you may—up to four times—roll the mob die and place a mob token in a matching clearing that has no mob token but is adjacent to any clearing with a mob token.
         - name: Lavish (No Item).
           text: At the end of your Birdsong, you may remove any number of items from your Hoard permanently. For each item you remove, place two warriors into your warlord's clearing. When you are done, shift items in your Hoard to fill its tracks from left to right.
-        - name: Relentless (`item:bag`).
+        - name: Relentless (`item:sack`).
           text: Whenever you take the Advance the Warlord action and both move and battle, you may then either move your warlord with any Hundreds warriors or battle in your warlord's clearing.
         - name: Rowdy (`item:coin`).
           text: In Evening (`rule:14.6.3`), draw one more card. If your warlord's clearing has three or more enemy pieces _(even a combination of pieces from different enemies)_, draw two more cards instead.
@@ -1310,7 +1310,7 @@
                   text: Initiate a battle in the Acting Captain's clearing. Take all warriors you hit as a Prisoner (`rule:18.2.6`), moving each to a separate forest with no Prisoners.
                 - name: Skirmish (`item:crossbow`).
                   text: Move the Acting Captain from a forest. Then, initiate a battle in the Acting Captain's destination clearing, ignoring the first hit you take.
-                - name: Nab (`item:bag`).
+                - name: Nab (`item:sack`).
                   text: Initiate a battle in the Acting Captain's clearing. If the Acting Captain is hit, it is not removed—move it to an adjacent forest instead; if it cannot be moved, it is removed as normal. If the Acting Captain was not hit, you may move it after the battle _(after placing acclaim)_.
                 - name: Revel (`item:tea`).
                   text: Place 1 acclaim and 1 Skunk at the Acting Captain. _(If it's in a forest, just place the Skunk.)_ If acclaim is already in the Acting Captain's clearing, place 2 Skunks there instead.
@@ -1527,14 +1527,14 @@
     - name: Thief
       children:
         - name: Starting Items.
-          text: Start with `item:boot`, `item:bag`.
+          text: Start with `item:boot`, `item:sack`.
         - name: Ability.
           text: After you Filch, you may move the Thief.
 
     - name: Tinker
       children:
         - name: Starting Items.
-          text: Start with `item:bag`, `item:hammer`.
+          text: Start with `item:sack`, `item:hammer`.
         - name: Ability.
           text: After you Serve, draw 1 card.
 
@@ -1604,7 +1604,7 @@
     - name: Jailor
       children:
         - name: Starting Items.
-          text: Start with `item:crossbow`, `item:bag`.
+          text: Start with `item:crossbow`, `item:sack`.
         - name: Ability.
           text: In Nab battles, you may deal 1 less hit, even if you are dealing no hits, to ignore 1 rolled hit you take. _(Do this after rolling the dice.)_
 
@@ -1730,7 +1730,7 @@
     - name: Tinker
       children:
         - name: Starting Items.
-          text: Start with `item:boot`, `item:torch`, `item:bag`, `item:hammer`.
+          text: Start with `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
         - name: 'Special Action: Day Labor.'
           text: Exhaust one `item:torch` to take a card from the discard pile whose suit matches your clearing. _(You can always take a bird card.)_
 
