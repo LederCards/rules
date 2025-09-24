@@ -167,7 +167,7 @@ export function getCustomRenderer(
       if (type === 'faction') {
         const [icon, extra] = subtype.split('$');
         return `
-            <a href="#${indexRuleHash[extra]}">
+            <a class="rule-link" href="#${indexRuleHash[extra]}">
               <img src="inicon/${type}-${icon}.png" class="inline-icon" />
             </a>
           `;

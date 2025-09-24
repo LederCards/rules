@@ -11,7 +11,7 @@
       <!-- no text at this level -->
 
       <div class="rule major" [id]="indexesToRules[rule.index]">
-        <span [id]="rule.index"></span>
+        <span class="index-link" [id]="rule.index"></span>
         <span class="index major">{{ rule.indexDisplay }}</span>
         <a
           [innerHTML]="rule.formattedName | highlight: searchTerm : rule.index"
@@ -34,7 +34,7 @@
           [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1])"
         >
           <div class="rule minor" [id]="indexesToRules[childRule.index]">
-            <span [id]="childRule.index"></span>
+            <span class="index-link" [id]="childRule.index"></span>
             <span class="index minor">{{ childRule.indexDisplay }}</span>
             <a
               [innerHTML]="
@@ -80,7 +80,7 @@
                 class="rule child"
                 [id]="indexesToRules[grandchildRule.index]"
               >
-                <span [id]="grandchildRule.index"></span>
+                <span class="index-link" [id]="grandchildRule.index"></span>
                 <span class="index child">
                   {{ grandchildRule.indexDisplay }}
                 </span>
@@ -144,7 +144,10 @@
                             "
                             [href]="'#' + indexesToRules[descRule.index]"
                           >
-                            <span [id]="descRule.index"></span>
+                            <span
+                              class="index-link"
+                              [id]="descRule.index"
+                            ></span>
                           </a>
 
                           <span
@@ -203,7 +206,10 @@
                                       '#' + indexesToRules[descDescRule.index]
                                     "
                                   >
-                                    <span [id]="descDescRule.index"></span>
+                                    <span
+                                      class="index-link"
+                                      [id]="descDescRule.index"
+                                    ></span>
                                   </a>
 
                                   <span

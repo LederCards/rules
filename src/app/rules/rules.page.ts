@@ -88,7 +88,7 @@ export class RulesPage {
   });
 
   public showSearch = signal<boolean>(false);
-  public showScrollUp = signal<boolean>(false);
+  public scrollBackTo = signal<string>('');
 
   public shouldCompareRulesInstead = computed(
     () => !!this.paramService.compareToPrinting(),
@@ -109,7 +109,23 @@ export class RulesPage {
     $event.preventDefault();
     $event.stopPropagation();
 
+    const target = realTarget as HTMLElement;
+    if (target && target.classList.contains('rule-link')) {
+      const closestIndexLink = target
+        .closest('.rule')
+        ?.querySelector('.index-link')
+        ?.getAttribute('id');
+
+      if (closestIndexLink) {
+        this.scrollBackTo.set('#' + closestIndexLink);
+      }
+    }
+
     this.scrollToEl(hash, 'start');
+  }
+
+  resetScrollbackButton() {
+    this.scrollBackTo.set('');
   }
 
   constructor() {
@@ -148,11 +164,6 @@ export class RulesPage {
     setTimeout(() => {
       window.location.hash = `#${id}`;
     }, 500);
-  }
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  public scroll($event: any) {
-    this.showScrollUp.set($event.detail.scrollTop > window.innerHeight);
   }
 
   public toggleSearch() {
