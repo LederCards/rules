@@ -5,8 +5,7 @@
       children:
         - name: Precedence.
           text: If a card conflicts with the Law, follow the card. If the Learning to Play guide conflicts with the Law, follow the Law. If you can follow both a general rule and a faction or hireling rule, follow both; if you cannot, follow the faction or hireling rule.
-        - name: Use of **Cannot**.
-          plainName: Use of Cannot.
+        - name: Use of Cannot.
           text: The term **cannot** is absolute. It cannot be overridden unless explicitly instructed.
         - name: Unclear Resolutions and Choices.
           text: Whenever it is unclear what order simultaneous effects should resolve in, or which player should make a decision, the player taking their turn chooses.
