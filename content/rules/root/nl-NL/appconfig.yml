@@ -10,3 +10,8 @@ App:
     ShowErrata: Toon Errata
   Titles:
     Search: Zoek Regels
+  About:
+    ModalTitle: Andere Links
+    CardLibrary: Kaartenbibliotheek
+    GitHub: GitHub
+    Discord: Discord

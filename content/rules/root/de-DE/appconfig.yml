@@ -10,3 +10,8 @@ App:
     ShowErrata: Errata anzeigen
   Titles:
     Search: Regel suchen
+  About:
+    ModalTitle: Weitere Links
+    CardLibrary: Kartenbibliothek
+    GitHub: GitHub
+    Discord: Discord

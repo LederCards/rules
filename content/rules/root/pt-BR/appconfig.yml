@@ -10,3 +10,8 @@ App:
     ShowErrata: Mostrar Errata
   Titles:
     Search: Procurar nas Regras
+  About:
+    ModalTitle: Outros Links
+    CardLibrary: Biblioteca de Cartas
+    GitHub: GitHub
+    Discord: Discord

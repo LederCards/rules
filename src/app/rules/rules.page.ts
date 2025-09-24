@@ -20,6 +20,7 @@ import {
   IonItem,
   IonList,
   IonMenuButton,
+  IonModal,
   IonPopover,
   IonSearchbar,
   IonSelect,
@@ -29,7 +30,17 @@ import {
 } from '@ionic/angular/standalone';
 import { TranslateModule } from '@ngx-translate/core';
 import { addIcons } from 'ionicons';
-import { arrowUpOutline, language, options, search } from 'ionicons/icons';
+import {
+  arrowUpOutline,
+  close,
+  helpCircle,
+  language,
+  link,
+  logoDiscord,
+  logoGithub,
+  options,
+  search,
+} from 'ionicons/icons';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import { navigation$ } from 'src/app/navigation';
 import { ParamService } from 'src/app/param-service';
@@ -65,6 +76,7 @@ import { RulesDisplayComponent } from '../rules-display/rules-display.component'
     IonList,
     IonItem,
     IonCheckbox,
+    IonModal,
   ],
 })
 export class RulesPage {
@@ -77,6 +89,8 @@ export class RulesPage {
 
   public showSearch = signal<boolean>(false);
   public showScrollUp = signal<boolean>(false);
+
+  public showHelpModal = signal<boolean>(false);
 
   public shouldCompareRulesInstead = computed(
     () => !!this.paramService.compareToPrinting(),
@@ -101,7 +115,17 @@ export class RulesPage {
   }
 
   constructor() {
-    addIcons({ arrowUpOutline, search, language, options });
+    addIcons({
+      arrowUpOutline,
+      helpCircle,
+      close,
+      logoGithub,
+      logoDiscord,
+      link,
+      search,
+      language,
+      options,
+    });
 
     navigation$
       .pipe(takeUntilDestroyed())

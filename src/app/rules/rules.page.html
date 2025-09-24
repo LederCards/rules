@@ -33,6 +33,7 @@
 
     <ion-buttons slot="end">
       @if (!showSearch()) {
+        <!-- options -->
         <ion-button (click)="displayOptions.present($event)">
           <ion-icon name="options"></ion-icon>
         </ion-button>
@@ -76,6 +77,7 @@
           </ng-template>
         </ion-popover>
 
+        <!-- language -->
         <ion-button (click)="languageSelect.open()">
           <ion-icon name="language"></ion-icon>
         </ion-button>
@@ -95,6 +97,64 @@
             </ion-select-option>
           }
         </ion-select>
+
+        <!-- about -->
+        <ion-button (click)="showHelpModal.set(true)">
+          <ion-icon name="help-circle"></ion-icon>
+        </ion-button>
+
+        <ion-modal [isOpen]="showHelpModal()">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>{{ 'App.About.ModalTitle' | translate }}</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="showHelpModal.set(false)">
+                    <ion-icon name="close"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+
+            <ion-content class="ion-padding">
+              <ion-list>
+                <ion-item
+                  target="_blank"
+                  [href]="'https://cards.ledergames.com'"
+                >
+                  <ion-icon slot="start" icon="link" color="#000"></ion-icon>
+                  {{ 'App.About.CardLibrary' | translate }}
+                </ion-item>
+
+                <ion-item
+                  target="_blank"
+                  [href]="'https://github.com/LederCards'"
+                >
+                  <ion-icon
+                    slot="start"
+                    icon="logo-github"
+                    color="#000"
+                  ></ion-icon>
+                  {{ 'App.About.GitHub' | translate }}
+                </ion-item>
+
+                <ion-item
+                  target="_blank"
+                  [href]="
+                    'https://discord.com/servers/woodland-warriors-476234833572397056'
+                  "
+                >
+                  <ion-icon
+                    slot="start"
+                    icon="logo-discord"
+                    color="#000"
+                  ></ion-icon>
+                  {{ 'App.About.Discord' | translate }}
+                </ion-item>
+              </ion-list>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       }
 
       @if (!shouldCompareRulesInstead()) {

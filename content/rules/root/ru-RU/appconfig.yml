@@ -10,3 +10,8 @@ App:
     ShowErrata: Показать Errata
   Titles:
     Search: Поиск
+  About:
+    ModalTitle: Другие ссылки
+    CardLibrary: Библиотека Карт
+    GitHub: GitHub
+    Discord: Discord
