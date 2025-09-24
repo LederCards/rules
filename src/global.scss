@@ -265,3 +265,15 @@ table {
     border: 1px solid #aaa;
   }
 }
+
+@media (any-pointer: coarse) {
+  *::-webkit-scrollbar-thumb {
+    background: #999;
+  }
+
+  *::-webkit-scrollbar {
+    display: block !important;
+    background-color: transparent;
+    width: 6px;
+  }
+}
