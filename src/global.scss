@@ -254,3 +254,13 @@ p {
 .dropdown-list {
   padding-bottom: 0 !important;
 }
+
+table {
+  margin-top: 4px;
+
+  td,
+  th {
+    padding: 6px;
+    border: 1px solid #aaa;
+  }
+}
