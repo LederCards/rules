@@ -99,17 +99,17 @@
         </ion-select>
 
         <!-- about -->
-        <ion-button (click)="showHelpModal.set(true)">
+        <ion-button (click)="helpModal.present()">
           <ion-icon name="help-circle"></ion-icon>
         </ion-button>
 
-        <ion-modal [isOpen]="showHelpModal()">
+        <ion-modal #helpModal>
           <ng-template>
             <ion-header>
               <ion-toolbar>
                 <ion-title>{{ 'App.About.ModalTitle' | translate }}</ion-title>
                 <ion-buttons slot="end">
-                  <ion-button (click)="showHelpModal.set(false)">
+                  <ion-button (click)="helpModal.dismiss()">
                     <ion-icon name="close"></ion-icon>
                   </ion-button>
                 </ion-buttons>

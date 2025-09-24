@@ -90,8 +90,6 @@ export class RulesPage {
   public showSearch = signal<boolean>(false);
   public showScrollUp = signal<boolean>(false);
 
-  public showHelpModal = signal<boolean>(false);
-
   public shouldCompareRulesInstead = computed(
     () => !!this.paramService.compareToPrinting(),
   );
