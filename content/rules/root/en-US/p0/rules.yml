@@ -35,7 +35,7 @@
         - name: Interrupts.
           text: You cannot interrupt an action _(including a compound action such as the Marquise's March)_, ability _(such as the Corvids' Exposure)_, or persistent effect _(such as the Eyrie Emigre card)_ with another effect unless it explicitly allows it. _(For example, the Armorers card says it is used "In battle...")_.
         - name: End of Turn.
-          text: Once a player begins the last step of their turn, they cannot take actions except those that specify "end of Evening" or "end of turn," such as hirelings (`rule:22.`).
+          text: Once a player begins the last step of their turn, they cannot take actions except those that specify "end of Evening" or "end of turn," such as hirelings (`rule:23.`).
 
     - name: Pieces
       children:
