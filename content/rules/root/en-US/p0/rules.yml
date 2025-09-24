@@ -1899,6 +1899,7 @@
 
 - name: Vagabonds
   color: '#000000'
+  appendix: V
   children:
     - name: Thief
       children:
