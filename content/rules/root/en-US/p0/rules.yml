@@ -606,7 +606,7 @@
       pretext: If you have _The Riverfolk Expansion_, you can play a game with two Vagabonds by following these rules.
       children:
       - name: Setup
-        text: Use both sets of "R" items and place two random "R" items in each ruin slot. If you are using the Standard Setup `rule:5.1`, randomly determine which Vagabond sets up first.
+        text: Use both sets of "R" items and place two random "R" items in each ruin slot. If you are using the Standard Setup (`rule:5.1`), randomly determine which Vagabond sets up first.
       - name: Share Quests
         text: Either Vagabond may complete any of the three face-up quests. Do not add extra quest cards during setup.
       - name: Taking Items from Ruins
