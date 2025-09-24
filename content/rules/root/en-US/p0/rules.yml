@@ -1276,7 +1276,7 @@
                 - name: The Vagabond.
                   text: The Vagabond cannot take hits from banish because it is not a warrior.
                 - name: Hirelings.
-                  text: Hirelings cannot take hits from banish because they cannot be forced to move (`rule:22.3.4`).
+                  text: Hirelings cannot take hits from banish because they cannot be forced to move (`rule:23.3.4`).
             - name: Agitate.
               text: If you returned a non-bird card, spend it and choose a matching assembly. Place 1 warrior in your Loyalists, then flip the assembly to Governing if it is Closed. _(You cannot gain the Loyalist if you don't have a matching assembly.)_
             - name: Empower.
