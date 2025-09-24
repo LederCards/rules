@@ -1459,7 +1459,7 @@
         - name: Booklets.
           text: Walkthrough, Learning to Play, and this Law.
         - name: Cardboard Pieces.
-          text: 28 Buildings _\(7 Roosts, 6 Sawmills, 6 Recruiters, 6 Workshops, 3 Bases\)_, 19 Tokens _\(10 Sympathy, 8 Wood, 1 Keep\)_, 12 Clearing Markers _\(4 Rabbit, 4 Fox, 4 Mouse\)_, 4 Ruins, 4 Victory Point Markers, 3 Relationship Markers, 23 Items _\(4 Boots, 4 Swords, 4 Bags, 3 Hammers, 3 Tea, 2 Coins, 2 Crossbows, 1 Torch\)_.
+          text: 28 Buildings _\(7 Roosts, 6 Sawmills, 6 Recruiters, 6 Workshops, 3 Bases\)_, 19 Tokens _\(10 Sympathy, 8 Wood, 1 Keep\)_, 12 Clearing Markers _\(4 Rabbit, 4 Fox, 4 Mouse\)_, 4 Ruins, 4 Victory Point Markers, 3 Relationship Markers, 23 Items _\(4 Boots, 4 s, 4 Bags, 3 Hammers, 3 Tea, 2 Coins, 2 Crossbows, 1 Torch\)_.
         - name: Wooden Pieces.
           text: 55 Warriors _\(25 Marquise, 20 Eyrie, 10 Alliance\)_, 1 Vagabond Pawn.
         - name: Cards.
@@ -1472,7 +1472,7 @@
         - name: Booklets.
           text: Learning to Play.
         - name: Cardboard Pieces.
-          text: 15 Buildings _\(15 Gardens\)_, 9 Tokens _\(9 Trade Posts\)_, 3 Victory Point Markers, 1 Outcast Marker, 9 Relationship Markers, 11 Items _\(3 Boots, 3 Swords, 1 Bag, 1 Hammer, 1 Torch, 1 Coins, 1 Crossbow\)_, and 17 spare pieces with letter backs for future scenarios.
+          text: 15 Buildings _\(15 Gardens\)_, 9 Tokens _\(9 Trade Posts\)_, 3 Victory Point Markers, 1 Outcast Marker, 9 Relationship Markers, 11 Items _\(3 Boots, 3 s, 1 Bag, 1 Hammer, 1 Torch, 1 Coins, 1 Crossbow\)_, and 17 spare pieces with letter backs for future scenarios.
         - name: Wooden Pieces.
           text: 40 Warriors _\(25 Lizard, 15 Riverfolk\)_, 1 Vagabond Pawn.
         - name: Cards.
@@ -1511,7 +1511,7 @@
         - name: Booklets.
           text: Learning to Play and this Law.
         - name: Cardboard Pieces.
-          text: 26 Tokens _\(12 Enclaves, 6 Assemblies, 8 Acclaim\)_, 28 Items _\(4 Coins, 4 Boots, 4 Swords, 5 Tea, 4 Hammers, 4 Bags, 3 Crossbows\)_, 4 Ruins, 4 Relationship Markers, 3 Victory Point Markers, 9 Reminder Markers, 3 Flood Markers, 1 Pond Placard.
+          text: 26 Tokens _\(12 Enclaves, 6 Assemblies, 8 Acclaim\)_, 28 Items _\(4 Coins, 4 Boots, 4 s, 5 Tea, 4 Hammers, 4 Bags, 3 Crossbows\)_, 4 Ruins, 4 Relationship Markers, 3 Victory Point Markers, 9 Reminder Markers, 3 Flood Markers, 1 Pond Placard.
         - name: Wooden Pieces.
           text: 43 Warriors _\(20 Diaspora, 20 Council, 10 Knave Skunks\)_, 3 Vagabond / Knave Captains _\(Jailor, Gladiator, Cheat\)_, 3 Landmarks _\(Mousehold, Foxburrow, Rabbittown\)_.
         - name: Cards.
@@ -1962,7 +1962,7 @@
         - name: Starting Items.
           text: Start with `item:boot`, `item:boot`, `item:torch`, `item:sword`.
         - name: 'Special Action: Swift Strike.'
-          text: You may exhaust a Sword to deal an extra hit in battle _(after rolling)_.
+          text: You may exhaust a `item:sword` to deal an extra hit in battle _(after rolling)_.
 
     - name: Cheat (Homeland)
       children:
