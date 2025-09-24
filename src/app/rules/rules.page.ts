@@ -31,7 +31,6 @@ import {
 import { TranslateModule } from '@ngx-translate/core';
 import { addIcons } from 'ionicons';
 import {
-  arrowUpOutline,
   close,
   helpCircle,
   language,
@@ -39,6 +38,7 @@ import {
   logoDiscord,
   logoGithub,
   options,
+  returnUpBack,
   search,
 } from 'ionicons/icons';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
@@ -112,7 +112,7 @@ export class RulesPage {
     const target = realTarget as HTMLElement;
     if (target && target.classList.contains('rule-link')) {
       const closestIndexLink = target
-        .closest('.rule')
+        .closest('.rule-container')
         ?.querySelector('.index-link')
         ?.getAttribute('id');
 
@@ -130,7 +130,7 @@ export class RulesPage {
 
   constructor() {
     addIcons({
-      arrowUpOutline,
+      returnUpBack,
       helpCircle,
       close,
       logoGithub,
