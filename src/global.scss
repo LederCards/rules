@@ -218,6 +218,10 @@ a:not(.rule-link) {
   }
 }
 
+.rule-link.icon {
+  text-decoration: none;
+}
+
 @media only screen and (min-height: 600px) and (min-width: 768px) {
   .sc-ion-modal-md-h {
     --height: 80%;
