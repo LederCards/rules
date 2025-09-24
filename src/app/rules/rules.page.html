@@ -10,10 +10,6 @@
           <span class="title-text ion-hide-sm-down">
             {{ 'App.NavTitle' | translate }}
           </span>
-
-          <span class="title-text ion-hide-md-up">
-            {{ 'App.NavTitleShort' | translate }}
-          </span>
         </span>
       </ion-title>
     }
@@ -118,6 +114,14 @@
 
             <ion-content class="ion-padding">
               <ion-list>
+                <ion-item>
+                  <ion-icon
+                    slot="start"
+                    icon="color-palette"
+                    color="#000"
+                  ></ion-icon>
+                  {{ 'App.NavTitleShort' | translate }}
+                </ion-item>
                 <ion-item
                   target="_blank"
                   [href]="'https://cards.ledergames.com'"

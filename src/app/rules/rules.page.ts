@@ -32,6 +32,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { addIcons } from 'ionicons';
 import {
   close,
+  colorPalette,
   helpCircle,
   language,
   link,
@@ -131,6 +132,7 @@ export class RulesPage {
   constructor() {
     addIcons({
       returnUpBack,
+      colorPalette,
       helpCircle,
       close,
       logoGithub,
