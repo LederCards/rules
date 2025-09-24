@@ -38,6 +38,7 @@ import {
   link,
   logoDiscord,
   logoGithub,
+  mail,
   options,
   returnUpBack,
   search,
@@ -141,6 +142,7 @@ export class RulesPage {
       search,
       language,
       options,
+      mail,
     });
 
     navigation$
