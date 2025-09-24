@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, effect, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { get } from 'es-toolkit/compat';
 import { linkedQueryParam } from 'ngxtension/linked-query-param';
@@ -45,6 +45,14 @@ export class RulesDisplayComponent {
 
     return true;
   });
+
+  constructor() {
+    effect(() => {
+      if (!this.isDisplayingNothing()) return;
+
+      this.paramService.showRules.set(true);
+    });
+  }
 
   public isVisible(index: number[]): boolean {
     if (!this.search()) {
