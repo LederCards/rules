@@ -91,6 +91,10 @@
 
 .pretext {
   margin-bottom: 10px;
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
 }
 
 .desc.child .name {
