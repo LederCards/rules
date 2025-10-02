@@ -1227,7 +1227,7 @@
         - name: Assemblies.
           text: 'Assemblies have two sides: Closed _(closed tent)_ and Governing _(open tent)_. When an enemy of the Council removes an assembly, the Council removes 1 Loyalist.'
         - name: Governors.
-          text: At Governing assemblies, enemies of the Council cannot activate crafting pieces and cannot place, remove, or flip pieces, except in battle. _(The Vagabond cannot craft because the Vagabond pawn is its crafting piece.)_
+          text: At Governing assemblies, enemies of the Council cannot activate crafting pieces and cannot place, take, remove, or flip pieces, except in battle. _(The Vagabond cannot craft because the Vagabond pawn is its crafting piece.)_
         - name: Entreating.
           text: Any number of times on their turn, an enemy may force the Council to flip any assembly to Closed. After flipping it, the Council may either place any number of Loyalists at that assembly or place 1 warrior in their Loyalists.
         - name: Peacekeepers.
@@ -1248,7 +1248,7 @@
           text: Fill your Assemblies track on your player board with your 6 assemblies.
 
     - name: Birdsong
-      pretext: You may reveal any number of cards to take one action per card revealed, in any order and number, as follows. _(Reveal cards from your hand into your play area. They cannot be used for any other purposes during Birdsong.)_
+      pretext: Any number of times, you may reveal a card to take an action, as follows. _(Reveal cards from your hand into your play area. They cannot be used for any other purposes during Birdsong.)_
       children:
         - name: Move.
           text: Take a move from a clearing matching the revealed card.
