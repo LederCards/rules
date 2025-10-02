@@ -183,7 +183,7 @@ export function getCustomRenderer(
     `<div class="specialhighlight">${parser.parse(blockquote.tokens)}</div>`;
 
   renderer.strong = (strong: marked.Tokens.Strong) =>
-    `${parser.parseInline(strong.tokens)}`;
+    `<span class="emph">${parser.parseInline(strong.tokens)}</span>`;
 
   renderer.paragraph = (paragraph: marked.Tokens.Paragraph) =>
     `${parser.parseInline(paragraph.tokens)}`;
