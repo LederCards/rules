@@ -1,0 +1,14 @@
+- q: Which planets on cluster borders are adjacent or not to each other?
+  a: The planets on the borders of clusters 5 and 6 as well as the planets bordering clusters 2 and 3 are adjacent, unlike the other clusters with irregular borders.
+  rules:
+    - '4.3.2.2'
+
+- q: Do I resolve hits simultaneously and then Provoke Outrage, or do I resolve them one by one?
+  a: Resolve all of your hits, then Provoke Outrage. In the campaign, resolve all hits first before resolving effects that trigger from **harm**.
+  rules:
+    - '7.7.1'
+
+- q: Can I Cede Control while I am a Flagship?
+  a: Yes, you can Cede Control of buildings on the map, but not buildings on your Flagship.
+  rules:
+    - '17.2.1.1'
