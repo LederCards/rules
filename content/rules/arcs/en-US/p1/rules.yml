@@ -1147,9 +1147,9 @@
               text: >
                 For each attacking ship, you may collect 1 assault, skirmish, or raid die.
 
-                  - **Assault dice** damage the defender quickly at some cost to you.
-                  - **Skirmish dice** damage the defender slowly but keep you safe.
-                  - **Raid dice** steal stuff from the defender and might damage them but are
+                  \- **Assault dice** damage the defender quickly at some cost to you.
+                  \- **Skirmish dice** damage the defender slowly but keep you safe.
+                  \- **Raid dice** steal stuff from the defender and might damage them but are
                     risky.
 
               children:
