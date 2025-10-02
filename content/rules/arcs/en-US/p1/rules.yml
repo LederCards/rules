@@ -1145,13 +1145,9 @@
 
             - name: 'Step 3: Collect Dice.'
               text: >
-                For each attacking ship, you may collect 1 assault, skirmish, or raid die.
-
-
-                  \- **Assault dice** damage the defender quickly at some cost to you.
-
-                  \- **Skirmish dice** damage the defender slowly but keep you safe.
-
+                For each attacking ship, you may collect 1 assault, skirmish, or raid die.<br><br>
+                  \- **Assault dice** damage the defender quickly at some cost to you.<br>
+                  \- **Skirmish dice** damage the defender slowly but keep you safe.<br>
                   \- **Raid dice** steal stuff from the defender and might damage them but are risky.
 
               children:
