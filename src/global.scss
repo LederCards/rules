@@ -195,6 +195,10 @@ a[href] > img {
 }
 
 .emph {
+  font-weight: bold;
+}
+
+.root .emph {
   font-variant: small-caps;
 }
 

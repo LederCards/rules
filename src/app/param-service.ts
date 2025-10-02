@@ -119,9 +119,12 @@ export class ParamService {
     }
 
     this.updateRules();
+    this.syncBodyClass();
   }
 
   public changeProduct() {
+    this.syncBodyClass();
+
     if (
       !this.allLanguages()
         .map((l) => l.code)
@@ -156,5 +159,9 @@ export class ParamService {
       rulesJson[this.currentProduct()][this.currentLocale()][printing].rules ??
       []
     );
+  }
+
+  private syncBodyClass() {
+    document.getElementsByTagName('body')[0].className = this.currentProduct();
   }
 }
