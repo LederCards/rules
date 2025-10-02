@@ -1942,14 +1942,14 @@
         - name: 'Special Action: Scorched Earth.'
           text: Exhaust a `item:torch` and place it in your clearing to remove all enemy pieces there. Pieces cannot be placed in or moved into the clearing with the `item:torch`. _(You remain in this clearing. Once you move out, you cannot move back in. The `item:torch` cannot be removed with a "Favor of the..." card because it is not an enemy piece.)_
 
-    - name: Adventurer (Underworld)
+    - name: Adventurer (Vagabond Pack)
       children:
         - name: Starting Items.
           text: Start with `item:boot`, `item:torch`, `item:hammer`.
         - name: 'Special Action: Improvise.'
           text: Once per turn while taking the Quest action, you may treat one unexhausted item as any other item. When you exhaust it to complete the quest, also damage that item.
 
-    - name: Harrier (Underworld)
+    - name: Harrier (Vagabond Pack)
       children:
         - name: Starting Items.
           text: Start with `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
