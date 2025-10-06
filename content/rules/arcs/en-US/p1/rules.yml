@@ -1105,7 +1105,7 @@
 
             - name: Step 3.
               text: >
-                Finally, draw a card from the Court deck and place it face up in the Court in the
+                Draw a card from the Court deck and place it face up in the Court in the
                 same spot as the secured card.
 
     - name: Battle

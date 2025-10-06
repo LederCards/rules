@@ -16,12 +16,7 @@
 - q: If I have more than two resource slots open, can I put my starting resources in different slots?
   a: No. They always go in your two leftmost slots.
   rules:
-    - ''
-
-- q: If multiple things are happening simultaneously but must be resolved in order, who chooses the order?
-  a: The player taking their turn chooses the order.
-  rules:
-    - ''
+    - '3.1.2.4'
 
 - q: What does 'resources I have' mean?
   a: >
@@ -39,19 +34,19 @@
     do not apply to buildings you are using 'like they are Loyal.' (i.e. You cannot use Living Structures to replace a 
     building that you are only treating like it is Loyal. This ability only applies to buildings that are actually Loyal.)
   rules:
-    - ''
+    - '23.1.15'
 
 - q: Do I have to use all the pips on my action card?
   a: Nope! For example, if you have 3 action pips, you could take only 1 action.
   rules:
-    - ''
+    - '5.'
 
 - q: If I convert a standard action into a new action, do modifiers of the standard action apply?
   a: >
     Nope! Action modifiers only change the listed standard action. However, if a new action __contains__ a standard action, 
     then modifiers of that standard action apply, unless explicitly ignored (e.g., Force Beams).
   rules:
-    - ''
+    - '8.2'
 
 - q: When a card says 'when you Copy or Pivot to' do a specific action, what triggers this?
   a: >
@@ -62,32 +57,27 @@
     the Nurture action on Living Structures contains the Tax action, so if you took the Nurture action with a Copy or Pivot, 
     it would trigger an ability that says “If you Copy or Pivot to tax…”
   rules:
-    - ''
+    - '5.2.2'
 
 - q: Can I tax a city even if there are no resources of its type to tax?
   a: Yes. For example, you could still gain a Captive by taxing a Rival city in this way.
   rules:
-    - ''
+    - '7.1'
 
 - q: If I choose to collect fewer dice than the maximum, are those ships still 'in the battle' and can they take hits?
   a: Yes. All your Loyal ships are attacking ships and can take hits from self-hits and intercepts.
   rules:
-    - ''
+    - '7.7.1.3'
 
 - q: Can I attempt to battle somewhere even without a legal defender?
   a: No.
   rules:
-    - ''
+    - '7.7'
 
 - q: Can I attempt to secure a card even without a legal target?
   a: No.
   rules:
-    - ''
-
-- q: When I secure a Vox card, what's the order of resolving the When Secured effect? 
-  a: Resolve the effect, __then__ draw a new card to refill the Court.
-  rules:
-    - ''
+    - '7.6'
 
 - q: When exactly do I need to stop with a Catapult move
   a: > 
@@ -97,7 +87,7 @@
     Catapult from a planet in cluster 3, drop ships off in gate 3, then in gate 4, 
     then finally stop at a planet in cluster 3.
   rules:
-    - ''
+    - '7.3.2'
 
 - q: Can you lay out the turn structure in fine detail?
   a: > 
@@ -111,44 +101,44 @@
     In practice, as long as your actions do not reveal new information (e.g., battle/secure), it is fine to rewind 
     to the Prelude.
   rules:
-    - ''
+    - '5.'
 
 - q: In my Prelude, can I regain a resource that I spent in my Prelude? 
   a: No. Reesources only return to their supplies at the end of Prelude.
   rules:
-    - ''
+    - '9.1'
 
 - q: Can I use *non*-Prelude actions on cards that I secured from the Court during my current Prelude?
   a: Yes!
   rules:
-    - ''
+    - '8.1.2'
 
 - q: Can I use Prelude actions on cards in the same Prelude I gained them if I took them from places other than the Court?
   a: Yes! For example, if you stole a card using Silver-Tongues, you could immediately use it.
   rules:
-    - ''
+    - '8.1.2'
 
 - q: Is seizing mandatory if I Surpass with a '7' card?
   a: Yes. As normal, though, you cannot seize the initiative if someone else already did this round.
   rules:
-    - ''
+    - '5.2.3'
 
 - q: Can I spend resources in my Prelude without effect?
   a: Yes, even if you have Outrage of the resource types.
   rules:
-    - ''
+    - '9.1'
 
 - q: Can I rearrange resources when I lose a resource?
   a: No, only when gaining.
   rules:
-    - ''
+    - '9.2.1'
 
 - q: When I spend a resource for an action, can I also spend a Weapon to change this action to battle?
   a: No. Weapons only let you modify actions you take from your action card pips.
   rules:
-    - ''
+    - '9.1'
 
-- q: Does Provoking Outrage discard anything I take from Ransacking the Court or raiding in the same battle?
+- q: To be clear, does Provoking Outrage discard anything I take from Ransacking the Court or raiding in the same battle?
   a: Nope!
   rules:
-    - ''
+    - '7.7.4'
