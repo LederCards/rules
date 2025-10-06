@@ -363,14 +363,11 @@
                     The player with the initiative marker performs the following steps. Then, going
                     clockwise from the player with initiative, the 2nd, 3rd, and 4th players set up
                     in the same way in the systems marked **2A–C, 3A–C, and 4A–C** on the setup
-                    card, respectively.
-
-                      - Place **3 ships and 1 city** in the system marked **1A** on the setup card.
-                        Place the leftmost city from your player board.
-
-                      - Place **3 ships and 1 starport** in the system marked **1B**.
-
-                      - Place **2 ships** in the system (3–4 players) or 2 systems (2 players)
+                    card, respectively.<br>
+                      \- Place **3 ships and 1 city** in the system marked **1A** on the setup card.
+                        Place the leftmost city from your player board.<br>
+                      \- Place **3 ships and 1 starport** in the system marked **1B**.<br>
+                      \- Place **2 ships** in the system (3–4 players) or 2 systems (2 players)
                         marked **1C**.
 
                 - name: O.
@@ -732,7 +729,7 @@
               text: >
                 Controlling a system lets you tax Rival cities there and capture their agents,
                 restricts how their ships move, and damages pieces they build (see
-                `rule-relative:Standard Actions$Tax`,-`rule-relative:Standard Actions$Move`).
+                `rule-relative:Standard Actions$Tax`-`rule-relative:Standard Actions$Move`).
 
     - name: Trophies & Captives
       children:
@@ -805,13 +802,12 @@
 
             - name: Ambitions by Card.
               text: >
-                Most action cards have an ambition, depending on their card number:
-                  - The “1” cards have ***no*** ambition. _(Four players only.)_
-
-                  - The “2” through 6” cards let you declare the ***matching*** ambition. _(They
+                Most action cards have an ambition, depending on their card number:<br>
+                  \- The “1” cards have ***no*** ambition. _(Four players only.)_<br>
+                  \- The “2” through 6” cards let you declare the ***matching*** ambition. _(They
                     are listed in
-                    `rule:6.2.1`.)_
-                  - The “7” cards let you declare ***any*** ambition. _(Four players only.)_
+                    `rule:6.2.1`.)_<br>
+                  \- The “7” cards let you declare ***any*** ambition. _(Four players only.)_
 
             - name: Ambitions are Limited.
               text: >
@@ -1292,12 +1288,12 @@
         In your turn's Prelude (see `rule-relative:Other Actions$Prelude Actions`), you may spend
         any number and mix of your resource tokens to optionally use their actions:
 
-          - Material: Take a Build or Repair action.
-          - Fuel: Take a Move action.
-          - Weapon: This turn, you may spend any action pips from your card play to take Battle
+          - **Material:** Take a Build or Repair action.
+          - **Fuel:** Take a Move action.
+          - **Weapon:** This turn, you may spend any action pips from your card play to take Battle
             actions.
-          - Relic: Take a Secure action.
-          - Psionic: Take an action listed on the lead card.
+          - **Relic:** Take a Secure action.
+          - **Psionic:** Take an action listed on the lead card.
 
     - name: Slots
       pretext: >
@@ -1840,11 +1836,10 @@
             - name: Step 2.
               text: >
                 The player with initiative rolls the event and number dice and resolves the event
-                die as follows:
-
-                  - If `symbol:crisis` is rolled, resolve **Crises** (see
-                    `rule-relative:Crises`).
-                  - If `symbol:edict` is rolled, resolve **Edicts** (see `rule-relative:Edicts`).
+                die as follows:<br>
+                  \- If `symbol:crisis` is rolled, resolve **Crises** (see
+                    `rule-relative:Crises`).<br>
+                  \- If `symbol:edict` is rolled, resolve **Edicts** (see `rule-relative:Edicts`).
 
         - name: Imperial Council Overrides Events.
           text: >
