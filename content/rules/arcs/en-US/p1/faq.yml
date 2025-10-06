@@ -97,9 +97,7 @@
     3. Prelude window begins. You may use the Prelude actions of cards and resources.<br>
     4. Prelude window ends. Return spent resources to the supply.<br>
     5. Perform actions by spending action pips from your played card.<br><br>
-    In theory, once you spend an action pip from the played action card, you cannot use any more Prelude actions. 
-    In practice, as long as your actions do not reveal new information (e.g., battle/secure), it is fine to rewind 
-    to the Prelude.
+
   rules:
     - '5.'
 
@@ -142,3 +140,11 @@
   a: Nope!
   rules:
     - '7.7.4'
+
+- q: How strict do I need to be with this rule?
+  a: >
+      In theory, once you spend an action pip from the played action card, you cannot use any more Prelude actions. 
+      In practice, as long as your actions do not reveal new information (e.g., battle/secure), it is fine to rewind 
+      to the Prelude.
+  rules:
+    - '8.1.1'
