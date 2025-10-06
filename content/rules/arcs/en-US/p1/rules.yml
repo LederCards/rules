@@ -384,7 +384,7 @@
     - name: Campaign (Act I)
       pretext: >
             If you are starting a campaign from the beginning, use this section. Otherwise, use
-            Act II & III Setup (`rule:3.2.2`).
+            Act II & III Setup (`rule:3.2`).
             Campaign setup is very different from single session
             setup. Here are the important changes:
 
@@ -545,9 +545,10 @@
 
             - name: Starting Hand.
               text: >
-                Each player draws 6 action cards into their hand. 2 Players Only:
-                The player without initiative may discard all of the action cards in their hand
-                except Events and draw the same number of new cards from the action deck.
+                Each player draws 6 action cards into their hand.<br>
+                ***2 Players Only:*** The player without initiative may discard all of the 
+                action cards in their hand except Events and draw the same number of new cards 
+                from the action deck.
 
             - name: Action Discard Pile.
               text: >
@@ -2484,13 +2485,12 @@
           children:
             - name: Switching Fates.
               text: >
-                If you choose a new Fate card, do the following:
-
-                  - Return your current Fate card to the box.
-                  - Scrap the rest of your Fate Set that is not in play. Don't scrap anything
-                    that is in play, including your Flagship if you have one.
-                  - Return all Favors you have to your Rivals.
-                  - Take the new Fate Set for your Fate from the box.
+                If you choose a new Fate card, do the following:<br>
+                  \- Return your current Fate card to the box.<br>
+                  \- Scrap the rest of your Fate Set that is not in play. Don't scrap anything
+                    that is in play, including your Flagship if you have one.<br>
+                  \- Return all Favors you have to your Rivals.<br>
+                  \- Take the new Fate Set for your Fate from the box.<br>
 
     - name: Next Act?
       pretext: >
