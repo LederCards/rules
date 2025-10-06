@@ -381,13 +381,8 @@
                 Discard all action cards not in players' hands into a facedown action
                 discard pile on the map, then shuffle it.
 
-    - name: Campaign
+    - name: Campaign (Act I)
       pretext: >
-        If you are starting a campaign game, use this section.
-
-      children:
-        - name: Act I Setup
-          text: >
             If you are starting a campaign from the beginning, use this section. Otherwise, use
             Act II & III Setup (`rule:3.2.2`).
             Campaign setup is very different from single session
@@ -400,218 +395,218 @@
               - Use the same deck of lore cards as the base game (marked "L"), but you will
                 shuffle lore into the Court deck after dealing the Court.
 
+      children:
+        - name: Step 1. Set Up Table
           children:
-            - name: Step 1. Set Up Table
-              children:
-                - name: Map, Dice, Tokens, and Free Pieces.
-                  text: >
-                    Place the map on the table and collect the 18 battle dice, 25
-                    resource tokens, 24 Blight tokens, 28 Free cities, and 14 Free
-                    starports.
+            - name: Map, Dice, Tokens, and Free Pieces.
+              text: >
+                Place the map on the table and collect the 18 battle dice, 25
+                resource tokens, 24 Blight tokens, 28 Free cities, and 14 Free
+                starports.
 
-                - name: Initiative Marker.
-                  text: >
-                    Give the initiative marker to a random player.
+            - name: Initiative Marker.
+              text: >
+                Give the initiative marker to a random player.
 
-                - name: Action Deck (2-6).
-                  text: >
-                    Shuffle the 20 action cards marked "2" through "6" to start the action
-                    deck.
+            - name: Action Deck .
+              text: >
+                Shuffle the 20 action cards marked "2" through "6" to start the action
+                deck.
 
-                - name: Action Deck (1 & 7).
-                  text: >
-                    4 Players Only: Shuffle the 8 action cards marked "1" and "7" into
-                    the action deck.
+            - name: Action Deck (4 Players Only).
+              text: >
+                Shuffle the 8 action cards marked "1" and "7" into
+                the action deck.
 
-                - name: Event Cards.
-                  text: >
-                    Shuffle 2 Event action cards (2–3 players) or 3 Event action cards (4
-                    players) into the action deck.
+            - name: Event Cards.
+              text: >
+                Shuffle 2 Event action cards (2–3 players) or 3 Event action cards (4
+                players) into the action deck.
 
-                - name: Ambition Markers.
-                  text: >
-                    Place the 3 ambition markers on their blue, lower-numbered sides in the
-                    Available Markers section of the map.
-
-                - name: Chapter Track Tile and Marker.
-                  text: >
-                    Place the Chapter track tile to cover the chapter track on the map, with
-                    its "Act I & II" side face up, and place the chapter marker on its "1"
-                    space.
-
-                - name: Zero Marker.
-                  text: >
-                    Place the zero marker in the Ambition Declared slot on the map.
-
-                - name: Court Deck and Row.
-                  text: >
-                    Shuffle all 15 campaign Vox and Guild cards (marked "CC") to make the Court
-                    deck. Deal 3 cards (2 players) or 4 cards (3–4 players) from it into
-                    the Court row.
-
-                - name: Lore Cards.
-                  text: >
-                    Shuffle 1 lore card per player at random from the lore deck into the Court
-                    deck. _Use the same lore deck as you use in the base game. You can add any lore
-                    cards you want from expansion packs._
-
-                - name: Imperial Council Card.
-                  text: >
-                    Place the Imperial Council card (`symbol:diamond`01) on its In Session
-                    side as the leftmost Court card.
-
-                - name: Guild Envoys Depart (2 Players Only).
-                  text: >
-                    Slide the Guild Envoys Depart edict card
-                    (`symbol:diamond`02) into the first slot in the rules booklet.
-
-                - name: Govern Edict Cards.
-                  text: >
-                    Shuffle the 3 Govern the Imperial Reach edict cards
-                    (`symbol:diamond`03–05) face down, flip them all over, and slide them all face
-                    up into the first available slot in the rules booklet.
-
-                - name: Imperial Ships.
-                  text: >
-                    Roll the number die, then set up the 2 Imperial clusters—in the rolled
-                    cluster and the next clockwise cluster, place 1 Imperial ship in each
-                    system. _(8 total.)_
-
-                - name: Free Cities.
-                  text: >
-                    Roll the event die. Place 1 Free city on each planet of the rolled
-                    planet ID symbol outside the Imperial clusters.
-
-                - name: Damaged Blight.
-                  text: >
-                    Place 1 damaged Blight _(shaded side)_ in each system outside the
-                    Imperial clusters.
-
-                - name: Resources on Ambitions (2 Players Only).
-                  text: >
-                    Place the 6 resource tokens matching the planets
-                    in Imperial clusters onto the ambition boxes:<br>
-                      \- Material and Fuel go on Tycoon.<br>
-                      \- Weapons go on Warlord.<br>
-                      \- Relics go on Keeper.<br>
-                      \- Psionics go on Empath.
-
-            - name: Step 2. Set Up Players
-              children:
-                - name: Player Pieces.
-                  text: >
-                    Each player chooses a color, collects the player board, 15 ships, 5
-                    cities, 5 starports, and 10 agents of that color, and places those
-                    cities in the 5 triangle slots along the top of their player board.
-
-                - name: Fate Cards and Sets.
-                  text: >
-                    Each player draws 2 "A" Fate cards ("A" on card back) and chooses one
-                    secretly. After everyone chooses, reveal them and take the matching Fate
-                    Sets (`rule-relative:What's in the Box$Fates`).
-
-                - name: Objective Card Setup.
-                  text: >
-                    Each player sets up based on the Setup side of their objective card—the
-                    first card in their Fate Set—then flips the card to its Objective side.
-
-                - name: Objective Marker.
-                  text: >
-                    Each player places their objective marker on the Power track space shown
-                    by the large clock on their objective card.
-
-                - name: Power Marker.
-                  text: >
-                    Each player puts their Power marker on the "0" Power track space on the
-                    map.
-
-                - name: Regent/Outlaw Title Card.
-                  text: >
-                    Each player takes a Regent/Outlaw title card (`symbol:diamond`06–09) and
-                    tucks it partially under their Fate card with its Regent side up. If no one has
-                    the First Regent tile from their setup, the player with initiative takes
-                    it.
-
-                - name: First Placement.
-                  text: >
-                    In turn order, each player places 3 ships and 1 building in an empty
-                    building slot at a planet with an Imperial ship and gains 1 resource
-                    token of that planet type. _(The planet can have Rival pieces.)_
-
-                - name: Second Placement.
-                  text: >
-                    Repeat the previous step but in reverse turn order—start with the last
-                    player in turn order and go counterclockwise.
-
-                - name: Remaining Free Cities.
-                  text: >
-                    Place Free cities in all empty building slots on planets with Imperial
-                    ships. _(With 4 players, you might not place any.)_
-
-                - name: Starting Hand.
-                  text: >
-                    Each player draws 6 action cards into their hand. 2 Players Only:
-                    The player without initiative may discard all of the action cards in their hand
-                    except Events and draw the same number of new cards from the action deck.
-
-                - name: Action Discard Pile.
-                  text: >
-                    Discard all action cards not in players' hands into the action discard
-                    pile on the map.
-
-        - name: Act II & III Setup.
-          text: >
-            Set up Act II or III so it's the same as the previous Act, including Power, with these
-            changes:
-
-          children:
             - name: Ambition Markers.
               text: >
-                In Act II, flip the lowest-Power ambition marker to its higher-Power side.
-                In Act III, flip the two lowest-Power ones to their higher-Power sides. The others
-                start on their lower-Power sides.
+                Place the 3 ambition markers on their blue, lower-numbered sides in the
+                Available Markers section of the map.
 
-            - name: Court Deck and Imperial Council.
+            - name: Chapter Track Tile and Marker.
               text: >
-                Shuffle the Court deck and deal 3 cards (2 players) or 4 cards (3–4
-                players) from it into the Court. Flip the Imperial Council card to In
-                Session.
+                Place the Chapter track tile to cover the chapter track on the map, with
+                its "Act I & II" side face up, and place the chapter marker on its "1"
+                space.
 
-            - name: Blight on Gates.
+            - name: Zero Marker.
               text: >
-                Place 1 damaged Blight on each gate that has no Blight and no ships.
+                Place the zero marker in the Ambition Declared slot on the map.
 
-            - name: Blight on Planets.
+            - name: Court Deck and Row.
               text: >
-                Roll the event die. In each cluster, place 1 damaged Blight at the
-                planet with the rolled ID symbol if it has no Blight. If it does have Blight,
-                place 1 damaged Blight at each planet in its cluster with no Blight.
+                Shuffle all 15 campaign Vox and Guild cards (marked "CC") to make the Court
+                deck. Deal 3 cards (2 players) or 4 cards (3–4 players) from it into
+                the Court row.
+
+            - name: Lore Cards.
+              text: >
+                Shuffle 1 lore card per player at random from the lore deck into the Court
+                deck. _Use the same lore deck as you use in the base game. You can add any lore
+                cards you want from expansion packs._
+
+            - name: Imperial Council Card.
+              text: >
+                Place the Imperial Council card (`symbol:diamond`01) on its In Session
+                side as the leftmost Court card.
+
+            - name: Guild Envoys Depart (2 Players Only).
+              text: >
+                Slide the Guild Envoys Depart edict card
+                (`symbol:diamond`02) into the first slot in the rules booklet.
+
+            - name: Govern Edict Cards.
+              text: >
+                Shuffle the 3 Govern the Imperial Reach edict cards
+                (`symbol:diamond`03–05) face down, flip them all over, and slide them all face
+                up into the first available slot in the rules booklet.
+
+            - name: Imperial Ships.
+              text: >
+                Roll the number die, then set up the 2 Imperial clusters—in the rolled
+                cluster and the next clockwise cluster, place 1 Imperial ship in each
+                system. _(8 total.)_
+
+            - name: Free Cities.
+              text: >
+                Roll the event die. Place 1 Free city on each planet of the rolled
+                planet ID symbol outside the Imperial clusters.
+
+            - name: Damaged Blight.
+              text: >
+                Place 1 damaged Blight _(shaded side)_ in each system outside the
+                Imperial clusters.
 
             - name: Resources on Ambitions (2 Players Only).
               text: >
-                Roll the number die twice. Place the 6 resource
-                tokens matching the planets in the 2 rolled clusters onto ambition boxes as in
-                `rule:3.2.1.1.17`. _(If the resource supply empties, just place as
-                much as you can.)_
+                Place the 6 resource tokens matching the planets
+                in Imperial clusters onto the ambition boxes:<br>
+                  \- Material and Fuel go on Tycoon.<br>
+                  \- Weapons go on Warlord.<br>
+                  \- Relics go on Keeper.<br>
+                  \- Psionics go on Empath.
 
-            - name: Objective Card Setup and Resources.
+        - name: Step 2. Set Up Players
+          children:
+            - name: Player Pieces.
               text: >
-                Each player sets up using the Setup side of their objective card, then flips it
-                to its Objective side. Each player may also rearrange their resource tokens. If
-                multiple players must make setup choices, resolve them in turn order. _(To speed up
-                setup, feel free to do all this simultaneously!)_
+                Each player chooses a color, collects the player board, 15 ships, 5
+                cities, 5 starports, and 10 agents of that color, and places those
+                cities in the 5 triangle slots along the top of their player board.
+
+            - name: Fate Cards and Sets.
+              text: >
+                Each player draws 2 "A" Fate cards ("A" on card back) and chooses one
+                secretly. After everyone chooses, reveal them and take the matching Fate
+                Sets (`rule-relative:What's in the Box$Fates`).
+
+            - name: Objective Card Setup.
+              text: >
+                Each player sets up based on the Setup side of their objective card—the
+                first card in their Fate Set—then flips the card to its Objective side.
 
             - name: Objective Marker.
               text: >
-                Each player places their objective marker on the Power track space as shown at
-                the top of their objective card. In Act III, only players with a "C" Fate do this
-                step.
+                Each player places their objective marker on the Power track space shown
+                by the large clock on their objective card.
 
-            - name: Chapter Track and Action Cards.
+            - name: Power Marker.
               text: >
-                Place the Chapter track tile on its side that lists the current Act. Place the
-                chapter marker on its "1" space. Draw and discard action cards exactly as
-                in `rule:3.2.1.2.10`-`rule:3.2.1.2.11`.
+                Each player puts their Power marker on the "0" Power track space on the
+                map.
+
+            - name: Regent/Outlaw Title Card.
+              text: >
+                Each player takes a Regent/Outlaw title card (`symbol:diamond`06–09) and
+                tucks it partially under their Fate card with its Regent side up. If no one has
+                the First Regent tile from their setup, the player with initiative takes
+                it.
+
+            - name: First Placement.
+              text: >
+                In turn order, each player places 3 ships and 1 building in an empty
+                building slot at a planet with an Imperial ship and gains 1 resource
+                token of that planet type. _(The planet can have Rival pieces.)_
+
+            - name: Second Placement.
+              text: >
+                Repeat the previous step but in reverse turn order—start with the last
+                player in turn order and go counterclockwise.
+
+            - name: Remaining Free Cities.
+              text: >
+                Place Free cities in all empty building slots on planets with Imperial
+                ships. _(With 4 players, you might not place any.)_
+
+            - name: Starting Hand.
+              text: >
+                Each player draws 6 action cards into their hand. 2 Players Only:
+                The player without initiative may discard all of the action cards in their hand
+                except Events and draw the same number of new cards from the action deck.
+
+            - name: Action Discard Pile.
+              text: >
+                Discard all action cards not in players' hands into the action discard
+                pile on the map.
+
+    - name: Campaign (Act II & III)
+      pretext: >
+        Set up Act II or III so it's the same as the previous Act, including Power, with these
+        changes:
+
+      children:
+        - name: Ambition Markers.
+          text: >
+            In Act II, flip the lowest-Power ambition marker to its higher-Power side.
+            In Act III, flip the two lowest-Power ones to their higher-Power sides. The others
+            start on their lower-Power sides.
+
+        - name: Court Deck and Imperial Council.
+          text: >
+            Shuffle the Court deck and deal 3 cards (2 players) or 4 cards (3–4
+            players) from it into the Court. Flip the Imperial Council card to In
+            Session.
+
+        - name: Blight on Gates.
+          text: >
+            Place 1 damaged Blight on each gate that has no Blight and no ships.
+
+        - name: Blight on Planets.
+          text: >
+            Roll the event die. In each cluster, place 1 damaged Blight at the
+            planet with the rolled ID symbol if it has no Blight. If it does have Blight,
+            place 1 damaged Blight at each planet in its cluster with no Blight.
+
+        - name: Resources on Ambitions (2 Players Only).
+          text: >
+            Roll the number die twice. Place the 6 resource
+            tokens matching the planets in the 2 rolled clusters onto ambition boxes as in
+            `rule:3.2.1.17`. _(If the resource supply empties, just place as
+            much as you can.)_
+
+        - name: Objective Card Setup and Resources.
+          text: >
+            Each player sets up using the Setup side of their objective card, then flips it
+            to its Objective side. Each player may also rearrange their resource tokens. If
+            multiple players must make setup choices, resolve them in turn order. _(To speed up
+            setup, feel free to do all this simultaneously!)_
+
+        - name: Objective Marker.
+          text: >
+            Each player places their objective marker on the Power track space as shown at
+            the top of their objective card. In Act III, only players with a "C" Fate do this
+            step.
+
+        - name: Chapter Track and Action Cards.
+          text: >
+            Place the Chapter track tile on its side that lists the current Act. Place the
+            chapter marker on its "1" space. Draw and discard action cards exactly as
+            in `rule:3.2.2.10`-`rule:3.2.2.11`.
 
 - name: Core Concepts
   color: '#000000'
@@ -1844,7 +1839,7 @@
         The **Imperial Council** is a card in the Court with two sides: In Session and Decided. In
         each Act, it starts **In Session**. Securing the Imperial Council flips it to its
         **Decided** side. It flips back to In Session at the start of an Act
-        (`rule:3.2.2`), and you can flip it to In Session if
+        (`rule:3.2`), and you can flip it to In Session if
         you call a Summit and Petition the Council (`rule-relative:Summits$Call to
         Order$Petition the Council.`).
 
@@ -2506,7 +2501,7 @@
         - name: Next Act.
           text: >
             If you are playing the next Act, set it up as described in **Act II & III Setup**
-            (`rule:3.2.2`).
+            (`rule:3.2`).
 
         - name: Packing Up.
           text: >
