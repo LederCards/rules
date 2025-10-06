@@ -810,7 +810,7 @@
 
                   - The “2” through 6” cards let you declare the ***matching*** ambition. _(They
                     are listed in
-                    `rule-relative:Ending a Chapter$End Procedure$Step 1: Score Ambitions.`)_
+                    `rule:6.2.1`.)_
                   - The “7” cards let you declare ***any*** ambition. _(Four players only.)_
 
             - name: Ambitions are Limited.
@@ -1281,11 +1281,8 @@
         - name: Play Steps.
           text: >
             Modifiers can also affect critical play steps, such as **setup** (see
-            `rule-relative:Setup`), **scoring** (see `rule-relative:Ending a Chapter$End
-            Procedure$Step 1: Score Ambitions.`), **declare an ambition** (see
-            `rule-relative:Playing a Chapter$Step 1: Player with Initiative Takes Turn$Declaring
-            an Ambition.`), and **seize the initiative** (see `rule-relative:Playing a
-            Chapter$Step 2: Other Players Take Turns$Seizing the Initiative.`).
+            `rule-relative:Setup`), **scoring** (see `rule:6.2.1`), **declare an ambition** (see
+            `rule:5.1`), and **seize the initiative** (see `rule:5.2.3`).
 
 - name: Resources
   color: '#000000'
