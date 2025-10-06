@@ -395,7 +395,7 @@
         - name: Act I Setup
           text: >
             If you are starting a campaign from the beginning, use this section. Otherwise, use
-            Act II & III Setup (see `rule-relative:Setup$Campaign$Act II & III Setup.`).
+            Act II & III Setup (see `rule:3.2.2`).
             Campaign setup is very different from single session
             setup. Here are the important changes:
 
@@ -1276,7 +1276,7 @@
         - name: Play Steps.
           text: >
             Modifiers can also affect critical play steps, such as **setup** (see
-            `rule-relative:Setup`), **scoring** (see `rule:6.2.1`), **declare an ambition** (see
+            `rule:3.1.1`), **scoring** (see `rule:6.2.1`), **declare an ambition** (see
             `rule:5.1`), and **seize the initiative** (see `rule:5.2.3`).
 
 - name: Resources
@@ -1286,7 +1286,6 @@
       pretext: >
         In your turn's Prelude (see `rule-relative:Other Actions$Prelude Actions`), you may spend
         any number and mix of your resource tokens to optionally use their actions:
-
           - **Material:** Take a Build or Repair action.
           - **Fuel:** Take a Move action.
           - **Weapon:** This turn, you may spend any action pips from your card play to take Battle
@@ -1372,8 +1371,8 @@
   children:
     - name: Setup
       pretext: >
-        Replace Steps N–O of base game setup (see `rule-relative:Setup$Base Game`) with the
-      following:
+        Replace the Starting Placement (`rule:3.1.1.2.3`) and Starting Resources (`rule:3.1.1.2.4`) steps of the base game setup with the
+        following:
       children:
         - name: 'Step 1.'
           text: >
