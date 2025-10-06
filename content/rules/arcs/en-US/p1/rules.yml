@@ -913,8 +913,8 @@
           children:
             - name: Ties.
               text: >
-                On a tie for first place, all tied players get second place. On a tie for second
-                place, the tied players do not place and gain no Power.
+                On a tie for first place, all tied players get second place. _(Other players do not place and gain no Power.)_ 
+                On a tie for second place, the tied players do not place and gain no Power.
 
             - name: Qualifying.
               text: >
