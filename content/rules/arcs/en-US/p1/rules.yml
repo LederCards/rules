@@ -695,7 +695,7 @@
 
         Resources can be spent for various actions (**Resources**, `rule-relative:Resources`), and
         some of them add to the **Tycoon**, **Keeper**, and **Empath** ambitions (see
-        `rule-relative:Ending a Chapter$End Procedure$Step 1: Score Ambitions.`).<br><br>
+        `rule:6.2.1`).<br><br>
 
         You hold resource tokens in the **resource slots** on your player board. As you build
         **cities**, you open resource slots and uncover Power bonuses for winning ambitions.
