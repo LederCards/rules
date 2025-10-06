@@ -269,7 +269,7 @@
           text: >
             These sheets record players' details between games.
 
-- name: Setup.
+- name: Setup
   color: '#000000'
   children:
     - name: Base Game
