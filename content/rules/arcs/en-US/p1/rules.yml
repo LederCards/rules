@@ -86,7 +86,7 @@
         - name: Leader.
           text: >
             These cards give special powers and show a player's starting pieces and resources. They
-            are used in Leaders & Lore mode (see `rule-relative:Leaders & Lore`). There are **8
+            are used in Leaders & Lore mode (`rule-relative:Leaders & Lore`). There are **8
             leader cards** in the base game and **8 leader cards** in the Leaders & Lore pack.
 
         - name: Guild.
@@ -124,8 +124,8 @@
         - name: Lore.
           text: >
             These cards represent long-lost technologies and the intangible qualities of
-            leadership, charm, and rank. They are used in Leaders & Lore mode (see
-            `rule-relative:Leaders & Lore`). There are 14 lore cards in the base game and 14 lore
+            leadership, charm, and rank. They are used in Leaders & Lore mode
+            (`rule-relative:Leaders & Lore`). There are 14 lore cards in the base game and 14 lore
             cards in the Leaders & Lore pack.
 
         - name: Event.
@@ -249,8 +249,8 @@
 
         - name: Other Dividers.
           text: >
-            You can store cards and pieces behind these dividers (see
-            `rule-relative:Intermission$Next Act?$Next Act.$Packing Up.`). There are **6 other
+            You can store cards and pieces behind these dividers
+            (`rule-relative:Intermission$Next Act?$Next Act.$Packing Up.`). There are **6 other
             dividers**.
 
         - name: Aid Sheets.
@@ -395,7 +395,7 @@
         - name: Act I Setup
           text: >
             If you are starting a campaign from the beginning, use this section. Otherwise, use
-            Act II & III Setup (see `rule:3.2.2`).
+            Act II & III Setup (`rule:3.2.2`).
             Campaign setup is very different from single session
             setup. Here are the important changes:
 
@@ -514,7 +514,7 @@
                   text: >
                     Each player draws 2 "A" Fate cards ("A" on card back) and chooses one
                     secretly. After everyone chooses, reveal them and take the matching Fate
-                    Sets (see `rule-relative:What's in the Box$Fates`).
+                    Sets (`rule-relative:What's in the Box$Fates`).
 
                 - name: Objective Card Setup.
                   text: >
@@ -630,11 +630,11 @@
         Broadly, in a round, each player will take one **turn** by playing an action card to do
         various actions, starting with the player who has initiative. After everyone takes a turn,
         players check who gets initiative for the next round. You'll learn more in **Playing a
-        Chapter** (see `rule-relative:Playing a Chapter`)!<br><br>
+        Chapter** (`rule-relative:Playing a Chapter`)!<br><br>
 
         Keep playing rounds until everyone runs out of action cards in their hand. At this point,
         the chapter ends, players gain Power from ambitions they fulfilled, and everyone draws a
-        new hand of cards. You'll learn more in **Ending a Chapter** (see `rule-relative:Ending a
+        new hand of cards. You'll learn more in **Ending a Chapter** (`rule-relative:Ending a
         Chapter`)!
 
     - name: Power & Ambitions
@@ -656,7 +656,7 @@
         - name: Adjacency.
           text: >
             A system is **adjacent** to other systems sharing a thin border. Adjacency is most
-            important when moving (see `rule-relative:Standard Actions$Move`).
+            important when moving (`rule-relative:Standard Actions$Move`).
 
           children:
             - name: Gates.
@@ -690,8 +690,8 @@
         (**Battle**, `rule-relative:Standard Actions$Battle`).<br><br>
 
         Resources can be spent for various actions (**Resources**, `rule-relative:Resources`), and
-        some of them add to the **Tycoon**, **Keeper**, and **Empath** ambitions (see
-        `rule:6.2.1`).<br><br>
+        some of them add to the **Tycoon**, **Keeper**, and **Empath** ambitions
+        (`rule:6.2.1`).<br><br>
 
         You hold resource tokens in the **resource slots** on your player board. As you build
         **cities**, you open resource slots and uncover Power bonuses for winning ambitions.
@@ -727,22 +727,22 @@
             - name: Benefits of Control.
               text: >
                 Controlling a system lets you tax Rival cities there and capture their agents,
-                restricts how their ships move, and damages pieces they build (see
-                `rule-relative:Standard Actions$Tax`-`rule-relative:Standard Actions$Move`).
+                restricts how their ships move, and damages pieces they build
+                (`rule-relative:Standard Actions$Tax`-`rule-relative:Standard Actions$Move`).
 
     - name: Trophies & Captives
       children:
         - name: Trophies.
           text: >
             If you **destroy** a Rival's pieces, put them in the **Trophies box** on your player
-            board. Trophies add to the **Warlord** ambition. Actions such as Battle (see
-            `rule-relative:Standard Actions$Battle`) let you destroy Rival pieces.
+            board. Trophies add to the **Warlord** ambition. Actions such as Battle
+            (`rule-relative:Standard Actions$Battle`) let you destroy Rival pieces.
 
         - name: Captives.
           text: >
             If you **capture** a Rival's agents, put them in the **Captives box** on your player
-            board. Captives add to the **Tyrant** ambition. Actions such as Tax (see
-            `rule-relative:Standard Actions$Tax`) and Secure (see `rule-relative:Standard
+            board. Captives add to the **Tyrant** ambition. Actions such as Tax
+            (`rule-relative:Standard Actions$Tax`) and Secure (`rule-relative:Standard
             Actions$Secure`) let you capture Rival agents.
 
 - name: Playing a Chapter
@@ -753,7 +753,7 @@
     marker. Broadly, on your turn, you must play 1 **action card**, which lets you take one or more
     actions. At the end of the round, the initiative marker might go to a new player based on which
     cards were played. Keep playing rounds until everyone runs out of action cards. At this point,
-    the chapter ends (see `rule-relative:Ending a Chapter`).
+    the chapter ends (`rule-relative:Ending a Chapter`).
 
   children:
     - name: 'Step 1: Player with Initiative Takes Turn'
@@ -761,7 +761,7 @@
         - name: Lead Card.
           text: >
             As the player with initiative, you must play one action card face up as the **lead
-            card**. You may take one action (see `rule-relative:Standard Actions`) for each
+            card**. You may take one action (`rule-relative:Standard Actions`) for each
             **action pip** on the lead card based on its suit:
 
               - **Administration** pips can **tax**, **repair**, or **influence**.
@@ -784,7 +784,7 @@
             - name: Early Chapter End.
               text: >
                 If everyone with cards in their hand passes consecutively, discard all action
-                cards and end the chapter (see `rule-relative:Ending a Chapter`).
+                cards and end the chapter (`rule-relative:Ending a Chapter`).
 
         - name: Declaring an Ambition.
           text: >
@@ -886,7 +886,7 @@
         - name: End of Round.
           text: >
             If any players have any action cards left in their hand, start the next round.
-            Otherwise, end the chapter (see `rule-relative:Ending a Chapter`).
+            Otherwise, end the chapter (`rule-relative:Ending a Chapter`).
 
 - name: Ending a Chapter
   color: '#000000'
@@ -1022,7 +1022,7 @@
                 - name: Captives.
                   text: >
                     Place captured agents in the Captives box on your player board. They add to
-                    your **Tyrant** ambition (see `rule-relative:Ending a Chapter`).
+                    your **Tyrant** ambition (`rule-relative:Ending a Chapter`).
 
         - name: Tax Limit.
           text: >
@@ -1106,7 +1106,7 @@
                 - name: Captives.
                   text: >
                     Put agents you capture in the Captives box on your player board. They add to
-                    your **Tyrant** ambition (see `rule-relative:Ending a Chapter`).
+                    your **Tyrant** ambition (`rule-relative:Ending a Chapter`).
 
             - name: Step 2.
               text: >
@@ -1196,7 +1196,7 @@
             - name: Trophies.
               text: >
                 Place pieces taken as Trophies in the Trophies box on the respective player board.
-                These add to the **Warlord** ambition (see `rule-relative:Ending a Chapter`).
+                These add to the **Warlord** ambition (`rule-relative:Ending a Chapter`).
 
         - name: Destroying Cities.
           text: >
@@ -1213,8 +1213,8 @@
               children:
                 - name: Outrage.
                   text: >
-                    You cannot spend Outraged resources for their normal Prelude action (see
-                    `rule-relative:Standard Actions$Battle$Destroying Cities.`).
+                    You cannot spend Outraged resources for their normal Prelude action
+                    (`rule-relative:Standard Actions$Battle$Destroying Cities.`).
 
             - name: 'Step 2: Ransack the Court.'
               text: >
@@ -1226,7 +1226,7 @@
             If any attacking ships remain after taking hits, you may spend `symbol:key` you
             rolled to steal resources and Guild cards from the defender, one at a time, by spending
             the number `symbol:key` of in its **raid cost**, shown above the resource slot on
-            the player board or in the top-left corner of the Guild card (see `rule-relative:Guild
+            the player board or in the top-left corner of the Guild card (`rule-relative:Guild
             Cards$Card Anatomy$Raid Cost.`).
 
 - name: Other Actions
@@ -1234,7 +1234,7 @@
   children:
     - name: Prelude Actions
       pretext: >
-        Many cards and all resources (see `rule-relative:Resources`) give **Prelude actions**. On
+        Many cards and all resources (`rule-relative:Resources`) give **Prelude actions**. On
         cards, these actions begin with **“Prelude:”**
 
       children:
@@ -1275,16 +1275,16 @@
 
         - name: Play Steps.
           text: >
-            Modifiers can also affect critical play steps, such as **setup** (see
-            `rule:3.1.1`), **scoring** (see `rule:6.2.1`), **declare an ambition** (see
-            `rule:5.1`), and **seize the initiative** (see `rule:5.2.3`).
+            Modifiers can also affect critical play steps, such as **setup**
+            (`rule:3.1.1`), **scoring** (`rule:6.2.1`), **declare an ambition**
+            (`rule:5.1`), and **seize the initiative** (`rule:5.2.3`).
 
 - name: Resources
   color: '#000000'
   children:
     - name: Prelude Actions
       pretext: >
-        In your turn's Prelude (see `rule-relative:Other Actions$Prelude Actions`), you may spend
+        In your turn's Prelude (`rule-relative:Other Actions$Prelude Actions`), you may spend
         any number and mix of your resource tokens to optionally use their actions:
           - **Material:** Take a Build or Repair action.
           - **Fuel:** Take a Move action.
@@ -1332,8 +1332,8 @@
   children:
     - name: Acquisition
       pretext: >
-        You can gain Guild cards by influencing them in the Court and then securing them (see
-        `rule-relative:Standard Actions$Secure`).
+        You can gain Guild cards by influencing them in the Court and then securing them
+        (`rule-relative:Standard Actions$Secure`).
 
     - name: Card Anatomy
       pretext: >
@@ -1349,7 +1349,7 @@
 
         - name: Rules.
           text: >
-            Guild cards give new actions and modifiers (see `rule-relative:Other Actions$New
+            Guild cards give new actions and modifiers (`rule-relative:Other Actions$New
             Actions`-`rule-relative:Other Actions$Modifiers`).
 
         - name: Raid Cost.
@@ -1450,7 +1450,7 @@
     - name: Determining a Winner
       pretext: >
         At the end of Act III, the winner is the player with the most Power ***accumulated over all
-        three Acts***. You can also win by completing a final objective (see `rule-relative:The
+        three Acts***. You can also win by completing a final objective (`rule-relative:The
         Campaign$Final Objective`).
 
       children:
@@ -1609,7 +1609,7 @@
             Loyal—you treat them as being your player color, and Rivals treat them as Rival pieces.
             You can **build** buildings at Loyal tokens, you can **repair** damaged Loyal tokens,
             and they fulfill the need for Loyal pieces found in rules such as the Empire's Presence
-            Law (see `rule-relative:The Empire$Control & Command$Presence Law.`).
+            Law (`rule-relative:The Empire$Control & Command$Presence Law.`).
 
 - name: The Empire
   color: '#000000'
@@ -1617,12 +1617,12 @@
     Everyone starts as a **Regent** of a crumbling galactic **Empire**, shown by their Regent title
     card tucked into their Fate card.<br><br>
 
-    One Regent is the **First Regent**, who governs the Empire (see `rule-relative:The Empire`)
+    One Regent is the **First Regent**, who governs the Empire (`rule-relative:The Empire`)
     and holds the **Imperial Trust**
-    (see `rule-relative:Edicts$Collect Imperial Demand$Resources.`), resources they collect from
+    (`rule-relative:Edicts$Collect Imperial Demand$Resources.`), resources they collect from
     Regents as tribute for the distant Emperor.<br><br>
 
-    A Regent can become an **Outlaw** by calling a Summit (see `rule-relative:Summits`). Outlaws
+    A Regent can become an **Outlaw** by calling a Summit (`rule-relative:Summits`). Outlaws
     can be attacked by the Empire, but they can battle Regents freely and don't pay into the
     Imperial Trust.
 
@@ -1650,7 +1650,7 @@
         - name: First Regent's Privilege.
           text: >
             The First Regent controls all Empire-controlled systems for the purpose of ambitions,
-            objectives, and events (see `rule-relative:Events & the Imperial Council`).
+            objectives, and events (`rule-relative:Events & the Imperial Council`).
 
     - name: Movement
       children:
@@ -1712,8 +1712,8 @@
     - name: The Blight
       pretext: >
         The Blight is a mysterious entity spreading through the Reach. No one knows what it wants
-        or how to communicate with it. In Crises (see `rule-relative:Crises`), the Blight hits
-        ships. In the Intermission (see `rule-relative:Intermission`), it destroys buildings in
+        or how to communicate with it. In Crises (`rule-relative:Crises`), the Blight hits
+        ships. In the Intermission (`rule-relative:Intermission`), it destroys buildings in
         systems with no ships.
 
       children:
@@ -1785,7 +1785,7 @@
         added.
 
     Events can be triggered by playing an **Event card** or securing the **Imperial Council card**
-    from the Court (see `rule-relative:Events & the Imperial Council$Imperial Council`).
+    from the Court (`rule-relative:Events & the Imperial Council$Imperial Council`).
 
   children:
     - name: Event Cards
@@ -1808,7 +1808,7 @@
               text: >
                 Your Event card gives you no actions if ***another Event card*** was played
                 earlier this round or if the ***Imperial Council*** was secured earlier this round
-                (see `rule-relative:Events & the Imperial Council$Imperial Council`).
+                (`rule-relative:Events & the Imperial Council$Imperial Council`).
 
         - name: Cannot Scrap.
           text: >
@@ -1829,19 +1829,19 @@
           children:
             - name: Step 1.
               text: >
-                The player with initiative may call the Summit (see `rule-relative:Summits`).
+                The player with initiative may call the Summit (`rule-relative:Summits`).
 
             - name: Step 2.
               text: >
                 The player with initiative rolls the event and number dice and resolves the event
                 die as follows:<br>
-                  \- If `symbol:crisis` is rolled, resolve **Crises** (see
-                    `rule-relative:Crises`).<br>
-                  \- If `symbol:edict` is rolled, resolve **Edicts** (see `rule-relative:Edicts`).
+                  \- If `symbol:crisis` is rolled, resolve **Crises**
+                    (`rule-relative:Crises`).<br>
+                  \- If `symbol:edict` is rolled, resolve **Edicts** (`rule-relative:Edicts`).
 
         - name: Imperial Council Overrides Events.
           text: >
-            If the Imperial Council (see `rule-relative:Events & the Imperial Council$Imperial
+            If the Imperial Council (`rule-relative:Events & the Imperial Council$Imperial
             Council`) is secured during the same round as any Event cards are played, resolve the
             Council and do not resolve the Event card.
 
@@ -1849,9 +1849,9 @@
       pretext: >
         The **Imperial Council** is a card in the Court with two sides: In Session and Decided. In
         each Act, it starts **In Session**. Securing the Imperial Council flips it to its
-        **Decided** side. It flips back to In Session at the start of an Act (see
-        `rule-relative:Setup$Campaign$Act II & III Setup.`), and you can flip it to In Session if
-        you call a Summit and Petition the Council (see `rule-relative:Summits$Call to
+        **Decided** side. It flips back to In Session at the start of an Act
+        (`rule-relative:Setup$Campaign$Act II & III Setup.`), and you can flip it to In Session if
+        you call a Summit and Petition the Council (`rule-relative:Summits$Call to
         Order$Petition the Council.`).
 
       children:
@@ -1872,7 +1872,7 @@
           children:
             - name: 'Step 1: Summit.'
               text: >
-                You may call a Summit (see `rule-relative:Summits`).
+                You may call a Summit (`rule-relative:Summits`).
 
             - name: 'Step 2: Become First Regent.'
               text: >
@@ -1887,13 +1887,13 @@
 
             - name: 'Step 4: Crises or Edicts.'
               text: >
-                You must choose to resolve either the **Crises** (see `rule-relative:Crises`) or
-                the **Edicts** (see `rule-relative:Edicts`).
+                You must choose to resolve either the **Crises** (`rule-relative:Crises`) or
+                the **Edicts** (`rule-relative:Edicts`).
 
         - name: Event Cards.
           text: >
-            If the Imperial Council is secured in the same round as Event cards (see
-            `rule-relative:Events & the Imperial Council$Event Cards`) are played, resolve the
+            If the Imperial Council is secured in the same round as Event cards
+            (`rule-relative:Events & the Imperial Council$Event Cards`) are played, resolve the
             Council and ignore the Event cards.
 
         - name: Intrigue.
@@ -1927,8 +1927,8 @@
       children:
         - name: Return Favors.
           text: >
-            Return a Rival's Favors to their supply to force them to take Negotiation actions (see
-            `rule-relative:Summits$Negotiations$Negotiation Actions.`) you choose, ***targeting
+            Return a Rival's Favors to their supply to force them to take Negotiation actions
+            (`rule-relative:Summits$Negotiations$Negotiation Actions.`) you choose, ***targeting
             you***, in the way you choose. By default, each
             Negotiation action you force costs 1 Favor.
 
@@ -1977,7 +1977,7 @@
               text: >
                 Give 1 Captive, Trophy, Favor, or resource you have to a Rival. If it is their
                 Loyal piece, return it to their supply. Forcing you to give a resource with Return
-                Favors (see `rule-relative:Summits$Call to Order$Return Favors.`) costs Favors
+                Favors (`rule-relative:Summits$Call to Order$Return Favors.`) costs Favors
                 equal to its raid cost.
 
             - name: Invite to Empire.
@@ -2027,7 +2027,7 @@
       children:
         - name: Attached Cards.
           text: >
-            If a Vox card has another Vox card attached to it (see `rule-relative:Campaign Rules &
+            If a Vox card has another Vox card attached to it (`rule-relative:Campaign Rules &
             Terms$Attaching Cards`), resolve the attached card first.
 
         - name: Event & Number Dice.
@@ -2103,8 +2103,8 @@
           children:
             - name: Frozen.
               text: >
-                Resources in the Imperial Trust are **frozen** except for Imperial Actions (see
-                `rule-relative:Campaign Rules & Terms$Resources$Frozen.`).
+                Resources in the Imperial Trust are **frozen** except for Imperial Actions
+                (`rule-relative:Campaign Rules & Terms$Resources$Frozen.`).
 
         - name: Trophies & Captives.
           text: >
@@ -2202,8 +2202,8 @@
     - name: Upgrades & Armor
       pretext: >
         Your Flagship board has 6 **Upgrade** slots, each with an **Armor** slot above it, that you
-        can build Loyal buildings in. Upgrades give benefits (see
-        `rule-relative:Flagships$Upgrades & Armor$Upgrade Benefits.`). Armor takes hits before its
+        can build Loyal buildings in. Upgrades give benefits
+        (`rule-relative:Flagships$Upgrades & Armor$Upgrade Benefits.`). Armor takes hits before its
         matched Upgrade.
 
       children:
@@ -2325,7 +2325,7 @@
             - name: Does Not Intercept.
               text: >
                 If the attacker rolls a `symbol:intercept`, your Flagship ***does not
-                intercept*** unless it has a Defense Array (see `rule-relative:Flagships$Upgrades
+                intercept*** unless it has a Defense Array (`rule-relative:Flagships$Upgrades
                 & Armor$Upgrade Benefits.$Defense Array.`).
 
             - name: Taking Hits as Defender.
@@ -2437,7 +2437,7 @@
 
         - name: Step 2.
           text: >
-            Return all frozen resources (see `rule-relative:Campaign Rules &
+            Return all frozen resources (`rule-relative:Campaign Rules &
             Terms$Resources$Frozen.`), including from the Imperial Trust on the First Regent tile,
             to the supply.
 
@@ -2511,8 +2511,8 @@
       children:
         - name: Next Act.
           text: >
-            If you are playing the next Act, set it up as described in **Act II & III Setup** (see
-            `rule-relative:Setup$Campaign$Act II & III Setup.`).
+            If you are playing the next Act, set it up as described in **Act II & III Setup**
+            (`rule-relative:Setup$Campaign$Act II & III Setup.`).
 
         - name: Packing Up.
           text: >
