@@ -693,9 +693,9 @@
         taxing cities (**Tax**, `rule-relative:Standard Actions$Tax`) and raiding Rivals in battle
         (**Battle**, `rule-relative:Standard Actions$Battle`).<br><br>
 
-        "Resources can be spent for various actions (**Resources**, `rule-relative:Resources`), and
+        Resources can be spent for various actions (**Resources**, `rule-relative:Resources`), and
         some of them add to the **Tycoon**, **Keeper**, and **Empath** ambitions (see
-        `rule-relative:Ending a Chapter$End Procedure$Step 1: Score Ambitions.`).<br><br>"
+        `rule-relative:Ending a Chapter$End Procedure$Step 1: Score Ambitions.`).<br><br>
 
         You hold resource tokens in the **resource slots** on your player board. As you build
         **cities**, you open resource slots and uncover Power bonuses for winning ambitions.
@@ -808,9 +808,9 @@
                 Most action cards have an ambition, depending on their card number:
                   - The “1” cards have ***no*** ambition. _(Four players only.)_
 
-                  - "The “2” through 6” cards let you declare the ***matching*** ambition. _(They
+                  - The “2” through 6” cards let you declare the ***matching*** ambition. _(They
                     are listed in
-                    `rule-relative:Ending a Chapter$End Procedure$Step 1: Score Ambitions.`)_"
+                    `rule-relative:Ending a Chapter$End Procedure$Step 1: Score Ambitions.`)_
                   - The “7” cards let you declare ***any*** ambition. _(Four players only.)_
 
             - name: Ambitions are Limited.
@@ -1280,12 +1280,12 @@
 
         - name: Play Steps.
           text: >
-            "Modifiers can also affect critical play steps, such as **setup** (see
+            Modifiers can also affect critical play steps, such as **setup** (see
             `rule-relative:Setup`), **scoring** (see `rule-relative:Ending a Chapter$End
             Procedure$Step 1: Score Ambitions.`), **declare an ambition** (see
             `rule-relative:Playing a Chapter$Step 1: Player with Initiative Takes Turn$Declaring
             an Ambition.`), and **seize the initiative** (see `rule-relative:Playing a
-            Chapter$Step 2: Other Players Take Turns$Seizing the Initiative.`)."
+            Chapter$Step 2: Other Players Take Turns$Seizing the Initiative.`).
 
 - name: Resources
   color: '#000000'
