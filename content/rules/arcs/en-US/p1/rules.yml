@@ -274,118 +274,112 @@
   children:
     - name: Base Game
       pretext: >
-        If you are starting a non-campaign game, use this section.
+        If you are starting a non-campaign game, use this section. This section assumes that 
+        you are not using Leaders & Lore (`rule-relative:Leaders & Lore$Setup`).
 
       children:
-        - name: Basic Setup
-          text:
-            This section assumes that you are not using Leaders & Lore. To play Leaders & Lore
-            mode, see Leaders & Lore (`rule-relative:Leaders & Lore$Setup`) for any setup
-            changes.
-
+        - name: Step 1. Set Up Table
           children:
-            - name: Step 1. Set Up Table
-              children:
-                - name: Map, Dice, and Tokens.
-                  text: >
-                    Place the map and collect the 18 battle dice and 25 resource
-                    tokens.
+            - name: Map, Dice, and Tokens.
+              text: >
+                Place the map and collect the 18 battle dice and 25 resource
+                tokens.
 
-                - name: Initiative Marker.
-                  text: >
-                    Give the initiative marker to a random player.
+            - name: Initiative Marker.
+              text: >
+                Give the initiative marker to a random player.
 
-                - name: Action Deck.
-                  text: >
-                    Shuffle the 20 action cards marked "2" through "6" to start the action
-                    deck.
+            - name: Action Deck.
+              text: >
+                Shuffle the 20 action cards marked "2" through "6" to start the action
+                deck.
 
-                - name: Action Deck (4 Players Only).
-                  text: >
-                    Shuffle the 8 action cards marked "1" and "7" into the
-                    action deck. (Otherwise, return them to the box.)
+            - name: Action Deck (4 Players Only).
+              text: >
+                Shuffle the 8 action cards marked "1" and "7" into the
+                action deck. (Otherwise, return them to the box.)
 
-                - name: Ambition Markers.
-                  text: >
-                    Place the 3 ambition markers on their blue, lower-numbered sides in the
-                    Available Markers section of the map.
+            - name: Ambition Markers.
+              text: >
+                Place the 3 ambition markers on their blue, lower-numbered sides in the
+                Available Markers section of the map.
 
-                - name: Chapter Marker.
-                  text: >
-                    Place the chapter marker on the "1" space of the Chapter track on the map.
+            - name: Chapter Marker.
+              text: >
+                Place the chapter marker on the "1" space of the Chapter track on the map.
 
-                - name: Zero Marker.
-                  text: >
-                    Place the zero marker in the Ambition Declared slot on the map.
+            - name: Zero Marker.
+              text: >
+                Place the zero marker in the Ambition Declared slot on the map.
 
-                - name: Court Deck and Row.
-                  text: >
-                    Shuffle all 6 Vox and 25 Guild cards to make the Court deck. Draw **3
-                    cards (2 players)** or **4 cards (3–4 players)** from this deck to make a face-up
-                    Court row.
+            - name: Court Deck and Row.
+              text: >
+                Shuffle all 6 Vox and 25 Guild cards to make the Court deck. Draw **3
+                cards (2 players)** or **4 cards (3–4 players)** from this deck to make a face-up
+                Court row.
 
-                - name: Setup Card.
-                  text: >
-                    Shuffle the setup cards that list your number of players. Draw 1 setup
-                    card.
+            - name: Setup Card.
+              text: >
+                Shuffle the setup cards that list your number of players. Draw 1 setup
+                card.
 
-                - name: Path and Out-of-Play Markers.
-                  text: >
-                    In the **2 clusters (2–3 players)** or **1 cluster (4 players)** on the map marked Out
-                    of Play on the setup card, place a path marker over its numbered gate and
-                    place 3 out-of-play markers over the planets touching that gate.
+            - name: Path and Out-of-Play Markers.
+              text: >
+                In the **2 clusters (2–3 players)** or **1 cluster (4 players)** on the map marked Out
+                of Play on the setup card, place a path marker over its numbered gate and
+                place 3 out-of-play markers over the planets touching that gate.
 
-                - name: Resources on Ambitions (2 Players Only).
-                  text: >
-                    Place the 6 resource tokens matching the 6 planets
-                    covered by out-of-play markers onto the ambition boxes:<br>
-                    \- Material and Fuel go on Tycoon.<br>
-                    \- Weapons go on Warlord.<br>
-                    \- Relics go on Keeper.<br>
-                    \- Psionics go on Empath.
+            - name: Resources on Ambitions (2 Players Only).
+              text: >
+                Place the 6 resource tokens matching the 6 planets
+                covered by out-of-play markers onto the ambition boxes:<br>
+                \- Material and Fuel go on Tycoon.<br>
+                \- Weapons go on Warlord.<br>
+                \- Relics go on Keeper.<br>
+                \- Psionics go on Empath.
 
-            - name: Step 2. Set Up Players
-              children:
-                - name: Player Pieces.
-                  text: >
-                    Each player chooses a color, collects the matching player board, 5
-                    cities, 5 starports, 15 ships, and 10 agents, and places the
-                    cities in the triangle slots along the top of their player board.
+        - name: Step 2. Set Up Players
+          children:
+            - name: Player Pieces.
+              text: >
+                Each player chooses a color, collects the matching player board, 5
+                cities, 5 starports, 15 ships, and 10 agents, and places the
+                cities in the triangle slots along the top of their player board.
 
-                - name: Power Marker.
-                  text: >
-                    Each player puts their Power marker on the "0" Power track space on the
-                    map.
+            - name: Power Marker.
+              text: >
+                Each player puts their Power marker on the "0" Power track space on the
+                map.
 
-                - name: Starting Placement.
-                  text: >
-                    Players simultaneously place their starting pieces onto the map as follows.
-                    The player with the initiative marker performs the following steps. Then, going
-                    clockwise from the player with initiative, the 2nd, 3rd, and 4th players set up
-                    in the same way in the systems marked 2A–C, 3A–C, and 4A–C on the setup
-                    card, respectively.<br>
-                      \- Place **3 ships and 1 city** in the system marked 1A on the setup card.
-                        Place the leftmost city from your player board.<br>
-                      \- Place **3 ships and 1 starport** in the system marked 1B.<br>
-                      \- Place **2 ships** in the system (3–4 players) or 2 systems (2 players)
-                        marked 1C.
+            - name: Starting Placement.
+              text: >
+                Players simultaneously place their starting pieces onto the map as follows.
+                The player with the initiative marker performs the following steps. Then, going
+                clockwise from the player with initiative, the 2nd, 3rd, and 4th players set up
+                in the same way in the systems marked 2A–C, 3A–C, and 4A–C on the setup
+                card, respectively.<br>
+                  \- Place **3 ships and 1 city** in the system marked 1A on the setup card.
+                    Place the leftmost city from your player board.<br>
+                  \- Place **3 ships and 1 starport** in the system marked 1B.<br>
+                  \- Place **2 ships** in the system (3–4 players) or 2 systems (2 players)
+                    marked 1C.
 
-                - name: Starting Resources.
-                  text: >
-                    Each player gains the 2 resource tokens matching the planet icons in their
-                    A and B systems, putting them in the leftmost and next leftmost circle slots on
-                    their player board, respectively.
+            - name: Starting Resources.
+              text: >
+                Each player gains the 2 resource tokens matching the planet icons in their
+                A and B systems, putting them in the leftmost and next leftmost circle slots on
+                their player board, respectively.
 
-                - name: Starting Hand.
-                  text: >
-                    Each player draws 6 action cards into their hand.<br>
-                    ***2 Players Only:*** The player without initiative may 
-                    discard all 6 action cards in their hand and draw 6 new ones.
+            - name: Starting Hand.
+              text: >
+                Each player draws 6 action cards into their hand.<br>
+                ***2 Players Only:*** The player without initiative may 
+                discard all 6 action cards in their hand and draw 6 new ones.
 
-                - name: Action Discard Pile.
-                  text: >
-                    Discard all action cards not in players' hands into a facedown action
-                    discard pile on the map, then shuffle it.
+            - name: Action Discard Pile.
+              text: >
+                Discard all action cards not in players' hands into a facedown action
+                discard pile on the map, then shuffle it.
 
     - name: Campaign
       pretext: >
@@ -1276,7 +1270,7 @@
         - name: Play Steps.
           text: >
             Modifiers can also affect critical play steps, such as **setup**
-            (`rule:3.1.1`), **scoring** (`rule:6.2.1`), **declare an ambition**
+            (`rule:3.1`), **scoring** (`rule:6.2.1`), **declare an ambition**
             (`rule:5.1`), and **seize the initiative** (`rule:5.2.3`).
 
 - name: Resources
@@ -1371,7 +1365,7 @@
   children:
     - name: Setup
       pretext: >
-        Replace the Starting Placement (`rule:3.1.1.2.3`) and Starting Resources (`rule:3.1.1.2.4`) steps of the base game setup with the
+        Replace the Starting Placement (`rule:3.1.2.3`) and Starting Resources (`rule:3.1.2.4`) steps of the base game setup with the
         following:
       children:
         - name: 'Step 1.'
