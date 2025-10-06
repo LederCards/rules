@@ -277,14 +277,14 @@
         If you are starting a non-campaign game, use this section.
 
       children:
-        - name: Basic Setup.
+        - name: Basic Setup
           text:
             This section assumes that you are not using Leaders & Lore. To play Leaders & Lore
             mode, see Leaders & Lore (`rule-relative:Leaders & Lore$Setup`) for any setup
             changes.
 
           children:
-            - name: Step 1. Set Up Table.
+            - name: Step 1. Set Up Table
               children:
                 - name: Map, Dice, and Tokens.
                   text: >
@@ -295,14 +295,14 @@
                   text: >
                     Give the initiative marker to a random player.
 
-                - name: Action Deck (2-6).
+                - name: Action Deck.
                   text: >
                     Shuffle the 20 action cards marked "2" through "6" to start the action
                     deck.
 
-                - name: Action Deck (1 & 7).
+                - name: Action Deck (4 Players Only).
                   text: >
-                    4 Players Only: Shuffle the 8 action cards marked "1" and "7" into the
+                    Shuffle the 8 action cards marked "1" and "7" into the
                     action deck. (Otherwise, return them to the box.)
 
                 - name: Ambition Markers.
@@ -320,8 +320,8 @@
 
                 - name: Court Deck and Row.
                   text: >
-                    Shuffle all 6 Vox and 25 Guild cards to make the Court deck. Draw 3
-                    cards (2 players) or 4 cards (3–4 players) from this deck to make a face-up
+                    Shuffle all 6 Vox and 25 Guild cards to make the Court deck. Draw **3
+                    cards (2 players)** or **4 cards (3–4 players)** from this deck to make a face-up
                     Court row.
 
                 - name: Setup Card.
@@ -331,20 +331,20 @@
 
                 - name: Path and Out-of-Play Markers.
                   text: >
-                    In the 2 clusters (2–3 players) or 1 cluster (4 players) on the map marked Out
+                    In the **2 clusters (2–3 players)** or **1 cluster (4 players)** on the map marked Out
                     of Play on the setup card, place a path marker over its numbered gate and
                     place 3 out-of-play markers over the planets touching that gate.
 
-                - name: Resources on Ambitions (2P).
+                - name: Resources on Ambitions (2 Players Only).
                   text: >
-                    2 Players Only: Place the 6 resource tokens matching the 6 planets
+                    Place the 6 resource tokens matching the 6 planets
                     covered by out-of-play markers onto the ambition boxes:<br>
                     \- Material and Fuel go on Tycoon.<br>
                     \- Weapons go on Warlord.<br>
                     \- Relics go on Keeper.<br>
                     \- Psionics go on Empath.
 
-            - name: Step 2. Set Up Players.
+            - name: Step 2. Set Up Players
               children:
                 - name: Player Pieces.
                   text: >
@@ -364,10 +364,10 @@
                     clockwise from the player with initiative, the 2nd, 3rd, and 4th players set up
                     in the same way in the systems marked 2A–C, 3A–C, and 4A–C on the setup
                     card, respectively.<br>
-                      \- Place 3 ships and 1 city in the system marked 1A on the setup card.
+                      \- Place **3 ships and 1 city** in the system marked 1A on the setup card.
                         Place the leftmost city from your player board.<br>
-                      \- Place 3 ships and 1 starport in the system marked 1B.<br>
-                      \- Place 2 ships in the system (3–4 players) or 2 systems (2 players)
+                      \- Place **3 ships and 1 starport** in the system marked 1B.<br>
+                      \- Place **2 ships** in the system (3–4 players) or 2 systems (2 players)
                         marked 1C.
 
                 - name: Starting Resources.
@@ -378,9 +378,9 @@
 
                 - name: Starting Hand.
                   text: >
-                    Each player draws 6 action cards into their hand. 2 Players Only: The
-                    player without initiative may discard all 6 action cards in their hand and draw
-                    6 new ones.
+                    Each player draws 6 action cards into their hand.<br>
+                    ***2 Players Only:*** The player without initiative may 
+                    discard all 6 action cards in their hand and draw 6 new ones.
 
                 - name: Action Discard Pile.
                   text: >
@@ -392,7 +392,7 @@
         If you are starting a campaign game, use this section.
 
       children:
-        - name: Act I Setup.
+        - name: Act I Setup
           text: >
             If you are starting a campaign from the beginning, use this section. Otherwise, use
             Act II & III Setup (see `rule-relative:Setup$Campaign$Act II & III Setup.`).
@@ -407,7 +407,7 @@
                 shuffle lore into the Court deck after dealing the Court.
 
           children:
-            - name: Step 1. Set Up Table.
+            - name: Step 1. Set Up Table
               children:
                 - name: Map, Dice, Tokens, and Free Pieces.
                   text: >
@@ -466,9 +466,9 @@
                     Place the Imperial Council card (`symbol:diamond`01) on its In Session
                     side as the leftmost Court card.
 
-                - name: Guild Envoys Depart (2P).
+                - name: Guild Envoys Depart (2 Players Only).
                   text: >
-                    2 Players Only: Slide the Guild Envoys Depart edict card
+                    Slide the Guild Envoys Depart edict card
                     (`symbol:diamond`02) into the first slot in the rules booklet.
 
                 - name: Govern Edict Cards.
@@ -493,16 +493,16 @@
                     Place 1 damaged Blight _(shaded side)_ in each system outside the
                     Imperial clusters.
 
-                - name: Resources on Ambitions (2P).
+                - name: Resources on Ambitions (2 Players Only).
                   text: >
-                    2 Players Only: Place the 6 resource tokens matching the planets
+                    Place the 6 resource tokens matching the planets
                     in Imperial clusters onto the ambition boxes:<br>
                       \- Material and Fuel go on Tycoon.<br>
                       \- Weapons go on Warlord.<br>
                       \- Relics go on Keeper.<br>
                       \- Psionics go on Empath.
 
-            - name: Step 2. Set Up Players.
+            - name: Step 2. Set Up Players
               children:
                 - name: Player Pieces.
                   text: >
@@ -565,7 +565,7 @@
                     Discard all action cards not in players' hands into the action discard
                     pile on the map.
 
-        - name: Act II & III Setup.
+        - name: Act II & III Setup
           text: >
             Set up Act II or III so it's the same as the previous Act, including Power, with these
             changes:
@@ -593,11 +593,11 @@
                 planet with the rolled ID symbol if it has no Blight. If it does have Blight,
                 place 1 damaged Blight at each planet in its cluster with no Blight.
 
-            - name: Resources on Ambitions (2P).
+            - name: Resources on Ambitions (2 Players Only).
               text: >
-                2 Players Only: Roll the number die twice. Place the 6 resource
+                Roll the number die twice. Place the 6 resource
                 tokens matching the planets in the 2 rolled clusters onto ambition boxes as in
-                Step Q of Table Setup in Act I. _(If the resource supply empties, just place as
+                `rule:3.2.1.1.17`. _(If the resource supply empties, just place as
                 much as you can.)_
 
             - name: Objective Card Setup and Resources.
@@ -617,7 +617,7 @@
               text: >
                 Place the Chapter track tile on its side that lists the current Act. Place the
                 chapter marker on its "1" space. Draw and discard action cards exactly as
-                in steps J–K of Player Setup in Act I.
+                in `rule:3.2.1.2.10`-`rule:3.2.1.2.11`.
 
 - name: Core Concepts
   color: '#000000'
