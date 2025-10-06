@@ -1,8 +1,33 @@
 - text: >
-    Edited to: "Discard all action cards not in players' hands into a facedown action discard pile on the map, *then shuffle it*."
+    Edited to: "Discard all action cards not in players' hands into a facedown action discard pile on the map, **then shuffle it**."
     <br>
     *There are a couple situations where discard order matters.*
   versions:
     - v1
   rules:
-    - '3.1.1.2.6'
+    - '3.1.2.6'
+
+- text: >
+    *This text was added to clarify when leader setup happens.*
+  versions:
+    - v1
+  rules:
+    - '11.1.6'
+
+- text: >
+    Edited to: "Discard all action cards not in players' hands into the action discard pile on the map face down, **then shuffle it**."
+    <br>
+    *There are a couple situations where discard order matters.*
+  versions:
+    - v1
+  rules:
+    - '6.2.4'
+
+- text: >
+    Edited to: "Some cards say they hold resources. These resources can be spent and add to ambitions, **but they cannot be stolen in battle unless explicitly allowed.** If a card holding resources is stolen, the resources on the card stay on it. If it is buried, discarded, **or scrapped,** the resources on it return to the supply."
+    <br>
+    *This clarifies some card interactions with raiding, Blighted Reach cards, and with cards like Silver-Tongues. Yes, you can steal resources off cards with Silver-Tongues!*
+  versions:
+    - v1
+  rules:
+    - '9.3.1'

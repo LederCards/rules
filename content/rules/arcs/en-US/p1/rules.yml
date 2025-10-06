@@ -1310,8 +1310,10 @@
       children:
         - name: Access.
           text: >
-            Some cards say they hold resources. These resources can be spent and add to ambitions,
-            but they can be stolen only as the card describes.
+            Some cards say they hold resources. These resources can be spent and add to ambitions, 
+            but they cannot be stolen in battle unless explicitly allowed. If a card holding resources 
+            is stolen, the resources on the card stay on it. If it is buried, discarded, or scrapped, 
+            the resources on it return to the supply.
         - name: Removal.
           text: >
             If a card holding resources is stolen, the resources on the card stay on it. If it is
@@ -1400,7 +1402,7 @@
 
         - name: 'Step 6.'
           text: >
-            Finally, if any leaders have extra setup steps, players perform them in turn order.
+            If any leaders have extra setup steps, players perform them in turn order.
 
 - name: The Campaign
   color: '#000000'
