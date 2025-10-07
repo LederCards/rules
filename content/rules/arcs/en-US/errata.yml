@@ -8,7 +8,7 @@
     - '3.1.2.6'
 
 - text: >
-    *This text was added to clarify when leader setup happens.*
+    This text was added to clarify when leader setup happens.
   versions:
     - v1
   rules:
@@ -33,7 +33,7 @@
     - '9.3.1'
 
 - text: >
-    Edited to: "Outlaw control of gates ends the Catapult moves of Regent and Imperial **pieces** alike."
+    Edited "Imperial ships" to "Imperial **pieces**" to better support interactions with Fates.
   versions:
     - v1
   rules:
@@ -47,7 +47,7 @@
     - '20.6'
 
 - text: >
-    Added 'This counts as stealing.'<br>
+    Added "This counts as stealing."<br>
     *This clarifies interactions with cards like [Pirate Hoard](https://cards.ledergames.com/card/ARCS-F1202).*
   versions:
     - v1
@@ -55,7 +55,7 @@
     - '20.6'
 
 - text: >
-    Edited to 'Resources in the Imperial Trust are frozen **except for Imperial Actions**.'<br>
+    Edited to "Resources in the Imperial Trust are frozen **except for Imperial Actions**."<br>
     *The Distribute Arms action under Imperial Actions already states that you give the Weapon from the Imperial Trust, but this addition codifies the exception for clarity.*
   versions:
     - v1
@@ -77,7 +77,7 @@
     - '13.3.1'
 
 - text: >
-    On page 2 in the first printing, in the Stop box, mentions of 'deep wells' should say 'lower wells.'<br>
+    On page 2 in the first printing, in the Stop box, mentions of "deep wells" should say "lower wells."<br>
     *The deep well is where the removable trays are stored, not the small cards.*
   versions:
     - v1
@@ -92,7 +92,7 @@
     - '16.1.2.1'
 
 - text: >
-    Added 'If it flips while tucked under a card, return it to the Court.'<br>
+    Added "If it flips while tucked under a card, return it to the Court."<br>
     *After some soul-searching, we have reversed the previous behavior of the 
     Council. This means cards like [Council Intrigue](https://cards.ledergames.com/card/ARCS-CC12) 
     can flip the Council while it’s tucked under a card in the card play area, returning it to 
