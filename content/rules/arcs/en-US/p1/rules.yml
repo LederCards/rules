@@ -1664,7 +1664,7 @@
 
             - name: Outlaw Control.
               text: >
-                Outlaw control of gates ends the Catapult moves of Regent and Imperial ships alike.
+                Outlaw control of gates ends the Catapult moves of Regent and Imperial pieces alike.
 
     - name: Battle, Harm, & Taxing
       children:
@@ -1755,7 +1755,7 @@
         - name: Raiding.
           text: >
             You may raid the Free States. You may gain exactly 1 resource matching its planet type
-            by spending `symbol:key`. You cannot gain multiple resources from the Free States
+            by spending `symbol:key`. This counts as stealing. You cannot gain multiple resources from the Free States
             in the same battle.
 
         - name: Empty Supply.
@@ -1763,7 +1763,7 @@
             In the rare event that you must place a Free building but the supply is empty, use a
             proxy piece.
 
-- name: Events & the Imperial Council
+- name: Events & the Imperial Council #Notably, this is actually a weirdly combined section that doesn't follow the rulebook. Fix this!
   color: '#000000'
   pretext: >
     There are three kinds of events: Summits, Crises, and Edicts.
@@ -1840,10 +1840,13 @@
       pretext: >
         The **Imperial Council** is a card in the Court with two sides: In Session and Decided. In
         each Act, it starts **In Session**. Securing the Imperial Council flips it to its
-        **Decided** side. It flips back to In Session at the start of an Act
+        **Decided** side.<br> 
+        It flips back to In Session at the start of an Act
         (`rule:3.2`), and you can flip it to In Session if
         you call a Summit and Petition the Council (`rule-relative:Summits$Call to
-        Order$Petition the Council.`).
+        Order$Petition the Council.`).<br>
+        If it flips while tucked under a card, return it to the Court.
+
 
       children:
         - name: In Session.

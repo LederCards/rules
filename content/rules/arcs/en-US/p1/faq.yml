@@ -18,16 +18,6 @@
   rules:
     - '3.1.2.4'
 
-- q: What does 'resources I have' mean?
-  a: >
-    This counts all of the resources in your play area. This includes the Imperial Trust in the Blighted Reach Expansion, 
-    resource supplies on Monopoly cards in the Blighted Reach Expansion, and other cards that hold resources, even if they 
-    are frozen.  This means they count towards ambitions, count towards Monopoly calculations in the Blighted 
-    Reach Expansion, and apply to cards like Keeper's Solidarity and Skirmishers.
-  rules:
-    - ''
-# This should just be implemented on the Card Library side.
-
 - q: When a rule lets me use a building 'like they are Loyal,' what does this mean?
   a: >
     This is a shorthand that essentially means 'you do not need to control the buildings' and in the case of taxing 
@@ -90,7 +80,7 @@
   rules:
     - '7.3.2'
 
-- q: Can you lay out the turn structure in fine detail?
+- q: Can you summarize the whole turn structure?
   a: > 
     Here is the turn structure:<br>
     1. Play an action card.<br>

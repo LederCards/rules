@@ -31,3 +31,73 @@
     - v1
   rules:
     - '9.3.1'
+
+- text: >
+    Edited to: "Outlaw control of gates ends the Catapult moves of Regent and Imperial **pieces** alike."
+  versions:
+    - v1
+  rules:
+    - '14.2.2.3'
+
+- text: >
+    These rules have been expanded to allow more card types than lore to interact with Flagships in the same way. For example, this allows edicts like [Policy of Escalation](https://cards.ledergames.com/card/ARCS-AID05) to interact with Flagships.
+  versions:
+    - v1
+  rules:
+    - '20.6'
+
+- text: >
+    Added 'This counts as stealing.'<br>
+    *This clarifies interactions with cards like [Pirate Hoard](https://cards.ledergames.com/card/ARCS-F1202).*
+  versions:
+    - v1
+  rules:
+    - '20.6'
+
+- text: >
+    Edited to 'Resources in the Imperial Trust are frozen **except for Imperial Actions**.'<br>
+    *The Distribute Arms action under Imperial Actions already states that you give the Weapon from the Imperial Trust, but this addition codifies the exception for clarity.*
+  versions:
+    - v1
+  rules:
+    - '19.2.1.1'
+
+- text: >
+    This rule now explicitly states, rather than implies, that cards like [Command Chaos](https://cards.ledergames.com/card/ARCS-F713) can remove Imperial Officers, even though it’s protected, because it states it by name.
+  versions:
+    - v1
+  rules:
+    - '13.1.1'
+
+- text: >
+    This rule now explicitly states, rather than implies, that **scrap** can target frozen resources.
+  versions:
+    - v1
+  rules:
+    - '13.3.1'
+
+- text: >
+    On page 2 in the first printing, in the Stop box, mentions of 'deep wells' should say 'lower wells.'<br>
+    *The deep well is where the removable trays are stored, not the small cards.*
+  versions:
+    - v1
+  rules:
+    - '21.7.2'
+
+- text: >
+    This is now worded in passive voice so that it the limitation applies regardless of who played or secured something.
+  versions:
+    - v1
+  rules:
+    - '16.1.2.1'
+
+- text: >
+    Added 'If it flips while tucked under a card, return it to the Court.'<br>
+    *After some soul-searching, we have reversed the previous behavior of the 
+    Council. This means cards like [Council Intrigue](https://cards.ledergames.com/card/ARCS-CC12) 
+    can flip the Council while it’s tucked under a card in the card play area, returning it to 
+    the Court. This cancels the resolution of the Council at the end of the round!*
+  versions:
+    - v1
+  rules:
+    - '16.3'
