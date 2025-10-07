@@ -9,7 +9,7 @@
     - '7.7.1'
 
 - q: Can I Cede Control while I am a Flagship?
-  a: Yes, you can Cede Control of buildings on the map, but not buildings on your Flagship.
+  a: You can Cede Control of buildings on the map, but not buildings on your Flagship, and not your Flagship itself.
   rules:
     - '17.2.1.1'
 
@@ -26,6 +26,7 @@
     Reach Expansion, and apply to cards like Keeper's Solidarity and Skirmishers.
   rules:
     - ''
+# This should just be implemented on the Card Library side.
 
 - q: When a rule lets me use a building 'like they are Loyal,' what does this mean?
   a: >
@@ -93,7 +94,7 @@
   a: > 
     Here is the turn structure:<br>
     1. Play an action card.<br>
-    2. If you’re leading, you may declare an ambition. If you’re not leading, you may seize the initiative.<br>
+    2. If you're leading, you may declare an ambition. If you're not leading, you may seize the initiative.<br>
     3. Prelude window begins. You may use the Prelude actions of cards and resources.<br>
     4. Prelude window ends. Return spent resources to the supply.<br>
     5. Perform actions by spending action pips from your played card.<br><br>
@@ -148,3 +149,56 @@
       to the Prelude.
   rules:
     - '8.1.1'
+
+- q: Are the lore cards secret or known before shuffling them in?
+  a: >
+      They are secret.
+  rules:
+    - '3.2.1.10'
+
+- q: Can I give away frozen resources or protected Guild cards?
+  a: >
+      No. You cannot even be forced to give them away with a returned Favor.
+  rules:
+    - '17.2.1.4'
+ 
+- q: Can I see a summary of ending a chapter in the Blighted Reach campaign?
+  a: >
+          **1. Score Ambitions**<br>
+          a. Resolve effects that happen **at the start of scoring**.<br>
+          b. Score ambitions. (In Act 3, also score grand ambitions.)<br>
+          c. Advance objectives that happen **at the end of a chapter**.<br>
+          d. Resolve effects that happen **after scoring**. If more than one needs to be resolved, the player with the initiative decides their order.<br>
+          **2. Clean Up & Flip Ambition Marker**<br>
+          **3. End Game or Advance Chapter**<br>
+          a. If any final objectives are met, the game ends.<br>
+          b. If it was the last chapter, the game ends.<br>
+          c. Resolve effects that happen **at end of game**.<br>
+          d. Advance the chapter marker.<br>
+          **4. Draw Cards**
+  rules:
+    - '6.'
+
+- q: Do my frozen resources count as 'resources I have' for the purpose of [Monopolies](https://cards.ledergames.com/card/ARCS-F318), etc.?
+  a: >
+      Yes!
+  rules:
+    - '13.3.1'
+
+- q: Can I attach a card to the Imperial Council while it's on its Decided side?
+  a: >
+      Yes!
+  rules:
+    - '13.2'
+
+- q: What happens if I need to place my Flagship but I have no ships on the map?
+  a: >
+      Place 3 ships in any gate during step D of the Intermission (`rule:21.4`).
+  rules:
+    - '13.2'
+
+- q: Do I build Upgrades and Armor damaged if someone else controls my Flagship's system?
+  a: >
+      Yes!
+  rules:
+    - '20.3.1'
