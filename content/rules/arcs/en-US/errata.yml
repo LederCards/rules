@@ -108,7 +108,7 @@
   versions:
     - v1
   rules:
-    - ''
+    - '9.2.1'
 
 - text: >
     Fixed this to say that they come from the **leftmost** slot.<br>
@@ -116,4 +116,4 @@
   versions:
     - v1
   rules:
-    - ''
+    - '22.3.3'

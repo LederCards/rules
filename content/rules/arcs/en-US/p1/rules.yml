@@ -593,7 +593,7 @@
           text: >
             Each player sets up using the Setup side of their objective card, then flips it
             to its Objective side. Each player may also rearrange their resource tokens. If
-            multiple players must make setup choices, resolve them in turn order. _(To speed up
+            player setups affect each other, resolve them in turn order. _(To speed up
             setup, feel free to do all this simultaneously!)_
 
         - name: Objective Marker.
@@ -1582,7 +1582,7 @@
     - name: Harm
       pretext: >
         Some rules refer to **harm**—this means choosing as defender in battle, damaging,
-        destroying, or hitting.
+        destroying, or hitting, except against yourself.
 
     - name: Tokens
       pretext: >
@@ -1591,8 +1591,7 @@
       children:
         - name: Cannot Harm.
           text: >
-            By default, tokens added by Fates cannot be **harmed**. Some tokens do say they can be
-            harmed, ignoring this rule.
+            These tokens cannot be **harmed** unless they say otherwise.
 
         - name: Not Loyal.
           text: >
@@ -1799,7 +1798,7 @@
               text: >
                 Your Event card gives you no actions if ***another Event card*** was played
                 earlier this round or if the ***Imperial Council*** was secured earlier this round
-                (`rule-relative:Events & the Imperial Council$Imperial Council`).
+                and is currently tucked (`rule-relative:Events & the Imperial Council$Imperial Council`).
 
         - name: Cannot Scrap.
           text: >
@@ -2015,8 +2014,8 @@
 
     - name: Court Crises
       pretext: >
-        Roll the event and number dice unless you just rolled them to resolve an Event card.
-        Resolve the **Crisis** text on each Vox card in the Court from left to right.
+        The ***player with initiative*** rolls the event and number dice unless they were just rolled to 
+        resolve an Event card. Resolve the **Crisis** text on each Vox card in the Court from left to right.
 
       children:
         - name: Attached Cards.
@@ -2189,16 +2188,16 @@
 
         - name: Battle with Starports.
           text: >
-            In **battle**, your Flagship collects a variable number of dice, and it does not deal
-            hits for an intercept by default. (**Defending**, `rule-relative:Flagships$Flagship
+            In battle, your Flagship collects a variable number of dice, does not deal hits for 
+            intercept by default, and doesn’t protect buildings on planets. (**Defending**, `rule-relative:Flagships$Flagship
             Battles$Defending.`)
 
     - name: Upgrades & Armor
       pretext: >
         Your Flagship board has 6 **Upgrade** slots, each with an **Armor** slot above it, that you
         can build Loyal buildings in. Upgrades give benefits
-        (`rule-relative:Flagships$Upgrades & Armor$Upgrade Benefits.`). Armor takes hits before its
-        matched Upgrade.
+        (`rule-relative:Flagships$Upgrades & Armor$Upgrade Benefits.`). Armor cannot be hit or 
+        destroyed before its Upgrade.
 
       children:
         - name: Building.
@@ -2232,6 +2231,10 @@
               text: >
                 Destroying cities on Flagships does not **Provoke Outrage** or **Ransack the
                 Court**.
+            
+            - name: Cannot be Replaced.
+              text: >
+                They cannot be replaced with non-Loyal pieces, such as Free buildings.
 
         - name: Upgrade Benefits.
           text: >
@@ -2328,7 +2331,9 @@
 
                   - The attacker hits your Upgrades and Armor with `symbol:buildinghit`.
                   - If the Flagship is the only remaining defending ship, the attacker hits
-                    Upgrades and Armor with `symbol:hit`.
+                    Upgrades and Armor with `symbol:hit`.<br>
+                Defending buildings on a planet can be hit with `symbol:buildinghit` or with
+                `symbol:hit` if the Flagship is the only remaining defending ship. 
 
     - name: Flagships in Events
       children:
@@ -2427,7 +2432,7 @@
       children:
         - name: Step 1.
           text: >
-            Return all Trophies and Captives to their players.
+            Return all Trophies and Captives.
 
         - name: Step 2.
           text: >
