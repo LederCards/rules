@@ -9,6 +9,186 @@
     - '7.7.1'
 
 - q: Can I Cede Control while I am a Flagship?
-  a: Yes, you can Cede Control of buildings on the map, but not buildings on your Flagship.
+  a: You can Cede Control of buildings on the map, but not buildings on your Flagship, and not your Flagship itself.
   rules:
     - '17.2.1.1'
+
+- q: If I have more than two resource slots open, can I put my starting resources in different slots?
+  a: No. They always go in your two leftmost slots.
+  rules:
+    - '3.1.2.4'
+
+- q: When a rule lets me use a building 'like they are Loyal,' what does this mean?
+  a: >
+    This is a shorthand that essentially means 'you do not need to control the buildings' and in the case of taxing 
+    'you don't take a Captive.' Other cards may refer to abilities you can do with Loyal buildings, but those abilities 
+    do not apply to buildings you are using 'like they are Loyal.' (i.e. You cannot use Living Structures to replace a 
+    building that you are only treating like it is Loyal. This ability only applies to buildings that are actually Loyal.)
+  rules:
+    - '23.1.15'
+
+- q: Do I have to use all the pips on my action card?
+  a: Nope! For example, if you have 3 action pips, you could take only 1 action.
+  rules:
+    - '5.'
+
+- q: If I convert a standard action into a new action, do modifiers of the standard action apply?
+  a: >
+    Nope! Action modifiers only change the listed standard action. However, if a new action __contains__ a standard action, 
+    then modifiers of that standard action apply, unless explicitly ignored (e.g., Force Beams).
+  rules:
+    - '8.2'
+
+- q: When a card says 'when you Copy or Pivot to' do a specific action, what triggers this?
+  a: >
+    Only spending the card pip to Copy or Pivot for that action. It does not trigger from Prelude actions.<br>
+    An ability that says “When you Copy or Pivot to battle” does trigger if you spent a Weapon to let you battle from your 
+    Copy or Pivot action pip.<br>
+    You can trigger the ability if you Copy or Pivot to use a new action containing the listed standard action. For example, 
+    the Nurture action on Living Structures contains the Tax action, so if you took the Nurture action with a Copy or Pivot, 
+    it would trigger an ability that says “If you Copy or Pivot to tax…”
+  rules:
+    - '5.2.2'
+
+- q: Can I tax a city even if there are no resources of its type to tax?
+  a: Yes. For example, you could still gain a Captive by taxing a Rival city in this way.
+  rules:
+    - '7.1'
+
+- q: If I choose to collect fewer dice than the maximum, are those ships still 'in the battle' and can they take hits?
+  a: Yes. All your Loyal ships are attacking ships and can take hits from self-hits and intercepts.
+  rules:
+    - '7.7.1.3'
+
+- q: Can I attempt to battle somewhere even without a legal defender?
+  a: No.
+  rules:
+    - '7.7'
+
+- q: Can I attempt to secure a card even without a legal target?
+  a: No.
+  rules:
+    - '7.6'
+
+- q: When exactly do I need to stop with a Catapult move
+  a: > 
+    When you reach a planet (regardless of control) or a gate that is controlled 
+    by a Rival (counted just before your ships move in). As long as you have not 
+    stopped, you may backtrack while dropping off ships. For example, you could 
+    Catapult from a planet in cluster 3, drop ships off in gate 3, then in gate 4, 
+    then finally stop at a planet in cluster 3.
+  rules:
+    - '7.3.2'
+
+- q: Can you summarize the whole turn structure?
+  a: > 
+    Here is the turn structure:<br>
+    1. Play an action card.<br>
+    2. If you're leading, you may declare an ambition. If you're not leading, you may seize the initiative.<br>
+    3. Prelude window begins. You may use the Prelude actions of cards and resources.<br>
+    4. Prelude window ends. Return spent resources to the supply.<br>
+    5. Perform actions by spending action pips from your played card.<br><br>
+
+  rules:
+    - '5.'
+
+- q: In my Prelude, can I regain a resource that I spent in my Prelude? 
+  a: No. Reesources only return to their supplies at the end of Prelude.
+  rules:
+    - '9.1'
+
+- q: Can I use *non*-Prelude actions on cards that I secured from the Court during my current Prelude?
+  a: Yes!
+  rules:
+    - '8.1.2'
+
+- q: Can I use Prelude actions on cards in the same Prelude I gained them if I took them from places other than the Court?
+  a: Yes! For example, if you stole a card using Silver-Tongues, you could immediately use it.
+  rules:
+    - '8.1.2'
+
+- q: Is seizing mandatory if I Surpass with a '7' card?
+  a: Yes. As normal, though, you cannot seize the initiative if someone else already did this round.
+  rules:
+    - '5.2.3'
+
+- q: Can I spend resources in my Prelude without effect?
+  a: Yes, even if you have Outrage of the resource types.
+  rules:
+    - '9.1'
+
+- q: Can I rearrange resources when I lose a resource?
+  a: No, only when gaining.
+  rules:
+    - '9.2.1'
+
+- q: When I spend a resource for an action, can I also spend a Weapon to change this action to battle?
+  a: No. Weapons only let you modify actions you take from your action card pips.
+  rules:
+    - '9.1'
+
+- q: To be clear, does Provoking Outrage discard anything I take from Ransacking the Court or raiding in the same battle?
+  a: Nope!
+  rules:
+    - '7.7.4'
+
+- q: How strict do I need to be with this rule?
+  a: >
+      In theory, once you spend an action pip from the played action card, you cannot use any more Prelude actions. 
+      In practice, as long as your actions do not reveal new information (e.g., battle/secure), it is fine to rewind 
+      to the Prelude.
+  rules:
+    - '8.1.1'
+
+- q: Are the lore cards secret or known before shuffling them in?
+  a: >
+      They are secret.
+  rules:
+    - '3.2.1.10'
+
+- q: Can I give away frozen resources or protected Guild cards?
+  a: >
+      No. You cannot even be forced to give them away with a returned Favor.
+  rules:
+    - '17.2.1.4'
+ 
+- q: Can I see a summary of ending a chapter in the Blighted Reach campaign?
+  a: >
+          **1. Score Ambitions**<br>
+          a. Resolve effects that happen **at the start of scoring**.<br>
+          b. Score ambitions. (In Act 3, also score grand ambitions.)<br>
+          c. Advance objectives that happen **at the end of a chapter**.<br>
+          d. Resolve effects that happen **after scoring**. If more than one needs to be resolved, the player with the initiative decides their order.<br>
+          **2. Clean Up & Flip Ambition Marker**<br>
+          **3. End Game or Advance Chapter**<br>
+          a. If any final objectives are met, the game ends.<br>
+          b. If it was the last chapter, the game ends.<br>
+          c. Resolve effects that happen **at end of game**.<br>
+          d. Advance the chapter marker.<br>
+          **4. Draw Cards**
+  rules:
+    - '6.'
+
+- q: Do my frozen resources count as 'resources I have' for the purpose of [Monopolies](https://cards.ledergames.com/card/ARCS-F318), etc.?
+  a: >
+      Yes!
+  rules:
+    - '13.3.1'
+
+- q: Can I attach a card to the Imperial Council while it's on its Decided side?
+  a: >
+      Yes!
+  rules:
+    - '13.2'
+
+- q: What happens if I need to place my Flagship but I have no ships on the map?
+  a: >
+      Place 3 ships in any gate during step D of the Intermission (`rule:21.4`).
+  rules:
+    - '13.2'
+
+- q: Do I build Upgrades and Armor damaged if someone else controls my Flagship's system?
+  a: >
+      Yes!
+  rules:
+    - '20.3.1'
