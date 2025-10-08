@@ -85,7 +85,8 @@
     - '21.7.2'
 
 - text: >
-    This is now worded in passive voice so that it the limitation applies regardless of who played or secured something.
+    This is now clarified so that the limitation applies regardless of who played or secured something,
+    unless the Council is no longer happening at the end of the round.
   versions:
     - v1
   rules:
@@ -117,3 +118,53 @@
     - v1
   rules:
     - '22.3.3'
+
+- text: >
+    Added last bullet point that clarifies defense rules with buildings on planets.
+  versions:
+    - v1
+  rules:
+    - '20.4.3'
+
+- text: >
+    Specified that the player with initiative rolls the dice, to better support interactions like [Empath's Vision](https://cards.ledergames.com/card/ARCS-L19).
+  versions:
+    - v1
+  rules:
+    - '18.3'
+
+- text: Clarified that hitting yourself doesn't count as harm.    
+  versions:
+    - v1
+  rules:
+    - '13.4'
+
+- text: Clarified that hitting yourself doesn't count as harm.    
+  versions:
+    - v1
+  rules:
+    - '13.4'
+
+- text: Added this rule to prevent extremely messy interactions.    
+  versions:
+    - v1
+  rules:
+    - '20.3.3.4'
+
+- text: Added this rule to prevent extremely messy interactions.    
+  versions:
+    - v1
+  rules:
+    - '20.3.3.4'
+
+- text: Clarified that Upgrades cannot be hit **or destroyed** while it has armor.   
+  versions:
+    - v1
+  rules:
+    - '20.3'
+
+- text: Removed "to their players" to clarify that Blight Trophies are also returned.   
+  versions:
+    - v1
+  rules:
+    - '21.3.1'

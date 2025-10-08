@@ -2195,9 +2195,9 @@
     - name: Upgrades & Armor
       pretext: >
         Your Flagship board has 6 **Upgrade** slots, each with an **Armor** slot above it, that you
-        can build Loyal buildings in. Upgrades give benefits
-        (`rule-relative:Flagships$Upgrades & Armor$Upgrade Benefits.`). Armor cannot be hit or 
-        destroyed before its Upgrade.
+        can build Loyal buildings in.<br>
+        Upgrades give benefits (`rule-relative:Flagships$Upgrades & Armor$Upgrade Benefits.`).
+        While an Upgrade has Armor, the Upgrade cannot be hit or destroyed.
 
       children:
         - name: Building.
@@ -2327,13 +2327,12 @@
 
             - name: Taking Hits as Defender.
               text: >
-                While defending, Upgrades and Armor are hit like ***buildings***:
-
-                  - The attacker hits your Upgrades and Armor with `symbol:buildinghit`.
-                  - If the Flagship is the only remaining defending ship, the attacker hits
+                While defending, Upgrades and Armor are hit like ***buildings***:<br>
+                  \- The attacker hits your Upgrades and Armor with `symbol:buildinghit`.<br>
+                  \- If the Flagship is the only remaining defending ship, the attacker hits
                     Upgrades and Armor with `symbol:hit`.<br>
-                Defending buildings on a planet can be hit with `symbol:buildinghit` or with
-                `symbol:hit` if the Flagship is the only remaining defending ship. 
+                  \- Defending buildings on a planet can be hit with `symbol:buildinghit` or with
+                    `symbol:hit` if the Flagship is the only remaining defending ship. 
 
     - name: Flagships in Events
       children:
