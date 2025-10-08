@@ -1249,7 +1249,7 @@
       pretext: >
         Cards can give you a **new action** followed by the name of a standard action in
         parentheses, such as **Assassinate (Battle)**. When you would take the standard action by
-        spending an action pip or a non-Outraged resource, you may instead take the new action.
+        spending an action pip or resource, you may instead take the new action.
 
     - name: Modifiers
       pretext: >
@@ -1289,8 +1289,8 @@
       children:
         - name: Placing Resources.
           text: >
-            When you take or are given a resource, place it in an empty resource slot of yours. To
-            do this, you may rearrange any resources in your resource slots, but you must discard
+            When you take a resource, place it in an empty resource slot of yours. At this time,
+            you may rearrange any resources in your resource slots, but you must discard
             resources you cannot hold.
 
           children:
@@ -2593,8 +2593,8 @@
         - name: Origins.
           text: >
             Pieces that you **place** and **return** come from and go to their original supply by
-            default except for cities: cities come from and go to the rightmost empty city slot on
-            their original player board. _(Remember, pieces often go to Trophies and Captives
+            default except for cities: cities come from the leftmost filled city slot on their original 
+            player board, and go to the rightmost empty city slot. _(Remember, pieces often go to Trophies and Captives
             instead of back to supplies.)_
 
         - name: Do as Much as Possible.

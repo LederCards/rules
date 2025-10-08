@@ -26,7 +26,7 @@
 - text: >
     Edited to: "Some cards say they hold resources. These resources can be spent and add to ambitions, **but they cannot be stolen in battle unless explicitly allowed.** If a card holding resources is stolen, the resources on the card stay on it. If it is buried, discarded, **or scrapped,** the resources on it return to the supply."
     <br>
-    *This clarifies some card interactions with raiding, Blighted Reach cards, and with cards like Silver-Tongues. Yes, you can steal resources off cards with Silver-Tongues!*
+    *(NOT YET IN PRINT) This clarifies some card interactions with raiding, Blighted Reach cards, and with cards like Silver-Tongues. Yes, you can steal resources off cards with Silver-Tongues!*
   versions:
     - v1
   rules:
@@ -101,3 +101,19 @@
     - v1
   rules:
     - '16.3'
+
+- text: >
+    Edited "To do this" to "At this time" to clarify that you can always rearrange when you take a resource.<br>
+    *(NOT YET IN PRINT)* 
+  versions:
+    - v1
+  rules:
+    - ''
+
+- text: >
+    Fixed this to say that they come from the **leftmost** slot.<br>
+    *(NOT YET IN PRINT)*
+  versions:
+    - v1
+  rules:
+    - ''
