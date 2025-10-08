@@ -97,7 +97,7 @@
     *After some soul-searching, we have reversed the previous behavior of the 
     Council. This means cards like [Council Intrigue](https://cards.ledergames.com/card/ARCS-CC12) 
     can flip the Council while it’s tucked under a card in the card play area, returning it to 
-    the Court. This cancels the resolution of the Council at the end of the round!*
+    the Court. This means the Council won't resolve at the end of the round!*
   versions:
     - v1
   rules:
