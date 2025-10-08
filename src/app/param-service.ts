@@ -97,7 +97,7 @@ export class ParamService {
   public allPrintings = computed(() =>
     sortBy(
       Object.keys(rulesJson[this.currentProduct()][this.currentLocale()] ?? {}),
-      (k) => +k.replace('v', ''),
+      (k) => +k.replace('p', ''),
     ).reverse(),
   );
 
