@@ -1,0 +1,18 @@
+App:
+  NavTitle: First Printing
+  NavTitleShort: First Printing
+  NoItemsFound: No items found.
+  NoRulesAvailable: No rules available.
+  SearchPlaceholder: Search Rules
+  Locale:
+    ShowRules: Show Rules
+    ShowFAQ: Show FAQ
+    ShowErrata: Show Errata
+  Titles:
+    Search: Search Rules
+  About:
+    ModalTitle: Other Links
+    CardLibrary: Card Library
+    GitHub: GitHub
+    Discord: Discord
+    LederSupport: Leder Games Support
