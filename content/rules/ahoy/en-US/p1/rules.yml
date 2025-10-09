@@ -2,36 +2,36 @@
   color: '#000000'
   children:
     - name: Victory Condition
-      text: The game ends at the end of a round if any player has at least **30 Fame**. The winner is the player with the **most Fame**!
+      pretext: The game ends at the end of a round if any player has at least **30 Fame**. The winner is the player with the **most Fame**!
     
     - name: Factions
       children:
-        - name: Bluefin Squadron
+        - name: Bluefin Squadron.
           text: The **Bluefin Squadron** has roamed these waters for decades, enforcing order with shot and sword. Each round, they gain Fame by controlling regions—basically by having the most pieces on them.
         
-        - name: Mollusk Union
+        - name: Mollusk Union.
           text: The **Mollusk Union**, driven long ago into the deep, now rises from the sea to reclaim their ancestral home. Just like the Bluefin Squadron, they gain Fame each round by controlling regions.
         
-        - name: Smugglers
+        - name: Smugglers.
           text: The two **Smugglers** run blockades to bring luxuries and essentials to those with the most need—or the most coin. They gain Fame by delivering Cargo cards, though this also increases the wealth of regions, making them worth more Fame for the Squadron and Union to control.
 
 - name: Components
   color: '#000000'
   children:
     - name: Guides and Boards
-      text: 4 Pocket Guides, 12 Region Tiles, 4 Player Boards *(one per faction, with overview and setup on back)*
+      pretext: 4 Pocket Guides, 12 Region Tiles, 4 Player Boards *(one per faction, with overview and setup on back)*
     
     - name: Figures
-      text: 4 Flagship Figures *(one per faction)*, 10 Patrol Figures, 3 Stronghold Figures, 1 Cutter Figure, 1 Gunship Figure
+      pretext: 4 Flagship Figures *(one per faction)*, 10 Patrol Figures, 3 Stronghold Figures, 1 Cutter Figure, 1 Gunship Figure
     
     - name: Dice
-      text: 17 Action Dice *(5 for Bluefin Squadron, 4 for each other player)*, 11 Wealth Dice, 2 Battle Dice
+      pretext: 17 Action Dice *(5 for Bluefin Squadron, 4 for each other player)*, 11 Wealth Dice, 2 Battle Dice
     
     - name: Cards
-      text: 30 Market Cards, 12 Plan Cards, 1 First Player Card *(end-of-round aid on back)*, 2 Bluefin Squadron Aid Cards *(1 Patrol, 1 Stronghold)*, 2 Smuggler Aid Cards *(one per Smuggler)*
+      pretext: 30 Market Cards, 12 Plan Cards, 1 First Player Card *(end-of-round aid on back)*, 2 Bluefin Squadron Aid Cards *(1 Patrol, 1 Stronghold)*, 2 Smuggler Aid Cards *(one per Smuggler)*
     
     - name: Tokens and Markers
-      text: 25 Damage Tokens, 20 Gold Tokens, 20 Comrade Tokens, 1 Fame Track *(setup aid on back)*, 4 Fame Markers *(one per faction)*, 4 Pledge Markers *(two per Smuggler)*, 4 Reward Markers *(two per Smuggler)*
+      pretext: 25 Damage Tokens, 20 Gold Tokens, 20 Comrade Tokens, 1 Fame Track *(setup aid on back)*, 4 Fame Markers *(one per faction)*, 4 Pledge Markers *(two per Smuggler)*, 4 Reward Markers *(two per Smuggler)*
 
 - name: Game Setup
   color: '#000000'
@@ -127,20 +127,20 @@
   color: '#000000'
   children:
     - name: Game Structure
-      text: Ahoy is played over a series of rounds until someone wins at the end of a round. **In a round, players take one turn at a time,** starting with the first player.
+      pretext: Ahoy is played over a series of rounds until someone wins at the end of a round. **In a round, players take one turn at a time,** starting with the first player.
     
     - name: Taking Your Turn
       children:
-        - name: Actions Overview
+        - name: Actions Overview.
           text: On your turn, you can take various actions. Most of the time, you take an action by placing an action die onto a die slot on your player board. A few actions don't require placing an action die, such as recruiting Crew and handling Cargo.
         
-        - name: Dice Placement Requirement
+        - name: Dice Placement Requirement.
           text: In total, you must place 2 action dice on your turn, no more and no less. On their final turn of the round, though, the Bluefin Squadron places only 1 action die. In the rare situation that you cannot place a die, set it aside—you cannot place it this round.
         
-        - name: Action Resolution
+        - name: Action Resolution.
           text: Take actions one at a time. You must complete your action before taking another one.
         
-        - name: Ending Your Turn
+        - name: Ending Your Turn.
           text: When you decide that you're done acting, your turn ends. The next player in clockwise order who has any action dice left to place begins their turn. If everyone has already placed all their action dice, the round ends.
 
 - name: Ending the Round
@@ -149,10 +149,8 @@
     - name: Score Regions
       pretext: When the round ends, score Fame from controlled regions and then clean up.
       children:
-        - name: Check Control
+        - name: Check Control.
           text: Check every region for control. Only the Bluefin Squadron or Mollusk Union can control a region, based on which faction has the higher control.
-        
-        - name: Control Calculation
           children:
             - name: Bluefin Squadron Control
               text: +1 control per Patrol, +2 control per Stronghold, +2 control for their Flagship
@@ -160,7 +158,7 @@
             - name: Mollusk Union Control
               text: +1 control per Comrade on the region's Island, +1 control per Union ship
         
-        - name: Score Fame
+        - name: Score Fame.
           text: The controller gains Fame equal to the region's wealth die. Every region has a wealth die on the center of its tile. They start at "1" but increase as the game progresses. On a tie for control of a region, no one scores Fame for it.
     
     - name: Clean Up
@@ -172,30 +170,30 @@
         - name: 'Step 2: Adjust for Two?'
           text: With 2 players, the first player must increase one region's wealth die by 1, then may return all cards in the Market to the box. *(Refill it.)*
         
-        - name: 'Step 3: Reroll Dice'
+        - name: 'Step 3: Reroll Dice.'
           text: Each player rolls all of their action dice and places them nearby.
         
-        - name: 'Step 4: Pass First Player'
+        - name: 'Step 4: Pass First Player.'
           text: Give the first player card to the next clockwise player.
         
-        - name: Next Round
+        - name: Next Round.
           text: When you're done cleaning up, begin the next round, starting with the new first player.
 
 - name: Taking Action
   color: '#000000'
   children:
     - name: Action Requirements
-      text: On your turn, you must take two actions that require placing a die. To do so, place a die on the action's die slot. Most of them are on your player board, but you may gain more from Crew.
+      pretext: On your turn, you must take two actions that require placing a die. To do so, place a die on the action's die slot. Most of them are on your player board, but you may gain more from Crew.
     
     - name: Die Slot Rules
       children:
-        - name: Empty Slots
+        - name: Empty Slots.
           text: The die slot must be empty. It cannot be filled with a die or damage token. Once you place a die, it stays placed until the end of the round.
         
-        - name: Die Value Requirements
+        - name: Die Value Requirements.
           text: Some die slots only accept dice of certain values. A slot with no icon accepts any die. A slot with a die value only accepts that exact value. A slot that says "even" only accepts an even number - 2, 4, or 6.
         
-        - name: Modifying Dice
+        - name: Modifying Dice.
           text: You may spend gold to modify your die. When placing a die, you may spend any number of gold tokens to increase or decrease the die's value by one per gold you spend.
 
 - name: Common Actions
@@ -203,16 +201,16 @@
   pretext: Every faction has these actions on their player board, with some differences that you'll learn about later.
   children:
     - name: Sail
-      text: Move your Flagship 1 or 2 spaces. Each move goes to an adjacent space, not diagonal. (See **Moving**)
+      pretext: Move your Flagship 1 or 2 spaces. Each move goes to an adjacent space, not diagonal. (See **Moving**)
     
     - name: Tailwind
-      text: You may move your Flagship directly to any space on the map with a printed die in the corner whose value matches the die you placed on the Tailwind die slot. This space does not have to be adjacent, and you ignore everything between the starting and ending space. (See **Moving**)
+      pretext: You may move your Flagship directly to any space on the map with a printed die in the corner whose value matches the die you placed on the Tailwind die slot. This space does not have to be adjacent, and you ignore everything between the starting and ending space. (See **Moving**)
     
     - name: Cannons
-      text: Your figures have **loaded Cannons** from now until the end of the round. Whenever you move one of your figures into a space with enemy figures, you must battle them if either of you has loaded Cannons. (See **Battling**)
+      pretext: Your figures have **loaded Cannons** from now until the end of the round. Whenever you move one of your figures into a space with enemy figures, you must battle them if either of you has loaded Cannons. (See **Battling**)
     
     - name: Repair
-      text: Remove up to 2 damage tokens from any of your die slots. (See **Damage**)
+      pretext: Remove up to 2 damage tokens from any of your die slots. (See **Damage**)
 
 - name: Moving
   color: '#000000'
@@ -220,50 +218,52 @@
   children:
     - name: Movement Rules
       children:
-        - name: Adjacent Spaces Only
+        - name: Adjacent Spaces Only.
           text: You may only move to an adjacent space - one space up, down, left, or right from your space, not diagonal. If you're on the map edge, you can move off the map.
         
-        - name: Sandbars
+        - name: Sandbars.
           text: You cannot move across Sandbars - lines of tan sand separating two spaces.
     
     - name: Movement Resolution
       pretext: Each time you move a space, do this in order.
       children:
-        - name: 'Step 1: Exploring'
+        - name: 'Step 1: Exploring.'
           text: If you move off the map, you **explore**, letting you draw and place a new region tile. (See **Exploring**)
         
-        - name: 'Step 2: Battling'
+        - name: 'Step 2: Battling.'
           text: If the space has enemy figures, you **battle** them if either of you has loaded Cannons. (See **Battling**)
         
-        - name: 'Step 3: Terrain'
+        - name: 'Step 3: Terrain.'
           text: If the space has Wreckage or Strong Current **terrain**, resolve it. (See **Terrain**)
     
     - name: Anchoring
-      text: After moving a space, if you choose not to move another space or cannot move another space, you **anchor**. If the space has Harbor or Treasure terrain, resolve it.
+      pretext: After moving a space, if you choose not to move another space or cannot move another space, you **anchor**. If the space has Harbor or Treasure terrain, resolve it.
 
 - name: Exploring
   color: '#000000'
   pretext: Whenever you move one of your figures off the map, you **explore** a new region.
   children:
-    - name: 'Step 1: Draw Region'
-      text: Draw a region tile from the tile stack.
+    - name: Explore Steps
+      children:
+        - name: 'Step 1: Draw Region'
+          text: Draw a region tile from the tile stack.
     
-    - name: 'Step 2: Place Region'
-      text: Place the region tile so that one space is where you are moving to. Pick up your figure and put it back down on that space.
+        - name: 'Step 2: Place Region'
+          text: Place the region tile so that one space is where you are moving to. Pick up your figure and put it back down on that space.
     
-    - name: 'Step 3: Place Wealth Die'
-      text: Place a wealth die showing "1" on the center of the region.
+        - name: 'Step 3: Place Wealth Die'
+          text: Place a wealth die showing "1" on the center of the region.
     
     - name: Placement Requirements
       children:
-        - name: Room Required
+        - name: Room Required.
           text: You cannot move off the map to explore if there isn't enough room to place the region without overlapping another, or if the tile stack is empty.
         
-        - name: Rotation and Islands
+        - name: Rotation and Islands.
           text: You can rotate the region, but you cannot place its Island adjacent to any other Island. *(They can be diagonal.)*
     
-    - name: After Exploring
-      text: After exploring, you cannot move your figure any more spaces with your current action. *(If you're on Strong Current terrain, it still moves you before you anchor.)*
+    - name: Cannot Move After Explore
+      pretext: After exploring, you cannot move your figure any more spaces with your current action. *(If you're on Strong Current terrain, it still moves you before you anchor.)*
 
 - name: Battling
   color: '#000000'
@@ -287,72 +287,72 @@
         - name: 'Step 5: Resolve Victory'
           text: The winner may resolve one Battle Victory option, listed on their player board.
     
-    - name: After Battling
-      text: After battling, you cannot move your figure any more spaces with your current action.
+    - name: Cannot Move After Battle
+      pretext: After battling, you cannot move your figure any more spaces with your current action.
 
 - name: Terrain
   color: '#000000'
   pretext: Each space of a region can have **terrain**.
   children:
     - name: Strong Current
-      text: When any of your figures moves here, you must move it to the adjacent space in the direction shown for free. *(Don't spend movement. Move before anchoring. This can make you explore or battle.)*
+      pretext: When any of your figures moves here, you must move it to the adjacent space in the direction shown for free. *(Don't spend movement. Move before anchoring. This can make you explore or battle.)*
     
     - name: Harbor
-      text: When your Flagship anchors here, you may repair 2 damage, or you may take any die that you have already placed and place it on your Cannons die slot. *(The Squadron may only place a "5" or "6" die.)*
+      pretext: When your Flagship anchors here, you may repair 2 damage, or you may take any die that you have already placed and place it on your Cannons die slot. *(The Squadron may only place a "5" or "6" die.)*
     
     - name: Fog
-      text: Battles cannot happen here.
+      pretext: Battles cannot happen here.
     
     - name: Tailwind
-      text: You can move here directly, ignoring everything between, by placing a matching die on your Tailwind action. *(Some Fog and other spaces have Tailwinds.)*
+      pretext: You can move here directly, ignoring everything between, by placing a matching die on your Tailwind action. *(Some Fog and other spaces have Tailwinds.)*
     
     - name: Sandbar
-      text: You cannot move across this edge. *(Your Tailwind action and some Crew let you ignore Sandbars.)*
+      pretext: You cannot move across this edge. *(Your Tailwind action and some Crew let you ignore Sandbars.)*
     
     - name: Wreckage
-      text: When any figure moves here, it must take 1 damage.
+      pretext: When any figure moves here, it must take 1 damage.
     
     - name: Treasure
-      text: When your Flagship anchors here, you may gain 1 gold for each gold icon shown in the corner of the space. *(All Wreckage and some other spaces have Treasure.)*
+      pretext: When your Flagship anchors here, you may gain 1 gold for each gold icon shown in the corner of the space. *(All Wreckage and some other spaces have Treasure.)*
     
     - name: Island
-      text: As an action, while your Flagship is here, you may recruit Crew from the Market. *(Each faction can also do unique actions here. For example, the Smugglers can smuggle and deliver Cargo here.)*
+      pretext: As an action, while your Flagship is here, you may recruit Crew from the Market. *(Each faction can also do unique actions here. For example, the Smugglers can smuggle and deliver Cargo here.)*
 
 - name: Damage
   color: '#000000'
   children:
     - name: Taking Damage
-      text: Whenever your Flagship is damaged, a damage token is placed onto an empty die slot of your player board or Crew. Wreckage terrain and some Crew make your Flagship **take damage**. In this case, you choose which die slot of your own to damage.
+      pretext: Whenever your Flagship is damaged, a damage token is placed onto an empty die slot of your player board or Crew. Wreckage terrain and some Crew make your Flagship **take damage**. In this case, you choose which die slot of your own to damage.
     
     - name: Dealing Damage
-      text: Victory in battle and some Crew let you **deal damage**. In this case, you choose which die slot of your enemy to damage.
+      pretext: Victory in battle and some Crew let you **deal damage**. In this case, you choose which die slot of your enemy to damage.
     
     - name: Repairing Damage
-      text: Whenever you **repair damage**, remove a damage token from any damaged die slot on your player board or Crew, returning it to the supply.
+      pretext: Whenever you **repair damage**, remove a damage token from any damaged die slot on your player board or Crew, returning it to the supply.
     
     - name: Damage Restrictions
-      text: A die slot cannot be damaged if it already has a damage token or die on it, or if it has a dashed box around it, such as the Repair slot. If no slots can be damaged, ignore the damage.
+      pretext: A die slot cannot be damaged if it already has a damage token or die on it, or if it has a dashed box around it, such as the Repair slot. If no slots can be damaged, ignore the damage.
 
 - name: Crew
   color: '#000000'
   children:
     - name: Recruiting Crew
-      text: As an action, while your Flagship is at an Island, you may recruit any number of cards from the Market into your Crew, as long as the Crew's suit matches the Island.
+      pretext: As an action, while your Flagship is at an Island, you may recruit any number of cards from the Market into your Crew, as long as the Crew's suit matches the Island.
     
     - name: Recruitment Cost
-      text: To recruit Crew, you must pay the cost shown under its suit. It either requires you to place a die on the card or spend 1 or 2 gold back to the supply. You can have any number of Crew.
+      pretext: To recruit Crew, you must pay the cost shown under its suit. It either requires you to place a die on the card or spend 1 or 2 gold back to the supply. You can have any number of Crew.
     
     - name: Crew Placement
-      text: When you recruit Crew, tuck the bottom of the card under your player board to cover its Cargo, then draw a market card to refill the Market unless the Market deck is empty.
+      pretext: When you recruit Crew, tuck the bottom of the card under your player board to cover its Cargo, then draw a market card to refill the Market unless the Market deck is empty.
     
     - name: Crew Types
-      text: Some Crew give a new **action**, which may require placing a die. Other Crew give a **passive power** that you can use at the time it says.
+      pretext: Some Crew give a new **action**, which may require placing a die. Other Crew give a **passive power** that you can use at the time it says.
 
 - name: Bluefin Squadron
   color: '#416eb0'
   children:
     - name: Overview
-      text: The Bluefin Squadron enforces order through military presence. They gain Fame by controlling regions and can deploy Patrols and build Strongholds to maintain their dominance.
+      pretext: The Bluefin Squadron enforces order through military presence. They gain Fame by controlling regions and can deploy Patrols and build Strongholds to maintain their dominance.
     
     - name: Patrols
       children:
@@ -364,148 +364,148 @@
     
     - name: Strongholds
       children:
-        - name: Placing Strongholds
+        - name: Placing Strongholds.
           text: At the end of your turn, any number of times, you may remove 2 Patrols from an Island to place a Stronghold there. *(You may have multiple Strongholds on an Island.)*
         
-        - name: Battling with Strongholds
+        - name: Battling with Strongholds.
           text: They always have loaded Cannons. Strongholds start battle as if you had a die on your Cannons slot, even if you do not. In this battle, add +2 to your roll. *(You can still lower your Cannons die.)*
         
-        - name: Damaging Strongholds
+        - name: Damaging Strongholds.
           text: Whenever a Stronghold is damaged, return the Stronghold to your supply instead of placing a damage token.
         
-        - name: Island Dominance
+        - name: Island Dominance.
           text: You may recruit Crew of matching suit from any Islands with a Stronghold, as if your Flagship were there. Also, while an enemy's Flagship is at an Island with a Stronghold, they cannot recruit Crew or smuggle or deliver Cargo. *(The Mollusk Union can still place Comrades. Smugglers cannot recruit Crew even if they gain a Reward.)*
     
     - name: Fifth Die
-      text: You have 5 dice. On your first and second turns, you place 2 dice. On your third turn, you place 1 die. If you're last in turn order, take your third turn right after your second turn.
+      pretext: You have 5 dice. On your first and second turns, you place 2 dice. On your third turn, you place 1 die. If you're last in turn order, take your third turn right after your second turn.
     
     - name: Standard Actions
       children:
-        - name: Sail
+        - name: Sail.
           text: Place any die. Move your Flagship 1 or 2 spaces. When your Flagship anchors, you may place a Patrol in your Flagship's space.
         
-        - name: Tailwind
+        - name: Tailwind.
           text: Place any die. You may move your Flagship as described in **Common Actions**. When your Flagship anchors, you may place a Patrol in your Flagship's space.
         
-        - name: Cannons
+        - name: Cannons.
           text: Place a "5" or "6" die. You now have loaded Cannons as described in **Battling**.
         
-        - name: Repair
+        - name: Repair.
           text: Place a "2" die. Remove up to 2 damage from any of your die slots.
     
     - name: Unique Actions
       children:
-        - name: Bombard
+        - name: Bombard.
           text: Place a "4" die. Remove all Comrades from the Island in your Flagship's region, returning them to the Union's supply. *(Comrades are Mollusk Union pieces.)*
         
-        - name: Order
+        - name: Order.
           text: Place a "3" die. Move up to 4 different Patrols, each 1 space. *(They can explore and battle, which won't end the movement of Patrols that haven't moved yet.)*
         
-        - name: Deploy
+        - name: Deploy.
           text: Place any die. Place 1 Patrol in your Flagship's space or an adjacent space. *(You cannot place it diagonally. Ignore battle and all terrain, including Sandbars.)*
     
     - name: Battle Victory
       pretext: When you win a battle, you may choose one of the following options.
       children:
-        - name: Option 1
+        - name: Option 1.
           text: Deal 1 damage and steal 1 gold from the defeated player.
         
-        - name: Option 2
+        - name: Option 2.
           text: Deal 2 damage.
         
-        - name: Option 3
+        - name: Option 3.
           text: "**Mollusk Union Ship:** Deal 1 damage and remove 1 Comrade from the Island in the region of battle."
 
 - name: Mollusk Union
   color: '#68b653'
   children:
     - name: Overview
-      text: The Mollusk Union rises from the deep to reclaim their ancestral home. They gain Fame by controlling regions through Comrades and can deploy special ships for additional tactical options.
+      pretext: The Mollusk Union rises from the deep to reclaim their ancestral home. They gain Fame by controlling regions through Comrades and can deploy special ships for additional tactical options.
     
     - name: Comrades
       children:
-        - name: Gaining Comrades
+        - name: Gaining Comrades.
           text: Your Sail and Rally actions let you take Comrade tokens from your supply and place them onto the Ready Comrades section of your player board. You can have any number.
         
-        - name: Placing Comrades
+        - name: Placing Comrades.
           text: Your Sail, Inspire, and Assemble actions let you take Ready Comrades and place them on Islands. Comrades on Islands *(but not Ready Comrades)* each add +1 control.
         
-        - name: Removing Comrades
+        - name: Removing Comrades.
           text: Removed Comrades are returned to your supply, not your Ready Comrades.
         
-        - name: Battling
+        - name: Battling.
           text: Comrades are tokens, so they cannot battle or be battled.
     
     - name: Plans
       children:
-        - name: Drawing Plans
+        - name: Drawing Plans.
           text: You start the game with 2 plan cards in your hand. After cleaning up at the end of each round, you draw 2 plan cards into your hand unless your plan deck is empty. You can hold any number of plans in your hand.
         
-        - name: Playing Plans
+        - name: Playing Plans.
           text: You may play plan cards at the time they list at the top—as an action or at the start of any battle. When you play it, resolve it and discard it face up into a discard pile. If you play your Cutter or Gunship plan, place it near you instead.
         
-        - name: Discussing Plans
+        - name: Discussing Plans.
           text: You may talk *(and lie!)* about plans in your hand, but you cannot show them to other players.
     
     - name: Cutter and Gunship
       children:
-        - name: Placing Ships
+        - name: Placing Ships.
           text: If you play the Cutter or Gunship plan, remove 2 Comrades from any 1 Island to place the ship's figure there. *(Do not battle.)*
         
-        - name: Die Slots
+        - name: Die Slots.
           text: The Cutter and Gunship plans have die slots that let the ship either Sail or Tailwind, ignoring Wreckage. The Cutter's Sail lets it move 1 to 3 spaces, not 1 or 2.
         
-        - name: Damaging Ships
+        - name: Damaging Ships.
           text: When the Cutter or Gunship is damaged, the damage is placed on an empty die slot of the ship's plan. This damage cannot be repaired. When all of its die slots are all damaged, discard its plan and remove its figure.
         
-        - name: Gunship Battling
+        - name: Gunship Battling.
           text: It always has loaded Cannons. The Gunship starts battles as if you had a die on your Cannons slot, even if you do not. In this battle, add +3 to your roll. *(You can still lower your die on Cannons to add more.)*
         
-        - name: Cutter Battling
+        - name: Cutter Battling.
           text: It cannot load Cannons. The Cutter cannot use your die on Cannons to start battles, and you cannot lower your die on Cannons in battle to add to its roll. *(It only battles enemies who have loaded Cannons, including Strongholds.)*
         
-        - name: The Mighty Claw
+        - name: The Mighty Claw.
           text: In addition to adding +1 control, the Cutter doubles the control of all Comrades on the Island in its region—each Comrade adds +2 control instead of +1. *(Seeing the claw, a symbol of the union, inspires your Comrades to take back what's theirs!)*
     
     - name: Standard Actions
       children:
-        - name: Sail
+        - name: Sail.
           text: Place any die. Move your Flagship 1 or 2 spaces. If you anchor at an Island, you may either place 2 Comrades on the Island or gain 2 Ready Comrades.
         
-        - name: Tailwind
+        - name: Tailwind.
           text: Place any die. You may move your Flagship as described in **Common Actions**.
         
-        - name: Cannons
+        - name: Cannons.
           text: Place any die. You now have loaded Cannons as described in **Battling**.
         
-        - name: Repair
+        - name: Repair.
           text: Place an even die. Remove up to 2 damage from any of your die slots.
     
     - name: Unique Actions
       children:
-        - name: Inspire
+        - name: Inspire.
           text: Place a "6" die. Place 1 Comrade each on up to 4 different Islands. *(If there are fewer than 4 Islands, you may only place as many Comrades as there are Islands.)*
         
-        - name: Assemble
+        - name: Assemble.
           text: Place a "1" die. Place 4 Comrades on the Island in your Flagship's region.
         
-        - name: Rally
+        - name: Rally.
           text: Place a "6" die. If your Flagship is at an Island, gain 4 Ready Comrades.
     
     - name: Battle Victory
       pretext: When you win a battle, you may choose one of the following options.
       children:
-        - name: Option 1
+        - name: Option 1.
           text: Deal 1 damage and place 1 Comrade on the Island in the region of battle. *(This comes from Ready Comrades, regardless of which of your ships is battling!)*
         
-        - name: Option 2
+        - name: Option 2.
           text: Deal 1 damage and steal 1 gold from the defeated player.
 
 - name: Smugglers
   color: '#6d6e70'
   children:
     - name: Overview
-      text: The Smugglers run blockades to deliver goods. They gain Fame by delivering Cargo cards, which also increases the wealth of regions for other factions to control.
+      pretext: The Smugglers run blockades to deliver goods. They gain Fame by delivering Cargo cards, which also increases the wealth of regions for other factions to control.
     
     - name: Cargo
       pretext: As a Smuggler, you have two unique actions that do not require placing dice. While your Flagship is at an Island, you may **smuggle** and **deliver** any number of cards.
@@ -516,69 +516,69 @@
         - name: Delivering Cargo
           pretext: To deliver Cargo, your Flagship must be at an Island whose suit matches the Cargo's Deliver suit, shown at the bottom of the card. When you deliver, do these steps.
           children:
-            - name: 'Step 1: Gain 2 Fame'
+            - name: 'Step 1: Gain 2 Fame.'
               text: Gain 2 Fame.
             
-            - name: 'Step 2: Increase Wealth'
+            - name: 'Step 2: Increase Wealth.'
               text: Increase the wealth die on your Flagship's region by one.
             
-            - name: 'Step 3: Gain Reward'
+            - name: 'Step 3: Gain Reward.'
               text: On your player board, move your white reward marker on the Rewards grid to an adjacent space, except the one with the black reward marker. You may gain the reward in the space with the white reward marker. Then, move the black reward marker to the space that the white reward marker moved out of.
             
-            - name: 'Step 4: Pledge Cargo'
+            - name: 'Step 4: Pledge Cargo.'
               text: Place the delivered Cargo card facedown under either your Squadron or Union pledge marker, keeping the pledge marker facedown.
     
     - name: Pledged Cargo
-      text: At the end of the game, you reveal your Squadron and Union pledge markers and the delivered Cargo under them. For each Cargo, you gain 1 Fame for each region that the pledged faction controls whose Island matches the Cargo's top-left suit.
+      pretext: At the end of the game, you reveal your Squadron and Union pledge markers and the delivered Cargo under them. For each Cargo, you gain 1 Fame for each region that the pledged faction controls whose Island matches the Cargo's top-left suit.
     
     - name: Standard Actions
       children:
-        - name: Sail
+        - name: Sail.
           text: Place any die. Move your Flagship 1 or 2 spaces.
         
-        - name: Tailwind
+        - name: Tailwind.
           text: Place any die. You may move your Flagship as described in **Common Actions**.
         
-        - name: Cannons
+        - name: Cannons.
           text: Place any die. You now have loaded Cannons as described in **Battling**.
         
-        - name: Repair
+        - name: Repair.
           text: Place an even die. Remove up to 2 damage from any of your die slots.
     
     - name: Unique Actions
       children:
-        - name: Full Sail
+        - name: Full Sail.
           text: Place any die. Move your Flagship a number of spaces up to the value of the die you placed, but at least 1 space. *(So placing a "6" die lets you move up to 6 spaces!)*
         
-        - name: Negotiate
+        - name: Negotiate.
           text: Place an even die. While your Flagship is at an Island, you may recruit any card from the Market into your Crew, ignoring its cost and suit requirement. You may recruit one more Crew, as described, if you choose to remove one Comrade from the Island.
     
     - name: Battle Victory
       pretext: When you win a battle, you may choose one of the following options.
       children:
-        - name: Option 1
+        - name: Option 1.
           text: Deal 1 damage and move 1 or 2 spaces immediately, ignoring all other battles in your space.
         
-        - name: Option 2
+        - name: Option 2.
           text: Deal 1 damage and gain a reward, exactly as in step 3 of delivering Cargo.
 
 - name: The Fine Print
   color: '#000000'
   children:
     - name: Piece Limits
-      text: All pieces are limited by the contents of the box except for damage tokens. If you are prompted to place a piece from a supply, but its supply is empty, do not place the piece.
+      pretext: All pieces are limited by the contents of the box except for damage tokens. If you are prompted to place a piece from a supply, but its supply is empty, do not place the piece.
     
     - name: Rules Hierarchy
-      text: Crew and plan cards supersede the core rules. Rules that say **cannot** are absolute and cannot be superseded unless a rule explicitly supersedes it with the **ignore** keyword. Sidebars, text written in italics and parentheses *(like this)*, and text on the player boards are clarifications and reminders, which are superseded by the core rules they reference.
+      pretext: Crew and plan cards supersede the core rules. Rules that say **cannot** are absolute and cannot be superseded unless a rule explicitly supersedes it with the **ignore** keyword. Sidebars, text written in italics and parentheses *(like this)*, and text on the player boards are clarifications and reminders, which are superseded by the core rules they reference.
     
     - name: Die Values
-      text: A die cannot increase over 6, decrease below 1, or wrap from 1 to 6 or reverse. Dice values are public.
+      pretext: A die cannot increase over 6, decrease below 1, or wrap from 1 to 6 or reverse. Dice values are public.
     
     - name: Simultaneous Timing
-      text: If two things happen at the same time, the player taking their turn chooses the order.
+      pretext: If two things happen at the same time, the player taking their turn chooses the order.
     
     - name: Effectless Actions
-      text: You can do things with no outcome, such as spending 2 gold to decrease and increase a die.
+      pretext: You can do things with no outcome, such as spending 2 gold to decrease and increase a die.
     
     - name: Conceding with Two Players
-      text: With 2 players, the winner might be clear before the game ends. Conceding is totally okay!
+      pretext: With 2 players, the winner might be clear before the game ends. Conceding is totally okay!
