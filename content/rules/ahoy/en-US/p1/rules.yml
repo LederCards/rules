@@ -152,10 +152,10 @@
         - name: Check Control.
           text: Check every region for control. Only the Bluefin Squadron or Mollusk Union can control a region, based on which faction has the higher control.
           children:
-            - name: Bluefin Squadron Control
+            - name: Bluefin Squadron.
               text: +1 control per Patrol, +2 control per Stronghold, +2 control for their Flagship
             
-            - name: Mollusk Union Control
+            - name: Mollusk Union.
               text: +1 control per Comrade on the region's Island, +1 control per Union ship
         
         - name: Score Fame.
@@ -243,15 +243,15 @@
   color: '#000000'
   pretext: Whenever you move one of your figures off the map, you **explore** a new region.
   children:
-    - name: Explore Steps
+    - name: Explore Resolution
       children:
-        - name: 'Step 1: Draw Region'
+        - name: 'Step 1: Draw Region.'
           text: Draw a region tile from the tile stack.
     
-        - name: 'Step 2: Place Region'
+        - name: 'Step 2: Place Region.'
           text: Place the region tile so that one space is where you are moving to. Pick up your figure and put it back down on that space.
     
-        - name: 'Step 3: Place Wealth Die'
+        - name: 'Step 3: Place Wealth Die.'
           text: Place a wealth die showing "1" on the center of the region.
     
     - name: Placement Requirements
@@ -269,22 +269,22 @@
   color: '#000000'
   pretext: Whenever you move one of your figures, check if you have loaded Cannons. *(Usually this means you have a die on Cannons, but some figures always have loaded Cannons.)* If you do, your figure must **battle** every enemy figure in its space. If you do not, you must battle every enemy figure there that has loaded Cannons. *(Do not battle if no one there, including you, has loaded Cannons.)*
   children:
-    - name: Battle Steps
+    - name: Battle Resolution
       pretext: You must battle these enemy figures one by one, in any order.
       children:
-        - name: 'Step 1: Choose a Defender'
+        - name: 'Step 1: Choose a Defender.'
           text: Choose one eligible enemy figure there. You are the attacker. They are the defender.
         
-        - name: 'Step 2: Attacker Fires Cannons'
+        - name: 'Step 2: Attacker Fires Cannons.'
           text: You may turn your die on Cannons to lower its value by any amount *(not below 1)*. This adds to your battle die roll in step 4.
         
-        - name: 'Step 3: Defender Fires Cannons'
+        - name: 'Step 3: Defender Fires Cannons.'
           text: The defender may lower their Cannons value, as in step 2.
         
-        - name: 'Step 4: Roll Battle Dice'
+        - name: 'Step 4: Roll Battle Dice.'
           text: Each player rolls 1 battle die and adds the amount that they reduced their own die on Cannons. The player with the higher total is the winner. On a tie, the attacker wins.
         
-        - name: 'Step 5: Resolve Victory'
+        - name: 'Step 5: Resolve Victory.'
           text: The winner may resolve one Battle Victory option, listed on their player board.
     
     - name: Cannot Move After Battle
