@@ -77,50 +77,50 @@
     - name: Faction Setup
       pretext: After shared setup, set up the factions as described both on page 6 and on the backs of the player boards. Return the pieces of all unchosen factions to the box.
       children:
-        - name: 'Step 1: Roll Action Dice'
+        - name: 'Step 1: Roll Action Dice.'
           text: The Bluefin Squadron takes and rolls the **5 action dice** of their color. Each other player takes and rolls the **4 action dice** of their color.
         
-        - name: 'Step 2: Take Gold'
+        - name: 'Step 2: Take Gold.'
           text: Each player takes **1 gold token**.
         
         - name: 'Step 3: Set Up Bluefin Squadron'
           children:
-            - name: Gather Pieces
+            - name: Gather Pieces.
               text: Take your **10 Patrol figures** and **3 Stronghold figures**.
             
-            - name: Take Cards
+            - name: Take Cards.
               text: Take your **Patrol aid card**, **Stronghold aid card**, and the **first player card**. *(You may place the figures on their aid cards if you want.)*
             
-            - name: Place Starting Pieces
+            - name: Place Starting Pieces.
               text: Place both your **Flagship figure** and **1 Patrol figure** on the Island on either region tile. *(Each region has 1 Island.)*
         
         - name: 'Step 4: Set Up First Smuggler'
           pretext: In games with 3 or 4 players, do this.
           children:
-            - name: Place Flagship
+            - name: Place Flagship.
               text: Place your **Flagship figure** on any space on the map except an Island.
             
-            - name: Take Markers
+            - name: Take Markers.
               text: Take your **Smuggler aid card** and your **2 pledge markers** with their Squadron and Union icons facedown. *(You may look at them.)*
             
-            - name: Place Reward Markers
+            - name: Place Reward Markers.
               text: Place your **black and white reward markers** on the middle space of the Rewards grid on your player board. *(You can stack them.)*
         
         - name: 'Step 5: Set Up Mollusk Union'
           children:
-            - name: Gather Pieces
+            - name: Gather Pieces.
               text: Take your **Cutter figure**, **Gunship figure**, and **20 Comrade tokens**.
             
-            - name: Place Starting Pieces
+            - name: Place Starting Pieces.
               text: Place your **Flagship figure** and **2 Comrade tokens** on the empty Island.
             
-            - name: Draw Plans
+            - name: Draw Plans.
               text: Shuffle your **12 plan cards** into a plan deck and draw 2 plan cards into your hand, keeping them secret from the other players.
             
-            - name: Place Ready Comrades
+            - name: Place Ready Comrades.
               text: Place **6 Comrade tokens** on the Ready Comrades section of your player board.
         
-        - name: 'Step 6: Set Up Second Smuggler'
+        - name: 'Step 6: Set Up Second Smuggler.'
           text: In games with 4 players, set up the second Smuggler in the same way as the first Smuggler.
 
 - name: Playing the Game
@@ -201,16 +201,16 @@
   pretext: Every faction has these actions on their player board, with some differences that you'll learn about later.
   children:
     - name: Sail
-      pretext: Move your Flagship 1 or 2 spaces. Each move goes to an adjacent space, not diagonal. (See **Moving**)
+      pretext: Move your Flagship 1 or 2 spaces. Each move goes to an adjacent space, not diagonal. (See **Moving**, `rule:8.`)
     
     - name: Tailwind
-      pretext: You may move your Flagship directly to any space on the map with a printed die in the corner whose value matches the die you placed on the Tailwind die slot. This space does not have to be adjacent, and you ignore everything between the starting and ending space. (See **Moving**)
+      pretext: You may move your Flagship directly to any space on the map with a printed die in the corner whose value matches the die you placed on the Tailwind die slot. This space does not have to be adjacent, and you ignore everything between the starting and ending space. (See **Moving**, `rule:8.`)
     
     - name: Cannons
-      pretext: Your figures have **loaded Cannons** from now until the end of the round. Whenever you move one of your figures into a space with enemy figures, you must battle them if either of you has loaded Cannons. (See **Battling**)
+      pretext: Your figures have **loaded Cannons** from now until the end of the round. Whenever you move one of your figures into a space with enemy figures, you must battle them if either of you has loaded Cannons. (See **Battling**, `rule:10.`)
     
     - name: Repair
-      pretext: Remove up to 2 damage tokens from any of your die slots. (See **Damage**)
+      pretext: Remove up to 2 damage tokens from any of your die slots. (See **Damage**, `rule:12.`)
 
 - name: Moving
   color: '#000000'
@@ -228,13 +228,13 @@
       pretext: Each time you move a space, do this in order.
       children:
         - name: 'Step 1: Exploring.'
-          text: If you move off the map, you **explore**, letting you draw and place a new region tile. (See **Exploring**)
+          text: If you move off the map, you **explore**, letting you draw and place a new region tile. (See **Exploring**, `rule:9.`)
         
         - name: 'Step 2: Battling.'
-          text: If the space has enemy figures, you **battle** them if either of you has loaded Cannons. (See **Battling**)
+          text: If the space has enemy figures, you **battle** them if either of you has loaded Cannons. (See **Battling**, `rule:10.`)
         
         - name: 'Step 3: Terrain.'
-          text: If the space has Wreckage or Strong Current **terrain**, resolve it. (See **Terrain**)
+          text: If the space has Wreckage or Strong Current **terrain**, resolve it. (See **Terrain**, `rule:11.`)
     
     - name: Anchoring
       pretext: After moving a space, if you choose not to move another space or cannot move another space, you **anchor**. If the space has Harbor or Treasure terrain, resolve it.
@@ -356,10 +356,10 @@
     
     - name: Patrols
       children:
-        - name: Placing Patrols
+        - name: Placing Patrols.
           text: Whenever you take the Sail or Tailwind action, you may place 1 Patrol from your supply into your Flagship's space when you anchor. *(Do not trigger battle or terrain.)*
         
-        - name: Damaging Patrols
+        - name: Damaging Patrols.
           text: Whenever a Patrol is damaged *(even from moving into Wreckage)*, return the Patrol to your supply instead of placing a damage token.
     
     - name: Strongholds
@@ -510,7 +510,7 @@
     - name: Cargo
       pretext: As a Smuggler, you have two unique actions that do not require placing dice. While your Flagship is at an Island, you may **smuggle** and **deliver** any number of cards.
       children:
-        - name: Smuggling Cargo
+        - name: Smuggling Cargo.
           text: To smuggle Cargo, take a card from the Market whose suit matches your Island's suit. *(Unlike recruiting, smuggling has no cost.)* Tuck it into the Cargo slot on your player board so it only shows the Cargo at the bottom, then draw a market card to refill the Market unless the market deck is empty. You may have up to 2 Cargo. If you ever have more than 2 Cargo, you must return Cargo to the box until you have 2 Cargo. *(Cast it into the sea!)*
         
         - name: Delivering Cargo
