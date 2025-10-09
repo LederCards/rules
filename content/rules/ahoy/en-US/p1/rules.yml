@@ -38,40 +38,40 @@
   children:
     - name: Shared Setup
       children:
-        - name: 'Step 1: Collect Shared Pieces'
+        - name: 'Step 1: Collect Shared Pieces.'
           text: Collect the **20 gold tokens**, **25 damage tokens**, **11 wealth dice**, and **2 battle dice** nearby.
         
-        - name: 'Step 2: Choose Factions'
+        - name: 'Step 2: Choose Factions.'
           text: Each player chooses a faction to play. The factions you can play depend on the number of players.
           children:
-            - name: Two Players
+            - name: Two Players.
               text: Play with the Bluefin Squadron and Mollusk Union.
             
-            - name: Three Players
+            - name: Three Players.
               text: Play with the Bluefin Squadron, a Smuggler, and the Mollusk Union.
             
-            - name: Four Players
+            - name: Four Players.
               text: Play with all four factions.
         
-        - name: 'Step 3: Seat Players'
+        - name: 'Step 3: Seat Players.'
           text: Players must sit in this clockwise order - Bluefin Squadron, Smuggler (3 and 4 players), Mollusk Union, Smuggler (4 players only). Each player places the **player board** for their faction in front of themself.
         
-        - name: 'Step 4: Prepare Region Stack'
+        - name: 'Step 4: Prepare Region Stack.'
           text: Shuffle the 12 region tiles, return one facedown to the box, and place the remaining **11 region tiles** in a facedown stack nearby.
         
-        - name: 'Step 5: Set Up Map'
+        - name: 'Step 5: Set Up Map.'
           text: Draw and deal **2 region tiles** randomly and face up to the table. Place them so only 1 space of each region touches the other region, and so their 2 Islands are opposite and as far away from each other as possible.
         
-        - name: 'Step 6: Place Wealth Dice'
+        - name: 'Step 6: Place Wealth Dice.'
           text: Place a **wealth die** with a value of "1" on the center of each face-up region tile.
         
-        - name: 'Step 7: Prepare Market'
+        - name: 'Step 7: Prepare Market.'
           text: If you're playing with 2 or 3 players, return **1 random market card of each suit**, shown in their top-left corner, from the deck of 30 market cards to the box.
         
-        - name: 'Step 8: Deal Market'
+        - name: 'Step 8: Deal Market.'
           text: Shuffle the market cards into a deck, and deal **3 market cards** to a face-up Market row.
         
-        - name: 'Step 9: Mark Fame Track'
+        - name: 'Step 9: Mark Fame Track.'
           text: Place the **Fame track** nearby and place the **Fame marker** for each player on the "0" Fame space.
 
     - name: Faction Setup
