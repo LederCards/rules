@@ -349,7 +349,7 @@
       pretext: Some Crew give a new **action**, which may require placing a die. Other Crew give a **passive power** that you can use at the time it says.
 
 - name: Bluefin Squadron
-  color: '#416eb0'
+  color: '#486180'
   children:
     - name: Overview
       pretext: The Bluefin Squadron enforces order through military presence. They gain Fame by controlling regions and can deploy Patrols and build Strongholds to maintain their dominance.
@@ -417,7 +417,7 @@
           text: "**Mollusk Union Ship:** Deal 1 damage and remove 1 Comrade from the Island in the region of battle."
 
 - name: Mollusk Union
-  color: '#68b653'
+  color: '#FFD50B'
   children:
     - name: Overview
       pretext: The Mollusk Union rises from the deep to reclaim their ancestral home. They gain Fame by controlling regions through Comrades and can deploy special ships for additional tactical options.
@@ -502,7 +502,7 @@
           text: Deal 1 damage and steal 1 gold from the defeated player.
 
 - name: Smugglers
-  color: '#6d6e70'
+  color: '#90171B'
   children:
     - name: Overview
       pretext: The Smugglers run blockades to deliver goods. They gain Fame by delivering Cargo cards, which also increases the wealth of regions for other factions to control.
