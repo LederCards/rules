@@ -1179,8 +1179,8 @@
           text: In a clearing on the river, place 5 warriors and 1 enclave on its Peaceful side. This is your starting clearing.
         - name: 'Step 3: Remove Dominance.'
           text: In a two-player game, remove the Frog Dominance card permanently.
-        - name: 'Step 4: Shuffle Frog Cards.'
-          text: Shuffle all of the Frog cards into the shared deck—14 cards, or 13 if the Frog Dominance card was removed.
+        - name: 'Step 4: Set Up Cards and Pond.'
+          text: Shuffle all of the Frog cards into the shared deck—14 cards, or 13 if the Frog Dominance card was removed. Place the Pond placard near the shared deck.
 
     - name: Birdsong
       pretext: Your Birdsong has two steps in the following order.
