@@ -1223,7 +1223,7 @@
     - name: Faction Rules and Abilities
       children:
         - name: Loyalists.
-          text: The Council can hold up to 4 warriors on its player board as **Loyalists**. They can place Loyalists with Entreat (`rule:17.2.4`) and Assemble (`rule:17.4.3`). They may remove Loyalists at any time.
+          text: The Council can hold up to 4 warriors on its player board as **Loyalists**. They can place Loyalists with Entreat (`rule:17.2.4`) and Assemble (`rule:17.4.4`). They may remove Loyalists at any time.
         - name: Assemblies.
           text: 'Assemblies have two sides: Closed _(closed tent)_ and Governing _(open tent)_. When an enemy of the Council removes an assembly, the Council removes 1 Loyalist.'
         - name: Governors.
@@ -1254,10 +1254,10 @@
           text: Take a move from a clearing matching the revealed card.
         - name: Recruit.
           text: Place 1 warrior in a clearing matching the revealed card.
-        - name: Assemble.
-          text: Place a Closed assembly and any number of Loyalists in a clearing matching the revealed card that has no assembly. Then, if you don't rule the clearing, discard the revealed card.
         - name: Battle.
           text: Initiate a battle in a clearing matching the revealed card. If an assembly is there, discard the revealed card.
+        - name: Assemble.
+          text: Place a Closed assembly and any number of Loyalists in a clearing matching the revealed card that has no assembly. Then, if you don't rule the clearing, discard the revealed card.
 
     - name: Daylight
       pretext: Sleep. Flip assemblies ruled by enemies to Closed.
@@ -1325,7 +1325,7 @@
         - name: 'Step 3: Place Captains and Skunks.'
           text: Place 1 Captain warrior and 1 Skunk warrior each in three different forests.
         - name: 'Step 4: Set Up Player Board.'
-          text: Place the 6 items face up in your Stash that are shown on your 3 chosen Captain cards. Fill each Acclaim slot with the 2 acclaim tokens.
+          text: Place the 6 items face up in your Stash that are shown on your 3 chosen Captain cards. Fill each Acclaim slot with 2 acclaim tokens.
 
     - name: Birdsong
       pretext: '**Ready.** Place a face-up Captain card in the Acting Captain slot on your player board. You gain the effect listed on this card until you Retire (`rule:18.5.2`). If the corresponding Captain warrior is not on the map, place it in any forest, remove any Prisoners in that forest and adjacent forests, and you take only three actions during Captain Acts (`rule:18.5.1`).'
