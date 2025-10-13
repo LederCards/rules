@@ -11,9 +11,6 @@ products:
   root:
     name: Root
 
-  vast:
-    name: Vast
-
 languages:
   de-DE:
     name: Deutsch
