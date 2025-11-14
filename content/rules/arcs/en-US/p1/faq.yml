@@ -185,7 +185,7 @@
   a: >
       Place 3 ships in any gate during step D of the Intermission (`rule:21.4`).
   rules:
-    - '13.2'
+    - '20.1.1'
 
 - q: Do I build Upgrades and Armor damaged if someone else controls my Flagship's system?
   a: >
