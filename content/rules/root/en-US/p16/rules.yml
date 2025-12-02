@@ -505,7 +505,7 @@
             - name: The Satchel.
               text: When gained, `item:boot`, `item:sword`, `item:crossbow`, `item:torch`, and `item:hammer` are placed face up in the Vagabond's Satchel.
         - name: Maximum Rolled Hits.
-          text: In battle, the Vagabond's maximum rolled hits (`rule:4.3.2.1`) equals his undamaged `item:sword`, face up or face down, in his Satchel.
+          text: In battle, the Vagabond's maximum rolled hits (`rule:4.3.3.1`) equals his undamaged `item:sword`, face up or face down, in his Satchel.
         - name: Taking Hits.
           text: Whenever the Vagabond takes a hit (`rule:4.3.6`), he must damage one undamaged item, moving it to his Damaged box. These items are damaged. If no undamaged items remain to damage, the Vagabond ignores any remaining hits.
         - name: Dominance Cards and Coalitions.
@@ -530,9 +530,9 @@
                 - name: Attacking with Ally.
                   text: At the start of battle as the attacker, you may treat the warriors of one Allied faction in the clearing of battle as your own. The maximum hits you can roll equals the number of their warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own when attacking the same Allied faction.
                 - name: Taking Hits with Ally.
-                  text: In a battle where you treat Allied warriors as your own, you can take hits by removing them. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied faction becomes Hostile (`rule:9.3.3`) at the end of the battle. This rule overrides the condition for becoming Hostile in `rule:9.3.3`.
+                  text: In a battle where you treat Allied warriors as your own, you can take hits by removing them. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied faction becomes Hostile (`rule:9.2.9.3`) at the end of the battle. This rule overrides the condition for becoming Hostile in `rule:9.3.3`.
             - name: Hostile Status.
-              text: If you remove a warrior of a non-Hostile faction, move their relationship marker to the Hostile box. This faction is now **Hostile**. Then, if this happened in battle during your turn, check for Infamy scoring (`rule:9.3.3.1`).
+              text: If you remove a warrior of a non-Hostile faction, move their relationship marker to the Hostile box. This faction is now **Hostile**. Then, if this happened in battle during your turn, check for Infamy scoring (`rule:9.2.9.3.1`).
               children:
                 - name: Infamy.
                   text: Score one extra victory point for each piece of a Hostile faction you remove in battle during your turn, except the warrior that made the faction Hostile. _(Add this to points scored for enemy buildings and tokens.)_
@@ -566,7 +566,7 @@
         - name: Refresh.
           text: Flip two exhausted items face up for each `item:tea` face up on the Refresh track, not counting `item:tea` that you flip face up in this step. Then flip up three more exhausted items.
         - name: Slip.
-          text: You may move into an adjacent clearing or forest without exhausting any `item:boot`, even for moving into a Hostile clearing (`rule:9.3.3.2`). This move ignores all effects that prevent movement out of a clearing _(such as the Corvids' snare)_.
+          text: You may move into an adjacent clearing or forest without exhausting any `item:boot`, even for moving into a Hostile clearing (`rule:9.2.9.3.2`). This move ignores all effects that prevent movement out of a clearing _(such as the Corvids' snare)_.
 
     - name: Daylight
       pretext: You can exhaust items to take the following actions, in any order and number. _(If you exhaust a `item:coin`, `item:tea`, or `item:sack` on a track, move it to the Satchel.)_
@@ -1223,7 +1223,7 @@
     - name: Faction Rules and Abilities
       children:
         - name: Loyalists.
-          text: The Council can hold up to 4 warriors on its player board as **Loyalists**. They can place Loyalists with Entreat (`rule:17.2.4`) and Assemble (`rule:17.4.4`). They may remove Loyalists at any time.
+          text: The Council can hold up to 4 warriors on its player board as **Loyalists**. They can place Loyalists with Entreat (`rule:17.2.4`) and Assemble (`rule:17.4.3`). They may remove Loyalists at any time.
         - name: Assemblies.
           text: 'Assemblies have two sides: Closed _(closed tent)_ and Governing _(open tent)_. When an enemy of the Council removes an assembly, the Council removes 1 Loyalist.'
         - name: Governors.
@@ -1234,7 +1234,7 @@
           text: When an enemy chooses another enemy as defender at an assembly, the Council adds Council warriors as defending warriors, but Council warriors only take hits once the defender's warriors have been removed. Ignore Peacekeepers if the Vagabond is defending. _(The Council cannot ambush, use battle effects, etc.)_
           children:
             - name: Vagabond Allies.
-              text: If the Vagabond attacks another enemy in battle while Allied (`rule:9.3.2`) to the Twilight Council, Council warriors are attacking warriors.
+              text: If the Vagabond attacks another enemy in battle while Allied (`rule:9.2.9.2`) to the Twilight Council, Council warriors are attacking warriors.
         - name: Crafting.
           text: The Council crafts during Evening by activating assemblies.
 
