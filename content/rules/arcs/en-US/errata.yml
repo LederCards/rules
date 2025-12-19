@@ -52,7 +52,7 @@
   versions:
     - v1
   rules:
-    - '20.6'
+    - '15.2.4'
 
 - text: >
     Edited to "Resources in the Imperial Trust are frozen **except for Imperial Actions**."<br>
