@@ -1,8 +1,8 @@
 {
-  "name": "lederrules",
+  "name": "bgsrules",
   "version": "0.0.1",
   "author": "kyle Kemp <kyle@seiyria.com>",
-  "homepage": "https://rules.ledergames.com/",
+  "homepage": "https://rules.buriedgiantstudios.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open --port 9005",

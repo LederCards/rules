@@ -18,4 +18,4 @@ One app to RULE them all!
 1. Create/update `errata.yml` in `content/rules/<game>/` - _note: this is optional_
 
 If you want to make a new game available to view without populating it in the publicly accessible menu, follow all of these steps except step 1, then
-view it using this URL: "https://rules.ledergames.com/?product=XXX&locale=XXX&printing=XXX", replacing the "XXX" with the appropriate names.
+view it using this URL: "https://rules.buriedgiantstudios.com/?product=XXX&locale=XXX&printing=XXX", replacing the "XXX" with the appropriate names.
