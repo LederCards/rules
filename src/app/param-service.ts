@@ -107,7 +107,7 @@ export class ParamService {
 
   init() {
     if (!this.currentProduct()) {
-      this.currentProduct.set('root');
+      this.currentProduct.set('arcs');
     }
 
     if (!this.currentLocale()) {
