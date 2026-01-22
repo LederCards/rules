@@ -40,7 +40,7 @@
     - '14.2.2.3'
 
 - text: >
-    These rules have been expanded to allow more card types than lore to interact with Flagships in the same way. For example, this allows edicts like [Policy of Escalation](https://cards.buriedgiantstudios.com/card/ARCS-AID05) to interact with Flagships.
+    These rules have been expanded to allow more card types than lore to interact with Flagships in the same way. For example, this allows edicts like [Policy of Escalation](https://cards.ledergames.com/card/ARCS-AID05) to interact with Flagships.
   versions:
     - v1
   rules:
@@ -48,7 +48,7 @@
 
 - text: >
     Added "This counts as stealing."<br>
-    *This clarifies interactions with cards like [Pirate Hoard](https://cards.buriedgiantstudios.com/card/ARCS-F1202).*
+    *This clarifies interactions with cards like [Pirate Hoard](https://cards.ledergames.com/card/ARCS-F1202).*
   versions:
     - v1
   rules:
@@ -63,7 +63,7 @@
     - '19.2.1.1'
 
 - text: >
-    This rule now explicitly states, rather than implies, that cards like [Command Chaos](https://cards.buriedgiantstudios.com/card/ARCS-F713) can remove Imperial Officers, even though it’s protected, because it states it by name.
+    This rule now explicitly states, rather than implies, that cards like [Command Chaos](https://cards.ledergames.com/card/ARCS-F713) can remove Imperial Officers, even though it’s protected, because it states it by name.
   versions:
     - v1
   rules:
@@ -94,9 +94,9 @@
 
 - text: >
     Added "If it flips while tucked under a card, return it to the Court."<br>
-    *After some soul-searching, we have reversed the previous behavior of the 
-    Council. This means cards like [Council Intrigue](https://cards.buriedgiantstudios.com/card/ARCS-CC12) 
-    can flip the Council while it’s tucked under a card in the card play area, returning it to 
+    *After some soul-searching, we have reversed the previous behavior of the
+    Council. This means cards like [Council Intrigue](https://cards.ledergames.com/card/ARCS-CC12)
+    can flip the Council while it’s tucked under a card in the card play area, returning it to
     the Court. This means the Council won't resolve at the end of the round!*
   versions:
     - v1
@@ -105,7 +105,7 @@
 
 - text: >
     Edited "To do this" to "At this time" to clarify that you can always rearrange when you take a resource.<br>
-    *(NOT YET IN PRINT)* 
+    *(NOT YET IN PRINT)*
   versions:
     - v1
   rules:
@@ -128,7 +128,7 @@
     - '20.4.3'
 
 - text: >
-    Specified that the player with initiative rolls the dice, to better support interactions like [Empath's Vision](https://cards.buriedgiantstudios.com/card/ARCS-L19).<br>
+    Specified that the player with initiative rolls the dice, to better support interactions like [Empath's Vision](https://cards.ledergames.com/card/ARCS-L19).<br>
     *(NOT YET IN PRINT)*
   versions:
     - v1
@@ -137,7 +137,7 @@
 
 - text: >
     Clarified that hitting yourself doesn't count as harm.<br>
-    *(NOT YET IN PRINT)*    
+    *(NOT YET IN PRINT)*
   versions:
     - v1
   rules:
@@ -145,7 +145,7 @@
 
 - text: >
     Added this rule to prevent extremely messy interactions.<br>
-    *(NOT YET IN PRINT)*    
+    *(NOT YET IN PRINT)*
   versions:
     - v1
   rules:
@@ -153,7 +153,7 @@
 
 - text: >
     Clarified that Upgrades cannot be hit **or destroyed** while it has Armor.<br>
-    *(NOT YET IN PRINT)*   
+    *(NOT YET IN PRINT)*
   versions:
     - v1
   rules:
@@ -161,7 +161,7 @@
 
 - text: >
     Removed "to their players" to clarify that Blight Trophies are also returned.<br>
-    *(NOT YET IN PRINT)* 
+    *(NOT YET IN PRINT)*
   versions:
     - v1
   rules:
