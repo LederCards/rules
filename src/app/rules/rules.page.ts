@@ -179,6 +179,8 @@ export class RulesPage {
   }
 
   public setSearchValue(str: string | null | undefined) {
+    if (str === this.search()) return;
+
     this.rulesService.resetVisibility();
 
     if (str === null || str === undefined) {

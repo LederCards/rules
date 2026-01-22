@@ -23,6 +23,7 @@
         (ionClear)="setSearchValue(undefined)"
         (ionInput)="setSearchValue($event.detail.value)"
         (ionChange)="setSearchValue($event.detail.value)"
+        (keyup.esc)="setSearchValue(undefined)"
         [placeholder]="'App.SearchPlaceholder' | translate"
       ></ion-searchbar>
     }
