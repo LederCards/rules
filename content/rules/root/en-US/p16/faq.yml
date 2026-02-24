@@ -78,7 +78,7 @@
 - q: Can the Marquise place hirelings at the Keep?
   a: Yes!
   rules:
-    - '6.2.3'
+    - '6.2.2'
 
 - q: Does Turmoil trigger if I have an empty column?
   a: Nope! Turmoil triggers if you have a card in your Decree that you can't complete.
