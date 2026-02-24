@@ -114,7 +114,7 @@ export class ParamService {
       this.currentLocale.set('en-US');
     }
 
-    if (!this.currentPrinting()) {
+    if (!this.compareToPrinting()) {
       this.currentPrinting.set(this.allPrintings()[0]);
     }
 
