@@ -530,7 +530,7 @@
                 - name: Attacking with Ally.
                   text: At the start of battle as the attacker, you may treat the warriors of one Allied faction in the clearing of battle as your own. The maximum hits you can roll equals the number of their warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own when attacking the same Allied faction.
                 - name: Taking Hits with Ally.
-                  text: In a battle where you treat Allied warriors as your own, you can take hits by removing them. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied faction becomes Hostile (`rule:9.2.9.3`) at the end of the battle. This rule overrides the condition for becoming Hostile in `rule:9.3.3`.
+                  text: In a battle where you treat Allied warriors as your own, you can take hits by removing them. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied faction becomes Hostile (`rule:9.2.9.3`) at the end of the battle. This rule overrides the condition for becoming Hostile in `rule:9.2.9.3`.
             - name: Hostile Status.
               text: If you remove a warrior of a non-Hostile faction, move their relationship marker to the Hostile box. This faction is now **Hostile**. Then, if this happened in battle during your turn, check for Infamy scoring (`rule:9.2.9.3.1`).
               children:
