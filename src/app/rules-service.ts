@@ -1,5 +1,6 @@
 import { computed, Injectable, signal } from '@angular/core';
 import { marked } from 'marked';
+import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import {
   type FAQEntryQA,
   type GameRule,
@@ -18,8 +19,12 @@ export class RulesService {
   public formattedRules = signal<GameRule[]>([]);
   public indexRuleHash = signal<Record<string, string>>({});
 
+  public search = linkedQueryParam('search', {
+    defaultValue: '',
+  });
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  public indexVisibilityHash: Record<string, any> = {};
+  public indexVisibilityHash = signal<Record<string, any>>({});
 
   public navHeaders = computed(() =>
     this.rules().map((rule, i) => ({
@@ -137,11 +142,11 @@ export class RulesService {
       const allEntries = index.split('.');
 
       // take care of the first entry
-      this.indexVisibilityHash[allEntries[0]] = this.indexVisibilityHash[
-        allEntries[0]
-      ] || { visible: true };
+      const visibility = structuredClone(this.indexVisibilityHash());
 
-      let curObj = this.indexVisibilityHash[allEntries[0]];
+      visibility[allEntries[0]] = visibility[allEntries[0]] || { visible: true };
+
+      let curObj = visibility[allEntries[0]];
 
       allEntries.shift();
 
@@ -150,10 +155,12 @@ export class RulesService {
         curObj[idx] = curObj[idx] || { visible: true };
         curObj = curObj[idx];
       });
+
+      this.indexVisibilityHash.set(visibility);
     }, 0);
   }
 
   resetVisibility() {
-    this.indexVisibilityHash = {};
+    this.indexVisibilityHash.set({});
   }
 }

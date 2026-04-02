@@ -1,7 +1,6 @@
 import { Component, computed, effect, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { get } from 'es-toolkit/compat';
-import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import { HighlightPipe } from 'src/app/highlight-pipe';
 import { ParamService } from 'src/app/param-service';
 import { RulesService } from 'src/app/rules-service';
@@ -22,12 +21,8 @@ import { FaqErrataHeaderDisplayComponent } from '../faq-errata-header-display/fa
   ],
 })
 export class RulesDisplayComponent {
-  private rulesService = inject(RulesService);
+  public rulesService = inject(RulesService);
   public paramService = inject(ParamService);
-
-  readonly search = linkedQueryParam('search', {
-    defaultValue: '',
-  });
 
   public allRules = computed(() => this.rulesService.formattedRules());
   public ruleIndexes = computed(() => this.rulesService.indexRuleHash());
@@ -55,12 +50,13 @@ export class RulesDisplayComponent {
   }
 
   public isVisible(index: number[]): boolean {
-    if (!this.search()) {
+    const searchTerm = this.rulesService.search().trim();
+    if (!searchTerm) {
       return true;
     }
 
     return get(
-      this.rulesService.indexVisibilityHash,
+      this.rulesService.indexVisibilityHash(),
       [...index, 'visible'],
       false,
     );

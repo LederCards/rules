@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import {
   Component,
   computed,
+  effect,
   HostListener,
   inject,
   signal,
@@ -43,7 +44,6 @@ import {
   returnUpBack,
   search,
 } from 'ionicons/icons';
-import { linkedQueryParam } from 'ngxtension/linked-query-param';
 import { navigation$ } from 'src/app/navigation';
 import { ParamService } from 'src/app/param-service';
 import { RulesService } from 'src/app/rules-service';
@@ -84,10 +84,6 @@ import { RulesDisplayComponent } from '../rules-display/rules-display.component'
 export class RulesPage {
   public paramService = inject(ParamService);
   public rulesService = inject(RulesService);
-
-  readonly search = linkedQueryParam('search', {
-    defaultValue: '',
-  });
 
   public showSearch = signal<boolean>(false);
   public scrollBackTo = signal<string>('');
@@ -148,6 +144,13 @@ export class RulesPage {
     navigation$
       .pipe(takeUntilDestroyed())
       .subscribe((id) => this.scrollToEl(id, 'start'));
+
+    effect(() => {
+      const querySearch = this.rulesService.search();
+      if (querySearch) {
+        this.showSearch.set(true);
+      }
+    });
   }
 
   public scrollToEl(id: string, block: ScrollLogicalPosition = 'start') {
@@ -179,12 +182,13 @@ export class RulesPage {
   }
 
   public setSearchValue(str: string | null | undefined) {
+    const newValue = (str ?? '').trim();
+
     this.rulesService.resetVisibility();
+    this.rulesService.search.set(newValue);
 
     if (str === null || str === undefined) {
       this.showSearch.set(false);
-    } else {
-      this.search.set(str);
     }
   }
 }

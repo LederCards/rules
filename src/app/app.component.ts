@@ -1,18 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Component, inject, type OnInit } from '@angular/core';
 import {
-  IonApp,
-  IonContent,
-  IonHeader,
-  IonItem,
-  IonList,
-  IonMenu,
-  IonMenuToggle,
-  IonRouterOutlet,
-  IonSelect,
-  IonSelectOption,
-  IonSplitPane,
-  IonToolbar,
+    IonApp,
+    IonContent,
+    IonHeader,
+    IonItem,
+    IonList,
+    IonMenu,
+    IonMenuToggle,
+    IonRouterOutlet,
+    IonSelect,
+    IonSelectOption,
+    IonSplitPane,
+    IonToolbar,
 } from '@ionic/angular/standalone';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -87,6 +87,10 @@ export class AppComponent implements OnInit {
       this.paramService.compareToPrinting.set(
         baseParams.get('compareToPrinting')!,
       );
+
+    if (baseParams.has('search')) {
+      this.rulesService.search.set(baseParams.get('search')!);
+    }
 
     this.paramService.init();
 

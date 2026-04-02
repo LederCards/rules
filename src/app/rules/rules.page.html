@@ -19,6 +19,7 @@
         color="primary"
         showCancelButton="true"
         [debounce]="300"
+        [value]="rulesService.search()"
         (ionCancel)="setSearchValue(undefined)"
         (ionClear)="setSearchValue(undefined)"
         (ionInput)="setSearchValue($event.detail.value)"
