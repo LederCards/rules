@@ -138,6 +138,10 @@ export class ParamService {
   }
 
   public changeLanguage() {
+    if (!this.compareToPrinting()) {
+      this.currentPrinting.set(this.allPrintings()[0]);
+    }
+
     this.updateRules();
   }
 
