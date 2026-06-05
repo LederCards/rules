@@ -1,12 +1,6 @@
 products:
-  arcs:
-    name: Arcs
-
   ahoy:
     name: Ahoy
-
-  oath:
-    name: Oath
 
   root:
     name: Root
