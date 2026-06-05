@@ -149,7 +149,7 @@
           text: You cannot craft a persistent effect if you have an identical one in your play area.
 
     - name: Move
-      pretext: When you **move**, take any number _(more than zero)_ of your warriors and pawns from one clearing and move them on a linking path (`rule:2.2`) to one adjacent clearing.
+      pretext: When you **move**, choose any number _(more than zero)_ of your warriors and pawns from one clearing and move them on a linking path (`rule:2.2`) to one adjacent clearing.
       children:
         - name: You Must Rule.
           text: To take a move, you must rule the origin clearing, destination clearing, or both. `faction:vagabond$9.2.3` `faction:riverfolk$11.2.2` `faction:corvid$13.2.3` `faction:diaspora$16.2.4` `faction:knaves$18.2.4`
@@ -1142,7 +1142,7 @@
           text: 'The Diaspora has 12 enclave tokens, which are double-sided: one side is Peaceful and the other side is Militant.'
           children:
           - name: Clearing Suit.
-            text: While Peaceful, an enclave adds the frog suit to its clearing, making it dual-suited. While Militant, an enclave replaces its clearing suit with the frog suit.
+            text: While Peaceful, an enclave adds the frog suit to its clearing, making it dual-suited. While Militant, an enclave replaces its clearing suit by covering it with the frog suit.
           - name: Matching.
             text: Various effects target a clearing matching the suit of something else, such as a card. A clearing with a Militant enclave can be matched with the frog suit. A clearing with a Peaceful enclave can be matched with either the frog suit or the printed clearing suit.
         - name: Frog Cards.
@@ -1312,7 +1312,7 @@
         - name: Follow Me.
           text: When moving a Captain, the Knaves may move Skunks with the Captain. Captains can only be hit in battle if no Skunks remain in the battle clearing. Captains cannot be placed except in setup and with Ready (`rule:18.4`), and cannot be replaced.
         - name: Have at Thee.
-          text: 'When a Captain attacks a faction in battle, the Knaves take 1 defending warrior they hit as a prisoner: instead of removing it, they move it to an adjacent forest with no Prisoners, ignoring rule. If it cannot be moved, remove it as normal. At the end of this battle, place acclaim in the battle clearing if the Acting Captain is there.'
+          text: 'When an Acting Captain attacks a faction in battle, the Knaves take 1 defending warrior they hit as a prisoner: instead of removing it, they move it to an adjacent forest with no Prisoners, ignoring rule. If it cannot be moved, remove it as normal. At the end of this battle, place acclaim in the battle clearing if the Acting Captain is there.'
         - name: Run Away.
           text: When an enemy removes acclaim, they force the Knaves to place 1 Skunk in a forest of the enemy's choice adjacent to the acclaim's former clearing. _(If the Skunk supply is empty, ignore this.)_
         - name: Crafting.
@@ -1895,7 +1895,7 @@
         - name: The Dam.
           text: The dam separates the forests under it.
         - name: The Bridge.
-          text: The bridge does not separate the forests under it.
+          text: The bridge is a path. The bridge does not separate the forests under it.
         - name: Gorge Sides.
           text: The gorge sides do not separate the forests they are in.
 
