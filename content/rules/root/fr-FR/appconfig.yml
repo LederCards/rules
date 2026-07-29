@@ -1,0 +1,18 @@
+App:
+  NavTitle: 16ᵉ éd. USA
+  NavTitleShort: 16ᵉ éd.
+  NoItemsFound: Aucun élément trouvé.
+  NoRulesAvailable: Règles indisponibles.
+  SearchPlaceholder: Rechercher
+  Locale:
+    ShowRules: Afficher les règles
+    ShowFAQ: Afficher la FAQ
+    ShowErrata: Afficher les errata
+  Titles:
+    Search: Rechercher
+  About:
+    ModalTitle: Autres liens
+    CardLibrary: Bibliothèque de cartes
+    GitHub: GitHub
+    Discord: Discord
+    LederSupport: Assistance Leder Games
