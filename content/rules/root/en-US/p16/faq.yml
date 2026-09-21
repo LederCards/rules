@@ -7,14 +7,14 @@
   a: Buildings are square cardboard pieces that go in open building slots on the map, while tokens are circular cardboard pieces that do not occupy a slot. You'll find detailed lists of buildings and tokens on the back of the learn-to-play and the backs of the faction boards.
   rules:
     - '2.5'
-    - '16.6.3'
-    - '16.6.32'
+    - 'G.3'
+    - 'G.34'
 
 - q: Do I lose points if one of my buildings is removed?
   a: Nope!
   rules:
     - '2.5.2'
-    - '16.6.22'
+    - 'G.24'
 
 - q: Can I play multiple ambush cards in a battle?
   a: Nope! Just one.
@@ -44,7 +44,7 @@
   a: Most often, back to the board or supply of the owning player. This is described more in `rule:2.5`.
   rules:
     - '2.5'
-    - '16.6.22'
+    - 'G.24'
 
 - q: What does "activating" a piece for crafting mean? Do I do anything with it?
   a: Nope. Activating just means “I have it, and I want to use it for crafting.” You don't need to get rid of it or do anything other than point at it and say, “I'm activating this to craft a card.”
@@ -61,7 +61,7 @@
 - q: What happens if all of my pieces are removed from the map?
   a: Unfortunately, you're probably out of the game. However, if the Riverfolk Company or hirelings are in play, you can build a building again if you rule a clearing. Either way, if this happens, the game will likely end at a moment's notice!
   rules:
-    - '6'
+    - '6.1'
 
 - q: Can someone move a piece into the clearing with my keep?
   a: Yes! "Place" is a different keyword from "move."
@@ -118,10 +118,10 @@
     - '8.4.1'
 
 - q: What happens if a hireling removes sympathy?
-  a: The player controlling the hireling would trigger Outrage, since Outrage specifies “When a player removes…” This is also covered explicitly in Law E.3.7.
+  a: The player controlling the hireling would trigger Outrage, since Outrage specifies “When a player removes…” This is also covered explicitly in `rule:H.3.7`.
   rules:
     - '8.2.6'
-    - '16.4.3.7'
+    - 'H.3.7'
 
 - q: Does the Vagabond cause Outrage?
   a: Depends. Any player removing a sympathy token will cause outrage. Moving into a sympathetic clearing will not, as the Vagabond is a pawn, not a warrior.
@@ -156,16 +156,16 @@
     - '9.2.9.3'
 
 - q: If the Vagabond battles using a controlled hireling and removes enemy pieces, does the Vagabond turn Hostile with that faction or gain Infamy points if they're already Hostile?
-  a: Nope! Hirelings don't use the abilities of their controlling faction (E.3.5) or let their controlling faction score points for removing enemy pieces (E.3.6).
+  a: Nope! Hirelings don't use the abilities of their controlling faction (`rule:H.3.5`) or let their controlling faction score points for removing enemy pieces (`rule:H.3.6`).
   rules:
     - '9.2.9.3'
-    - '16.4.3.5'
-    - '16.4.3.6'
+    - 'H.3.5'
+    - 'H.3.6'
 
 - q: Can the Vagabond move Allied warriors using the Ferry from the Underworld Expansion? If so, does the Ally faction also draw a card?
   a: Yes to both!
   rules:
-    - '16.2.2.5'
+    - 'M.3.5'
 
 - q: Can a Vagabond form a coalition with a player who has activated a dominance card? Can a player activate a dominance card after a Vagabond formed a coalition with them?
   a: A Vagabond cannot form a coalition with a dominance player, since they have no victory point marker on the track. However, a player can activate a dominance card after a Vagabond forms a coalition with them!
