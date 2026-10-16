@@ -1134,17 +1134,17 @@
   icon: faction-diaspora
   children:
     - name: Overview
-      pretext: The Lilypad Diaspora wishes to establish **enclaves** as safe havens in the Woodland, and they score points by spending cards matching enclaves on their peaceful side. These enclaves introduce the Diaspora culture to the Woodland, adding the new **frog suit** to their clearing. They also add frog cards to the deck and a new discard pile for frog cards called the **pond**. However, their Peaceful enclaves cannot protect them. To gain warriors, they need enclaves on their militant side. But these enclaves cover their clearing's suit as the Diaspora expels threats real or imagined, making them lose essential Woodland support. They also prompt the Diaspora to retaliate, making them battle at them every turn. To prevent this, they can reconcile to flip Militant enclaves to Peaceful, and their enemies can do the same through negotiations. However, their enemies may battle the Diaspora to flip Peaceful enclaves to Militant, as their people's fears come to pass.
+      pretext: The Lilypad Diaspora wishes to establish **enclaves** as safe havens in the Woodland, and they score points by spending cards matching enclaves on their peaceful side. These enclaves introduce the Diaspora culture to the Woodland, adding the new **frog suit** to their clearing. They also add **frog cards** to the deck and a new discard pile for frog cards called the **pond**. However, their Peaceful enclaves cannot protect them. To gain warriors, they need enclaves on their **militant side**. But these enclaves cover their clearing's suit as the Diaspora expels threats real or imagined, making them lose essential Woodland support. They also prompt the Diaspora to **retaliate**, making them battle at them every turn. To prevent this, they can **reconcile** to flip Militant enclaves to Peaceful, and their enemies can do the same through **negotiations**. However, their enemies may battle the Diaspora to flip Peaceful enclaves to Militant, as their people's **fears come to pass**.
 
     - name: Faction Rules and Abilities
       children:
         - name: Enclaves.
-          text: 'The Diaspora has 12 enclave tokens, which are double-sided: one side is Peaceful and the other side is Militant.'
+          text: 'The Diaspora has 12 enclave tokens, which are double-sided: one side is Peaceful and the other side is Militant. Each clearing can hold only one enclave.'
           children:
           - name: Clearing Suit.
-            text: While Peaceful, an enclave adds the frog suit to its clearing, making it dual-suited. While Militant, an enclave replaces its clearing suit by covering it with the frog suit.
+            text: While Peaceful, an enclave adds the frog suit to its clearing, making it dual-suited. While Militant, an enclave replaces its clearing suit by covering it with the frog suit. _(A crafting piece at a Peaceful enclave can be used for a frog icon or the printed clearing icon. A crafting piece at a Militant enclave can be used only for a frog icon. The frog icon can be used as a wild icon.)_
           - name: Matching.
-            text: Various effects target a clearing matching the suit of something else, such as a card. A clearing with a Militant enclave can be matched with the frog suit. A clearing with a Peaceful enclave can be matched with either the frog suit or the printed clearing suit.
+            text: Various effects target a clearing matching the suit of something else, such as a card. A clearing with a Militant enclave can be matched with the frog suit. A clearing with a Peaceful enclave can be matched with either the frog suit or the printed clearing suit. _(For example, the Lizard Cult could Build with a frog card to place a fox garden in a fox clearing with a Peaceful enclave, since it also has the frog suit. The Woodland Alliance could spend a fox and a frog card to revolt in a fox clearing with a Peaceful enclave.)_
         - name: Frog Cards.
           text: During setup, 14 frog cards are shuffled into the shared deck. These cards have the frog suit. Some of them have frog crafting icons. Many of their crafted effects force the Diaspora to take actions; the Diaspora can craft these to act themselves.
           children:
@@ -1156,18 +1156,18 @@
               - name: Peacekeepers.
                 text: If both Peacekeepers (`rule:17.2.5`) and Enclave Defense (`rule:16.2.2.1.1`) affect a battle, the Diaspora chooses the combination of Council warriors and Enclave Defense warriors to take hits after their own.
         - name: The Pond.
-          text: When a frog card is discarded, it goes face up on top of the Pond pile, on the Pond placard, instead of the discard pile.
+          text: When a frog card is discarded, it goes face up on top of the Pond pile, on the Pond placard, instead of the discard pile. _(With the Lizard Cult, discard frog cards to the Pond, not the Lost Souls.)_
           children:
             - name: Drawing.
               text: When a player draws any number of cards, they may draw the first card from the top of the Pond instead of the shared deck.
             - name: Reshuffling.
               text: When the shared deck is reshuffled, all cards from the Pond are also shuffled into it.
+        - name: Swimmers.
+          text: The Diaspora treat rivers as paths and may move along a river fully linking an origin and destination clearing, ignoring the need for rule. _(They can still move using paths.)_
         - name: Fears Come to Pass.
           text: After a battle where an enemy attacks a defending Peaceful enclave, or when an enemy removes a Peaceful enclave outside battle, flip all Peaceful enclaves with that enemy's pieces to Militant and place 1 warrior at each flipped enclave.
         - name: Negotiations.
           text: Once during their turn, an enemy with faction pieces in a clearing with a Militant enclave may flip it to Peaceful. If they don't rule the enclave but another player does, the flipping player must give the ruler a card in order to flip the enclave.
-        - name: Swimmers.
-          text: The Diaspora treat rivers as paths and may move along a river fully linking an origin and destination clearing, ignoring the need for rule.
         - name: Crafting.
           text: The Diaspora crafts by activating enclaves in Birdsong (`rule:16.4.1`).
 
@@ -1223,12 +1223,12 @@
     - name: Faction Rules and Abilities
       children:
         - name: Loyalists.
-          text: The Council can hold up to 4 warriors on its player board as **Loyalists**. They can place Loyalists with Entreat (`rule:17.2.4`) and Assemble (`rule:17.4.3`). They may remove Loyalists at any time.
+          text: The Council can hold up to 4 warriors on its player board as Loyalists. They can place Loyalists with Entreat (`rule:17.2.4`) and Assemble (`rule:17.4.4`). They may remove Loyalists at any time.
         - name: Assemblies.
           text: 'Assemblies have two sides: Closed _(closed tent)_ and Governing _(open tent)_. When an enemy of the Council removes an assembly, the Council removes 1 Loyalist.'
         - name: Governors.
           text: At Governing assemblies, enemies of the Council cannot activate crafting pieces and cannot place, take, remove, or flip pieces, except in battle. _(The Vagabond cannot craft because the Vagabond pawn is its crafting piece.)_
-        - name: Entreat.
+        - name: Entreating.
           text: Any number of times on their turn, an enemy may force the Council to flip any assembly to Closed. After flipping it, the Council may either place any number of Loyalists at that assembly or place 1 warrior in their Loyalists.
         - name: Peacekeepers.
           text: When an enemy chooses another enemy as defender at an assembly, the Council adds Council warriors as defending warriors, but Council warriors only take hits once the defender's warriors have been removed. Ignore Peacekeepers if the Vagabond is defending. _(The Council cannot ambush, use battle effects, etc.)_
@@ -1254,10 +1254,10 @@
           text: Take a move from a clearing matching the revealed card.
         - name: Recruit.
           text: Place 1 warrior in a clearing matching the revealed card.
-        - name: Assemble.
-          text: Place a Closed assembly and any number of Loyalists in a clearing matching the revealed card that has no assembly. Then, if you don't rule the clearing, discard the revealed card.
         - name: Battle.
           text: Initiate a battle in a clearing matching the revealed card. If an assembly is there, discard the revealed card.
+        - name: Assemble.
+          text: Place a Closed assembly and any number of Loyalists in a clearing matching the revealed card that has no assembly. Then, if you don't rule the clearing, discard the revealed card.
 
     - name: Daylight
       children:
@@ -1312,11 +1312,11 @@
         - name: Follow Me.
           text: When moving a Captain, the Knaves may move Skunks with the Captain. Captains can only be hit in battle if no Skunks remain in the battle clearing. Captains cannot be placed except in setup and with Ready (`rule:18.4`), and cannot be replaced.
         - name: Have at Thee.
-          text: 'When an Acting Captain attacks a faction in battle, the Knaves take 1 defending warrior they hit as a prisoner: instead of removing it, they move it to an adjacent forest with no Prisoners, ignoring rule. If it cannot be moved, remove it as normal. At the end of this battle, place acclaim in the battle clearing if the Acting Captain is there.'
+          text: 'When an Acting Captain attacks a faction in battle, the Knaves take 1 defending warrior they hit as a prisoner: instead of removing it, they move it to an adjacent forest with no Prisoners, ignoring rule. If it cannot be moved, remove it as normal. At the end of this battle, place acclaim in the battle clearing if the Acting Captain is there. _(You can lay Prisoners down flat to distinguish them.)_'
         - name: Run Away.
           text: When an enemy removes acclaim, they force the Knaves to place 1 Skunk in a forest of the enemy's choice adjacent to the acclaim's former clearing. _(If the Skunk supply is empty, ignore this.)_
         - name: Crafting.
-          text: The Knaves craft in Daylight by activating their Acting Captain or acclaim. Their Filch (`rule:18.5.1.3`) lets them activate their Acting Captain, and their Serve (`rule:18.5.1.4.7`) lets them activate any number of acclaim matching their Acting Captain's clearing. Each acclaim can only be activated once per turn.
+          text: The Knaves craft in Daylight by activating their Acting Captain or acclaim. Their Filch (`rule:18.5.1.3`) lets them activate their Acting Captain, and their Serve (`rule:18.5.1.4.7`) lets them activate any number of acclaim matching their Acting Captain's clearing. Each acclaim can only be activated once per turn. _(You may flip the acclaim over to show it has been activated.)_
 
     - name: Faction Setup
       children:
